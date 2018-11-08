@@ -1,3 +1,3 @@
 # wick-new-site
 
-test
+New Website for the WickEditor
