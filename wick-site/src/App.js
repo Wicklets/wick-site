@@ -6,7 +6,8 @@
     Top-Level React Component
 */
 
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import Content from './Content.js';
 import './App.scss';
 
 class App extends Component {
@@ -24,9 +25,9 @@ class App extends Component {
     render() {
         return(
             <div className="App">
-                <Header onClick={this.handleClick} />
+                {/*<Header onClick={this.handleClick} />*/}
                 <Content active={this.state.active} />
-                <Footer />
+                {/*<Footer />*/}
             </div>
         );
     }

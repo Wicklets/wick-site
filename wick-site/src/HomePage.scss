@@ -1,0 +1,67 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    HomePage.scss
+
+    Stylings for the Wick Homepage
+*/
+
+.row {
+    justify-content: center;
+    padding-left: inherit;
+    padding-right: inherit;
+}
+
+.sectionHead,
+#supportRow {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardContainer,
+#ourLatestRow {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.webpageButtonRow {
+    padding-bottom: 40px;
+}
+
+#wickSubtitleRow {
+    margin-top: -8px;
+}
+
+#editorButtonRow {
+    padding: 20px 0;
+}
+
+#promoVideoRow {
+    padding: 40px 0;
+}
+
+#videoPlaceholder {
+    background-color: grey;
+    height: 337.5px;
+    width: 600px;
+}
+
+#updateRow {
+    flex-direction: column;
+    align-items: flex-start;
+    border: solid 1px black;
+    padding: 16px;
+    margin: 20px 0 8px;
+}
+
+#newsRow {
+    padding-bottom: 80px;
+}
+
+#supportRow {
+    padding-bottom: 60px;
+}
+
+.test {
+    border: solid 1px black;
+}
