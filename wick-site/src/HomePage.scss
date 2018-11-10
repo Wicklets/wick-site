@@ -8,8 +8,6 @@
 
 .row {
     justify-content: center;
-    padding-left: inherit;
-    padding-right: inherit;
 }
 
 .sectionHead,
@@ -24,16 +22,36 @@
     padding-bottom: 20px
 }
 
+.sectionTitle {
+    font-size: 24px;
+}
+
+.sectionSubtitle {
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .webpageButtonRow {
     padding-bottom: 40px;
 }
 
+#wickTitleRow {
+    font-size: 40px;
+    line-height: 40px;
+}
+
 #wickSubtitleRow {
     margin-top: -8px;
+    font-size: 14px;
+    color: gray;
 }
 
 #editorButtonRow {
-    padding: 20px 0;
+    padding: 20px 0 40px;
+}
+
+#descTextRow {
+    font-size: 20px;
 }
 
 #promoVideoRow {
@@ -46,6 +64,10 @@
     width: 600px;
 }
 
+#ourLatestRow {
+    font-size: 40px;
+}
+
 #updateRow {
     flex-direction: column;
     align-items: flex-start;
@@ -54,12 +76,16 @@
     margin: 20px 0 8px;
 }
 
+#updateButton {
+    margin-top: 8px;
+}
+
 #newsRow {
     padding-bottom: 80px;
 }
 
 #supportRow {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .test {

@@ -16,10 +16,12 @@ const HomePage = () => (
         <Row id="wickTitleRow">wick editor</Row>
         <Row id="wickSubtitleRow">click the letters!</Row>
         <Row id="editorButtonRow">
-            <Button color="secondary" size="lg">get started!</Button>
+            <Col sm="2">
+                <Button color="secondary" size="lg" block>get started!</Button>
+            </Col>
         </Row>
         <Row id="descTextRow">
-            <Col sm={{size: 7, offset: 2.5}}>
+            <Col sm="7">
                 wick is a free online editor for animations, games, and everything in between.
             </Col>
         </Row>
@@ -29,7 +31,7 @@ const HomePage = () => (
         <Row id="ourLatestRow">our latest</Row>
         <Row className="sectionHead">
             <div className="sectionTitle">tutorials</div>
-            <Col className="sectionSubTitle" sm={{size: 7, offset: 2.5}}>
+            <Col className="sectionSubtitle" sm="7">
                 Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
             </Col>
         </Row>
@@ -39,11 +41,13 @@ const HomePage = () => (
             <Col className="test" sm="4">Test</Col>
         </Row>
         <Row className="webpageButtonRow">
-            <Button color="secondary" size="sm">watch more</Button>
+            <Col sm="2">
+                <Button color="secondary" size="sm" block>watch more</Button>
+            </Col>
         </Row>
         <Row className="sectionHead">
             <div className="sectionTitle">examples</div>
-            <Col className="sectionSubTitle" sm={{size: 7, offset: 2.5}}>
+            <Col className="sectionSubtitle" sm="7">
                 Check out some examples to help you get started using the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
             </Col>
         </Row>
@@ -53,7 +57,9 @@ const HomePage = () => (
             <Col className="test" sm="4">Test</Col>
         </Row>
         <Row className="webpageButtonRow">
-            <Button color="secondary" size="sm">see more</Button>
+            <Col sm="2">
+                <Button color="secondary" size="sm" block>see more</Button>
+            </Col>
         </Row>
         <Row className="sectionHead">
             <div className="sectionTitle">updates</div>
@@ -61,7 +67,7 @@ const HomePage = () => (
         <Row id="updateRow">
             <div>update 3.5</div>
             <div>Some exciting description here. Try it out!</div>
-            <Button outline color="secondary" size="sm">try it</Button>
+            <Button id="updateButton" outline color="secondary" size="sm">try it</Button>
         </Row>
         <Row id="newsRow">
             <Col className="test" sm="4">Test</Col>
@@ -73,6 +79,14 @@ const HomePage = () => (
             <div id="supportText">
                 Join the wick editor community with a YouTube membership or Patreon subscription!
             </div>
+        </Row>
+        <Row id="subscribeRow">
+            <Col sm="3">
+                <Button outline color="secondary" block>Become a Patron</Button>
+            </Col>
+            <Col sm="3">
+                <Button outline color="secondary" block>Subscribe on Youtube</Button>
+            </Col>
         </Row>
     </Container>
 );
