@@ -21,7 +21,7 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row id="descTextRow">
-            <Col sm="7">
+            <Col sm="6">
                 wick is a free online editor for animations, games, and everything in between.
             </Col>
         </Row>
@@ -31,14 +31,14 @@ const HomePage = () => (
         <Row id="ourLatestRow">our latest</Row>
         <Row className="sectionHead">
             <div className="sectionTitle">tutorials</div>
-            <Col className="sectionSubtitle" sm="7">
+            <Col className="sectionSubtitle" sm="6">
                 Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
             </Col>
         </Row>
         <Row className="cardContainer">
-            <Col className="test" sm="4">Test</Col>
-            <Col className="test" sm="4">Test</Col>
-            <Col className="test" sm="4">Test</Col>
+            <Col className="test" sm="3">Test</Col>
+            <Col className="test" sm="3">Test</Col>
+            <Col className="test" sm="3">Test</Col>
         </Row>
         <Row className="webpageButtonRow">
             <Col sm="2">
@@ -47,14 +47,14 @@ const HomePage = () => (
         </Row>
         <Row className="sectionHead">
             <div className="sectionTitle">examples</div>
-            <Col className="sectionSubtitle" sm="7">
+            <Col className="sectionSubtitle" sm="6">
                 Check out some examples to help you get started using the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
             </Col>
         </Row>
         <Row className="cardContainer">
-            <Col className="test" sm="4">Test</Col>
-            <Col className="test" sm="4">Test</Col>
-            <Col className="test" sm="4">Test</Col>
+            <Col className="test" sm="3">Test</Col>
+            <Col className="test" sm="3">Test</Col>
+            <Col className="test" sm="3">Test</Col>
         </Row>
         <Row className="webpageButtonRow">
             <Col sm="2">
@@ -64,21 +64,25 @@ const HomePage = () => (
         <Row className="sectionHead">
             <div className="sectionTitle">updates</div>
         </Row>
-        <Row id="updateRow">
-            <div>update 3.5</div>
-            <div>Some exciting description here. Try it out!</div>
-            <Button id="updateButton" outline color="secondary" size="sm">try it</Button>
+        <Row>
+            <Col id="updateRow" sm="9">
+                <div id="updateVersion">update 3.5</div>
+                <div id="updateText">Some exciting description here. Try it out!</div>
+                <Button id="updateButton" outline color="secondary" size="sm">try it</Button>
+            </Col>
         </Row>
         <Row id="newsRow">
-            <Col className="test" sm="4">Test</Col>
-            <Col className="test" sm="4">Test</Col>
-            <Col className="test" sm="4">Test</Col>
+            <Col className="test" sm="3">Test</Col>
+            <Col className="test" sm="3">Test</Col>
+            <Col className="test" sm="3">Test</Col>
         </Row>
-        <Row id="supportRow">
-            <div id="supportWick">Support Wick Editor</div>
-            <div id="supportText">
-                Join the wick editor community with a YouTube membership or Patreon subscription!
-            </div>
+        <Row>
+            <Col id="supportRow" sm="6">
+                <div id="supportWick">Support Wick Editor</div>
+                <div id="supportText">
+                    Join the wick editor community with a YouTube membership or Patreon subscription!
+                </div>
+            </Col>
         </Row>
         <Row id="subscribeRow">
             <Col sm="3">
