@@ -8,6 +8,7 @@
 
 import React, {Component} from 'react';
 import Content from './Content.js';
+import Footer from './Footer.js';
 import './App.scss';
 
 class App extends Component {
@@ -27,7 +28,7 @@ class App extends Component {
             <div className="App">
                 {/*<Header onClick={this.handleClick} />*/}
                 <Content active={this.state.active} />
-                {/*<Footer />*/}
+                <Footer />
             </div>
         );
     }

@@ -1,0 +1,31 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    HomePage.scss
+
+    Stylings for the Wick Footer
+*/
+
+.footerHeader,
+.footerContent,
+#copyrightRow {
+    text-align: left;
+    font-size: 12px;
+}
+
+#paddingRow {
+    padding-top: 160px;
+}
+
+.footerHeader {
+    font-weight: bold;
+}
+
+.footerContent {
+    color: darkgray;
+    padding-bottom: 60px;
+}
+
+#copyrightRow {
+    color: gray;
+}
