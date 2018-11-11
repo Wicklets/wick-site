@@ -9,6 +9,9 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import {Button} from 'reactstrap';
+import PreviewCardContainer from './PreviewCardContainer.js';
+import UpdateTab from './UpdateTab.js';
+import NewsCard from './NewsCard.js';
 import './HomePage.scss';
 
 const HomePage = () => (
@@ -36,9 +39,9 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row className="cardContainer">
-            <Col className="test" sm="3">Test</Col>
-            <Col className="test" sm="3">Test</Col>
-            <Col className="test" sm="3">Test</Col>
+            <Col sm="3"><PreviewCardContainer /></Col>
+            <Col sm="3"><PreviewCardContainer /></Col>
+            <Col sm="3"><PreviewCardContainer /></Col>
         </Row>
         <Row className="webpageButtonRow">
             <Col sm="2">
@@ -52,9 +55,9 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row className="cardContainer">
-            <Col className="test" sm="3">Test</Col>
-            <Col className="test" sm="3">Test</Col>
-            <Col className="test" sm="3">Test</Col>
+            <Col sm="3"><PreviewCardContainer /></Col>
+            <Col sm="3"><PreviewCardContainer /></Col>
+            <Col sm="3"><PreviewCardContainer /></Col>
         </Row>
         <Row className="webpageButtonRow">
             <Col sm="2">
@@ -65,16 +68,14 @@ const HomePage = () => (
             <div className="sectionTitle">updates</div>
         </Row>
         <Row>
-            <Col id="updateRow" sm="9">
-                <div id="updateVersion">update 3.5</div>
-                <div id="updateText">Some exciting description here. Try it out!</div>
-                <Button id="updateButton" outline color="secondary" size="sm">try it</Button>
+            <Col sm="9">
+                <UpdateTab />
             </Col>
         </Row>
         <Row id="newsRow">
-            <Col className="test" sm="3">Test</Col>
-            <Col className="test" sm="3">Test</Col>
-            <Col className="test" sm="3">Test</Col>
+            <Col className="test" sm="3"><NewsCard /></Col>
+            <Col className="test" sm="3"><NewsCard /></Col>
+            <Col className="test" sm="3"><NewsCard /></Col>
         </Row>
         <Row>
             <Col id="supportRow" sm="6">

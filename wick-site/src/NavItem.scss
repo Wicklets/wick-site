@@ -1,0 +1,26 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    NavItem.scss
+
+    Stylings for the Nav Bar Items
+*/
+
+#activeNavItem {
+    color: blue;
+}
+
+.navItem {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 32px;
+}
+
+.navItem:hover {
+    color: lightblue;
+    cursor: pointer;
+}
+
+.largerNavItem {
+    font-size: 18px;
+}

@@ -9,6 +9,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Header.scss';
+import NavItem from './NavItem.js';
 import './Header.scss';
 
 var cx = classNames.bind(styles);
@@ -16,43 +17,38 @@ var cx = classNames.bind(styles);
 const Header = ({page, onClick, hide}) => (
     <div
         id="headerContainer"
-        className={cx({showNavBar: !hide})}>
-        {console.log(hide)}
-        <div
-            id={cx({active: page === "home"})}
-            className="navItem"
+        className={cx({showNavBar: !hide})}
+    >
+        <NavItem
+            active={page === "home"}
+            larger={true}
             onClick={() => onClick("home")}
-        >
-            wick editor
-        </div>
-        <div
-            id={cx({active: page === "create"})}
-            className="navItem"
+            text="wickEditor"
+        />
+        <NavItem
+            active={page === "create"}
+            larger={false}
             onClick={() => onClick("create")}
-        >
-            create
-        </div>
-        <div
-            id={cx({active: page === "learn"})}
-            className="navItem"
+            text="create"
+        />
+        <NavItem
+            active={page === "learn"}
+            larger={false}
             onClick={() => onClick("learn")}
-        >
-            learn
-        </div>
-        <div
-            id={cx({active: page === "about"})}
-            className="navItem"
+            text="learn"
+        />
+        <NavItem
+            active={page === "about"}
+            larger={false}
             onClick={() => onClick("about")}
-        >
-            about
-        </div>
-        <div
-            id={cx({active: page === "community"})}
-            className="navItem"
+            text="about"
+        />
+        <NavItem
+            active={page === "community"}
+            larger={false}
             onClick={() => onClick("community")}
-        >
-            community
-        </div>
+            text="community"
+        />
     </div>
 );
 

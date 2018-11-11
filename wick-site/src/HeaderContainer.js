@@ -1,7 +1,7 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    Header.js
+    HeaderContainer.js
 
     Container Component for Navigation Bar for website
     Determines logic for showing/hiding navbar container
