@@ -6,6 +6,10 @@
     Stylings for the Wick Footer
 */
 
+#footerContainer {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
 .footerHeader,
 .footerContent,
 #copyrightRow {
@@ -23,7 +27,7 @@
 
 .footerContent {
     color: darkgray;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 #copyrightRow {

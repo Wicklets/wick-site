@@ -9,9 +9,9 @@
 import React, {Fragment} from 'react';
 import HomePage from './HomePage.js';
 
-const Content = ({active}) => (
+const Content = ({page}) => (
     <Fragment>
-        {active === "Home" && (
+        {page === "home" && (
             <HomePage />
         )}
     </Fragment>

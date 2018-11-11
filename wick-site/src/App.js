@@ -8,6 +8,7 @@
 
 import React, {Component} from 'react';
 import Content from './Content.js';
+import Header from './Header.js';
 import Footer from './Footer.js';
 import './App.scss';
 
@@ -17,17 +18,20 @@ class App extends Component {
 
         // Website current page
         this.state = {
-            active: "Home"
+            page: "home"
         };
     }
 
-    handleClick = (page) => {this.setState({active: page});}
+    handleClick = (page) => {this.setState({page})}
 
     render() {
         return(
             <div className="App">
-                {/*<Header onClick={this.handleClick} />*/}
-                <Content active={this.state.active} />
+                <Header
+                    page={this.state.page}
+                    onClick={this.handleClick}
+                />
+                <Content page={this.state.page} />
                 <Footer />
             </div>
         );

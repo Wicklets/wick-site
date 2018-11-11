@@ -6,12 +6,12 @@
     Footer information for website
 */
 
-import React, {Fragment} from 'react';
+import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import './Footer.scss';
 
 const Footer = () => (
-    <Fragment>
+    <div id="footerContainer">
         <Container>
             <Row id="paddingRow" />
             <Row id="contentRow">
@@ -67,7 +67,7 @@ const Footer = () => (
                 </Col>
             </Row>
         </Container>
-    </Fragment>
+    </div>
 );
 
 export default Footer;
