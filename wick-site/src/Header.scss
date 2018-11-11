@@ -23,5 +23,13 @@
 }
 
 #headerContainer {
-    padding: 12px 0 60px;
+    padding: 12px 0 12px;
+    margin-bottom: 48px;
+    position: sticky;
+    top: 0;
+}
+
+.showNavBar {
+    background-color: gray;
+    z-index: 1;
 }

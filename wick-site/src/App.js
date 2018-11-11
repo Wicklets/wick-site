@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 import Content from './Content.js';
-import Header from './Header.js';
+import HeaderContainer from './HeaderContainer.js';
 import Footer from './Footer.js';
 import './App.scss';
 
@@ -27,7 +27,7 @@ class App extends Component {
     render() {
         return(
             <div className="App">
-                <Header
+                <HeaderContainer
                     page={this.state.page}
                     onClick={this.handleClick}
                 />
@@ -36,6 +36,6 @@ class App extends Component {
             </div>
         );
     }
-}
+};
 
 export default App;

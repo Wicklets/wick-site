@@ -13,8 +13,11 @@ import './Header.scss';
 
 var cx = classNames.bind(styles);
 
-const Header = ({page, onClick}) => (
-    <div id="headerContainer">
+const Header = ({page, onClick, hide}) => (
+    <div
+        id="headerContainer"
+        className={cx({showNavBar: !hide})}>
+        {console.log(hide)}
         <div
             id={cx({active: page === "home"})}
             className="navItem"
