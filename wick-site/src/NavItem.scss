@@ -23,4 +23,10 @@
 
 .largerNavItem {
     font-size: 18px;
+    color: green;
+}
+
+.largerNavItem:hover {
+    color: lightgreen;
+    cursor: pointer;
 }
