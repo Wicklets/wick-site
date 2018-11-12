@@ -6,16 +6,21 @@
     Update Info Tab to be displayed on the homepage
 */
 
-import React from 'react';
+import React, {Fragment} from 'react';
+import {Card, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import {Button} from 'reactstrap';
 import './UpdateTab.scss';
 
 const UpdateTab = () => (
-    <div id="UpdateTab-container">
-        <div id="UpdateTab-version">update 3.5</div>
-        <div id="UpdateTab-text">Some exciting description here. Try it out!</div>
-        <Button id="UpdateTab-button" outline color="secondary" size="sm">try it</Button>
-    </div>
+    <Fragment>
+        <Card id="UpdateTab-container">
+            <CardBody>
+                <CardTitle id="UpdateTab-version">update 3.5</CardTitle>
+                <CardSubtitle id="UpdateTab-text">Some exciting description here. Try it out!</CardSubtitle>
+                <Button id="UpdateTab-button" outline color="secondary" size="sm">try it</Button>
+            </CardBody>
+        </Card>
+    </Fragment>
 );
 
 export default UpdateTab;

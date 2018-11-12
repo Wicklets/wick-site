@@ -6,11 +6,18 @@
     Component for news item info on homepage
 */
 
-import React from 'react';
+import React, {Fragment} from 'react';
+import {Card, CardBody, CardTitle} from 'reactstrap';
 import './NewsCard.scss';
 
 const NewsCard = () => (
-    <div className="NewsCard">News Item</div>
+    <Fragment>
+        <Card>
+            <CardBody>
+                <CardTitle>News Item</CardTitle>
+            </CardBody>
+        </Card>
+    </Fragment>
 );
 
 export default NewsCard;

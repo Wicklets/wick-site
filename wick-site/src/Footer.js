@@ -13,8 +13,8 @@ import './Footer.scss';
 const Footer = () => (
     <div id="Footer-container">
         <Container>
-            <Row id="Footer-paddingRow" />
-            <Row id="Footer-contentRow">
+            <Row id="Footer-paddingTopRow" className="Footer-row" />
+            <Row id="Footer-contentRow" className="Footer-row">
                 <Col sm="1">
                     <div className="Footer-header">Product</div>
                     <div className="Footer-content">
@@ -61,11 +61,12 @@ const Footer = () => (
                     </div>
                 </Col>
             </Row>
-            <Row id="Footer-copyrightRow">
+            <Row id="Footer-copyrightRow" className="Footer-row">
                 <Col sm="9">
                     © 2017, Wick, Inc. All Rights Reserved.
                 </Col>
             </Row>
+            <Row id="Footer-paddingBottomRow" className="Footer-row" />
         </Container>
     </div>
 );

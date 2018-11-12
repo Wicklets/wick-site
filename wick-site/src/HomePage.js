@@ -10,6 +10,7 @@ import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import {Button} from 'reactstrap';
 import PreviewCardDeckContainer from './PreviewCardDeckContainer.js';
+import NewsCardDeckContainer from './NewsCardDeckContainer.js';
 import UpdateTab from './UpdateTab.js';
 import NewsCard from './NewsCard.js';
 import './HomePage.scss';
@@ -73,9 +74,9 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row id="HomePage-newsRow" className="HomePage-row">
-            <Col className="test" sm="3"><NewsCard /></Col>
-            <Col className="test" sm="3"><NewsCard /></Col>
-            <Col className="test" sm="3"><NewsCard /></Col>
+            <Col sm="9">
+                <NewsCardDeckContainer />
+            </Col>
         </Row>
         <Row className="HomePage-row">
             <Col id="HomePage-supportRow" sm="6">

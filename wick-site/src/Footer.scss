@@ -7,12 +7,16 @@
 */
 
 // Formatting Settings
-#Footer-container {
-    background-color: rgba(255, 0, 0, 0.3);
+.Footer-row {
+    justify-content: center;
 }
 
-#Footer-paddingRow {
+#Footer-paddingTopRow {
     padding-top: 160px;
+}
+
+#Footer-paddingBottomRow {
+    padding-top: 12px;
 }
 
 // Text Settings
