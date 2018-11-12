@@ -7,14 +7,15 @@
 */
 
 
-#headerContainer {
+#Header-container {
     padding: 8px 0;
     margin-bottom: 48px;
     position: sticky;
     top: 0;
 }
 
-.showNavBar {
+// Formatting for the Nav Bar background
+.Header-showNavBar {
     background-color: gray;
     z-index: 1;
 }

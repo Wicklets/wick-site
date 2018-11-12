@@ -6,27 +6,32 @@
     Stylings for the Nav Bar Items
 */
 
-#activeNavItem {
+// highlight current tab
+#NavItem-active {
     color: blue;
 }
 
-.navItem {
+// Layout settings
+.NavItem,
+.NavItem-larger {
     display: inline-block;
     font-size: 16px;
     margin: 0 32px;
 }
 
-.navItem:hover {
-    color: lightblue;
-    cursor: pointer;
-}
-
-.largerNavItem {
+// formatting for larger text (wick editor name)
+.NavItem-larger {
     font-size: 18px;
     color: green;
 }
 
-.largerNavItem:hover {
+
+.NavItem:hover {
+    color: lightblue;
+    cursor: pointer;
+}
+
+.NavItem-larger:hover {
     color: lightgreen;
     cursor: pointer;
 }

@@ -12,16 +12,16 @@ import './PreviewCard.scss';
 const PreviewCard = ({onMouseEnter, onMouseLeave, displayOverlay}) => (
     <Fragment>
         <div
-            className="previewCard"
+            className="PreviewCard-container"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
         >
             <div className="imagePlaceholder" />
-            <div className="cardTitle">type something</div>
-            <div className="cardText">description type something lorem ipsum type something lorem ipsum type something lorem ipsum</div>
+            <div className="PreviewCard-title">type something</div>
+            <div className="PreviewCard-text">description type something lorem ipsum type something lorem ipsum type something lorem ipsum</div>
             {displayOverlay && (
-                <div className="previewCardOverlay">
-                    <div className="openPreviewCard">click to open</div>
+                <div className="PreviewCard-overlay">
+                    <div className="PreviewCard-overlayText">click to open</div>
                 </div>
             )}
         </div>

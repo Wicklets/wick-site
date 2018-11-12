@@ -6,7 +6,8 @@
     Stylings for the Wick Homepage Preview Cards
 */
 
-.previewCard {
+// Layout settings
+.PreviewCard-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -14,17 +15,17 @@
     border: solid 1px black;
 }
 
-.previewCardOverlay {
+.PreviewCard-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 15px;
     right: 15px;
     background-color: rgba(0,0, 122, 0.5);
-}
 
-.previewCardOverlay:hover {
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .imagePlaceholder {
@@ -32,18 +33,20 @@
     height: 50%;
 }
 
-.cardTitle {
+
+// Font settings
+.PreviewCard-title {
     font-size: 16px;
     margin-top: 16px;
 }
 
-.cardText {
+.PreviewCard-text {
     font-size: 12px;
     margin: 16px;
     overflow: hidden;
 }
 
-.openPreviewCard {
+.PreviewCard-overlayText {
     padding-top: 25%;
     font-size: 24px;
 }

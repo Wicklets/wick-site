@@ -10,7 +10,7 @@ import React from 'react';
 import './NewsCard.scss';
 
 const NewsCard = () => (
-    <div className="newsItem">News Item</div>
+    <div className="NewsCard">News Item</div>
 );
 
 export default NewsCard;

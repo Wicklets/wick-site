@@ -11,10 +11,10 @@ import {Button} from 'reactstrap';
 import './UpdateTab.scss';
 
 const UpdateTab = () => (
-    <div id="updateTab">
-        <div id="updateVersion">update 3.5</div>
-        <div id="updateText">Some exciting description here. Try it out!</div>
-        <Button id="updateButton" outline color="secondary" size="sm">try it</Button>
+    <div id="UpdateTab-container">
+        <div id="UpdateTab-version">update 3.5</div>
+        <div id="UpdateTab-text">Some exciting description here. Try it out!</div>
+        <Button id="UpdateTab-button" outline color="secondary" size="sm">try it</Button>
     </div>
 );
 

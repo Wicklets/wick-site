@@ -6,30 +6,32 @@
     Stylings for the Wick Footer
 */
 
-#footerContainer {
+// Formatting Settings
+#Footer-container {
     background-color: rgba(255, 0, 0, 0.3);
 }
 
-.footerHeader,
-.footerContent,
-#copyrightRow {
+#Footer-paddingRow {
+    padding-top: 160px;
+}
+
+// Text Settings
+.Footer-header,
+.Footer-content,
+#Footer-copyrightRow {
     text-align: left;
     font-size: 12px;
 }
 
-#paddingRow {
-    padding-top: 160px;
-}
-
-.footerHeader {
+.Footer-header {
     font-weight: bold;
 }
 
-.footerContent {
+.Footer-content {
     color: darkgray;
     padding-bottom: 40px;
 }
 
-#copyrightRow {
+#Footer-copyrightRow {
     color: gray;
 }

@@ -7,16 +7,12 @@
 */
 
 import React from 'react';
-import classNames from 'classnames/bind';
-import styles from './NavItem.scss';
 import './NavItem.scss';
-
-var cx = classNames.bind(styles);
 
 const NavItem = ({active, larger, onClick, text}) => (
     <div
-        id={cx({activeNavItem: active})}
-        className={cx({largerNavItem: larger}) + " navItem"}
+        id={(active ? "NavItem-active" : "")}
+        className={(larger ? "NavItem-larger" : " NavItem")}
         onClick={onClick}
     >
         {text}

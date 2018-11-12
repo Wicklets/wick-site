@@ -6,21 +6,21 @@
     Stylings for the Update Info Tab
 */
 
-#updateTab {
+#UpdateTab-container {
     text-align: left;
     border: solid 1px black;
     padding: 16px;
     margin: 20px 0;
 }
 
-#updateVersion {
+#UpdateTab-version {
     font-size: 24px;
 }
 
-#updateText {
+#UpdateTab-text {
     font-size: 16px;
 }
 
-#updateButton {
+#UpdateTab-button {
     margin-top: 8px;
 }

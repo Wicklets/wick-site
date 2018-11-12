@@ -7,17 +7,13 @@
 */
 
 import React from 'react';
-import classNames from 'classnames/bind';
-import styles from './Header.scss';
 import NavItem from './NavItem.js';
 import './Header.scss';
 
-var cx = classNames.bind(styles);
-
 const Header = ({page, onClick, hide}) => (
     <div
-        id="headerContainer"
-        className={cx({showNavBar: !hide})}
+        id="Header-container"
+        className={(!hide ? "Header-showNavBar" : "")}
     >
         <NavItem
             active={page === "home"}

@@ -6,56 +6,71 @@
     Stylings for the Wick Homepage
 */
 
-.row {
+// Center the content of the page
+.HomePage-row {
     justify-content: center;
 }
 
-.sectionHead,
-#supportRow {
+.HomePage-sectionHead,
+#HomePage-supportRow {
     flex-direction: column;
     align-items: center;
 }
 
-.cardContainer,
-#ourLatestRow {
-    padding-top: 20px;
-    padding-bottom: 20px
-}
-
-.sectionTitle {
-    font-size: 24px;
-}
-
-.sectionSubtitle {
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.webpageButtonRow {
-    padding-bottom: 60px;
-}
-
-#wickTitleRow {
+// Spacing settings for different rows of content
+#HomePage-wickTitleRow {
     font-size: 40px;
     line-height: 40px;
 }
 
-#wickSubtitleRow {
+#HomePage-editorButtonRow {
+    padding: 20px 0 40px;
+}
+
+#HomePage-promoVideoRow {
+    padding: 40px 0;
+}
+
+.HomePage-webpageButtonRow {
+    padding-bottom: 60px;
+}
+
+#HomePage-newsRow {
+    padding-bottom: 80px;
+}
+
+#HomePage-supportRow {
+    padding-bottom: 40px;
+}
+
+.HomePage-cardContainer,
+#HomePage-ourLatestRow {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+// Font settings
+#HomePage-wickSubtitleRow {
     margin-top: -8px;
     font-size: 14px;
     color: gray;
 }
 
-#editorButtonRow {
-    padding: 20px 0 40px;
-}
-
-#descTextRow {
+#HomePage-descTextRow {
     font-size: 20px;
 }
 
-#promoVideoRow {
-    padding: 40px 0;
+#HomePage-ourLatestRow {
+    font-size: 40px;
+}
+
+.HomePage-sectionTitle {
+    font-size: 24px;
+}
+
+.HomePage-sectionSubtitle {
+    font-size: 16px;
+    line-height: 20px;
 }
 
 #videoPlaceholder {
@@ -64,22 +79,10 @@
     width: 600px;
 }
 
-#ourLatestRow {
+#HomePage-supportWick {
     font-size: 40px;
 }
 
-#newsRow {
-    padding-bottom: 80px;
-}
-
-#supportRow {
-    padding-bottom: 40px;
-}
-
-#supportWick {
-    font-size: 40px;
-}
-
-#suportText {
+#HomePage-suportText {
     font-size: 20px;
 }

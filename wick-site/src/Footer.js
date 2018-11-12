@@ -11,13 +11,13 @@ import {Container, Row, Col} from 'reactstrap';
 import './Footer.scss';
 
 const Footer = () => (
-    <div id="footerContainer">
+    <div id="Footer-container">
         <Container>
-            <Row id="paddingRow" />
-            <Row id="contentRow">
+            <Row id="Footer-paddingRow" />
+            <Row id="Footer-contentRow">
                 <Col sm="1">
-                    <div className="footerHeader">Product</div>
-                    <div className="footerContent">
+                    <div className="Footer-header">Product</div>
+                    <div className="Footer-content">
                         <div>Footer Text</div>
                         <div>Footer Text</div>
                         <div>Footer Text</div>
@@ -25,8 +25,8 @@ const Footer = () => (
                     </div>
                 </Col>
                 <Col sm={{size: 1, offset: 1}}>
-                    <div className="footerHeader">Company</div>
-                    <div className="footerContent">
+                    <div className="Footer-header">Company</div>
+                    <div className="Footer-content">
                         <div>Footer Text</div>
                         <div>Footer Text</div>
                         <div>Footer Text</div>
@@ -34,8 +34,8 @@ const Footer = () => (
                     </div>
                 </Col>
                 <Col sm={{size: 1, offset: 1}}>
-                    <div className="footerHeader">Learn</div>
-                    <div className="footerContent">
+                    <div className="Footer-header">Learn</div>
+                    <div className="Footer-content">
                         <div>Footer Text</div>
                         <div>Footer Text</div>
                         <div>Footer Text</div>
@@ -43,8 +43,8 @@ const Footer = () => (
                     </div>
                 </Col>
                 <Col sm={{size: 1, offset: 1}}>
-                    <div className="footerHeader">Support</div>
-                    <div className="footerContent">
+                    <div className="Footer-header">Support</div>
+                    <div className="Footer-content">
                         <div>Footer Text</div>
                         <div>Footer Text</div>
                         <div>Footer Text</div>
@@ -52,8 +52,8 @@ const Footer = () => (
                     </div>
                 </Col>
                 <Col sm={{size: 1, offset: 1}}>
-                    <div className="footerHeader">Social</div>
-                    <div className="footerContent">
+                    <div className="Footer-header">Social</div>
+                    <div className="Footer-content">
                         <div>Footer Text</div>
                         <div>Footer Text</div>
                         <div>Footer Text</div>
@@ -61,7 +61,7 @@ const Footer = () => (
                     </div>
                 </Col>
             </Row>
-            <Row id="copyrightRow">
+            <Row id="Footer-copyrightRow">
                 <Col sm="9">
                     © 2017, Wick, Inc. All Rights Reserved.
                 </Col>
