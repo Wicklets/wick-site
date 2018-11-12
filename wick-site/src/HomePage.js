@@ -9,7 +9,7 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import {Button} from 'reactstrap';
-import PreviewCardContainer from './PreviewCardContainer.js';
+import PreviewCardDeckContainer from './PreviewCardDeckContainer.js';
 import UpdateTab from './UpdateTab.js';
 import NewsCard from './NewsCard.js';
 import './HomePage.scss';
@@ -39,9 +39,9 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row className="HomePage-cardContainer HomePage-row">
-            <Col sm="3"><PreviewCardContainer /></Col>
-            <Col sm="3"><PreviewCardContainer /></Col>
-            <Col sm="3"><PreviewCardContainer /></Col>
+            <Col sm="9">
+                <PreviewCardDeckContainer />
+            </Col>
         </Row>
         <Row className="HomePage-webpageButtonRow HomePage-row">
             <Col sm="2">
@@ -55,9 +55,9 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row className="HomePage-cardContainer HomePage-row">
-            <Col sm="3"><PreviewCardContainer /></Col>
-            <Col sm="3"><PreviewCardContainer /></Col>
-            <Col sm="3"><PreviewCardContainer /></Col>
+            <Col sm="9">
+                <PreviewCardDeckContainer />
+            </Col>
         </Row>
         <Row className="HomePage-webpageButtonRow HomePage-row">
             <Col sm="2">

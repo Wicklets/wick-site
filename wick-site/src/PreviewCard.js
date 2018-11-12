@@ -7,24 +7,24 @@
 */
 
 import React, {Fragment} from 'react';
+import {Card, CardImg, CardText, CardBody, CardTitle, CardImgOverlay} from 'reactstrap';
+import {Button} from 'reactstrap';
 import './PreviewCard.scss';
 
 const PreviewCard = ({onMouseEnter, onMouseLeave, displayOverlay}) => (
     <Fragment>
-        <div
-            className="PreviewCard-container"
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-        >
-            <div className="imagePlaceholder" />
-            <div className="PreviewCard-title">type something</div>
-            <div className="PreviewCard-text">description type something lorem ipsum type something lorem ipsum type something lorem ipsum</div>
+        <Card onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+            <CardBody>
+                <CardTitle className="PreviewCard-title">type something</CardTitle>
+                <CardText className="PreviewCard-text">description type something lorem ipsum type something lorem ipsum type something lorem ipsum</CardText>
+            </CardBody>
             {displayOverlay && (
-                <div className="PreviewCard-overlay">
-                    <div className="PreviewCard-overlayText">click to open</div>
-                </div>
+                <CardImgOverlay className="PreviewCard-overlay">
+                    <Button size="sm" color="primary">open</Button>
+                </CardImgOverlay>
             )}
-        </div>
+        </Card>
     </Fragment>
 );
 

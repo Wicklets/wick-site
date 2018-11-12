@@ -6,47 +6,17 @@
     Stylings for the Wick Homepage Preview Cards
 */
 
-// Layout settings
-.PreviewCard-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 332px;
-    border: solid 1px black;
-}
-
-.PreviewCard-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 15px;
-    right: 15px;
-    background-color: rgba(0,0, 122, 0.5);
-
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-.imagePlaceholder {
-    background-color: gray;
-    height: 50%;
-}
-
-
 // Font settings
 .PreviewCard-title {
     font-size: 16px;
-    margin-top: 16px;
 }
 
 .PreviewCard-text {
     font-size: 12px;
-    margin: 16px;
-    overflow: hidden;
 }
 
-.PreviewCard-overlayText {
+.PreviewCard-overlay {
     padding-top: 25%;
-    font-size: 24px;
+    background-color: rgba(0, 0, 122, 0.3);
+    border-radius: 3px; // coded to match the reactstrap card
 }

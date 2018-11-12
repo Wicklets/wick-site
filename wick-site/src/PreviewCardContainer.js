@@ -1,19 +1,19 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    PreviewCardContainer.js
+    PreviewCardDeckContainer.js
 
-    Container for Example/Tutorial Cards on the Homepage
+    Container for Example/Tutorial Card Decks on the Homepage
 */
 
 import React, {Component} from 'react';
 import PreviewCard from './PreviewCard.js';
 
-class PreviewCardContainer extends Component {
+class PreviewCardDeckContainer extends Component {
     constructor(props) {
         super(props);
 
-        // Website current page
+        // display overlay for card
         this.state = {
             displayOverlay: false
         };
@@ -27,10 +27,9 @@ class PreviewCardContainer extends Component {
             <PreviewCard
                 onMouseEnter={this.showOverlay}
                 onMouseLeave={this.hideOverlay}
-                displayOverlay={this.state.displayOverlay}
-            />
+                displayOverlay={this.state.displayOverlay}/>
         );
     }
 };
 
-export default PreviewCardContainer;
+export default PreviewCardDeckContainer;

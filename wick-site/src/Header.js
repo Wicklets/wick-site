@@ -9,11 +9,12 @@
 import React from 'react';
 import NavItem from './NavItem.js';
 import './Header.scss';
+import './styles/animate.css';
 
 const Header = ({page, onClick, hide}) => (
     <div
         id="Header-container"
-        className={(!hide ? "Header-showNavBar" : "")}
+        className={(!hide ? "Header-showNavBar" : "") + " fadeInDown"}
     >
         <NavItem
             active={page === "home"}
