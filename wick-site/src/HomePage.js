@@ -12,7 +12,6 @@ import {Button} from 'reactstrap';
 import PreviewCardDeckContainer from './PreviewCardDeckContainer.js';
 import NewsCardDeckContainer from './NewsCardDeckContainer.js';
 import UpdateTab from './UpdateTab.js';
-import NewsCard from './NewsCard.js';
 import './HomePage.scss';
 
 const HomePage = () => (

@@ -9,6 +9,7 @@
 // Font settings
 .PreviewCard-title {
     font-size: 16px;
+    margin-bottom: 0;
 }
 
 .PreviewCard-text {
@@ -19,4 +20,18 @@
     padding-top: 25%;
     background-color: rgba(0, 0, 122, 0.3);
     border-radius: 3px; // coded to fill the rounded space in the reactstrap card
+    cursor: pointer;
+}
+
+.PreviewCard-underline--show,
+.PreviewCard-underline--hide {
+    align-self: center;
+    height: 3px;
+    width: 50%;
+    margin: 3px auto 6px; // coded to match the height of the margin-bottom of reactstrap cardtitle component
+    background-color: black;
+}
+
+.PreviewCard-underline--hide {
+    background-color: white;
 }
