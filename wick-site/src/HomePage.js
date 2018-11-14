@@ -12,6 +12,7 @@ import {Button} from 'reactstrap';
 import PreviewCardDeckContainer from './PreviewCardDeckContainer.js';
 import NewsCardDeckContainer from './NewsCardDeckContainer.js';
 import UpdateTab from './UpdateTab.js';
+import PromoVideo from './PromoVideo.js';
 import './HomePage.scss';
 
 const HomePage = () => (
@@ -29,7 +30,9 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row id="HomePage-promoVideoRow" className="HomePage-row">
-            <div id="videoPlaceholder">Promo Video Placeholder</div>
+            <Col sm="7">
+                <PromoVideo />
+            </Col>
         </Row>
         <Row id="HomePage-ourLatestRow" className="HomePage-row">our latest</Row>
         <Row className="HomePage-sectionHead HomePage-row">
