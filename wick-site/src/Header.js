@@ -7,45 +7,81 @@
 */
 
 import React from 'react';
-import NavItem from './NavItem.js';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink } from 'reactstrap';
 import './Header.scss';
-import './styles/animate.css';
 
-const Header = ({page, onClick, hide}) => (
-    <div
-        id="Header-container"
-        className={(!hide ? "Header-showNavBar" : "") + " fadeInDown"}
-    >
-        <NavItem
-            active={page === "home"}
-            larger={true}
-            onClick={() => onClick("home")}
-            text="wickEditor"
-        />
-        <NavItem
-            active={page === "create"}
-            larger={false}
-            onClick={() => onClick("create")}
-            text="create"
-        />
-        <NavItem
-            active={page === "learn"}
-            larger={false}
-            onClick={() => onClick("learn")}
-            text="learn"
-        />
-        <NavItem
-            active={page === "about"}
-            larger={false}
-            onClick={() => onClick("about")}
-            text="about"
-        />
-        <NavItem
-            active={page === "community"}
-            larger={false}
-            onClick={() => onClick("community")}
-            text="community"
-        />
+const Header = ({page, onClickChangePage, onClickToggleDropdown, isBackgroundHidden, isDropdownOpen}) => (
+    <div id="Header-container">
+        <Navbar color={(isBackgroundHidden ? "" : "light")} light expand="sm">
+            <NavbarBrand
+                href="#"
+                id={(page === "home" ? "Header-activeItem" : "")}
+                className="Header-brand--narrow"
+                onClick={() => onClickChangePage("home")}
+            >
+                wick editor
+            </NavbarBrand>
+           <NavbarToggler onClick={onClickToggleDropdown} />
+           <Collapse isOpen={isDropdownOpen} navbar>
+                <Nav className="ml-auto mr-auto" navbar>
+                    <NavbarBrand
+                        href="#"
+                        id={(page === "home" ? "Header-activeItem" : "")}
+                        className="Header-brand--wide"
+                        onClick={() => onClickChangePage("home")}
+                    >
+                        wick editor
+                    </NavbarBrand>
+                    <NavItem>
+                        <NavLink
+                            href="#"
+                            id={(page === "create" ? "Header-activeItem" : "")}
+                            className="Header-navItem"
+                            onClick={() => onClickChangePage("create")}
+                        >
+                            create
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink
+                            href="#"
+                            id={(page === "learn" ? "Header-activeItem" : "")}
+                            className="Header-navItem"
+                            onClick={() => onClickChangePage("learn")}
+                        >
+                            learn
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink
+                            href="#"
+                            id={(page === "about" ? "Header-activeItem" : "")}
+                            className="Header-navItem"
+                            onClick={() => onClickChangePage("about")}
+                        >
+                            about
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink
+                            href="#"
+                            id={(page === "community" ? "Header-activeItem" : "")}
+                            className="Header-navItem"
+                            onClick={() => onClickChangePage("community")}
+                        >
+                            community
+                        </NavLink>
+                    </NavItem>
+                </Nav>
+            </Collapse>
+        </Navbar>
     </div>
 );
 

@@ -16,16 +16,26 @@ class HeaderContainer extends Component {
 
         // Website current page
         this.state = {
-            hide: true
+            isBackgroundHidden: true,
+            isDropdownOpen: false
         };
     }
 
-    toggleHeaderContainer = e => {
+    toggleHeaderContainer = () => {
         if (window.scrollY > 48) {
-            this.setState({hide: false});
+            this.setState({isBackgroundHidden: false});
         } else {
-            this.setState({hide: true});
+            this.setState({isBackgroundHidden: true});
         }
+    }
+
+    handleClickChangePage = (page) => {
+        this.setState({isDropdownOpen: false});
+        this.props.onClickChangePage(page);
+    }
+
+    toggleDropdown = e => {
+        this.setState({isDropdownOpen: !this.state.isDropdownOpen});
     }
 
     componentDidMount() {
@@ -40,7 +50,10 @@ class HeaderContainer extends Component {
         return (
             <Header
                 {...this.props}
-                hide={this.state.hide}
+                onClickChangePage={this.handleClickChangePage}
+                onClickToggleDropdown={this.toggleDropdown}
+                isBackgroundHidden={this.state.isBackgroundHidden}
+                isDropdownOpen={this.state.isDropdownOpen}
             />
         );
     }

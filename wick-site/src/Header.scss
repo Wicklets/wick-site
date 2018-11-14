@@ -8,14 +8,48 @@
 
 
 #Header-container {
-    padding: 8px 0;
     margin-bottom: 48px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
-// Formatting for the Nav Bar background
-.Header-showNavBar {
-    background-color: gray;
-    z-index: 1;
+#Header-activeItem {
+    color: blue !important;
+}
+
+.Header-navItem {
+    margin: 0 16px;
+
+    @media screen and (max-width: 576px) {
+        text-align: left;
+    }
+}
+
+.Header-brand--wide,
+.Header-brand--narrow {
+    color: green !important;
+}
+
+.Header-brand--wide {
+    margin: 0 24px;
+
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
+}
+
+.Header-brand--narrow {
+    @media screen and (min-width: 576px) {
+        display: none;
+    }
+}
+
+.Header-navItem:hover {
+    color: lightblue !important;
+}
+
+.Header-brand--wide:hover,
+.Header-brand--narrow:hover {
+    color: lightgreen !important;
 }

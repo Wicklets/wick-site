@@ -29,7 +29,7 @@ class App extends Component {
             <div className="App">
                 <HeaderContainer
                     page={this.state.page}
-                    onClick={this.handleClick}
+                    onClickChangePage={this.handleClick}
                 />
                 <Content page={this.state.page} />
                 <Footer />
