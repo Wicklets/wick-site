@@ -63,7 +63,7 @@ const Footer = () => (
             </Row>
             <Row id="Footer-copyrightRow" className="Footer-row">
                 <Col sm="9">
-                    © 2017, Wick, Inc. All Rights Reserved.
+                    © 2018, Wick, Inc. All Rights Reserved.
                 </Col>
             </Row>
             <Row id="Footer-paddingBottomRow" className="Footer-row" />

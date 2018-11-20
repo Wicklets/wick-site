@@ -9,10 +9,10 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import {Button} from 'reactstrap';
+import YouTube from 'react-youtube';
 import PreviewCardDeckContainer from './PreviewCardDeckContainer.js';
 import NewsCardDeckContainer from './NewsCardDeckContainer.js';
 import UpdateTab from './UpdateTab.js';
-import PromoVideo from './PromoVideo.js';
 import './HomePage.scss';
 
 const HomePage = () => (
@@ -26,13 +26,13 @@ const HomePage = () => (
         </Row>
         <Row id="HomePage-descTextRow" className="HomePage-row">
             <Col sm="6">
-                wick is a free online editor for animations, games, and everything in between.
+                The Wick Editor is a free online tool for creating games, animations, and everything in-between.
             </Col>
         </Row>
         <Row id="HomePage-promoVideoRow" className="HomePage-row">
-            <Col sm="7">
-                <PromoVideo />
-            </Col>
+            <YouTube
+                videoId="2g811Eo7K8U"
+            />
         </Row>
         <Row id="HomePage-ourLatestRow" className="HomePage-row">our latest</Row>
         <Row className="HomePage-sectionHead HomePage-row">

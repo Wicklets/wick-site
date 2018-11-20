@@ -16,7 +16,7 @@ const PreviewCard = ({onMouseEnter, onMouseLeave, displayOverlay}) => (
             <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
             <CardBody>
                 <CardTitle className="PreviewCard-title">type something</CardTitle>
-                <div className={(displayOverlay ? "PreviewCard-underline--show" : "PreviewCard-underline--hide")} />
+                {/* <div className={(displayOverlay ? "PreviewCard-underline--show" : "PreviewCard-underline--hide")} /> */}
                 <CardText className="PreviewCard-text">description type something lorem ipsum type something lorem ipsum type something lorem ipsum</CardText>
             </CardBody>
             {displayOverlay && (
