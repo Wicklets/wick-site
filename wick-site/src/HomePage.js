@@ -30,9 +30,7 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row id="HomePage-promoVideoRow" className="HomePage-row">
-            <YouTube
-                videoId="2g811Eo7K8U"
-            />
+            <YouTube videoId="2g811Eo7K8U" />
         </Row>
         <Row id="HomePage-ourLatestRow" className="HomePage-row">our latest</Row>
         <Row className="HomePage-sectionHead HomePage-row">
