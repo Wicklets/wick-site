@@ -20,7 +20,7 @@ const HomePage = () => (
         <Row id="HomePage-wickTitleRow" className="HomePage-row">wick editor</Row>
         <Row id="HomePage-wickSubtitleRow" className="HomePage-row">click the letters!</Row>
         <Row id="HomePage-editorButtonRow" className="HomePage-row">
-            <Col sm="2">
+            <Col sm="4" lg="3" xl="2">
                 <Button color="secondary" size="lg" block>get started!</Button>
             </Col>
         </Row>
@@ -45,8 +45,8 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row className="HomePage-webpageButtonRow HomePage-row">
-            <Col sm="2">
-                <Button color="secondary" size="sm" block>watch more</Button>
+            <Col xs="6" sm="4" md="3" lg="2">
+                <Button color="secondary" block>watch more</Button>
             </Col>
         </Row>
         <Row className="HomePage-sectionHead HomePage-row">
@@ -61,8 +61,8 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row className="HomePage-webpageButtonRow HomePage-row">
-            <Col sm="2">
-                <Button color="secondary" size="sm" block>see more</Button>
+            <Col xs="6" sm="4" md="3" lg="2">
+                <Button color="secondary" block>see more</Button>
             </Col>
         </Row>
         <Row className="HomePage-sectionHead HomePage-row">
@@ -87,10 +87,10 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row id="HomePage-subscribeRow" className="HomePage-row">
-            <Col sm="3">
+            <Col sm="9" md="4" lg="3">
                 <Button outline color="secondary" block>Become a Patron</Button>
             </Col>
-            <Col sm="3">
+            <Col sm="9" md="4" lg="3">
                 <Button outline color="secondary" block>Subscribe on Youtube</Button>
             </Col>
         </Row>
