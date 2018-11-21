@@ -10,6 +10,7 @@ import React, {Component} from 'react';
 import Content from './Content.js';
 import HeaderContainer from './HeaderContainer.js';
 import Footer from './Footer.js';
+import PageTitleContainer from './PageTitleContainer.js';
 import './App.scss';
 
 class App extends Component {
@@ -30,6 +31,9 @@ class App extends Component {
                 <HeaderContainer
                     page={this.state.page}
                     onClickChangePage={this.handleClick}
+                />
+                <PageTitleContainer
+                    page={this.state.page}
                 />
                 <Content page={this.state.page} />
                 <Footer />

@@ -1,0 +1,45 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    PageTitle.scss
+
+    Stylings for the Wick Page Title
+*/
+
+// Center the content of the page
+.PageTitle-row {
+    justify-content: center;
+}
+
+// Image Header
+
+.PageTitle-wickWorld {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    text-align: center;
+}
+
+
+// Spacing
+#PageTitle-titleRow {
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 40px;
+}
+
+#PageTitle-buttonRow {
+    padding: 20px 0 40px;
+}
+
+// Font Settings
+#PageTitle-subtitleRow {
+    font-size: 20px;
+}
+
+// Button Space Placeholder
+.PageTitle-buttonSpacer {
+    height: 48px; // coded to match height of reactstrap button
+}
