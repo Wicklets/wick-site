@@ -17,11 +17,22 @@
     align-items: center;
 }
 
+// Image Header
+
+.HomePage-wickWorld {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    text-align: center;
+}
+
 // Spacing settings for different rows of content
 #HomePage-wickTitleRow {
     font-size: 40px;
     line-height: 40px;
-    padding-bottom: 32px;
+    padding-bottom: 40px;
 }
 
 #HomePage-editorButtonRow {

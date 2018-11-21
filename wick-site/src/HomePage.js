@@ -13,10 +13,12 @@ import YouTube from 'react-youtube';
 import PreviewCardDeckContainer from './PreviewCardDeckContainer.js';
 import NewsCardDeckContainer from './NewsCardDeckContainer.js';
 import UpdateTab from './UpdateTab.js';
+import wickworld from './wickworld.svg';
 import './HomePage.scss';
 
 const HomePage = () => (
     <Container>
+        <img src={wickworld} className="HomePage-wickWorld" alt="Wick World" />
         <Row id="HomePage-wickTitleRow" className="HomePage-row">wick editor</Row>
         <Row id="HomePage-editorButtonRow" className="HomePage-row">
             <Col sm="4" lg="3" xl="2">
