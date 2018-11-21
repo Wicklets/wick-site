@@ -15,7 +15,7 @@ const Footer = () => (
         <Container>
             <Row id="Footer-paddingTopRow" className="Footer-row" />
             <Row id="Footer-contentRow" className="Footer-row">
-                <Col sm="1">
+                <Col xs="4" sm="2" xl="1">
                     <div className="Footer-header">Product</div>
                     <div className="Footer-content">
                         <div>Footer Text</div>
@@ -24,7 +24,7 @@ const Footer = () => (
                         <div>Footer Text</div>
                     </div>
                 </Col>
-                <Col sm={{size: 1, offset: 1}}>
+                <Col xs="4" sm="2" xl={{size: 1, offset: 1}}>
                     <div className="Footer-header">Company</div>
                     <div className="Footer-content">
                         <div>Footer Text</div>
@@ -33,7 +33,7 @@ const Footer = () => (
                         <div>Footer Text</div>
                     </div>
                 </Col>
-                <Col sm={{size: 1, offset: 1}}>
+                <Col xs="4" sm="2" xl={{size: 1, offset: 1}}>
                     <div className="Footer-header">Learn</div>
                     <div className="Footer-content">
                         <div>Footer Text</div>
@@ -42,7 +42,7 @@ const Footer = () => (
                         <div>Footer Text</div>
                     </div>
                 </Col>
-                <Col sm={{size: 1, offset: 1}}>
+                <Col xs="4" sm="2" xl={{size: 1, offset: 1}}>
                     <div className="Footer-header">Support</div>
                     <div className="Footer-content">
                         <div>Footer Text</div>
@@ -51,7 +51,7 @@ const Footer = () => (
                         <div>Footer Text</div>
                     </div>
                 </Col>
-                <Col sm={{size: 1, offset: 1}}>
+                <Col xs="4" sm="2" xl={{size: 1, offset: 1}}>
                     <div className="Footer-header">Social</div>
                     <div className="Footer-content">
                         <div>Footer Text</div>

@@ -8,7 +8,9 @@
 
 // Formatting Settings
 .Footer-row {
-    justify-content: center;
+    @media screen and (min-width: 576px) {
+        justify-content: center;
+    }
 }
 
 #Footer-paddingTopRow {

@@ -8,14 +8,22 @@
 
 import React, {Fragment} from 'react';
 import {CardDeck} from 'reactstrap';
+import {Col} from 'reactstrap';
 import PreviewCardContainer from './PreviewCardContainer.js';
+import './PreviewCardDeckContainer.scss';
 
 const PreviewCardDeckContainer = () => (
     <Fragment>
         <CardDeck>
-            <PreviewCardContainer />
-            <PreviewCardContainer />
-            <PreviewCardContainer />
+            <Col className="PreviewCardDeckContainer-noGutter" sm="12" md="6" lg="4">
+                <PreviewCardContainer />
+            </Col>
+            <Col className="PreviewCardDeckContainer-noGutter" sm="12" md="6" lg="4">
+                <PreviewCardContainer />
+            </Col>
+            <Col className="PreviewCardDeckContainer-noGutter" sm="12" md="6" lg="4">
+                <PreviewCardContainer />
+            </Col>
         </CardDeck>
     </Fragment>
 );

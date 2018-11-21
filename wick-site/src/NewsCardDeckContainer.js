@@ -8,14 +8,22 @@
 
 import React, {Fragment} from 'react';
 import {CardDeck} from 'reactstrap';
+import {Col} from 'reactstrap';
 import NewsCard from './NewsCard.js';
+import './NewsCardDeckContainer.scss';
 
 const NewsCardDeckContainer = () => (
     <Fragment>
         <CardDeck>
-            <NewsCard />
-            <NewsCard />
-            <NewsCard />
+            <Col className="NewsCardDeckContainer-noGutter" sm="12" md="6" lg="4">
+                <NewsCard />
+            </Col>
+            <Col className="NewsCardDeckContainer-noGutter" sm="12" md="6" lg="4">
+                <NewsCard />
+            </Col>
+            <Col className="NewsCardDeckContainer-noGutter" sm="12" md="6" lg="4">
+                <NewsCard />
+            </Col>
         </CardDeck>
     </Fragment>
 );

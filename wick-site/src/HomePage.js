@@ -18,14 +18,13 @@ import './HomePage.scss';
 const HomePage = () => (
     <Container>
         <Row id="HomePage-wickTitleRow" className="HomePage-row">wick editor</Row>
-        <Row id="HomePage-wickSubtitleRow" className="HomePage-row">click the letters!</Row>
         <Row id="HomePage-editorButtonRow" className="HomePage-row">
             <Col sm="4" lg="3" xl="2">
                 <Button color="secondary" size="lg" block>get started!</Button>
             </Col>
         </Row>
         <Row id="HomePage-descTextRow" className="HomePage-row">
-            <Col sm="6">
+            <Col sm="9" lg="6">
                 The Wick Editor is a free online tool for creating games, animations, and everything in-between.
             </Col>
         </Row>
@@ -35,7 +34,7 @@ const HomePage = () => (
         <Row id="HomePage-ourLatestRow" className="HomePage-row">our latest</Row>
         <Row className="HomePage-sectionHead HomePage-row">
             <div className="HomePage-sectionTitle">tutorials</div>
-            <Col className="HomePage-sectionSubtitle" sm="6">
+            <Col className="HomePage-sectionSubtitle" sm="9" md="7" lg="6">
                 Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
             </Col>
         </Row>
@@ -51,7 +50,7 @@ const HomePage = () => (
         </Row>
         <Row className="HomePage-sectionHead HomePage-row">
             <div className="HomePage-sectionTitle">examples</div>
-            <Col className="HomePage-sectionSubtitle" sm="6">
+            <Col className="HomePage-sectionSubtitle" sm="9" md="7" lg="6">
                 Check out some examples to help you get started using the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
             </Col>
         </Row>
