@@ -1,0 +1,25 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    AboutPage.scss
+
+    Stylings for the Wick About page
+*/
+
+// Center the content of the page
+.AboutPage-row {
+    justify-content: center;
+}
+
+.AboutPage-editorPreviewRow {
+    padding: 32px 0;
+}
+
+#AboutPage-editorPreviewImage {
+    transform: translateX(-16px);
+}
+
+#AboutPage-editorTextRow {
+    font-size: 16px;
+    padding-bottom: 88px;
+}

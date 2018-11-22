@@ -8,11 +8,15 @@
 
 import React, {Fragment} from 'react';
 import HomePage from './HomePage.js';
+import AboutPage from './AboutPage.js';
 
 const Content = ({page}) => (
     <Fragment>
         {page === "home" && (
             <HomePage />
+        )}
+        {page === "about" && (
+            <AboutPage />
         )}
     </Fragment>
 );

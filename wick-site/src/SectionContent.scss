@@ -1,0 +1,26 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    SectionContent.scss
+
+    Stylings page content accompanied by a section title
+*/
+
+// Center the content of the page
+.SectionContent-row {
+    justify-content: center;
+}
+
+.SectionContent-title {
+    font-size: 28px;
+}
+
+.SectionContent-body {
+    font-size: 16px;
+}
+
+.SectionContent-underline {
+    margin: 12px auto 16px;
+    width: 48px;
+    border: solid 1px black;
+}
