@@ -17,7 +17,7 @@ const PageTitle = ({title, showButton, buttonLabel, children}) => (
         <img src={wickworld} className="PageTitle-wickWorld" alt="Wick World" />
         <Row id="PageTitle-titleRow" className="PageTitle-row">{title}</Row>
         <Row id="PageTitle-buttonRow" className="PageTitle-row">
-            <Col xs="6" sm="4" lg="3" xl="2">
+            <Col xs="7" sm="5" md="4" lg="3" xl="2">
                 {showButton ? (
                     <Button color="secondary" size="lg" block>{buttonLabel}</Button>
                 ) : (
