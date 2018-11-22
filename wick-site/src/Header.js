@@ -28,8 +28,8 @@ const Header = ({page, onClickChangePage, onClickToggleDropdown, isBackgroundHid
             >
                 wick editor
             </NavbarBrand>
-           <NavbarToggler onClick={onClickToggleDropdown} />
-           <Collapse isOpen={isDropdownOpen} navbar>
+            <NavbarToggler onClick={onClickToggleDropdown} />
+            <Collapse isOpen={isDropdownOpen} navbar>
                 <Nav className="ml-auto mr-auto" navbar>
                     <NavbarBrand
                         href="#"

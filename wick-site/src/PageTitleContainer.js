@@ -15,6 +15,7 @@ const PageTitleContainer = ({page}) => (
             <PageTitle
                 title="wick editor"
                 showButton={true}
+                useLargeSubtitle={false}
                 buttonLabel="get started"
             >
                 The Wick Editor is a free online tool for creating games, animations, and everything in-between.
@@ -24,6 +25,7 @@ const PageTitleContainer = ({page}) => (
             <PageTitle
                 title="get started"
                 showButton={true}
+                useLargeSubtitle={false}
                 buttonLabel="try the tutorial"
             >
                 Hit the ground running with the basics of wick editor by trying out our starter tutorial.
@@ -33,6 +35,7 @@ const PageTitleContainer = ({page}) => (
             <PageTitle
                 title="about us"
                 showButton={false}
+                useLargeSubtitle={true}
                 buttonLabel=""
             >
                 What is Wick Editor?
@@ -42,6 +45,7 @@ const PageTitleContainer = ({page}) => (
             <PageTitle
                 title="community"
                 showButton={true}
+                useLargeSubtitle={true}
                 buttonLabel="visit the forum"
             >
                 wick editor forum
