@@ -12,7 +12,7 @@ import {Button} from 'reactstrap';
 import wickworld from './wickworld.svg';
 import './PageTitle.scss';
 
-const PageTitle = ({title, showButton, useLargeSubtitle, buttonLabel, children}) => (
+const PageTitle = ({title, showButton, showSubtitle, buttonLabel, children}) => (
     <Container>
         <img src={wickworld} className="PageTitle-wickWorld" alt="Wick World" />
         <Row id="PageTitle-titleRow" className="PageTitle-row">{title}</Row>
@@ -25,14 +25,13 @@ const PageTitle = ({title, showButton, useLargeSubtitle, buttonLabel, children})
                 )}
             </Col>
         </Row>
-        <Row
-            id={(useLargeSubtitle ? "PageTitle-subtitleRow--large" : "PageTitle-subtitleRow")}
-            className="PageTitle-row"
-        >
-            <Col sm="9" lg="6">
-                {children}
-            </Col>
-        </Row>
+        {showSubtitle && (
+            <Row id="PageTitle-subtitleRow" className="PageTitle-row">
+                <Col sm="9" lg="6">
+                    {children}
+                </Col>
+            </Row>
+        )}
     </Container>
 );
 
