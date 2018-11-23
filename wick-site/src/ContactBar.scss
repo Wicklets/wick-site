@@ -1,0 +1,21 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    ContactBar.scss
+
+    Stylings for contact links row
+*/
+
+// Center the content of the page
+.ContactBar-row {
+    justify-content: center;
+}
+
+.ContactBar-containerRow {
+    padding: 20px 0;
+}
+
+.ContactBar-icon {
+    width: 100%;
+    border-radius: 50%;
+}

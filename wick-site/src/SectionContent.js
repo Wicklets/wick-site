@@ -10,12 +10,14 @@ import React, {Fragment} from 'react';
 import {Row, Col} from 'reactstrap';
 import './SectionContent.scss';
 
-const SectionContent = ({title, children}) => (
+const SectionContent = ({title, includeUnderline, children}) => (
     <Fragment>
         <Row className="SectionContent-title SectionContent-row">
             {title}
         </Row>
-        <Row className="SectionContent-underline SectionContent-row" />
+        {includeUnderline && (
+            <Row className="SectionContent-underline SectionContent-row" />
+        )}
         <Row className="SectionContent-body SectionContent-row">
             <Col sm="9" lg="6">
                 {children}

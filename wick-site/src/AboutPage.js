@@ -11,16 +11,18 @@ import {Container, Row, Col} from 'reactstrap';
 import Img from 'react-image';
 import SectionContent from './SectionContent.js';
 import CreatorsRow from './CreatorsRow.js';
+import ContactBar from './ContactBar.js';
 import editorpreview from './editorpreview.svg';
+import cannon from './cannon.svg';
 import coreyemery from './CoreyEmery.png';
 import './AboutPage.scss';
 
 const AboutPage = () => (
     <Container>
-        <SectionContent title="What is Wick Editor?">
+        <SectionContent title="What is Wick Editor?" includeUnderline>
             The Wick Editor is a free and open-source tool for creating games, animations, and everything in-between. It's designed to be the most accessible tool for creating multimedia projects.
         </SectionContent>
-        <Row className="AboutPage-editorPreviewRow AboutPage-row">
+        <Row id="AboutPage-editorPreviewRow" className="AboutPage-row">
             <Img src={editorpreview} id="AboutPage-editorPreviewImage" />
         </Row>
         <Row id="AboutPage-editorTextRow" className="AboutPage-row">
@@ -28,7 +30,7 @@ const AboutPage = () => (
                 The Wick Editor is a hybrid of an animation tool and a coding environment, heavily inspired by similar tools such as Flash, HyperCard, and Scratch. It was developed in response to a growing need for such a tool for the modern web. You can read more about the creation of the Wick Editor here.
             </Col>
         </Row>
-        <SectionContent title="Who is Wick Editor?">
+        <SectionContent title="Who is Wick Editor?" includeUnderline>
             The Wick Editor is a free and open-source tool for creating games, animations, and everything in-between. It's designed to be the most accessible tool for creating multimedia projects.
         </SectionContent>
         <CreatorsRow
@@ -56,6 +58,17 @@ const AboutPage = () => (
         >
             Brand and web design by
         </CreatorsRow>
+        <Row id="AboutPage-cannonImageRow" className="AboutPage-row">
+            <Img src={cannon} />
+        </Row>
+        <SectionContent title="special thanks to">
+            Golan Levin, Tom Hughes, Sarah Guthals, Nina Barbuto (and everyone at Assemble including Jess Gold and Lieu Wolfe)
+        </SectionContent>
+        <Row className="AboutPage-spacerRow" />
+        <SectionContent title="contact us!">
+            Shoot us a message, join the wick editor community with a YouTube membership or subscribe on Patreon!
+        </SectionContent>
+        <ContactBar />
     </Container>
 );
 

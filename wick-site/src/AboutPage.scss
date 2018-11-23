@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.AboutPage-editorPreviewRow {
+#AboutPage-editorPreviewRow {
     padding: 32px 0;
 }
 
@@ -22,4 +22,12 @@
 #AboutPage-editorTextRow {
     font-size: 16px;
     padding-bottom: 88px;
+}
+
+#AboutPage-cannonImageRow {
+    padding: 88px 0 8px;
+}
+
+.AboutPage-spacerRow {
+    padding-top: 88px;
 }
