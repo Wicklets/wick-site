@@ -1,0 +1,18 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    Creator.scss
+
+    Stylings for the Creator Card (name and picture)
+*/
+
+.Creator-picture {
+    border-radius: 50%;
+    width: 75%;
+}
+
+.Creator-name {
+    font-size: 16px;
+    padding-top: 12px;
+    line-height: 20px;
+}

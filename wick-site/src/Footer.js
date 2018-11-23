@@ -8,12 +8,13 @@
 
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
+import Img from 'react-image';
 import footerimage from './footerimage.svg';
 import './Footer.scss';
 
 const Footer = () => (
     <div id="Footer-container">
-        <img src={footerimage} className="Footer-background" alt="Footer Background" />
+        <Img src={footerimage} className="Footer-background" />
         <Container>
             <Row id="Footer-paddingTopRow" className="Footer-row" />
             <Row id="Footer-contentRow" className="Footer-row">
