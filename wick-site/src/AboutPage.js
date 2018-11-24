@@ -23,7 +23,9 @@ const AboutPage = () => (
             The Wick Editor is a free and open-source tool for creating games, animations, and everything in-between. It's designed to be the most accessible tool for creating multimedia projects.
         </SectionContent>
         <Row id="AboutPage-editorPreviewRow" className="AboutPage-row">
-            <Img src={editorpreview} id="AboutPage-editorPreviewImage" />
+            <Col xs="12" lg="9">
+                <Img src={editorpreview} id="AboutPage-editorPreviewImage" />
+            </Col>
         </Row>
         <Row id="AboutPage-editorTextRow" className="AboutPage-row">
             <Col sm="9" lg="6">

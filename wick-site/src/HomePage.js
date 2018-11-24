@@ -9,7 +9,7 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import {Button} from 'reactstrap';
-import YouTube from 'react-youtube';
+import ResponsiveEmbed from 'react-responsive-embed';
 import PreviewCardDeckContainer from './PreviewCardDeckContainer.js';
 import NewsCardDeckContainer from './NewsCardDeckContainer.js';
 import UpdateTab from './UpdateTab.js';
@@ -18,7 +18,9 @@ import './HomePage.scss';
 const HomePage = () => (
     <Container>
         <Row id="HomePage-promoVideoRow" className="HomePage-row">
-            <YouTube videoId="2g811Eo7K8U" />
+            <Col xs="12" md="9" lg="8" xl="7">
+                <ResponsiveEmbed src='https://www.youtube.com/embed/2g811Eo7K8U' ratio='16:9' />
+            </Col>
         </Row>
         <Row id="HomePage-ourLatestRow" className="HomePage-row">our latest</Row>
         <Row className="HomePage-sectionHead HomePage-row">
