@@ -8,6 +8,16 @@
 
 .CommunityGallery-galleryRow {
     padding-bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 18px;
+    }
+    @media screen and (min-width: 992px) {
+        padding-bottom: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 28px;
+    }
 }
 
 .CommunityGallery-testText1 {
@@ -17,6 +27,18 @@
     height: 112px;
     font-size: 16px;
     overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        height: 60px;
+    }
+    @media screen and (min-width: 992px) {
+        height: 90px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        height: 112px;
+    }
 }
 
 .CommunityGallery-testText2 {
@@ -25,6 +47,18 @@
     justify-content: center;
     height: 112px;
     font-size: 32px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        height: 60px;
+    }
+    @media screen and (min-width: 992px) {
+        height: 90px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 32px;
+        height: 112px;
+    }
 }
 
 .CommunityGallery-image {
