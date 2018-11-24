@@ -1,0 +1,20 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    CommunityPage.scss
+
+    Stylings for the Wick Gallery page
+*/
+
+// Center the content of the page
+.CommunityPage-row {
+    justify-content: center;
+}
+
+.CommunityPage-spacerRow {
+    padding-top: 80px;
+}
+
+#CommunityPage-galleryContainer {
+    padding-top: 40px;
+}

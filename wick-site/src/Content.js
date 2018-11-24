@@ -9,6 +9,7 @@
 import React, {Fragment} from 'react';
 import HomePage from './HomePage.js';
 import AboutPage from './AboutPage.js';
+import CommunityPage from './CommunityPage.js'
 
 const Content = ({page}) => (
     <Fragment>
@@ -17,6 +18,9 @@ const Content = ({page}) => (
         )}
         {page === "about" && (
             <AboutPage />
+        )}
+        {page === "community" && (
+            <CommunityPage />
         )}
     </Fragment>
 );

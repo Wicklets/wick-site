@@ -1,0 +1,39 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    CommunityGallery.scss
+
+    Stylings for the Wick User Content Gallery
+*/
+
+.CommunityGallery-galleryRow {
+    padding-bottom: 28px;
+}
+
+.CommunityGallery-test {
+    background-color: black;
+    height: 112px;
+    border-radius: 4px;
+}
+
+.CommunityGallery-test2 {
+    background-color: black;
+    height: 252px;
+    border-radius: 4px;
+}
+
+.CommunityGallery-testText1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 112px;
+    font-size: 16px;
+}
+
+.CommunityGallery-testText2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 112px;
+    font-size: 32px;
+}
