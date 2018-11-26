@@ -15,7 +15,9 @@ import './PageTitle.scss';
 
 const PageTitle = ({title, showButton, showSubtitle, buttonLabel, children}) => (
     <Container>
-        <Img src={wickworld} className="PageTitle-wickWorld" />
+        <div className="PageTitle-wickWorld">
+            <Img src={wickworld} className="PageTitle-wickWorld" />
+        </div>
         <Row id="PageTitle-titleRow" className="PageTitle-row">{title}</Row>
         <Row id="PageTitle-buttonRow" className="PageTitle-row">
             <Col xs="7" sm="5" md="4" lg="3" xl="2">
