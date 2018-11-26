@@ -22,7 +22,7 @@ const CommunityPage = () => (
             Check out what people are making!
         </SectionContent>
         <Row id="CommunityPage-galleryContainer" className="CommunityPage-row">
-            <Col sm="9" md="12" lg="9">
+            <Col sm="9">
                 <CommunityGallery />
             </Col>
         </Row>
