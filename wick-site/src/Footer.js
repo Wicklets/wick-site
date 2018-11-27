@@ -8,13 +8,20 @@
 
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
-import Img from 'react-image';
+import InfiniteScrollImageContainer from './InfiniteScrollImageContainer.js';
 import footerimage from './footerimage.svg';
+import footerpaddingleft from './footerpaddingleft.svg';
+import footerpaddingright from './footerpaddingright.svg';
 import './Footer.scss';
 
 const Footer = () => (
     <div id="Footer-container">
-        <Img src={footerimage} className="Footer-background" />
+        <InfiniteScrollImageContainer
+            mainImg={footerimage}
+            leftImg={footerpaddingleft}
+            rightImg={footerpaddingright}
+            footer
+        />
         <Container>
             <Row id="Footer-paddingTopRow" className="Footer-row" />
             <Row id="Footer-contentRow" className="Footer-row">

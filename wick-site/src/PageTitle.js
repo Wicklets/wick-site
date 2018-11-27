@@ -9,12 +9,19 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import {Button} from 'reactstrap';
-import WickWorldContainer from './WickWorldContainer.js';
+import InfiniteScrollImageContainer from './InfiniteScrollImageContainer.js';
+import wickworld from './wickworld.svg';
+import mountainpadding from './mountainpadding.svg';
+import forestpadding from './forestpadding.svg';
 import './PageTitle.scss';
 
 const PageTitle = ({title, showButton, showSubtitle, buttonLabel, onClick, children}) => (
     <Container>
-        <WickWorldContainer />
+        <InfiniteScrollImageContainer
+            mainImg={wickworld}
+            leftImg={mountainpadding}
+            rightImg={forestpadding}
+        />
         <Row id="PageTitle-titleRow" className="PageTitle-row">{title}</Row>
         <Row id="PageTitle-buttonRow" className="PageTitle-row">
             <Col xs="7" sm="5" md="4" lg="3" xl="2">

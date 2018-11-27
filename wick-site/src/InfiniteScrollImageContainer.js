@@ -1,19 +1,15 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    WickWorldContainer.js
+    InfiniteScrollImageContainer.js
 
-    Page Header Image Container Component
+    Header and Footer Image Container Component
 */
 
 import React, {Component} from 'react';
-import Img from 'react-image';
-import wickworld from './wickworld.svg';
-import mountainpadding from './mountainpadding.svg';
-import forestpadding from './forestpadding.svg';
-import './WickWorld.scss';
+import InfiniteScrollImage from './InfiniteScrollImage.js';
 
-class WickWorldContainer extends Component {
+class InfiniteScrollImageContainer extends Component {
     constructor(props) {
         super(props);
 
@@ -33,6 +29,7 @@ class WickWorldContainer extends Component {
 
     componentDidMount() {
         window.addEventListener('resize', this.calculatePaddingImage);
+        this.calculatePaddingImage();
     }
 
     componentWillUnmount() {
@@ -41,20 +38,13 @@ class WickWorldContainer extends Component {
 
     render() {
         return (
-            <div className="WickWorld-container">
-                <div className="test">
-                {([...Array(this.state.paddingImage).keys()]).map(elem => (
-                    <Img key={elem} src={mountainpadding} />
-                ))}
-                <Img src={wickworld} />
-                {([...Array(this.state.paddingImage).keys()]).map(elem => (
-                    <Img key={elem} src={forestpadding} />
-                ))}
-                </div>
-            </div>
+            <InfiniteScrollImage
+                {...this.props}
+                numberPadding={this.state.paddingImage}
+            />
         )
     }
 }
 
-export default WickWorldContainer;
+export default InfiniteScrollImageContainer;
 
