@@ -8,16 +8,13 @@
 
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
-import Img from 'react-image';
 import {Button} from 'reactstrap';
-import wickworld from './wickworld.svg';
+import WickWorldContainer from './WickWorldContainer.js';
 import './PageTitle.scss';
 
 const PageTitle = ({title, showButton, showSubtitle, buttonLabel, onClick, children}) => (
     <Container>
-        <div className="PageTitle-wickWorld">
-            <Img src={wickworld} className="PageTitle-wickWorld" />
-        </div>
+        <WickWorldContainer />
         <Row id="PageTitle-titleRow" className="PageTitle-row">{title}</Row>
         <Row id="PageTitle-buttonRow" className="PageTitle-row">
             <Col xs="7" sm="5" md="4" lg="3" xl="2">
