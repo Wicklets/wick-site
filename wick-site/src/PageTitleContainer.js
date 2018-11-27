@@ -28,7 +28,7 @@ const PageTitleContainer = ({page}) => (
                 showButton
                 showSubtitle
                 buttonLabel="try the tutorial"
-                onClick={() => window.open("https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg")}
+                onClick={() => window.open("http://wickeditor.com/#tutorials")}
             >
                 Hit the ground running with the basics of wick editor by trying out our starter tutorial.
             </PageTitle>

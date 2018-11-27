@@ -36,7 +36,13 @@ const HomePage = () => (
         </Row>
         <Row className="HomePage-webpageButtonRow HomePage-row">
             <Col xs="6" sm="4" md="3" lg="2">
-                <Button color="secondary" block>watch more</Button>
+                <Button
+                    color="secondary"
+                    block
+                    onClick={() => window.open("http://wickeditor.com/#tutorials")}
+                >
+                    watch more
+                </Button>
             </Col>
         </Row>
         <Row className="HomePage-sectionHead HomePage-row">
@@ -52,7 +58,13 @@ const HomePage = () => (
         </Row>
         <Row className="HomePage-webpageButtonRow HomePage-row">
             <Col xs="6" sm="4" md="3" lg="2">
-                <Button color="secondary" block>see more</Button>
+                <Button
+                    color="secondary"
+                    block
+                    onClick={() => window.open("http://wickeditor.com/#examples")}
+                >
+                    see more
+                </Button>
             </Col>
         </Row>
         <Row className="HomePage-sectionHead HomePage-row">
