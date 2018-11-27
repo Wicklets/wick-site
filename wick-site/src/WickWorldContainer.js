@@ -41,7 +41,17 @@ class WickWorldContainer extends Component {
 
     render() {
         return (
-            <Img src={wickworld} className="WickWorld-container"/>
+            <div className="WickWorld-container">
+                <div className="test">
+                {([...Array(this.state.paddingImage).keys()]).map(elem => (
+                    <Img key={elem} src={mountainpadding} />
+                ))}
+                <Img src={wickworld} />
+                {([...Array(this.state.paddingImage).keys()]).map(elem => (
+                    <Img key={elem} src={forestpadding} />
+                ))}
+                </div>
+            </div>
         )
     }
 }
