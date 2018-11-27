@@ -17,6 +17,7 @@ const PageTitleContainer = ({page}) => (
                 showButton
                 showSubtitle
                 buttonLabel="get started"
+                onClick={() => window.open("http://wickeditor.com/wick-editor/")}
             >
                 The Wick Editor is a free online tool for creating games, animations, and everything in-between.
             </PageTitle>
@@ -27,6 +28,7 @@ const PageTitleContainer = ({page}) => (
                 showButton
                 showSubtitle
                 buttonLabel="try the tutorial"
+                onClick={() => window.open("https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg")}
             >
                 Hit the ground running with the basics of wick editor by trying out our starter tutorial.
             </PageTitle>
@@ -42,6 +44,7 @@ const PageTitleContainer = ({page}) => (
                 title="community"
                 showButton
                 buttonLabel="visit the forum"
+                onClick={() => window.open("https://forum.wickeditor.com/")}
             />
         )}
     </Fragment>

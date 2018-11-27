@@ -40,8 +40,18 @@ const AboutPage = () => (
                 [{name: "Zach Rispoli", img: coreyemery},
                  {name: "Luca Damasco", img: coreyemery}]
             }
+            includeHeadshot
         >
             The Wick Editor was created and is led by
+        </CreatorsRow>
+        <CreatorsRow
+            people={
+                [{name: "Anna Gusman", img: coreyemery},
+                 {name: "Corey Emery", img: coreyemery}]
+            }
+            includeHeadshot
+        >
+            Brand and web design by
         </CreatorsRow>
         <CreatorsRow
             people={
@@ -51,14 +61,6 @@ const AboutPage = () => (
             }
         >
             Editor Interface design by
-        </CreatorsRow>
-        <CreatorsRow
-            people={
-                [{name: "Anna Gusman", img: coreyemery},
-                 {name: "Corey Emery", img: coreyemery}]
-            }
-        >
-            Brand and web design by
         </CreatorsRow>
         <Row id="AboutPage-cannonImageRow" className="AboutPage-row">
             <Img src={cannon} />

@@ -38,6 +38,10 @@ class HeaderContainer extends Component {
         this.setState({isDropdownOpen: !this.state.isDropdownOpen});
     }
 
+    launchEditor = () => {
+        window.open("http://wickeditor.com/wick-editor/")
+    }
+
     componentDidMount() {
         window.addEventListener('scroll', this.toggleHeaderContainer);
     }
@@ -52,6 +56,7 @@ class HeaderContainer extends Component {
                 {...this.props}
                 onClickChangePage={this.handleClickChangePage}
                 onClickToggleDropdown={this.toggleDropdown}
+                onClickLaunchEditor={this.launchEditor}
                 isBackgroundHidden={this.state.isBackgroundHidden}
                 isDropdownOpen={this.state.isDropdownOpen}
             />

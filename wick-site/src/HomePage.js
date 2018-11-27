@@ -19,7 +19,7 @@ const HomePage = () => (
     <Container>
         <Row id="HomePage-promoVideoRow" className="HomePage-row">
             <Col xs="12" md="9" lg="8" xl="7">
-                <ResponsiveEmbed src='https://www.youtube.com/embed/2g811Eo7K8U' ratio='16:9' />
+                <ResponsiveEmbed src="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
             </Col>
         </Row>
         <Row id="HomePage-ourLatestRow" className="HomePage-row">our latest</Row>
@@ -78,10 +78,24 @@ const HomePage = () => (
         </Row>
         <Row id="HomePage-subscribeRow" className="HomePage-row">
             <Col sm="9" md="4" lg="3">
-                <Button outline color="secondary" block>Become a Patron</Button>
+                <Button
+                    outline
+                    color="secondary"
+                    block
+                    onClick={() => window.open("https://www.patreon.com/WickEditor")}
+                >
+                    Become a Patron
+                </Button>
             </Col>
             <Col sm="9" md="4" lg="3">
-                <Button outline color="secondary" block>Subscribe on Youtube</Button>
+                <Button
+                    outline
+                    color="secondary"
+                    block
+                    onClick={() => window.open("https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg")}
+                >
+                    Subscribe on Youtube
+                </Button>
             </Col>
         </Row>
     </Container>

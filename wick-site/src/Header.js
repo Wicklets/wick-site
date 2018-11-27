@@ -17,7 +17,7 @@ import {
   NavLink } from 'reactstrap';
 import './Header.scss';
 
-const Header = ({page, onClickChangePage, onClickToggleDropdown, isBackgroundHidden, isDropdownOpen}) => (
+const Header = ({page, onClickChangePage, onClickToggleDropdown, onClickLaunchEditor, isBackgroundHidden, isDropdownOpen}) => (
     <div id="Header-container">
         <Navbar color={(isBackgroundHidden ? "" : "light")} light expand="sm">
             <NavbarBrand
@@ -44,7 +44,7 @@ const Header = ({page, onClickChangePage, onClickToggleDropdown, isBackgroundHid
                             href="#"
                             id={(page === "create" ? "Header-activeItem" : "")}
                             className="Header-navItem"
-                            onClick={() => onClickChangePage("create")}
+                            onClick={onClickLaunchEditor}
                         >
                             create
                         </NavLink>

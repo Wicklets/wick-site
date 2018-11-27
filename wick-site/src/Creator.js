@@ -11,9 +11,11 @@ import {Col} from 'reactstrap';
 import Img from 'react-image';
 import './Creator.scss';
 
-const Creator = ({name, img}) => (
+const Creator = ({name, img, includeHeadshot}) => (
     <Col xs="4" sm="3" lg="2">
-        <Img src={img} className="Creator-picture" />
+        {includeHeadshot && (
+            <Img src={img} className="Creator-picture" />
+        )}
         <div className="Creator-name">{name}</div>
     </Col>
 );

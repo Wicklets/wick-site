@@ -17,7 +17,15 @@ const UpdateTab = () => (
             <CardBody>
                 <CardTitle id="UpdateTab-version">update 3.5</CardTitle>
                 <CardSubtitle id="UpdateTab-text">Some exciting description here. Try it out!</CardSubtitle>
-                <Button id="UpdateTab-button" outline color="secondary" size="sm">try it</Button>
+                <Button
+                    id="UpdateTab-button"
+                    outline
+                    color="secondary"
+                    size="sm"
+                    onClick={() => window.open("https://forum.wickeditor.com/t/wick-0-15-update-thread-video-export/461")}
+                >
+                    try it
+                </Button>
             </CardBody>
         </Card>
     </Fragment>
