@@ -12,8 +12,8 @@ import Img from 'react-image';
 import facebook from './facebook.png';
 import twitter from './twitter.png';
 import instagram from './instagram.png';
-import snapchat from './snapchat.jpg';
-import email from './email.jpg';
+import snapchat from './snapchat.png';
+import email from './email.png';
 import './ContactBar.scss';
 
 const ContactBar = () => (
