@@ -10,7 +10,8 @@ import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import {Button} from 'reactstrap';
 import ResponsiveEmbed from 'react-responsive-embed';
-import PreviewCardDeckContainer from './PreviewCardDeckContainer.js';
+import ExampleCardDeckContainer from './ExampleCardDeckContainer.js';
+import TutorialCardDeckContainer from './TutorialCardDeckContainer.js';
 import NewsCardDeckContainer from './NewsCardDeckContainer.js';
 import UpdateTab from './UpdateTab.js';
 import './HomePage.scss';
@@ -30,8 +31,8 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row className="HomePage-cardContainer HomePage-row">
-            <Col sm="9">
-                <PreviewCardDeckContainer />
+            <Col md="9">
+                <TutorialCardDeckContainer />
             </Col>
         </Row>
         <Row className="HomePage-webpageButtonRow HomePage-row">
@@ -52,8 +53,8 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row className="HomePage-cardContainer HomePage-row">
-            <Col sm="9">
-                <PreviewCardDeckContainer />
+            <Col md="9">
+                <ExampleCardDeckContainer />
             </Col>
         </Row>
         <Row className="HomePage-webpageButtonRow HomePage-row">
@@ -71,12 +72,12 @@ const HomePage = () => (
             <div className="HomePage-sectionTitle">updates</div>
         </Row>
         <Row className="HomePage-row">
-            <Col sm="9">
+            <Col md="9">
                 <UpdateTab />
             </Col>
         </Row>
         <Row id="HomePage-newsRow" className="HomePage-row">
-            <Col sm="9">
+            <Col md="9">
                 <NewsCardDeckContainer />
             </Col>
         </Row>
