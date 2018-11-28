@@ -15,7 +15,7 @@ import './CommunityPage.scss';
 const CommunityPage = () => (
     <Container>
         <SectionContent title="wick editor forum" includeUnderline>
-            Forum Description. Something here something here something heresomething heresomething heresomething heresomething heresomething here.
+            See what all the buzz is about and chat with fellow wick users for tips, tricks, and inspiration on your next project.
         </SectionContent>
         <Row className="CommunityPage-spacerRow" />
         <SectionContent title="creators" includeUnderline>
