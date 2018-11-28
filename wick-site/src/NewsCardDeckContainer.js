@@ -17,9 +17,23 @@ class NewsCardDeckContainer extends Component {
 
         this.state = {
             newsItems: [
-                {title: "Awesome, Super Cool New Website Launches!", date: "November 30, 2018"},
-                {title: "Wick Editor Version 0.15.2 Goes Live", date: "June 28, 2018"},
-                {title: "Hey look at this cool tool it's a thing now", date: "some point in the past"}
+                {
+                    title: "Awesome, Super Cool New Website Launches!",
+                    date: "November 30, 2018",
+                    hasExternalLink: false
+                },
+                {
+                    title: "Wick Editor wins Mozilla Grant",
+                    date: "October 15, 2018",
+                    hasExternalLink: true,
+                    link: "https://www.cmu.edu/news/stories/archives/2018/october/wick-editor.html"
+                },
+                {
+                    title: "Wick Editor Version 0.15.2 Goes Live",
+                    date: "June 28, 2018",
+                    hasExternalLink: true,
+                    link: "https://forum.wickeditor.com/t/wick-0-15-update-thread-video-export/461"
+                }
             ],
             numberCards: 3
         };
@@ -44,8 +58,8 @@ class NewsCardDeckContainer extends Component {
         return (
             <Fragment>
                 <CardDeck>
-                    {this.state.newsItems.slice(0, this.state.numberCards).map(example => (
-                        <NewsCard key={example.title} {...example} />
+                    {this.state.newsItems.slice(0, this.state.numberCards).map(newsItem => (
+                        <NewsCard key={newsItem.title} {...newsItem} />
                     ))}
                 </CardDeck>
             </Fragment>

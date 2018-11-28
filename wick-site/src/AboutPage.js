@@ -11,7 +11,7 @@ import {Container, Row, Col} from 'reactstrap';
 import Img from 'react-image';
 import SectionContent from './SectionContent.js';
 import CreatorsRow from './CreatorsRow.js';
-import ContactBar from './ContactBar.js';
+import ConnectBar from './ConnectBar.js';
 import editorpreview from './editorpreview.svg';
 import cannon from './cannon.svg';
 import coreyemery from './CoreyEmery.png';
@@ -72,7 +72,7 @@ const AboutPage = () => (
         <SectionContent title="contact us!">
             Shoot us a message, join the wick editor community with a YouTube membership or subscribe on Patreon!
         </SectionContent>
-        <ContactBar />
+        <ConnectBar />
     </Container>
 );
 
