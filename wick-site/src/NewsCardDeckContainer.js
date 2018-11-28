@@ -6,26 +6,51 @@
     Container for News Card Decks on the Homepage
 */
 
-import React, {Fragment} from 'react';
+import React, {Component, Fragment} from 'react';
 import {CardDeck} from 'reactstrap';
-import {Col} from 'reactstrap';
 import NewsCard from './NewsCard.js';
 import './NewsCardDeckContainer.scss';
 
-const NewsCardDeckContainer = () => (
-    <Fragment>
-        <CardDeck>
-            <Col className="NewsCardDeckContainer-noGutter" sm="12" md="6" lg="4">
-                <NewsCard />
-            </Col>
-            <Col className="NewsCardDeckContainer-noGutter" sm="12" md="6" lg="4">
-                <NewsCard />
-            </Col>
-            <Col className="NewsCardDeckContainer-noGutter" sm="12" md="6" lg="4">
-                <NewsCard />
-            </Col>
-        </CardDeck>
-    </Fragment>
-);
+class NewsCardDeckContainer extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            newsItems: [
+                {title: "Awesome, Super Cool New Website Launches!", date: "November 30, 2018"},
+                {title: "Wick Editor Version 0.15.2 Goes Live", date: "June 28, 2018"},
+                {title: "Hey look at this cool tool it's a thing now", date: "some point in the past"}
+            ],
+            numberCards: 3
+        };
+    }
+
+    updateNumberCards = () => {
+        var width = window.innerWidth;
+        var numberCards = (width > 575 && width < 992) ? 2 : 3 // code to match reactstrap cutoffs
+        this.setState({numberCards});
+    }
+
+    componentDidMount() {
+        window.addEventListener('resize', this.updateNumberCards);
+        this.updateNumberCards();
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateNumberCards);
+    }
+
+    render() {
+        return (
+            <Fragment>
+                <CardDeck>
+                    {this.state.newsItems.slice(0, this.state.numberCards).map(example => (
+                        <NewsCard key={example.title} {...example} />
+                    ))}
+                </CardDeck>
+            </Fragment>
+        );
+    }
+};
 
 export default NewsCardDeckContainer;

@@ -16,7 +16,6 @@ const PreviewCard = ({title, body, image, isClickable, onClick, onMouseEnter, on
             <CardImg top width="100%" src={image} alt="Card image cap" />
             <CardBody>
                 <CardTitle className="PreviewCard-title">{title}</CardTitle>
-                {/* <div className={(displayOverlay ? "PreviewCard-underline--show" : "PreviewCard-underline--hide")} /> */}
                 <CardText className="PreviewCard-text">{body}</CardText>
             </CardBody>
             {isClickable && displayOverlay && (

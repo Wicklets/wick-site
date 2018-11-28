@@ -7,14 +7,15 @@
 */
 
 import React, {Fragment} from 'react';
-import {Card, CardBody, CardTitle} from 'reactstrap';
+import {Card, CardBody, CardTitle, CardText} from 'reactstrap';
 import './NewsCard.scss';
 
-const NewsCard = () => (
+const NewsCard = ({title, date}) => (
     <Fragment>
         <Card>
             <CardBody>
-                <CardTitle>News Item</CardTitle>
+                <CardTitle className="NewsCard-title">{title}</CardTitle>
+                <CardText className="NewsCard-date">{date}</CardText>
             </CardBody>
         </Card>
     </Fragment>

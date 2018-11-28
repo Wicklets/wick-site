@@ -15,8 +15,8 @@ const UpdateTab = () => (
     <Fragment>
         <Card id="UpdateTab-container">
             <CardBody>
-                <CardTitle id="UpdateTab-version">update 3.5</CardTitle>
-                <CardSubtitle id="UpdateTab-text">Some exciting description here. Try it out!</CardSubtitle>
+                <CardTitle id="UpdateTab-version">update 0.15.2</CardTitle>
+                <CardSubtitle id="UpdateTab-text">It's mean. It's lean. It makes animations and games. Try it out!</CardSubtitle>
                 <Button
                     id="UpdateTab-button"
                     outline
