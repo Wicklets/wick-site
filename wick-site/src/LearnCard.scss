@@ -1,0 +1,43 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    LearnCard.scss
+
+    Stylings for the Wick Learn Page Cards
+*/
+
+// Center the content of the page
+.LearnCard-row {
+    justify-content: center;
+}
+
+.LearnCard-title {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.LearnCard-body {
+    font-size: 16px;
+}
+
+.LearnCard-contentRow {
+    padding: 12px 0;
+}
+
+.LearnCard-editorButtonRow {
+    padding-bottom: 12px;
+}
+
+.LearnCard-contentContainer {
+    position: relative;
+    height: 100%;
+}
+
+.LearnCard-image {
+    width: 100%;
+}
+
+.LearnCard-editorButton {
+    position: absolute;
+    bottom: 0;
+}

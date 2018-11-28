@@ -10,9 +10,9 @@ import React, {Fragment} from 'react';
 import {Row, Col} from 'reactstrap';
 import './SectionContent.scss';
 
-const SectionContent = ({title, includeUnderline, children}) => (
+const SectionContent = ({title, includeUnderline, useSmallTitle, children}) => (
     <Fragment>
-        <Row className="SectionContent-title SectionContent-row">
+        <Row className={(useSmallTitle ? "SectionContent-smallTitle" : "SectionContent-title") + " SectionContent-row"}>
             {title}
         </Row>
         {includeUnderline && (
