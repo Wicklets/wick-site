@@ -14,7 +14,8 @@ class LearnCardContainer extends Component {
         super(props);
 
         this.state = {
-            useButtonRow: false
+            useButtonRow: false,
+            displayContent: false
         };
     }
 
@@ -22,6 +23,10 @@ class LearnCardContainer extends Component {
         var width = window.innerWidth;
         var useButtonRow = (width < 768) // code to match reactstrap cutoffs
         this.setState({useButtonRow});
+    }
+
+    toggleDisplayContent = () => {
+        this.setState(prevState => ({displayContent: !prevState.displayContent}));
     }
 
     componentDidMount() {
@@ -38,6 +43,8 @@ class LearnCardContainer extends Component {
             <LearnCard
                 {...this.props}
                 useButtonRow={this.state.useButtonRow}
+                displayContent={this.state.displayContent}
+                toggleDisplayContent={this.toggleDisplayContent}
             />
         );
     }
