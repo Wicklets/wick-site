@@ -39,7 +39,7 @@ class HeaderContainer extends Component {
     }
 
     launchEditor = () => {
-        window.open("http://wickeditor.com/wick-editor/")
+        window.open("http://wickeditor.com/wick-editor/", "_self")
     }
 
     componentDidMount() {

@@ -22,7 +22,7 @@ const UpdateTab = () => (
                     outline
                     color="secondary"
                     size="sm"
-                    onClick={() => window.open("https://forum.wickeditor.com/t/wick-0-15-update-thread-video-export/461")}
+                    onClick={() => window.open("http://wickeditor.com/wick-editor/")}
                 >
                     try it
                 </Button>

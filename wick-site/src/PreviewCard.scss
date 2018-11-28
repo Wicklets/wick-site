@@ -15,9 +15,17 @@
     font-size: 12px;
 }
 
-.PreviewCard-overlay {
+.PreviewCard-overlay,
+.PreviewCard-disabled {
     padding-top: 25%;
-    background-color: rgba(0, 0, 122, 0.3);
     border-radius: 3px; // coded to fill the rounded space in the reactstrap card
+}
+
+.PreviewCard-overlay {
+    background-color: rgba(0, 0, 122, 0.3);
     cursor: pointer;
+}
+
+.PreviewCard-disabled {
+    background-color: rgba(122, 122, 122, 0.25);
 }

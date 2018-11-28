@@ -21,6 +21,9 @@ const PreviewCard = ({title, body, image, isClickable, onClick, onMouseEnter, on
             {isClickable && displayOverlay && (
                 <CardImgOverlay className="PreviewCard-overlay" />
             )}
+            {!isClickable && (
+                <CardImgOverlay className="PreviewCard-disabled" />
+            )}
         </Card>
     </Fragment>
 );
