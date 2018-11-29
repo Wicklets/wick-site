@@ -20,7 +20,7 @@ import '../scss_styles/Header.scss';
 
 const Header = ({page, onClickChangePage, onClickToggleDropdown, onClickLaunchEditor, isBackgroundHidden, isDropdownOpen}) => (
     <div id="Header-container">
-        <Navbar color={(isBackgroundHidden ? "" : "light")} light expand="sm">
+        <Navbar className={(isBackgroundHidden ? "" :"Header-colorOverride")} color={(isBackgroundHidden ? "" : "light")} light expand="sm">
             <NavbarBrand
                 href="#"
                 id={(page === "home" ? "Header-activeItem" : "")}
