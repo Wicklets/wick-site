@@ -14,7 +14,10 @@ import CreatorsRow from '../ContentComponents/Creators/CreatorsRow.js';
 import ConnectBar from '../ContentComponents/SocialMedia/ConnectBar.js';
 import editorpreview from '../Images/Misc/editorpreview.svg';
 import cannon from '../Images/Misc/cannon.svg';
-import coreyemery from '../Images/People/CoreyEmery.png';
+import coreyemery from '../Images/People/CoreyEmery.jpg';
+import lucadamasco from '../Images/People/LucaDamasco.jpg';
+import zachrispoli from '../Images/People/ZachRispoli.png';
+import annagusman from '../Images/People/AnnaGusman.jpeg';
 import '../scss_styles/AboutPage.scss';
 
 const AboutPage = () => (
@@ -37,8 +40,8 @@ const AboutPage = () => (
         </SectionContent>
         <CreatorsRow
             people={
-                [{name: "Zach Rispoli", img: coreyemery},
-                 {name: "Luca Damasco", img: coreyemery}]
+                [{name: "Zach Rispoli", img: zachrispoli},
+                 {name: "Luca Damasco", img: lucadamasco}]
             }
             includeHeadshot
         >
@@ -46,7 +49,7 @@ const AboutPage = () => (
         </CreatorsRow>
         <CreatorsRow
             people={
-                [{name: "Anna Gusman", img: coreyemery},
+                [{name: "Anna Gusman", img: annagusman},
                  {name: "Corey Emery", img: coreyemery}]
             }
             includeHeadshot

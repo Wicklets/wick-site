@@ -41,6 +41,7 @@ const LearnCard = ({title, body, image, link, launchEditor, useImage, useButtonR
                         {!useButtonRow && (
                             <Button
                                 className="LearnCard-editorButton"
+                                color="info"
                                 block
                                 size="lg"
                                 onClick={launchEditor}

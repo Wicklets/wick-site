@@ -36,7 +36,7 @@ const HomePage = () => (
         <Row className="HomePage-webpageButtonRow HomePage-row">
             <Col xs="6" sm="4" md="3" lg="2">
                 <Button
-                    color="secondary"
+                    color="success"
                     block
                     onClick={() => window.open("http://wickeditor.com/#tutorials")}
                 >
@@ -55,7 +55,7 @@ const HomePage = () => (
         <Row className="HomePage-webpageButtonRow HomePage-row">
             <Col xs="6" sm="4" md="3" lg="2">
                 <Button
-                    color="secondary"
+                    color="success"
                     block
                     onClick={() => window.open("http://wickeditor.com/#examples")}
                 >
@@ -85,8 +85,8 @@ const HomePage = () => (
         <Row id="HomePage-subscribeRow" className="HomePage-row">
             <Col sm="9" md="4" lg="3">
                 <Button
+                    color="info"
                     outline
-                    color="secondary"
                     block
                     onClick={() => window.open("https://www.patreon.com/WickEditor")}
                 >
@@ -95,8 +95,8 @@ const HomePage = () => (
             </Col>
             <Col sm="9" md="4" lg="3">
                 <Button
+                    color="info"
                     outline
-                    color="secondary"
                     block
                     onClick={() => window.open("https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg")}
                 >

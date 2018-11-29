@@ -20,7 +20,7 @@ const UpdateTab = () => (
                 <Button
                     id="UpdateTab-button"
                     outline
-                    color="secondary"
+                    color="success"
                     size="sm"
                     onClick={() => window.open("http://wickeditor.com/wick-editor/")}
                 >

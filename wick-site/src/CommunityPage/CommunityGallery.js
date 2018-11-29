@@ -17,7 +17,7 @@ import community5 from '../Images/Projects/community5.png';
 import community6 from '../Images/Projects/community6.png';
 import '../scss_styles/CommunityGallery.scss';
 
-const CommunityGallery = () => (
+const CommunityGallery = ({showGridText}) => (
     <Fragment>
         <Row>
             <Col xs="12" md="4">
@@ -55,9 +55,11 @@ const CommunityGallery = () => (
         </Row>
         <Row>
             <Col xs="12" md="4">
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12"><div className="CommunityGallery-testText2"><div>Wick Worlds</div></div></Col>
-                </Row>
+                {showGridText && (
+                    <Row className="CommunityGallery-galleryRow">
+                        <Col xs="12"><div className="CommunityGallery-testText2"><div>Wick Worlds</div></div></Col>
+                    </Row>
+                )}
                 <Row className="CommunityGallery-galleryRow">
                     <Col xs="6"><Img src={community1} className="CommunityGallery-image" /></Col>
                     <Col xs="6"><Img src={community1} className="CommunityGallery-image" /></Col>
@@ -71,9 +73,11 @@ const CommunityGallery = () => (
                 </Row>
             </Col>
             <Col xs="12" md="4">
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12"><div className="CommunityGallery-testText1"><div>The possibilities are endless! Here's what people around the world are creating with wick editor.</div></div></Col>
-                </Row>
+                {showGridText && (
+                    <Row className="CommunityGallery-galleryRow">
+                        <Col xs="12"><div className="CommunityGallery-testText1"><div>The possibilities are endless! Here's what people around the world are creating with wick editor.</div></div></Col>
+                    </Row>
+                )}
                 <Row className="CommunityGallery-galleryRow">
                     <Col xs="12"><Img src={community2} className="CommunityGallery-image" /></Col>
                 </Row>

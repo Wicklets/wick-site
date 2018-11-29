@@ -27,7 +27,7 @@ const PageTitle = ({title, showButton, showSubtitle, buttonLabel, onClick, child
             <Col xs="7" sm="5" md="4" lg="3" xl="2">
                 {showButton ? (
                     <Button
-                        color="secondary"
+                        color="primary"
                         size="lg"
                         block
                         onClick={onClick}

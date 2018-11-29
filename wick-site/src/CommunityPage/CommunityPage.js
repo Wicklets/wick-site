@@ -9,7 +9,7 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import SectionContent from '../ContentComponents/SectionHeader/SectionContent.js';
-import CommunityGallery from './CommunityGallery.js';
+import CommunityGalleryContainer from './CommunityGalleryContainer.js';
 import '../scss_styles/CommunityPage.scss';
 
 const CommunityPage = () => (
@@ -23,7 +23,7 @@ const CommunityPage = () => (
         </SectionContent>
         <Row id="CommunityPage-galleryContainer" className="CommunityPage-row">
             <Col sm="9" md="12" lg="9">
-                <CommunityGallery />
+                <CommunityGalleryContainer />
             </Col>
         </Row>
     </Container>
