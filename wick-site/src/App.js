@@ -8,10 +8,10 @@
 
 import React, {Component} from 'react';
 import Content from './Content.js';
-import HeaderContainer from './HeaderContainer.js';
-import Footer from './Footer.js';
-import PageTitleContainer from './PageTitleContainer.js';
-import './App.scss';
+import HeaderContainer from './NavBar/HeaderContainer.js';
+import Footer from './Footer/Footer.js';
+import PageTitleContainer from './ContentComponents/PageTitle/PageTitleContainer.js';
+import './scss_styles/App.scss';
 
 class App extends Component {
     constructor(props) {
