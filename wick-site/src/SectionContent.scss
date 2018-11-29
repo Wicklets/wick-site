@@ -19,8 +19,13 @@
     font-size: 24px;
 }
 
-.SectionContent-body {
+.SectionContent-body,
+.SectionContent-smallBody {
     font-size: 16px;
+}
+
+.SectionContent-smallBody {
+    line-height: 20px;
 }
 
 .SectionContent-underline {

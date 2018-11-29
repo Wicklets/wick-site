@@ -14,6 +14,7 @@ import ExampleCardDeckContainer from './ExampleCardDeckContainer.js';
 import TutorialCardDeckContainer from './TutorialCardDeckContainer.js';
 import NewsCardDeckContainer from './NewsCardDeckContainer.js';
 import UpdateTab from './UpdateTab.js';
+import SectionContent from './SectionContent.js';
 import './HomePage.scss';
 
 const HomePage = () => (
@@ -24,12 +25,9 @@ const HomePage = () => (
             </Col>
         </Row>
         <Row id="HomePage-ourLatestRow" className="HomePage-row">our latest</Row>
-        <Row className="HomePage-sectionHead HomePage-row">
-            <div className="HomePage-sectionTitle">tutorials</div>
-            <Col className="HomePage-sectionSubtitle" sm="9" md="7" lg="6">
-                Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
-            </Col>
-        </Row>
+        <SectionContent title="tutorials" useSmallTitle>
+            Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
+        </SectionContent>
         <Row className="HomePage-cardContainer HomePage-row">
             <Col md="9">
                 <TutorialCardDeckContainer />
@@ -46,12 +44,9 @@ const HomePage = () => (
                 </Button>
             </Col>
         </Row>
-        <Row className="HomePage-sectionHead HomePage-row">
-            <div className="HomePage-sectionTitle">examples</div>
-            <Col className="HomePage-sectionSubtitle" sm="9" md="7" lg="6">
-                Check out some examples to help you get started using the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
-            </Col>
-        </Row>
+        <SectionContent title="examples" useSmallTitle>
+            Check out some examples to help you get started using the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
+        </SectionContent>
         <Row className="HomePage-cardContainer HomePage-row">
             <Col md="9">
                 <ExampleCardDeckContainer />
@@ -68,9 +63,7 @@ const HomePage = () => (
                 </Button>
             </Col>
         </Row>
-        <Row className="HomePage-sectionHead HomePage-row">
-            <div className="HomePage-sectionTitle">updates</div>
-        </Row>
+        <SectionContent title="updates" useSmallTitle />
         <Row className="HomePage-row">
             <Col md="9">
                 <UpdateTab />

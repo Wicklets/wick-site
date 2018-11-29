@@ -11,7 +11,6 @@
     justify-content: center;
 }
 
-.HomePage-sectionHead,
 #HomePage-supportRow {
     flex-direction: column;
     align-items: center;
@@ -47,21 +46,6 @@
 // Font settings
 #HomePage-ourLatestRow {
     font-size: 40px;
-}
-
-.HomePage-sectionTitle {
-    font-size: 24px;
-}
-
-.HomePage-sectionSubtitle {
-    font-size: 16px;
-    line-height: 20px;
-}
-
-#videoPlaceholder {
-    background-color: grey;
-    height: 337.5px;
-    width: 600px;
 }
 
 #HomePage-supportWick {

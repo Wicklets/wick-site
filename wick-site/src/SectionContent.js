@@ -18,7 +18,7 @@ const SectionContent = ({title, includeUnderline, useSmallTitle, children}) => (
         {includeUnderline && (
             <Row className="SectionContent-underline SectionContent-row" />
         )}
-        <Row className="SectionContent-body SectionContent-row">
+        <Row className={(useSmallTitle ? "SectionContent-smallBody" : "SectionContent-body") + " SectionContent-row"}>
             <Col sm="9" lg="6">
                 {children}
             </Col>
