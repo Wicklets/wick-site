@@ -15,7 +15,8 @@ class LearnCardContainer extends Component {
 
         this.state = {
             useButtonRow: false,
-            displayContent: false
+            displayContent: false,
+            overlayDisplayClass: ""
         };
     }
 
@@ -28,6 +29,9 @@ class LearnCardContainer extends Component {
     toggleDisplayContent = () => {
         this.setState(prevState => ({displayContent: !prevState.displayContent}));
     }
+
+    showOverlay = () => this.setState({overlayDisplayClass: "fadeIn animated faster LearnCard-overlay"});
+    hideOverlay = () => this.setState({overlayDisplayClass: "fadeOut animated faster LearnCard-overlay"});
 
     componentDidMount() {
         window.addEventListener('resize', this.updateButtonDisplay);
@@ -45,6 +49,9 @@ class LearnCardContainer extends Component {
                 useButtonRow={this.state.useButtonRow}
                 displayContent={this.state.displayContent}
                 toggleDisplayContent={this.toggleDisplayContent}
+                onMouseEnter={this.showOverlay}
+                onMouseLeave={this.hideOverlay}
+                overlayDisplayClass={this.state.overlayDisplayClass}
             />
         );
     }

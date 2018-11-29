@@ -8,7 +8,7 @@
 
 import React, {Fragment} from 'react';
 import {Row, Col} from 'reactstrap';
-import {Card, CardBody, CardTitle} from 'reactstrap';
+import {Card, CardBody, CardTitle, CardImgOverlay} from 'reactstrap';
 import {Button} from 'reactstrap';
 import Img from 'react-image';
 import ResponsiveEmbed from 'react-responsive-embed';
@@ -16,25 +16,26 @@ import dropdownopen from '../Images/DropdownArrow/dropdownopen.svg';
 import dropdownclose from '../Images/DropdownArrow/dropdownclose.svg';
 import '../scss_styles/LearnCard.scss';
 
-const LearnCard = ({title, body, image, link, launchEditor, useImage, useButtonRow, displayContent, toggleDisplayContent}) => (
+const LearnCard = ({title, body, image, link, launchEditor, useImage, useButtonRow, displayContent, toggleDisplayContent, onMouseEnter, onMouseLeave, overlayDisplayClass}) => (
     <Fragment>
         <Row className="LearnCard-row">
             <Col sm="12">
-                <Card className="LearnCard-titleCard" onClick={toggleDisplayContent}>
+                <Card className="LearnCard-titleCard" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={toggleDisplayContent}>
                     <CardBody>
                         <div className="LearnCard-titleContainer">
                             <CardTitle className="LearnCard-title">
                                 {title}
                             </CardTitle>
-                            <Img src={(displayContent ? dropdownclose : dropdownopen)} className="LearnCard-dropdown" />
+                            <Img src={(displayContent ? dropdownclose : dropdownopen)} className="rotateIn animated LearnCard-dropdown" />
                         </div>
                     </CardBody>
+                    <CardImgOverlay className={overlayDisplayClass} />
                 </Card>
             </Col>
         </Row>
         {displayContent && (
             <Fragment>
-                <Row className="LearnCard-contentRow LearnCard-row">
+                <Row className="zoomInDown animated LearnCard-contentRow LearnCard-row">
                     <Col sm="6">
                     <div className="LearnCard-contentContainer">
                         <div>{body}</div>

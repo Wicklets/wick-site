@@ -15,12 +15,12 @@ class PreviewCardContainer extends Component {
 
         // display overlay for card
         this.state = {
-            displayOverlay: false
+            overlayDisplayClass: ""
         };
     }
 
-    showOverlay = () => this.setState({displayOverlay: true});
-    hideOverlay = () => this.setState({displayOverlay: false});
+    showOverlay = () => this.setState({overlayDisplayClass: "fadeIn animated faster PreviewCard-overlay"});
+    hideOverlay = () => this.setState({overlayDisplayClass: "fadeOut animated faster PreviewCard-overlay"});
 
     render() {
         return (
@@ -28,7 +28,7 @@ class PreviewCardContainer extends Component {
                 {...this.props}
                 onMouseEnter={this.showOverlay}
                 onMouseLeave={this.hideOverlay}
-                displayOverlay={this.state.displayOverlay}/>
+                overlayDisplayClass={this.state.overlayDisplayClass}/>
         );
     }
 };

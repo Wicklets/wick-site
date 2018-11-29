@@ -18,9 +18,10 @@ import {
 } from 'reactstrap';
 import '../scss_styles/Header.scss';
 
-const Header = ({page, onClickChangePage, onClickToggleDropdown, onClickLaunchEditor, isBackgroundHidden, isDropdownOpen}) => (
+const Header = ({page, onClickChangePage, onClickToggleDropdown, onClickLaunchEditor, backgroundAnimationClass, isDropdownOpen}) => (
     <div id="Header-container">
-        <Navbar className={(isBackgroundHidden ? "" :"Header-colorOverride")} color={(isBackgroundHidden ? "" : "light")} light expand="sm">
+        <Navbar light expand="sm">
+            <div className={backgroundAnimationClass} />
             <NavbarBrand
                 href="#"
                 id={(page === "home" ? "Header-activeItem" : "")}

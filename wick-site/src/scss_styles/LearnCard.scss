@@ -46,11 +46,6 @@
     border: 1px solid #17a2b8;
 }
 
-.LearnCard-titleCard:hover {
-    background-color: rgba(23, 162, 184, 0.5);;
-    cursor: pointer;
-}
-
 .LearnCard-titleContainer {
     display: flex;
     justify-content: space-between;
@@ -59,4 +54,10 @@
 
 .LearnCard-dropdown {
     height: 100%
+}
+
+.LearnCard-overlay {
+    border-radius: 3px; // coded to fill the rounded space in the reactstrap card
+    background-color: rgba(23, 162, 184, 0.5);
+    cursor: pointer;
 }
