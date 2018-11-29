@@ -12,7 +12,7 @@ import '../../scss_styles/PreviewCard.scss';
 
 const PreviewCard = ({title, body, image, isClickable, onClick, onMouseEnter, onMouseLeave, displayOverlay}) => (
     <Fragment>
-        <Card onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
+        <Card className={(isClickable ? "PreviewCard-container" : "")} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
             <CardImg top width="100%" src={image} alt="Card image cap" />
             <CardBody>
                 <CardTitle className="PreviewCard-title">{title}</CardTitle>

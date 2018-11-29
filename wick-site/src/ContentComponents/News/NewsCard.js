@@ -13,7 +13,7 @@ import '../../scss_styles/NewsCard.scss';
 
 const NewsCard = ({title, date, hasExternalLink, link}) => (
     <Fragment>
-        <Card>
+        <Card className="NewsCard-container">
             <CardBody>
                 <CardTitle className="NewsCard-title">{title}</CardTitle>
                 <CardText className="NewsCard-date">{date}</CardText>
