@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="239px" viewBox="0 0 1024 239" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1024px" height="124px" viewBox="0 0 1024 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
     <title>Group 29</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0" width="1024" height="240"></rect>
+        <rect id="path-1" x="0" y="0" width="1024" height="124"></rect>
     </defs>
     <g id="V2-Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-Copy" transform="translate(0.000000, -2546.000000)">
-            <g id="Group-29" transform="translate(0.000000, 2545.000000)">
+        <g id="Desktop-Copy" transform="translate(0.000000, -2547.000000)">
+            <g id="Group-29" transform="translate(0.000000, 2547.000000)">
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
                 <g id="Mask"></g>
-                <g opacity="0.7" mask="url(#mask-2)" fill="#1EE29A">
-                    <g transform="translate(-248.000000, 1.000000)">
-                        <path d="M247.272488,24.7889153 L104.917472,245.5 L1383.5,245.5 L1383.5,1.50468312 C1298.42793,11.8572487 1212.53577,17.033524 1125.82363,17.033524 C1077.60227,17.033524 1046.9316,14.8241908 992.277317,8.76371606 C991.283223,8.65348351 987.692069,8.25491763 987.895089,8.27744428 C986.137012,8.08237191 984.813486,7.93571953 983.519463,7.79269773 C921.371516,0.923805184 884.050887,-1.032402 822.190223,1.43967355 C773.316035,3.39278364 730.809813,6.61612664 671.673307,12.2794055 C663.505341,13.0616206 635.983119,15.738508 635.554101,15.78 C621.504621,17.1387771 611.000687,18.1260157 600.860911,19.0283276 C575.284897,21.3042693 554.142238,22.826324 533.84457,23.7570562 C518.948955,24.4400818 504.682363,24.7889153 490.662671,24.7889153 C383.536758,24.7889153 383.465409,24.7889153 247.272488,24.7889153 Z" id="Rectangle-4" stroke="#1EE29A" stroke-width="1" opacity="0.998811141"></path>
-                        <rect id="Rectangle-5" stroke="none" x="0" y="223.416393" width="1310" height="13.7114754"></rect>
+                <g mask="url(#mask-2)" fill="#1EE29A" fill-opacity="0.7" id="Rectangle-4" opacity="0.998811141">
+                    <g transform="translate(-143.000000, 0.000000)">
+                        <path d="M143,30.1143056 C238.854916,30.1143056 320.075806,30.1143056 386.662671,30.1143056 C486.542967,30.1143056 578.226192,8.09925819 718.170258,1.16553681 C858.114325,-5.76818458 891.499995,20.4988814 1021.82363,20.4988814 C1108.70605,20.4988814 1194.76484,14.0544332 1280,1.16553681 L1280,305 L0,305 L143,30.1143056 Z"></path>
                     </g>
                 </g>
             </g>
