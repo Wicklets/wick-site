@@ -11,7 +11,7 @@ import CommunityPage from './CommunityPage.js';
 
 class CommunityPageContainer extends Component {
     componentDidMount = () => {
-        window.scrollTo(0, 0)
+        window.scrollTo({top: 0, left: 0, behvaior: "smooth"})
     }
 
     render() {

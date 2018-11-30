@@ -13,7 +13,7 @@ import CommunityGalleryContainer from './CommunityGalleryContainer.js';
 import '../scss_styles/CommunityPage.scss';
 
 const CommunityPage = () => (
-    <Container>
+    <Container className="fadeIn animated">
         <SectionContent title="wick editor forum" includeUnderline>
             See what all the buzz is about and chat with fellow wick users for tips, tricks, and inspiration on your next project.
         </SectionContent>

@@ -21,7 +21,7 @@ import annagusman from '../Images/People/AnnaGusman.jpeg';
 import '../scss_styles/AboutPage.scss';
 
 const AboutPage = () => (
-    <Container>
+    <Container className="fadeIn animated">
         <SectionContent title="What is Wick Editor?" includeUnderline>
             The Wick Editor is a free and open-source tool for creating games, animations, and everything in-between. It's designed to be the most accessible tool for creating multimedia projects.
         </SectionContent>

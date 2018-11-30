@@ -18,7 +18,7 @@ import SectionContent from '../ContentComponents/SectionHeader/SectionContent.js
 import '../scss_styles/HomePage.scss';
 
 const HomePage = () => (
-    <Container>
+    <Container className="fadeIn animated">
         <Row id="HomePage-promoVideoRow" className="HomePage-row">
             <Col xs="12" md="9" lg="8" xl="7">
                 <ResponsiveEmbed src="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />

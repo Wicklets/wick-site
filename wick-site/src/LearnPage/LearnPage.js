@@ -13,7 +13,7 @@ import LearnCardContainer from './LearnCardContainer.js';
 import '../scss_styles/LearnPage.scss';
 
 const LearnPage = ({tutorials, examples}) => (
-    <Container>
+    <Container className="fadeIn animated">
         <Row className="LearnPage-spacerRow" />
         <SectionContent title="Explore Examples" useSmallTitle>
             Here are a few examples to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!

@@ -7,7 +7,7 @@
 */
 
 import React, {Fragment} from 'react';
-import HomePage from './HomePage/HomePage.js';
+import HomePageContainer from './HomePage/HomePageContainer.js';
 import AboutPageContainer from './AboutPage/AboutPageContainer.js';
 import LearnPageContainer from './LearnPage/LearnPageContainer.js';
 import CommunityPageContainer from './CommunityPage/CommunityPageContainer.js'
@@ -15,7 +15,7 @@ import CommunityPageContainer from './CommunityPage/CommunityPageContainer.js'
 const Content = ({page}) => (
     <Fragment>
         {page === "home" && (
-            <HomePage />
+            <HomePageContainer />
         )}
         {page === "about" && (
             <AboutPageContainer />

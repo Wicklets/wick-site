@@ -1,24 +1,24 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    AboutPageContainer.js
+    HomePageContainer.js
 
-    Container for About page (allows us to scroll back to top on page change)
+    Container for Home page (allows us to scroll back to top on page change)
 */
 
 import React, {Component} from 'react';
-import AboutPage from './AboutPage.js';
+import HomePage from './HomePage.js';
 
-class AboutPageContainer extends Component {
+class HomePageContainer extends Component {
     componentDidMount = () => {
         window.scrollTo({top: 0, left: 0, behvaior: 'smooth'})
     }
 
     render() {
         return (
-            <AboutPage />
+            <HomePage />
         );
     }
 };
 
-export default AboutPageContainer;
+export default HomePageContainer;
