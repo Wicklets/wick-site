@@ -6,29 +6,35 @@
     Stylings for the Wick About page
 */
 
-// Center the content of the page
-.AboutPage-row {
-    justify-content: center;
+#AboutPage {
+    &-cannonImageRow {
+        padding: 88px 0 8px;
+    }
+
+    // shift the image slightly so that the
+    // editor appears centered
+    &-editorPreviewImage {
+        transform: translateX(-2%);
+        width: 100%;
+    }
+
+    &-editorPreviewRow {
+        padding: 32px 0;
+    }
+
+    &-editorTextRow {
+        font-size: 16px;
+        padding-bottom: 88px;
+    }
 }
 
-#AboutPage-editorPreviewRow {
-    padding: 32px 0;
-}
+.AboutPage {
+    // Center the content of the page
+    &-row {
+        justify-content: center;
+    }
 
-#AboutPage-editorPreviewImage {
-    transform: translateX(-2%);
-    width: 100%;
-}
-
-#AboutPage-editorTextRow {
-    font-size: 16px;
-    padding-bottom: 88px;
-}
-
-#AboutPage-cannonImageRow {
-    padding: 88px 0 8px;
-}
-
-.AboutPage-spacerRow {
-    padding-top: 88px;
+    &-spacerRow {
+        padding-top: 88px;
+    }
 }

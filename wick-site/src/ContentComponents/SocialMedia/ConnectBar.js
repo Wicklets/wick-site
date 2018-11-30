@@ -7,13 +7,16 @@
 */
 
 import React from 'react';
+
 import {Row, Col} from 'reactstrap';
 import Img from 'react-image';
+
 import facebook from '../../Images/SocialMedia/facebook.png';
 import twitter from '../../Images/SocialMedia/twitter.png';
 import instagram from '../../Images/SocialMedia/instagram.png';
 import snapchat from '../../Images/SocialMedia/snapchat.png';
 import email from '../../Images/SocialMedia/email.png';
+
 import '../../scss_styles/ConnectBar.scss';
 
 const ConnectBar = () => (

@@ -6,15 +6,19 @@
     Stylings for the Wick Gallery page
 */
 
-// Center the content of the page
-.CommunityPage-row {
-    justify-content: center;
+#CommunityPage {
+    &-galleryContainer {
+        padding-top: 40px;
+    }
 }
 
-.CommunityPage-spacerRow {
-    padding-top: 60px;
-}
+.CommunityPage {
+    // Center the content of the page
+    &-row {
+        justify-content: center;
+    }
 
-#CommunityPage-galleryContainer {
-    padding-top: 40px;
+    &-spacerRow {
+        padding-top: 60px;
+    }
 }

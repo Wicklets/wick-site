@@ -6,15 +6,17 @@
     Stylings for the Wick Learn page
 */
 
-// Center the content of the page
-.LearnPage-row {
-    justify-content: center;
-}
+.LearnPage {
+    &-contentRow {
+        padding: 40px 0;
+    }
 
-.LearnPage-spacerRow {
-    padding-top: 60px;
-}
+    // Center the content of the page
+    &-row {
+        justify-content: center;
+    }
 
-.LearnPage-contentRow {
-    padding: 40px 0;
+    &-spacerRow {
+        padding-top: 60px;
+    }
 }

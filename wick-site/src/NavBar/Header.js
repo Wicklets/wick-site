@@ -7,6 +7,7 @@
 */
 
 import React from 'react';
+
 import {
   Collapse,
   Navbar,
@@ -16,6 +17,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
+
 import '../scss_styles/Header.scss';
 
 const Header = ({page, onClickChangePage, onClickToggleDropdown, onClickLaunchEditor, backgroundAnimationClass, isDropdownOpen}) => (

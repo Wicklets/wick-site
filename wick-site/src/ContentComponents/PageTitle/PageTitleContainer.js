@@ -7,6 +7,7 @@
 */
 
 import React, {Fragment} from 'react';
+
 import PageTitle from './PageTitle.js';
 
 const PageTitleContainer = ({page}) => (

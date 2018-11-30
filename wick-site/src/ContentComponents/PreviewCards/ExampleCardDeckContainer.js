@@ -1,14 +1,17 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    PreviewCardDeckContainer.js
+    ExampleCardDeckContainer.js
 
     Container for Example Card Decks
 */
 
 import React, {Component, Fragment} from 'react';
+
 import {CardDeck} from 'reactstrap';
+
 import PreviewCardContainer from './PreviewCardContainer.js';
+
 import example1 from '../../Images/Examples/example1.png';
 import example2 from '../../Images/Examples/example2.png';
 import comingsoon from '../../Images/Misc/comingsoon.png';
@@ -46,7 +49,7 @@ class ExampleCardDeckContainer extends Component {
 
     updateNumberCards = () => {
         var width = window.innerWidth;
-        var numberCards = (width > 575 && width < 992) ? 2 : 3 // code to match reactstrap cutoffs
+        var numberCards = (width > 575 && width < 992) ? 2 : 3 // coded to match reactstrap cutoff
         this.setState({numberCards});
     }
 

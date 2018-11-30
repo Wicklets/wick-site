@@ -7,9 +7,12 @@
 */
 
 import React from 'react';
+
 import {Container, Row, Col} from 'reactstrap';
+
 import SectionContent from '../ContentComponents/SectionHeader/SectionContent.js';
 import LearnCardContainer from './LearnCardContainer.js';
+
 import '../scss_styles/LearnPage.scss';
 
 const LearnPage = ({tutorials, examples}) => (

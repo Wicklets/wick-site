@@ -7,6 +7,7 @@
 */
 
 import React, {Component} from 'react';
+
 import InfiniteScrollImage from './InfiniteScrollImage.js';
 
 class InfiniteScrollImageContainer extends Component {

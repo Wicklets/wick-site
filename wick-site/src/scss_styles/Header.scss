@@ -1,65 +1,70 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    HomePage.scss
+    Header.scss
 
     Stylings for the Wick Nav Bar
 */
 
+#Header {
+    &-activeItem {
+        color: blue !important;
+    }
 
-#Header-container {
-    margin-bottom: 48px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.Header-background {
-    background-color: #d2f6ec !important;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
-
-#Header-activeItem {
-    color: blue !important;
-}
-
-.Header-navItem {
-    margin: 0 16px;
-
-    @media screen and (max-width: 575px) {
-        text-align: left;
+    &-container {
+        margin-bottom: 48px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
     }
 }
 
-.Header-brand--wide,
-.Header-brand--narrow {
-    color: green !important;
-}
-
-.Header-brand--wide {
-    margin: 0 24px;
-
-    @media screen and (max-width: 575px) {
-        display: none;
+.Header {
+    &-background {
+        background-color: #d2f6ec !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
     }
-}
 
-.Header-brand--narrow {
-    @media screen and (min-width: 576px) {
-        display: none;
+    &-brand--wide,
+    &-brand--narrow {
+        color: green !important;
     }
-}
 
-.Header-navItem:hover {
-    color: lightblue !important;
-}
+    &-brand--wide:hover,
+    &-brand--narrow:hover {
+        color: lightgreen !important;
+    }
 
-.Header-brand--wide:hover,
-.Header-brand--narrow:hover {
-    color: lightgreen !important;
+    &-brand--wide {
+        margin: 0 24px;
+
+        // hide for narrow screens
+        @media screen and (max-width: 575px) {
+            display: none;
+        }
+    }
+
+    &-brand--narrow {
+        // hide for wide screens
+        @media screen and (min-width: 576px) {
+            display: none;
+        }
+    }
+
+    &-navItem {
+        margin: 0 16px;
+
+        @media screen and (max-width: 575px) {
+            text-align: left;
+        }
+    }
+
+    &-navItem:hover {
+        color: lightblue !important;
+    }
 }

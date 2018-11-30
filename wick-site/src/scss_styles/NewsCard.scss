@@ -6,15 +6,16 @@
     Stylings for the news cards on homepage
 */
 
-// Font settings
-.NewsCard-title {
-    font-size: 16px;
-}
+.NewsCard {
+    &-container {
+        border: 1px solid blue;
+    }
 
-.NewsCard-date {
-    font-size: 12px;
-}
+    &-date {
+        font-size: 12px;
+    }
 
-.NewsCard-container {
-    border: 1px solid blue;
+    &-title {
+        font-size: 16px;
+    }
 }

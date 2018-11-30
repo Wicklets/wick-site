@@ -1,35 +1,38 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    WickWorld.scss
+    InfiniteScrollImage.scss
 
-    Stylings for the WickWorld Image
+    Stylings for the Header and Footer Images
 */
 
-// Image Header
-.InfiniteScrollImage-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-}
+.InfiniteScrollImage {
+    &-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1; // force behind the Page title and Nav Bar
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden; // don't show parts of image offscreen
+    }
 
-.InfiniteScrollImage-image--header,
-.InfiniteScrollImage-image--footer {
-    display: flex;
+    &-imageHeader,
+    &-imageFooter {
+    display: flex; // force images to sit next to each other
     position: absolute;
+    // center images
     left: 50%;
     transform: translateX(-50%);
-}
+    }
 
-.InfiniteScrollImage-image { // default behavior is to create a header
-    &--header {
+    &-imageHeader {
+        // lock to top of screen
         top: 0;
     }
-    &--footer { // this override creates a footer
+
+    &-imageFooter {
+        // lock to bottom of screen
         bottom: 0;
     }
 }

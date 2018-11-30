@@ -7,8 +7,11 @@
 */
 
 import React, {Fragment} from 'react';
+
 import {Row} from 'reactstrap';
+
 import Creator from './Creator.js';
+
 import '../../scss_styles/CreatorsRow.scss';
 
 const CreatorsRow = ({people, includeHeadshot, children}) => (

@@ -7,8 +7,10 @@
 */
 
 import React, {Fragment} from 'react';
+
 import {Card, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import {Button} from 'reactstrap';
+
 import '../../scss_styles/UpdateTab.scss';
 
 const UpdateTab = () => (

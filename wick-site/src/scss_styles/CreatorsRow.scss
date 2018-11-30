@@ -6,15 +6,17 @@
     Stylings for the Creators Credit Rows
 */
 
-// Center the content of the page
-.CreatorsRow-row {
-    justify-content: center;
-}
+.CreatorsRow {
+    &-description {
+        padding: 40px 0 20px;
+    }
 
-.CreatorsRow-description {
-    padding: 40px 0 20px;
-}
+    &-people {
+        padding-bottom: 8px;
+    }
 
-.CreatorsRow-people {
-    padding-bottom: 8px;
+    // Center the content of the page
+    &-row {
+        justify-content: center;
+    }
 }

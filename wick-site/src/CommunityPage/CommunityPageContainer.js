@@ -7,6 +7,7 @@
 */
 
 import React, {Component} from 'react';
+
 import CommunityPage from './CommunityPage.js';
 
 class CommunityPageContainer extends Component {

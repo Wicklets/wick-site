@@ -7,10 +7,12 @@
 */
 
 import React, {Component} from 'react';
+
 import Content from './Content.js';
 import HeaderContainer from './NavBar/HeaderContainer.js';
 import Footer from './Footer/Footer.js';
 import PageTitleContainer from './ContentComponents/PageTitle/PageTitleContainer.js';
+
 import './scss_styles/App.scss';
 
 class App extends Component {

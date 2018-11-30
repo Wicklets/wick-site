@@ -7,13 +7,16 @@
 */
 
 import React, {Fragment} from 'react';
+
 import {Row, Col} from 'reactstrap';
 import {Card, CardBody, CardTitle, CardImgOverlay} from 'reactstrap';
 import {Button} from 'reactstrap';
 import Img from 'react-image';
 import ResponsiveEmbed from 'react-responsive-embed';
+
 import dropdownopen from '../Images/DropdownArrow/dropdownopen.svg';
 import dropdownclose from '../Images/DropdownArrow/dropdownclose.svg';
+
 import '../scss_styles/LearnCard.scss';
 
 const LearnCard = ({title, body, image, link, launchEditor, useImage, useButtonRow, displayContent, toggleDisplayContent, onMouseEnter, onMouseLeave, overlayDisplayClass}) => (

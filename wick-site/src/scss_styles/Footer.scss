@@ -1,47 +1,54 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    HomePage.scss
+    Footer.scss
 
     Stylings for the Wick Footer
 */
 
-#Footer-container {
-    position: relative;
-}
+#Footer {
+    &-container {
+        position: relative;
+    }
 
-// Formatting Settings
-.Footer-row {
-    @media screen and (min-width: 576px) {
-        justify-content: center;
+    &-copyrightRow {
+        color: gray;
+    }
+
+    &-paddingTopRow {
+        padding-top: 160px;
+    }
+
+    &-paddingBottomRow {
+        padding-top: 12px;
     }
 }
 
-#Footer-paddingTopRow {
-    padding-top: 160px;
+.Footer {
+    // **NO CONTENT CURRENTLY, SO THIS IS NOT USED
+    &-content {
+        color: darkgray;
+        padding-bottom: 40px;
+    }
+
+    // **NO CONTENT CURRENTLY, SO THIS IS NOT USED
+    &-header {
+        font-weight: bold;
+    }
+
+    // based on screen size, center or left align
+    // the footer columns
+    // **NO CONTENT CURRENTLY, SO THIS IS NOT USED
+    &-row {
+        @media screen and (min-width: 576px) {
+            justify-content: center;
+        }
+    }
 }
 
-#Footer-paddingBottomRow {
-    padding-top: 12px;
-}
-
-// Text Settings
 .Footer-header,
 .Footer-content,
 #Footer-copyrightRow {
     text-align: left;
     font-size: 12px;
-}
-
-.Footer-header {
-    font-weight: bold;
-}
-
-.Footer-content {
-    color: darkgray;
-    padding-bottom: 40px;
-}
-
-#Footer-copyrightRow {
-    color: gray;
 }

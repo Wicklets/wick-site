@@ -7,7 +7,9 @@
 */
 
 import React, {Component} from 'react';
+
 import LearnPage from './LearnPage.js';
+
 import example1 from '../Images/Examples/example1.png';
 import example2 from '../Images/Examples/example2.png';
 

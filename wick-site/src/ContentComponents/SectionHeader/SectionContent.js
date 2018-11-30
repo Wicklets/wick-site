@@ -7,7 +7,9 @@
 */
 
 import React, {Fragment} from 'react';
+
 import {Row, Col} from 'reactstrap';
+
 import '../../scss_styles/SectionContent.scss';
 
 const SectionContent = ({title, includeUnderline, useSmallTitle, children}) => (

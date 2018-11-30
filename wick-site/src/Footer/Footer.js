@@ -7,11 +7,14 @@
 */
 
 import React from 'react';
+
 import {Container, Row, Col} from 'reactstrap';
+
 import InfiniteScrollImageContainer from '../InfiniteScrollImage/InfiniteScrollImageContainer.js';
 import footerimage from '../Images/Footer/footerimage.svg';
 import footerpaddingleft from '../Images/Footer/footerpaddingleft.svg';
 import footerpaddingright from '../Images/Footer/footerpaddingright.svg';
+
 import '../scss_styles/Footer.scss';
 
 const Footer = () => (

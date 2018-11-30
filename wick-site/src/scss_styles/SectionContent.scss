@@ -6,30 +6,32 @@
     Stylings page content accompanied by a section title
 */
 
-// Center the content of the page
-.SectionContent-row {
-    justify-content: center;
-}
+.SectionContent {
+    &-body,
+    &-smallBody {
+        font-size: 16px;
+    }
 
-.SectionContent-title {
-    font-size: 28px;
-}
+    // Center the content of the page
+    &-row {
+        justify-content: center;
+    }
 
-.SectionContent-smallTitle {
-    font-size: 24px;
-}
+    &-smallBody {
+        line-height: 20px;
+    }
 
-.SectionContent-body,
-.SectionContent-smallBody {
-    font-size: 16px;
-}
+    &-smallTitle {
+        font-size: 24px;
+    }
 
-.SectionContent-smallBody {
-    line-height: 20px;
-}
+    &-title {
+        font-size: 28px;
+    }
 
-.SectionContent-underline {
-    margin: 12px auto 16px;
-    width: 48px;
-    border: solid 2px #28a745;
+    &-underline {
+        margin: 12px auto 16px;
+        width: 48px;
+        border: solid 2px #28a745;
+    }
 }

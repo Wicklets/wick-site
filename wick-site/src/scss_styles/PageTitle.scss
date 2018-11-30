@@ -6,28 +6,30 @@
     Stylings for the Wick Page Title
 */
 
+#PageTitle {
+    &-buttonRow {
+        padding: 20px 0 40px;
+    }
+
+    // Button Space Placeholder
+    &-buttonSpacer {
+        height: 48px; // coded to match height of reactstrap button
+    }
+
+    &-titleRow {
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 40px;
+    }
+
+    &-subtitleRow {
+        font-size: 20px;
+    }
+}
+
 // Center the content of the page
-.PageTitle-row {
-    justify-content: center;
-}
-
-// Spacing
-#PageTitle-titleRow {
-    font-size: 40px;
-    line-height: 40px;
-    padding-bottom: 40px;
-}
-
-#PageTitle-buttonRow {
-    padding: 20px 0 40px;
-}
-
-// Font Settings
-#PageTitle-subtitleRow {
-    font-size: 20px;
-}
-
-// Button Space Placeholder
-.PageTitle-buttonSpacer {
-    height: 48px; // coded to match height of reactstrap button
+.PageTitle {
+    &-row {
+        justify-content: center;
+    }
 }

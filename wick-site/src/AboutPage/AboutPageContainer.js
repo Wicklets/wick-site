@@ -7,6 +7,7 @@
 */
 
 import React, {Component} from 'react';
+
 import AboutPage from './AboutPage.js';
 
 class AboutPageContainer extends Component {

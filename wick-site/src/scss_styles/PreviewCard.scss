@@ -6,29 +6,30 @@
     Stylings for the Wick Homepage Preview Cards
 */
 
-// Font settings
-.PreviewCard-title {
-    font-size: 16px;
-}
+.PreviewCard {
+    &-container {
+        border: 1px solid #28a745;
+    }
 
-.PreviewCard-text {
-    font-size: 12px;
-}
+    &-overlay,
+    &-disabled {
+        border-radius: 3px; // coded to fill the rounded space in the reactstrap card
+    }
 
-.PreviewCard-overlay,
-.PreviewCard-disabled {
-    border-radius: 3px; // coded to fill the rounded space in the reactstrap card
-}
+    &-disabled {
+        background-color: rgba(122, 122, 122, 0.25);
+    }
 
-.PreviewCard-overlay {
-    background-color: rgba(23, 162, 184, 0.5);
-    cursor: pointer;
-}
+    &-overlay {
+        background-color: rgba(23, 162, 184, 0.5);
+        cursor: pointer;
+    }
 
-.PreviewCard-disabled {
-    background-color: rgba(122, 122, 122, 0.25);
-}
+    &-text {
+        font-size: 12px;
+    }
 
-.PreviewCard-container {
-    border: 1px solid #28a745;
+    &-title {
+        font-size: 16px;
+    }
 }

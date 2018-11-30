@@ -7,6 +7,7 @@
 */
 
 import React, {Component} from 'react';
+
 import CommunityGallery from './CommunityGallery.js';
 
 class CommunityGalleryContainer extends Component {
@@ -20,7 +21,7 @@ class CommunityGalleryContainer extends Component {
 
     updateTextDisplay = () => {
         var width = window.innerWidth;
-        var showGridText = (width >= 768) // coded to match reactstrap cutoffs
+        var showGridText = (width >= 768) // coded to match reactstrap cutoff
         this.setState({showGridText});
     }
 

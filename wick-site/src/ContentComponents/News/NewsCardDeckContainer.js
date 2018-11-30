@@ -7,7 +7,9 @@
 */
 
 import React, {Component, Fragment} from 'react';
+
 import {CardDeck} from 'reactstrap';
+
 import NewsCard from './NewsCard.js';
 
 class NewsCardDeckContainer extends Component {

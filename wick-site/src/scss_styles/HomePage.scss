@@ -6,52 +6,52 @@
     Stylings for the Wick Homepage
 */
 
-// Center the content of the page
-.HomePage-row {
-    justify-content: center;
+#HomePage {
+    &-newsRow {
+        padding-bottom: 80px;
+    }
+
+    &-ourLatestRow {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 40px;
+    }
+
+    &-promoVideo {
+        width: 100%;
+    }
+
+    &-promoVideoRow {
+        padding: 40px 0;
+    }
+
+    &-supportRow {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    &-supportText {
+        font-size: 20px;
+    }
+
+    &-supportWick {
+        font-size: 40px;
+    }
 }
 
-#HomePage-supportRow {
-    flex-direction: column;
-    align-items: center;
-}
+.HomePage {
+    &-cardContainer {
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
 
-#HomePage-promoVideo {
-    width: 100%;
-}
+    // Center the content of the page
+    &-row {
+        justify-content: center;
+    }
 
-// Spacing settings for different rows of content
-#HomePage-promoVideoRow {
-    padding: 40px 0;
-}
-
-.HomePage-webpageButtonRow {
-    padding-bottom: 60px;
-}
-
-#HomePage-newsRow {
-    padding-bottom: 80px;
-}
-
-#HomePage-supportRow {
-    padding-bottom: 40px;
-}
-
-.HomePage-cardContainer,
-#HomePage-ourLatestRow {
-    padding-top: 20px;
-    padding-bottom: 20px
-}
-
-// Font settings
-#HomePage-ourLatestRow {
-    font-size: 40px;
-}
-
-#HomePage-supportWick {
-    font-size: 40px;
-}
-
-#HomePage-suportText {
-    font-size: 20px;
+    &-webpageButtonRow {
+        padding-bottom: 60px;
+    }
 }

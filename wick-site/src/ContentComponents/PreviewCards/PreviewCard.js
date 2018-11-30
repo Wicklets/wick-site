@@ -7,7 +7,9 @@
 */
 
 import React, {Fragment} from 'react';
+
 import {Card, CardImg, CardText, CardBody, CardTitle, CardImgOverlay} from 'reactstrap';
+
 import '../../scss_styles/PreviewCard.scss';
 
 const PreviewCard = ({title, body, image, isClickable, onClick, onMouseEnter, onMouseLeave, overlayDisplayClass}) => (

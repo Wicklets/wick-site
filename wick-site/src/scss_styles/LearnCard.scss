@@ -6,58 +6,60 @@
     Stylings for the Wick Learn Page Cards
 */
 
-// Center the content of the page
-.LearnCard-row {
-    justify-content: center;
-}
+.LearnCard {
+    &-body {
+        font-size: 16px;
+    }
 
-.LearnCard-title {
-    font-size: 20px;
-    margin-bottom: 0;
-}
+    &-contentContainer {
+        position: relative;
+        height: 100%;
+    }
 
-.LearnCard-body {
-    font-size: 16px;
-}
+    &-contentRow {
+        padding: 12px 0;
+    }
 
-.LearnCard-contentRow {
-    padding: 12px 0;
-}
+    &-dropdown {
+        height: 100%
+    }
 
-.LearnCard-editorButtonRow {
-    padding-bottom: 12px;
-}
+    &-editorButton {
+        position: absolute;
+        bottom: 0;
+    }
 
-.LearnCard-contentContainer {
-    position: relative;
-    height: 100%;
-}
+    &-editorButtonRow {
+        padding-bottom: 12px;
+    }
 
-.LearnCard-image {
-    width: 100%;
-}
+    &-image {
+        width: 100%;
+    }
 
-.LearnCard-editorButton {
-    position: absolute;
-    bottom: 0;
-}
+    &-overlay {
+        border-radius: 3px; // coded to fill the rounded space in the reactstrap card
+        background-color: rgba(23, 162, 184, 0.5);
+        cursor: pointer;
+    }
 
-.LearnCard-titleCard {
-    border: 1px solid #17a2b8;
-}
+    // Center the content of the page
+    &-row {
+        justify-content: center;
+    }
 
-.LearnCard-titleContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
+    &-titleCard {
+        border: 1px solid #17a2b8;
+    }
 
-.LearnCard-dropdown {
-    height: 100%
-}
+    &-titleContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
 
-.LearnCard-overlay {
-    border-radius: 3px; // coded to fill the rounded space in the reactstrap card
-    background-color: rgba(23, 162, 184, 0.5);
-    cursor: pointer;
+    &-title {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
 }

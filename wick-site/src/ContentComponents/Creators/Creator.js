@@ -7,8 +7,10 @@
 */
 
 import React from 'react';
+
 import {Col} from 'reactstrap';
 import Img from 'react-image';
+
 import '../../scss_styles/Creator.scss';
 
 const Creator = ({name, img, includeHeadshot}) => (

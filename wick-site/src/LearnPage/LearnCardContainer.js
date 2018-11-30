@@ -7,6 +7,7 @@
 */
 
 import React, {Component} from 'react';
+
 import LearnCard from './LearnCard.js';
 
 class LearnCardContainer extends Component {
@@ -22,7 +23,7 @@ class LearnCardContainer extends Component {
 
     updateButtonDisplay = () => {
         var width = window.innerWidth;
-        var useButtonRow = (width < 768) // code to match reactstrap cutoffs
+        var useButtonRow = (width < 768) // code to match reactstrap cutoff
         this.setState({useButtonRow});
     }
 

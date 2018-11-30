@@ -7,12 +7,15 @@
 */
 
 import React from 'react';
+
 import {Container, Row, Col} from 'reactstrap';
 import {Button} from 'reactstrap';
+
 import InfiniteScrollImageContainer from '../../InfiniteScrollImage/InfiniteScrollImageContainer.js';
 import wickworld from '../../Images/Header/wickworld.svg';
 import mountainpadding from '../../Images/Header/mountainpadding.svg';
 import forestpadding from '../../Images/Header/forestpadding.svg';
+
 import '../../scss_styles/PageTitle.scss';
 
 const PageTitle = ({title, showButton, showSubtitle, buttonLabel, onClick, children}) => (
@@ -35,7 +38,7 @@ const PageTitle = ({title, showButton, showSubtitle, buttonLabel, onClick, child
                         {buttonLabel}
                     </Button>
                 ) : (
-                    <div className="PageTitle-buttonSpacer" />
+                    <div id="PageTitle-buttonSpacer" />
                 )}
             </Col>
         </Row>

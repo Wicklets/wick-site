@@ -7,9 +7,11 @@
 */
 
 import React, {Fragment} from 'react';
+
 import HomePageContainer from './HomePage/HomePageContainer.js';
 import AboutPageContainer from './AboutPage/AboutPageContainer.js';
 import LearnPageContainer from './LearnPage/LearnPageContainer.js';
+
 import CommunityPageContainer from './CommunityPage/CommunityPageContainer.js'
 
 const Content = ({page}) => (

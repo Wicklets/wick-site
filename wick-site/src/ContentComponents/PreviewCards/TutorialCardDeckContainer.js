@@ -7,8 +7,11 @@
 */
 
 import React, {Component, Fragment} from 'react';
+
 import {CardDeck} from 'reactstrap';
+
 import PreviewCardContainer from './PreviewCardContainer.js';
+
 import tutorial1 from '../../Images/Tutorials/tutorial1.png';
 import tutorial2 from '../../Images/Tutorials/tutorial2.png';
 import comingsoon from '../../Images/Misc/comingsoon.png';
@@ -46,7 +49,7 @@ class TutorialCardDeckContainer extends Component {
 
     updateNumberCards = () => {
         var width = window.innerWidth;
-        var numberCards = (width > 575 && width < 992) ? 2 : 3
+        var numberCards = (width > 575 && width < 992) ? 2 : 3 // coded to match reactstrap cutoff
         this.setState({numberCards});
     }
 

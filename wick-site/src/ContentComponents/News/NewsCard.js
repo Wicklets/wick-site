@@ -7,8 +7,10 @@
 */
 
 import React, {Fragment} from 'react';
+
 import {Card, CardBody, CardTitle, CardText} from 'reactstrap';
 import {Button} from 'reactstrap';
+
 import '../../scss_styles/NewsCard.scss';
 
 const NewsCard = ({title, date, hasExternalLink, link}) => (

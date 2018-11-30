@@ -7,12 +7,14 @@
 */
 
 import React from 'react';
+
 import Img from 'react-image';
+
 import '../scss_styles/InfiniteScrollImage.scss';
 
 const InfiniteScrollImage = ({mainImg, leftImg, rightImg, numberPadding, footer}) => (
     <div className="InfiniteScrollImage-container">
-        <div className={(footer ? "InfiniteScrollImage-image--footer" : "InfiniteScrollImage-image--header")}>
+        <div className={(footer ? "InfiniteScrollImage-imageFooter" : "InfiniteScrollImage-imageHeader")}>
         {([...Array(numberPadding).keys()]).map(elem => (
             <Img key={elem} src={leftImg} />
         ))}
