@@ -17,7 +17,7 @@ class HeaderContainer extends Component {
 
         // Website current page
         this.state = {
-            backgroundAnimationClass: "",
+            backgroundAnimationClass: "Header-background Header-background--hidden",
             isDropdownOpen: false,
             pageJustLaunched: true
         };
@@ -30,7 +30,7 @@ class HeaderContainer extends Component {
                 pageJustLaunched: false
             });
         } else if (this.state.pageJustLaunched) {
-            this.setState({backgroundAnimationClass: ""});
+            this.setState({backgroundAnimationClass: "Header-background Header-background--hidden"});
         } else {
             this.setState({backgroundAnimationClass: "slideOutUp animated Header-background"});
         }

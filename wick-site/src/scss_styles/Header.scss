@@ -30,6 +30,10 @@
         z-index: -1;
     }
 
+    &-background--hidden {
+        display: none;
+    }
+
     &-brand--wide,
     &-brand--narrow {
         color: green !important;
