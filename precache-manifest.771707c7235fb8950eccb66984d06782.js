@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/wick-site/static/media/facebook.015efa5e.png"
   },
   {
-    "revision": "52f2382d7f13d18e6961",
+    "revision": "16865445654dbf654b55",
     "url": "/wick-site/static/css/main.29acb02e.chunk.css"
   },
   {
@@ -68,8 +68,8 @@ self.__precacheManifest = [
     "url": "/wick-site/static/media/tutorial2.a9d8712f.png"
   },
   {
-    "revision": "52f2382d7f13d18e6961",
-    "url": "/wick-site/static/js/main.52f2382d.chunk.js"
+    "revision": "16865445654dbf654b55",
+    "url": "/wick-site/static/js/main.16865445.chunk.js"
   },
   {
     "revision": "4b514fbf346f8363eed03955504c0a93",
@@ -136,7 +136,7 @@ self.__precacheManifest = [
     "url": "/wick-site/static/css/1.a38437c4.chunk.css"
   },
   {
-    "revision": "12bc610595813b8b1f84b92c37e8f4d5",
+    "revision": "0dbf363ac6267095f8c8685dac2b376b",
     "url": "/wick-site/index.html"
   }
 ];
