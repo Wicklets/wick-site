@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="124px" viewBox="0 0 120 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 29</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="120" height="124"></rect>
+    </defs>
+    <g id="V2-Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy" transform="translate(-904.000000, -2547.000000)">
+            <g id="Group-29" transform="translate(904.000000, 2547.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill-opacity="0.01" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <g mask="url(#mask-2)" fill="#1EE29A" fill-opacity="0.7" id="Rectangle-4" opacity="0.998811141">
+                    <g transform="translate(-1047.000000, -1.000000)">
+                        <path d="M143,31.1143056 C238.854916,31.1143056 320.075806,31.1143056 386.662671,31.1143056 C486.542967,31.1143056 578.226192,9.09925819 718.170258,2.16553681 C858.114325,-4.76818458 900.799513,15.409733 1031.12314,15.409733 C1118.00556,15.409733 1166.6542,15.409733 1177.06906,15.409733 L1280,306 L0,306 L143,31.1143056 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
