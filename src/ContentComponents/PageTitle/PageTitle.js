@@ -25,8 +25,8 @@ const PageTitle = ({title, showButton, showSubtitle, buttonLabel, onClick, child
             leftImg={mountainpadding}
             rightImg={forestpadding}
         />
-        <Row id="PageTitle-titleRow" className="fadeIn animated PageTitle-row">{title}</Row>
-        <Row id="PageTitle-buttonRow" className="fadeIn animated PageTitle-row">
+        <Row id="PageTitle-titleRow" className="fadeIn animated Wick-row">{title}</Row>
+        <Row id="PageTitle-buttonRow" className="fadeIn animated Wick-row">
             <Col xs="7" sm="5" md="4" lg="3" xl="2">
                 {showButton ? (
                     <Button
@@ -43,7 +43,7 @@ const PageTitle = ({title, showButton, showSubtitle, buttonLabel, onClick, child
             </Col>
         </Row>
         {showSubtitle && (
-            <Row id="PageTitle-subtitleRow" className="fadeIn animated PageTitle-row">
+            <Row id="PageTitle-subtitleRow" className="fadeIn animated Wick-row">
                 <Col sm="9" lg="6">
                     {children}
                 </Col>

@@ -29,12 +29,12 @@ const AboutPage = () => (
         <SectionContent title="What is Wick Editor?" includeUnderline>
             The Wick Editor is a free and open-source tool for creating games, animations, and everything in-between. It's designed to be the most accessible tool for creating multimedia projects.
         </SectionContent>
-        <Row id="AboutPage-editorPreviewRow" className="AboutPage-row">
+        <Row id="AboutPage-editorPreviewRow" className="Wick-row">
             <Col xs="12" lg="9">
                 <Img src={editorpreview} id="AboutPage-editorPreviewImage" />
             </Col>
         </Row>
-        <Row id="AboutPage-editorTextRow" className="AboutPage-row">
+        <Row id="AboutPage-editorTextRow" className="Wick-row">
             <Col sm="9" lg="6">
                 The Wick Editor is a hybrid of an animation tool and a coding environment, heavily inspired by similar tools such as Flash, HyperCard, and Scratch. It was developed in response to a growing need for such a tool for the modern web. You can read more about the creation of the Wick Editor here.
             </Col>
@@ -69,7 +69,7 @@ const AboutPage = () => (
         >
             Editor Interface design by
         </CreatorsRow>
-        <Row id="AboutPage-cannonImageRow" className="AboutPage-row">
+        <Row id="AboutPage-cannonImageRow" className="Wick-row">
             <Img src={cannon} />
         </Row>
         <SectionContent title="special thanks to">

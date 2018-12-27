@@ -24,7 +24,7 @@ const CommunityPage = () => (
         <SectionContent title="creators" includeUnderline>
             Check out what people are making!
         </SectionContent>
-        <Row id="CommunityPage-galleryContainer" className="CommunityPage-row">
+        <Row id="CommunityPage-galleryContainer" className="Wick-row">
             <Col sm="9" md="12" lg="9">
                 <CommunityGalleryContainer />
             </Col>

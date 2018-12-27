@@ -16,10 +16,10 @@ import '../../scss_styles/CreatorsRow.scss';
 
 const CreatorsRow = ({people, includeHeadshot, children}) => (
     <Fragment>
-        <Row className="CreatorsRow-description CreatorsRow-row">
+        <Row className="CreatorsRow-description Wick-row">
             {children}
         </Row>
-        <Row className="CreatorsRow-people CreatorsRow-row">
+        <Row className="CreatorsRow-people Wick-row">
             {people.map(person => (
                 <Creator
                     key={person.name}

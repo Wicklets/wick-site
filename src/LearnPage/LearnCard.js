@@ -21,7 +21,7 @@ import '../scss_styles/LearnCard.scss';
 
 const LearnCard = ({title, body, image, link, launchEditor, useImage, useButtonRow, displayContent, toggleDisplayContent, onMouseEnter, onMouseLeave, overlayDisplayClass}) => (
     <Fragment>
-        <Row className="LearnCard-row">
+        <Row className="Wick-row">
             <Col sm="12">
                 <Card className="LearnCard-titleCard" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={toggleDisplayContent}>
                     <CardBody>
@@ -38,7 +38,7 @@ const LearnCard = ({title, body, image, link, launchEditor, useImage, useButtonR
         </Row>
         {displayContent && (
             <Fragment>
-                <Row className="zoomInDown animated LearnCard-contentRow LearnCard-row">
+                <Row className="zoomInDown animated LearnCard-contentRow Wick-row">
                     <Col sm="6">
                     <div className="LearnCard-contentContainer">
                         <div>{body}</div>

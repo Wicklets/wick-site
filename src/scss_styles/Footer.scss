@@ -35,15 +35,6 @@
     &-header {
         font-weight: bold;
     }
-
-    // based on screen size, center or left align
-    // the footer columns
-    // **NO CONTENT CURRENTLY, SO THIS IS NOT USED
-    &-row {
-        @media screen and (min-width: 576px) {
-            justify-content: center;
-        }
-    }
 }
 
 .Footer-header,

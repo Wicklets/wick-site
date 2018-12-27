@@ -20,7 +20,7 @@ import email from '../../Images/SocialMedia/email.png';
 import '../../scss_styles/ConnectBar.scss';
 
 const ConnectBar = () => (
-    <Row className="ConnectBar-containerRow ConnectBar-row">
+    <Row className="ConnectBar-containerRow Wick-row">
         <Col xs="2" lg="1">
             <a href="https://www.facebook.com/wickeditor/" target="_blank" rel="noopener noreferrer">
                 <Img src={facebook} className="ConnectBar-icon" />

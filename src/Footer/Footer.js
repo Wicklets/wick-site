@@ -26,13 +26,13 @@ const Footer = () => (
             footer
         />
         <Container>
-            <Row id="Footer-paddingTopRow" className="Footer-row" />
-            <Row id="Footer-copyrightRow" className="Footer-row">
+            <Row id="Footer-paddingTopRow" className="Wick-row" />
+            <Row id="Footer-copyrightRow" className="Wick-row">
                 <Col md="9">
                     © 2018, Wicklets, LLC. All Rights Reserved.
                 </Col>
             </Row>
-            <Row id="Footer-paddingBottomRow" className="Footer-row" />
+            <Row id="Footer-paddingBottomRow" className="Wick-row" />
         </Container>
     </div>
 );

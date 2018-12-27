@@ -21,7 +21,7 @@ const LearnPage = ({tutorials, examples}) => (
         <SectionContent title="Explore Examples" useSmallTitle>
             Here are a few examples to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
         </SectionContent>
-        <Row className="LearnPage-contentRow LearnPage-row">
+        <Row className="LearnPage-contentRow Wick-row">
             <Col xs="12" lg="9">
                 {examples.map(example => (
                     <LearnCardContainer key={example.title} {...example} />
@@ -32,7 +32,7 @@ const LearnPage = ({tutorials, examples}) => (
         <SectionContent title="Explore Tutorials" useSmallTitle>
             Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
         </SectionContent>
-        <Row className="LearnPage-contentRow LearnPage-row">
+        <Row className="LearnPage-contentRow Wick-row">
             <Col xs="12" lg="9">
                 {tutorials.map(tutorial => (
                     <LearnCardContainer key={tutorial.title} {...tutorial} />
