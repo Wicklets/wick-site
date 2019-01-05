@@ -8,38 +8,34 @@
 
 #Footer {
     &-container {
+        display: flex;
+        justify-content: center;
         position: relative;
+        color: white;
+        font-size: 12px;
+        background-color: lightgreen;
     }
 
-    &-copyrightRow {
-        color: gray;
+    &-copyright {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding-right: 24px;
     }
 
-    &-paddingTopRow {
+    &-content,
+    &-copyright {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    &-padding {
         padding-top: 160px;
-    }
-
-    &-paddingBottomRow {
-        padding-top: 12px;
     }
 }
 
 .Footer {
-    // **NO CONTENT CURRENTLY, SO THIS IS NOT USED
-    &-content {
-        color: darkgray;
-        padding-bottom: 40px;
+    &-item {
+        padding: 0 28px;
     }
-
-    // **NO CONTENT CURRENTLY, SO THIS IS NOT USED
-    &-header {
-        font-weight: bold;
-    }
-}
-
-.Footer-header,
-.Footer-content,
-#Footer-copyrightRow {
-    text-align: left;
-    font-size: 12px;
 }

@@ -9,7 +9,7 @@
 import React, {Component} from 'react';
 
 import WickRouterContainer from './site_components/router/WickRouterContainer.js';
-import Footer from './Footer/Footer.js';
+import Footer from './site_components/footer/Footer.js';
 
 import './scss_styles/Wick.scss';
 
