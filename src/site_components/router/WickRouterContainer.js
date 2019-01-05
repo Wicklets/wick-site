@@ -1,7 +1,7 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    HeaderContainer.js
+    WickRouterContainer.js
 
     Container Component for Navigation Bar for website
     Determines logic for showing/hiding navbar container
@@ -9,15 +9,15 @@
 
 import React, {Component} from 'react';
 
-import Header from './Header.js';
+import WickRouter from './WickRouter.js';
 
-class HeaderContainer extends Component {
+class WickRouterContainer extends Component {
     constructor(props) {
         super(props);
 
         // Website current page
         this.state = {
-            backgroundAnimationClass: "Header-background Header-background--hidden",
+            backgroundAnimationClass: "WickRouter-background WickRouter-background--hidden",
             isDropdownOpen: false,
             pageJustLaunched: true
         };
@@ -26,13 +26,13 @@ class HeaderContainer extends Component {
     toggleHeaderContainer = () => {
         if (window.scrollY > 48) {
             this.setState({
-                backgroundAnimationClass: "slideInDown animated Header-background",
+                backgroundAnimationClass: "slideInDown animated WickRouter-background",
                 pageJustLaunched: false
             });
         } else if (this.state.pageJustLaunched) {
-            this.setState({backgroundAnimationClass: "Header-background Header-background--hidden"});
+            this.setState({backgroundAnimationClass: "WickRouter-background WickRouter-background--hidden"});
         } else {
-            this.setState({backgroundAnimationClass: "slideOutUp animated Header-background"});
+            this.setState({backgroundAnimationClass: "slideOutUp animated WickRouter-background"});
         }
     }
 
@@ -59,7 +59,7 @@ class HeaderContainer extends Component {
 
     render() {
         return (
-            <Header
+            <WickRouter
                 {...this.props}
                 onClickChangePage={this.handleClickChangePage}
                 onClickToggleDropdown={this.toggleDropdown}
@@ -71,4 +71,4 @@ class HeaderContainer extends Component {
     }
 };
 
-export default HeaderContainer;
+export default WickRouterContainer;

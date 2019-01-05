@@ -3,12 +3,13 @@
     WickEditor Website
     AboutPageContainer.js
 
-    Container for About page (allows us to scroll back to top on page change)
+    Container for About page
 */
 
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 
 import AboutPage from './AboutPage.js';
+import Header from '../../site_components/header/Header.js';
 
 class AboutPageContainer extends Component {
     componentDidMount = () => {
@@ -17,7 +18,13 @@ class AboutPageContainer extends Component {
 
     render() {
         return (
-            <AboutPage />
+            <Fragment>
+                <Header
+                    title="about us"
+                    buttonLabel=""
+                />
+                <AboutPage />
+            </Fragment>
         );
     }
 };

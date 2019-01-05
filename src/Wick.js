@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 
-import HeaderContainer from './NavBar/HeaderContainer.js';
+import WickRouterContainer from './site_components/router/WickRouterContainer.js';
 import Footer from './Footer/Footer.js';
 
 import './scss_styles/Wick.scss';
@@ -28,7 +28,7 @@ class Wick extends Component {
     render() {
         return(
             <div className="Wick">
-                <HeaderContainer
+                <WickRouterContainer
                     page={this.state.page}
                     onClickChangePage={this.handleClick}
                 />

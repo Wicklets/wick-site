@@ -12,13 +12,13 @@ import {Container, Row, Col} from 'reactstrap';
 import {Button} from 'reactstrap';
 import ResponsiveEmbed from 'react-responsive-embed';
 
-import ExampleCardDeckContainer from '../ContentComponents/PreviewCards/ExampleCardDeckContainer.js';
-import TutorialCardDeckContainer from '../ContentComponents/PreviewCards/TutorialCardDeckContainer.js';
-import NewsCardDeckContainer from '../ContentComponents/News/NewsCardDeckContainer.js';
-import UpdateTab from '../ContentComponents/VersionUpdate/UpdateTab.js';
-import SectionContent from '../ContentComponents/SectionHeader/SectionContent.js';
+import ExampleCardDeckContainer from '../../ContentComponents/PreviewCards/ExampleCardDeckContainer.js';
+import TutorialCardDeckContainer from '../../ContentComponents/PreviewCards/TutorialCardDeckContainer.js';
+import NewsCardDeckContainer from '../../ContentComponents/News/NewsCardDeckContainer.js';
+import UpdateTab from '../../ContentComponents/VersionUpdate/UpdateTab.js';
+import SectionContent from '../../ContentComponents/SectionHeader/SectionContent.js';
 
-import '../scss_styles/HomePage.scss';
+import '../../scss_styles/HomePage.scss';
 
 const HomePage = () => (
     <Container className="fadeIn animated">

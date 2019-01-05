@@ -3,15 +3,16 @@
     WickEditor Website
     LearnPageContainer.js
 
-    Container for Learn page (allows us to scroll back to top on page change)
+    Container for Learn page
 */
 
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 
 import LearnPage from './LearnPage.js';
+import Header from '../../site_components/header/Header.js';
 
-import example1 from '../Images/Examples/example1.png';
-import example2 from '../Images/Examples/example2.png';
+import example1 from '../../Images/Examples/example1.png';
+import example2 from '../../Images/Examples/example2.png';
 
 class LearnPageContainer extends Component {
     constructor(props) {
@@ -58,7 +59,18 @@ class LearnPageContainer extends Component {
 
     render() {
         return (
-            <LearnPage {...this.state} />
+            <Fragment>
+                <Header
+                    title="get started"
+                    showButton
+                    showSubtitle
+                    buttonLabel="try the tutorial"
+                    onClick={() => window.open("http://wickeditor.com/#tutorials")}
+                >
+                    Hit the ground running with the basics of wick editor by trying out our starter tutorial.
+                </Header>
+                <LearnPage {...this.state} />
+            </Fragment>
         );
     }
 };

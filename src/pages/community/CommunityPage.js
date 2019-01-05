@@ -10,10 +10,10 @@ import React from 'react';
 
 import {Container, Row, Col} from 'reactstrap';
 
-import SectionContent from '../ContentComponents/SectionHeader/SectionContent.js';
-import CommunityGalleryContainer from './CommunityGalleryContainer.js';
+import SectionContent from '../../ContentComponents/SectionHeader/SectionContent.js';
+import CommunityGalleryContainer from '../../CommunityPage/CommunityGalleryContainer.js';
 
-import '../scss_styles/CommunityPage.scss';
+import '../../scss_styles/CommunityPage.scss';
 
 const CommunityPage = () => (
     <Container className="fadeIn animated">
