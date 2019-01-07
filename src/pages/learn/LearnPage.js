@@ -10,7 +10,7 @@ import React from 'react';
 
 import {Container, Row, Col} from 'reactstrap';
 
-import SectionContent from '../../ContentComponents/SectionHeader/SectionContent.js';
+import ContentSection from '../../page_components/content_section/ContentSection.js';
 import LearnCardContainer from '../../LearnPage/LearnCardContainer.js';
 
 import '../../scss_styles/LearnPage.scss';
@@ -18,9 +18,9 @@ import '../../scss_styles/LearnPage.scss';
 const LearnPage = ({tutorials, examples}) => (
     <Container className="fadeIn animated">
         <Row className="LearnPage-spacerRow" />
-        <SectionContent title="Explore Examples" useSmallTitle>
+        <ContentSection title="Explore Examples" useSmallTitle>
             Here are a few examples to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
-        </SectionContent>
+        </ContentSection>
         <Row className="LearnPage-contentRow Wick-row">
             <Col xs="12" lg="9">
                 {examples.map(example => (
@@ -29,9 +29,9 @@ const LearnPage = ({tutorials, examples}) => (
             </Col>
         </Row>
         <Row className="LearnPage-spacerRow" />
-        <SectionContent title="Explore Tutorials" useSmallTitle>
+        <ContentSection title="Explore Tutorials" useSmallTitle>
             Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
-        </SectionContent>
+        </ContentSection>
         <Row className="LearnPage-contentRow Wick-row">
             <Col xs="12" lg="9">
                 {tutorials.map(tutorial => (
