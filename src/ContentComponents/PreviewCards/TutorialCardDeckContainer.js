@@ -10,10 +10,9 @@ import React, {Component, Fragment} from 'react';
 
 import {CardDeck} from 'reactstrap';
 
-import PreviewCardContainer from './PreviewCardContainer.js';
+import WickCardContainer from '../../pattern_library/card/WickCardContainer.js';
 
-import tutorial1 from '../../Images/Tutorials/tutorial1.png';
-import tutorial2 from '../../Images/Tutorials/tutorial2.png';
+import test from '../../Images/Tutorials/testworld.svg';
 import comingsoon from '../../Images/Misc/comingsoon.png';
 
 class TutorialCardDeckContainer extends Component {
@@ -25,22 +24,19 @@ class TutorialCardDeckContainer extends Component {
                 {
                     title: "Getting Started with Wick Editor",
                     body: "In this tutorial, we go over how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
-                    image: tutorial1,
-                    isClickable: true,
+                    image: test,
                     onClick: () => window.open("https://www.youtube.com/watch?v=bhN2VxyWJiU")
                 },
                 {
                     title: "Sounds in Wick Editor",
                     body: "Here's a tutorial to get you started using sounds in your wickeditor.com projects. I show you how to add sounds to the timeline as well as with code!",
-                    image: tutorial2,
-                    isClickable: true,
+                    image: test,
                     onClick: () => window.open("https://www.youtube.com/watch?v=T08B0KkEAZA")
                 },
                 {
                     title: "More Tutorials Coming Soon!",
                     body: "Check back soon for more awesome Wick Editor Tutorials!",
                     image: comingsoon,
-                    isClickable: false
                 }
             ],
             numberCards: 3
@@ -67,7 +63,7 @@ class TutorialCardDeckContainer extends Component {
             <Fragment>
                 <CardDeck>
                     {this.state.tutorials.slice(0, this.state.numberCards).map(tutorial => (
-                        <PreviewCardContainer key={tutorial.title} {...tutorial} />
+                        <WickCardContainer key={tutorial.title} {...tutorial} />
                     ))}
                 </CardDeck>
             </Fragment>

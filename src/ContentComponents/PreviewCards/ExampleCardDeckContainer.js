@@ -10,7 +10,7 @@ import React, {Component, Fragment} from 'react';
 
 import {CardDeck} from 'reactstrap';
 
-import PreviewCardContainer from './PreviewCardContainer.js';
+import WickCardContainer from '../../pattern_library/card/WickCardContainer.js';
 
 import example1 from '../../Images/Examples/example1.png';
 import example2 from '../../Images/Examples/example2.png';
@@ -67,7 +67,7 @@ class ExampleCardDeckContainer extends Component {
             <Fragment>
                 <CardDeck>
                     {this.state.examples.slice(0, this.state.numberCards).map(example => (
-                        <PreviewCardContainer key={example.title} {...example} />
+                        <WickCardContainer key={example.title} {...example} />
                     ))}
                 </CardDeck>
             </Fragment>

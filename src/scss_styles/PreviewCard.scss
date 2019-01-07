@@ -9,20 +9,18 @@
 .PreviewCard {
     &-container {
         border: 1px solid #28a745;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+        }
     }
 
-    &-overlay,
-    &-disabled {
+    &-content {
+        top: auto;
+        background-color: white;
+        overflow: hidden;
         border-radius: 3px; // coded to fill the rounded space in the reactstrap card
-    }
-
-    &-disabled {
-        background-color: rgba(122, 122, 122, 0.25);
-    }
-
-    &-overlay {
-        background-color: rgba(23, 162, 184, 0.5);
-        cursor: pointer;
     }
 
     &-text {
@@ -31,5 +29,9 @@
 
     &-title {
         font-size: 16px;
+
+        &--collapsed {
+            margin: 0;
+        }
     }
 }
