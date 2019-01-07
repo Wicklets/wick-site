@@ -12,7 +12,7 @@ import {Row, Col} from 'reactstrap';
 
 import '../../scss_styles/ContentSection.scss';
 
-const ContentSection = ({title, text, useSmallTitle, includeUnderline}) => (
+const ContentSection = ({title, text, useSmallTitle, includeUnderline, children}) => (
     <Fragment>
         <Row className={(useSmallTitle ? "ContentSection-smallTitle" : "ContentSection-title") + " Wick-row"}>
             {title}
@@ -27,6 +27,7 @@ const ContentSection = ({title, text, useSmallTitle, includeUnderline}) => (
                 </Col>
             </Row>
         )}
+        {children}
     </Fragment>
 );
 

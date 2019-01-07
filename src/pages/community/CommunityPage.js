@@ -22,18 +22,20 @@ const CommunityPage = () => (
             text="See what all the buzz is about and chat with fellow wick users for tips, tricks, and inspiration on your next project."
             includeUnderline
         />
+
         <Row className="CommunityPage-spacerRow" />
+
         <ContentSection
             title="creators"
             text="Check out what people are making!"
             includeUnderline
         >
+            <Row id="CommunityPage-galleryContainer" className="Wick-row">
+                <Col sm="9" md="12" lg="9">
+                    <CommunityGalleryContainer />
+                </Col>
+            </Row>
         </ContentSection>
-        <Row id="CommunityPage-galleryContainer" className="Wick-row">
-            <Col sm="9" md="12" lg="9">
-                <CommunityGalleryContainer />
-            </Col>
-        </Row>
     </Container>
 );
 
