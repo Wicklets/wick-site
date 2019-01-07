@@ -14,10 +14,10 @@ import Creator from './Creator.js';
 
 import '../../scss_styles/CreatorsRow.scss';
 
-const CreatorsRow = ({people, role, includeHeadshot}) => (
+const CreatorsRow = ({people, title, includeHeadshot}) => (
     <Fragment>
         <Row className="CreatorsRow-description Wick-row">
-            {role}
+            {title}
         </Row>
         <Row className="CreatorsRow-people Wick-row">
             {people.map(person => (

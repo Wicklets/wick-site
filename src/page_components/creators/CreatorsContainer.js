@@ -22,7 +22,7 @@ const CreatorsContainer = () => (
                 [{name: "Zach Rispoli", img: zachrispoli},
                  {name: "Luca Damasco", img: lucadamasco}]
             }
-            role="The Wick Editor was created and is led by"
+            title="The Wick Editor was created and is led by"
             includeHeadshot
         />
 
@@ -31,7 +31,7 @@ const CreatorsContainer = () => (
                 [{name: "Anna Gusman", img: annagusman},
                  {name: "Corey Emery", img: coreyemery}]
             }
-            role="Brand and web design by"
+            title="Brand and web design by"
             includeHeadshot
         />
 
@@ -41,7 +41,7 @@ const CreatorsContainer = () => (
                  {name: "Cameron Burgess"},
                  {name: "Gautam Bose"}]
             }
-            role="Editor Interface design by"
+            title="Editor Interface design by"
         />
     </Fragment>
 );

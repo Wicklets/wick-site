@@ -8,44 +8,34 @@
 
 import React from 'react';
 
-import {Row, Col} from 'reactstrap';
+import {Row} from 'reactstrap';
 import Img from 'react-image';
 
-import facebook from '../../Images/SocialMedia/facebook.png';
-import twitter from '../../Images/SocialMedia/twitter.png';
-import instagram from '../../Images/SocialMedia/instagram.png';
-import snapchat from '../../Images/SocialMedia/snapchat.png';
-import email from '../../Images/SocialMedia/email.png';
+import facebook from '../../Images/SocialMedia/facebook.svg';
+import twitter from '../../Images/SocialMedia/twitter.svg';
+import instagram from '../../Images/SocialMedia/instagram.svg';
+import youtube from '../../Images/SocialMedia/youtube.svg';
+import patreon from '../../Images/SocialMedia/patreon.svg';
 
 import '../../scss_styles/ConnectBar.scss';
 
 const ConnectBar = () => (
     <Row className="ConnectBar-containerRow Wick-row">
-        <Col xs="2" lg="1">
-            <a href="https://www.facebook.com/wickeditor/" target="_blank" rel="noopener noreferrer">
-                <Img src={facebook} className="ConnectBar-icon" />
-            </a>
-        </Col>
-        <Col xs="2" lg="1">
-            <a href="https://twitter.com/wickeditor" target="_blank" rel="noopener noreferrer">
-                <Img src={twitter} className="ConnectBar-icon" />
-            </a>
-        </Col>
-        <Col xs="2" lg="1">
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <Img src={instagram} className="ConnectBar-icon" />
-            </a>
-        </Col>
-        <Col xs="2" lg="1">
-            <a href="https://www.snapchat.com/" target="_blank" rel="noopener noreferrer">
-                <Img src={snapchat} className="ConnectBar-icon" />
-            </a>
-        </Col>
-        <Col xs="2" lg="1">
-            <a href="mailto:contact@wickeditor.com">
-                <Img src={email} className="ConnectBar-icon" />
-            </a>
-        </Col>
+        <a className="ConnectBar-iconContainer" href="https://www.facebook.com/wickeditor/" target="_blank" rel="noopener noreferrer">
+            <Img src={facebook} className="ConnectBar-icon" />
+        </a>
+        <a className="ConnectBar-iconContainer" href="https://twitter.com/wickeditor" target="_blank" rel="noopener noreferrer">
+            <Img src={twitter} className="ConnectBar-icon" />
+        </a>
+        <a className="ConnectBar-iconContainer" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <Img src={instagram} className="ConnectBar-icon" />
+        </a>
+        <a className="ConnectBar-iconContainer" href="https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg" target="_blank" rel="noopener noreferrer">
+            <Img src={youtube} className="ConnectBar-icon" />
+        </a>
+        <a className="ConnectBar-iconContainer" href="https://www.patreon.com/WickEditor" target="_blank" rel="noopener noreferrer">
+            <Img src={patreon} className="ConnectBar-icon" />
+        </a>
     </Row>
 );
 
