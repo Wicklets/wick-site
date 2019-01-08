@@ -14,7 +14,7 @@ import {Button} from 'reactstrap';
 import ExampleCardDeckContainer from '../../ContentComponents/PreviewCards/ExampleCardDeckContainer.js';
 import TutorialCardDeckContainer from '../../ContentComponents/PreviewCards/TutorialCardDeckContainer.js';
 import NewsCardDeckContainer from '../../ContentComponents/News/NewsCardDeckContainer.js';
-import UpdateTab from '../../ContentComponents/VersionUpdate/UpdateTab.js';
+import UpdateCard from '../../page_components/update/UpdateCard.js';
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import {WickLargeSpacer, WickSmallSpacer} from '../../pattern_library/spacers/WickSpacers.js';
 import Embed from '../../pattern_library/embed/WickEmbed.js';
@@ -25,9 +25,7 @@ import '../../scss_styles/HomePage.scss';
 const HomePage = () => (
     <Container className="fadeIn animated">
         <Embed url="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
-
         <WickSmallSpacer />
-
         <Title>our latest</Title>
 
         <ContentSection
@@ -85,11 +83,7 @@ const HomePage = () => (
             useSmallTitle
             includeUnderline
         >
-            <Row className="Wick-row">
-                <Col md="9">
-                    <UpdateTab />
-                </Col>
-            </Row>
+            <UpdateCard />
             <Row className="Wick-row">
                 <Col md="9">
                     <NewsCardDeckContainer />
