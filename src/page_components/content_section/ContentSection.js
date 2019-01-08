@@ -14,9 +14,11 @@ import '../../scss_styles/ContentSection.scss';
 
 const ContentSection = ({title, text, useSmallTitle, includeUnderline, children}) => (
     <Fragment>
-        <Row className={(useSmallTitle ? "ContentSection-smallTitle" : "ContentSection-title") + " Wick-row"}>
-            {title}
-        </Row>
+        {title && (
+            <Row className={(useSmallTitle ? "ContentSection-smallTitle" : "ContentSection-title") + " Wick-row"}>
+                {title}
+            </Row>
+        )}
         {includeUnderline && (
             <Row className={(useSmallTitle ? "ContentSection-smallUnderline" : "ContentSection-underline") + " Wick-row"} />
         )}
