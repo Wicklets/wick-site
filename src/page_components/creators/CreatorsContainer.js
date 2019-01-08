@@ -10,10 +10,10 @@ import React, {Fragment} from 'react';
 
 import CreatorsRow from './CreatorsRow.js';
 
-import coreyemery from '../../Images/People/CoreyEmery.jpg';
-import lucadamasco from '../../Images/People/LucaDamasco.jpg';
-import zachrispoli from '../../Images/People/ZachRispoli.png';
-import annagusman from '../../Images/People/AnnaGusman.jpeg';
+import coreyemery from '../../Images/People/CoreyEmery.svg';
+import lucadamasco from '../../Images/People/LucaDamasco.svg';
+import zachrispoli from '../../Images/People/ZachRispoli.svg';
+import annagusman from '../../Images/People/AnnaGusman.svg';
 
 const CreatorsContainer = () => (
     <Fragment>
