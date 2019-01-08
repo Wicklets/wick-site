@@ -12,7 +12,6 @@ import {Container, Row, Col} from 'reactstrap';
 import Img from 'react-image';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
-import ConnectBar from '../../ContentComponents/SocialMedia/ConnectBar.js';
 import CreatorsContainer from '../../page_components/creators/CreatorsContainer'
 import editorpreview from '../../Images/Misc/editorpreview.svg';
 
