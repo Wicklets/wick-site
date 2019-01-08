@@ -7,22 +7,13 @@
 */
 
 #HomePage {
-    &-newsRow {
-        padding-bottom: 80px;
-    }
-
     &-ourLatestRow {
-        padding-top: 20px;
         padding-bottom: 20px;
         font-size: 40px;
     }
 
     &-promoVideo {
         width: 100%;
-    }
-
-    &-promoVideoRow {
-        padding: 40px 0;
     }
 
     &-supportRow {
@@ -44,9 +35,5 @@
     &-cardContainer {
         padding-top: 20px;
         padding-bottom: 20px
-    }
-
-    &-webpageButtonRow {
-        padding-bottom: 60px;
     }
 }

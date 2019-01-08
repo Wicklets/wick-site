@@ -12,6 +12,7 @@ import {Container, Row, Col} from 'reactstrap';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import CommunityGalleryContainer from '../../CommunityPage/CommunityGalleryContainer.js';
+import {WickSmallSpacer} from '../../pattern_library/spacers/WickSpacers.js';
 
 import '../../scss_styles/CommunityPage.scss';
 
@@ -23,7 +24,7 @@ const CommunityPage = () => (
             includeUnderline
         />
 
-        <Row className="CommunityPage-spacerRow" />
+        <WickSmallSpacer />
 
         <ContentSection
             title="creators"

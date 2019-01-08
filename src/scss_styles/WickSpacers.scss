@@ -1,0 +1,17 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    WickSpacers.scss
+
+    Stylings for spacer components
+*/
+
+.WickSpacers {
+    &-largeSpacer {
+        padding-top: 88px;
+    }
+
+    &-smallSpacer {
+        padding-top: 60px;
+    }
+}

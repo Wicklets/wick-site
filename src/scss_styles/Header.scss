@@ -19,10 +19,14 @@
     &-titleRow {
         font-size: 40px;
         line-height: 40px;
-        padding-bottom: 40px;
     }
 
     &-subtitleRow {
         font-size: 20px;
+    }
+
+    &-titleRow,
+    &-subtitleRow {
+        padding-bottom: 40px;
     }
 }

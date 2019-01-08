@@ -17,16 +17,19 @@ import TutorialCardDeckContainer from '../../ContentComponents/PreviewCards/Tuto
 import NewsCardDeckContainer from '../../ContentComponents/News/NewsCardDeckContainer.js';
 import UpdateTab from '../../ContentComponents/VersionUpdate/UpdateTab.js';
 import ContentSection from '../../page_components/content_section/ContentSection.js';
+import {WickLargeSpacer, WickSmallSpacer} from '../../pattern_library/spacers/WickSpacers.js';
 
 import '../../scss_styles/HomePage.scss';
 
 const HomePage = () => (
     <Container className="fadeIn animated">
-        <Row id="HomePage-promoVideoRow" className="Wick-row">
+        <Row className="Wick-row">
             <Col xs="12" md="9" lg="8" xl="7">
                 <ResponsiveEmbed src="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
             </Col>
         </Row>
+
+        <WickSmallSpacer />
 
         <Row id="HomePage-ourLatestRow" className="Wick-row">our latest</Row>
 
@@ -41,7 +44,7 @@ const HomePage = () => (
                     <TutorialCardDeckContainer />
                 </Col>
             </Row>
-            <Row className="HomePage-webpageButtonRow Wick-row">
+            <Row className="Wick-row">
                 <Col xs="6" sm="4" md="3" lg="2">
                     <Button
                         color="success"
@@ -52,6 +55,7 @@ const HomePage = () => (
                     </Button>
                 </Col>
             </Row>
+            <WickSmallSpacer />
         </ContentSection>
 
         <ContentSection
@@ -65,7 +69,7 @@ const HomePage = () => (
                     <ExampleCardDeckContainer />
                 </Col>
             </Row>
-            <Row className="HomePage-webpageButtonRow Wick-row">
+            <Row className="Wick-row">
                 <Col xs="6" sm="4" md="3" lg="2">
                     <Button
                         color="success"
@@ -76,6 +80,7 @@ const HomePage = () => (
                     </Button>
                 </Col>
             </Row>
+            <WickSmallSpacer />
         </ContentSection>
 
         <ContentSection
@@ -88,12 +93,14 @@ const HomePage = () => (
                     <UpdateTab />
                 </Col>
             </Row>
-            <Row id="HomePage-newsRow" className="Wick-row">
+            <Row className="Wick-row">
                 <Col md="9">
                     <NewsCardDeckContainer />
                 </Col>
             </Row>
         </ContentSection>
+
+        <WickLargeSpacer />
 
         <Row className="Wick-row">
             <Col id="HomePage-supportRow" sm="6">
