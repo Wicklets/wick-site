@@ -10,7 +10,6 @@ import React from 'react';
 
 import {Container, Row, Col} from 'reactstrap';
 import {Button} from 'reactstrap';
-import ResponsiveEmbed from 'react-responsive-embed';
 
 import ExampleCardDeckContainer from '../../ContentComponents/PreviewCards/ExampleCardDeckContainer.js';
 import TutorialCardDeckContainer from '../../ContentComponents/PreviewCards/TutorialCardDeckContainer.js';
@@ -18,20 +17,18 @@ import NewsCardDeckContainer from '../../ContentComponents/News/NewsCardDeckCont
 import UpdateTab from '../../ContentComponents/VersionUpdate/UpdateTab.js';
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import {WickLargeSpacer, WickSmallSpacer} from '../../pattern_library/spacers/WickSpacers.js';
+import Embed from '../../pattern_library/embed/WickEmbed.js';
+import Title from '../../pattern_library/title/WickTitle.js';
 
 import '../../scss_styles/HomePage.scss';
 
 const HomePage = () => (
     <Container className="fadeIn animated">
-        <Row className="Wick-row">
-            <Col xs="12" md="9" lg="8" xl="7">
-                <ResponsiveEmbed src="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
-            </Col>
-        </Row>
+        <Embed url="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
 
         <WickSmallSpacer />
 
-        <Row id="HomePage-ourLatestRow" className="Wick-row">our latest</Row>
+        <Title>our latest</Title>
 
         <ContentSection
             title="tutorials"
