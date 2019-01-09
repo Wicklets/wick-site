@@ -84,11 +84,7 @@ const HomePage = () => (
             includeUnderline
         >
             <UpdateCard />
-            <Row className="Wick-row">
-                <Col md="9">
-                    <NewsCardDeckContainer />
-                </Col>
-            </Row>
+            <NewsCardDeckContainer />
         </ContentSection>
 
         <WickLargeSpacer />

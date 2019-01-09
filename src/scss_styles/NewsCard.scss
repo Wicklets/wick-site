@@ -8,14 +8,21 @@
 
 .NewsCard {
     &-container {
-        border: 1px solid blue;
+        text-align: left;
+        border-width: 0;
+        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    &-container:hover {
+        box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.6);
     }
 
     &-date {
         font-size: 12px;
+        color: #6C757D;
     }
 
     &-title {
-        font-size: 16px;
+        font-size: 22px;
     }
 }

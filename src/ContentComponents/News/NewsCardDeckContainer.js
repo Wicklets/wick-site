@@ -6,11 +6,9 @@
     Container for News Card Decks on the Homepage
 */
 
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 
-import {CardDeck} from 'reactstrap';
-
-import NewsCard from './NewsCard.js';
+import NewsCardDeck from './NewsCardDeck.js';
 
 class NewsCardDeckContainer extends Component {
     constructor(props) {
@@ -19,19 +17,19 @@ class NewsCardDeckContainer extends Component {
         this.state = {
             newsItems: [
                 {
-                    title: "Awesome, Super Cool New Website Launches!",
-                    date: "November 30, 2018",
+                    title: "News Item!",
+                    date: "11/30/18",
                     hasExternalLink: false
                 },
                 {
-                    title: "Wick Editor wins Mozilla Grant",
-                    date: "October 15, 2018",
+                    title: "News Item",
+                    date: "10/15/18",
                     hasExternalLink: true,
                     link: "https://www.cmu.edu/news/stories/archives/2018/october/wick-editor.html"
                 },
                 {
-                    title: "Wick Editor Version 0.15.2 Goes Live",
-                    date: "June 28, 2018",
+                    title: "News Item",
+                    date: "06/28/18",
                     hasExternalLink: true,
                     link: "https://forum.wickeditor.com/t/wick-0-15-update-thread-video-export/461"
                 }
@@ -42,7 +40,7 @@ class NewsCardDeckContainer extends Component {
 
     updateNumberCards = () => {
         var width = window.innerWidth;
-        var numberCards = (width > 575 && width < 992) ? 2 : 3 // code to match reactstrap cutoffs
+        var numberCards = (width > 575 && width < 992) ? 2 : 3 // coded to match reactstrap cutoffs
         this.setState({numberCards});
     }
 
@@ -57,13 +55,7 @@ class NewsCardDeckContainer extends Component {
 
     render() {
         return (
-            <Fragment>
-                <CardDeck>
-                    {this.state.newsItems.slice(0, this.state.numberCards).map(newsItem => (
-                        <NewsCard key={newsItem.title} {...newsItem} />
-                    ))}
-                </CardDeck>
-            </Fragment>
+            <NewsCardDeck newsItems={this.state.newsItems.slice(0, this.state.numberCards)} />
         );
     }
 };
