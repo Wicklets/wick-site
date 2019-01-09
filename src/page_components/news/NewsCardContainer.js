@@ -22,10 +22,13 @@ class NewsCardContainer extends Component {
 
     toggleContent = () => this.setState(prevState => ({isCardHovered: !prevState.isCardHovered}));
 
+    launchLink = () => window.open(this.props.link);
+
     render() {
         return (
             <NewsCard
                 {...this.props}
+                onClick={this.launchLink}
                 toggleContent={this.toggleContent}
                 isCardHovered={this.state.isCardHovered}/>
         );
