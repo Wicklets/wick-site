@@ -13,7 +13,7 @@ import {Button} from 'reactstrap';
 
 import ExampleCardDeckContainer from '../../ContentComponents/PreviewCards/ExampleCardDeckContainer.js';
 import TutorialCardDeckContainer from '../../ContentComponents/PreviewCards/TutorialCardDeckContainer.js';
-import NewsCardDeckContainer from '../../ContentComponents/News/NewsCardDeckContainer.js';
+import NewsCardDeckContainer from '../../page_components/news/NewsCardDeckContainer.js';
 import UpdateCard from '../../page_components/update/UpdateCard.js';
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import {WickLargeSpacer, WickSmallSpacer} from '../../pattern_library/spacers/WickSpacers.js';
