@@ -21,8 +21,6 @@ import Embed from '../../pattern_library/embed/WickEmbed.js';
 import Title from '../../pattern_library/title/WickTitle.js';
 import SocialMedia from '../../page_components/social_media/SocialMedia.js';
 
-import '../../scss_styles/HomePage.scss';
-
 const HomePage = () => (
     <Container className="fadeIn animated">
         <Embed url="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
@@ -34,11 +32,7 @@ const HomePage = () => (
             size="small"
             includeUnderline
         >
-            <Row className="HomePage-cardContainer Wick-row">
-                <Col md="9">
-                    <TutorialCardDeckContainer />
-                </Col>
-            </Row>
+            <TutorialCardDeckContainer />
             <Row className="Wick-row">
                 <Col xs="6" sm="4" md="3" lg="2">
                     <Button
@@ -58,11 +52,7 @@ const HomePage = () => (
             size="small"
             includeUnderline
         >
-            <Row className="HomePage-cardContainer Wick-row">
-                <Col md="9">
-                    <ExampleCardDeckContainer />
-                </Col>
-            </Row>
+            <ExampleCardDeckContainer />
             <Row className="Wick-row">
                 <Col xs="6" sm="4" md="3" lg="2">
                     <Button

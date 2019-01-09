@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 
-import NewsCardDeck from './NewsCardDeck.js';
+import WickCardDeckContainer from '../../pattern_library/card/WickCardDeckContainer.js';
 
 class NewsCardDeckContainer extends Component {
     constructor(props) {
@@ -33,29 +33,13 @@ class NewsCardDeckContainer extends Component {
                     date: "06/28/18",
                     link: "https://forum.wickeditor.com/t/wick-0-15-update-thread-video-export/461"
                 }
-            ],
-            numberCards: 3
+            ]
         };
-    }
-
-    updateNumberCards = () => {
-        var width = window.innerWidth;
-        var numberCards = (width > 575 && width < 992) ? 2 : 3 // coded to match reactstrap cutoffs
-        this.setState({numberCards});
-    }
-
-    componentDidMount() {
-        window.addEventListener('resize', this.updateNumberCards);
-        this.updateNumberCards();
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.updateNumberCards);
     }
 
     render() {
         return (
-            <NewsCardDeck newsItems={this.state.newsItems.slice(0, this.state.numberCards)} />
+            <WickCardDeckContainer cards={this.state.newsItems} useNewsCard />
         );
     }
 };

@@ -6,11 +6,9 @@
     Container for Tutorial Card Decks
 */
 
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 
-import {CardDeck} from 'reactstrap';
-
-import WickCardContainer from '../../pattern_library/card/WickCardContainer.js';
+import WickCardDeckContainer from '../../pattern_library/card/WickCardDeckContainer.js';
 
 import test from '../../Images/Tutorials/testworld.svg';
 import comingsoon from '../../Images/Misc/comingsoon.png';
@@ -38,35 +36,13 @@ class TutorialCardDeckContainer extends Component {
                     body: "Check back soon for more awesome Wick Editor Tutorials!",
                     image: comingsoon,
                 }
-            ],
-            numberCards: 3
+            ]
         };
-    }
-
-    updateNumberCards = () => {
-        var width = window.innerWidth;
-        var numberCards = (width > 575 && width < 992) ? 2 : 3 // coded to match reactstrap cutoff
-        this.setState({numberCards});
-    }
-
-    componentDidMount() {
-        window.addEventListener('resize', this.updateNumberCards);
-        this.updateNumberCards();
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.updateNumberCards);
     }
 
     render() {
         return (
-            <Fragment>
-                <CardDeck>
-                    {this.state.tutorials.slice(0, this.state.numberCards).map(tutorial => (
-                        <WickCardContainer key={tutorial.title} {...tutorial} />
-                    ))}
-                </CardDeck>
-            </Fragment>
+            <WickCardDeckContainer cards={this.state.tutorials} usePadding />
         );
     }
 };
