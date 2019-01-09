@@ -6,22 +6,6 @@
     Stylings for the Wick Homepage
 */
 
-#HomePage {
-    &-supportRow {
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 40px;
-    }
-
-    &-supportText {
-        font-size: 20px;
-    }
-
-    &-supportWick {
-        font-size: 40px;
-    }
-}
-
 .HomePage {
     &-cardContainer {
         padding-top: 20px;

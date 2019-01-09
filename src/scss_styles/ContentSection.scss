@@ -7,33 +7,58 @@
 */
 
 .ContentSection {
-    &-body,
-    &-smallBody {
+    &-body {
         font-size: 16px;
     }
 
-    &-smallBody {
+    &-body--large {
+        font-size: 20px;
+    }
+
+    &-body--small {
+        font-size: 16px;
         line-height: 20px;
     }
 
-    &-smallTitle {
-        font-size: 24px;
+    &-padding {
+        padding-bottom: 28px;
+    }
+
+    &-padding--large {
+        padding-bottom: 40px;
+    }
+
+    &-padding--small {
+        padding-bottom: 24px;
     }
 
     &-title {
         font-size: 28px;
     }
 
-    &-smallUnderline {
-        margin: 4px auto 8px;
+    &-title--large {
+        font-size: 40px;
+    }
+
+    &-title--small {
+        font-size: 24px;
     }
 
     &-underline {
         margin: 12px auto 16px;
     }
 
-    &-smallUnderline,
-    &-underline {
+    &-underline--large {
+        margin: 16px auto 20px;
+    }
+
+    &-underline--small {
+        margin: 4px auto 8px;
+    }
+
+    &-underline--small,
+    &-underline,
+    &-underline--large {
         width: 48px;
         border: solid 2px #28a745;
     }

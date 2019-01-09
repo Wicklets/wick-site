@@ -12,22 +12,25 @@ import {Row, Col} from 'reactstrap';
 
 import '../../scss_styles/ContentSection.scss';
 
-const ContentSection = ({title, text, useSmallTitle, includeUnderline, children}) => (
+const ContentSection = ({title, text, size, includeUnderline, includePadding, children}) => (
     <Fragment>
         {title && (
-            <Row className={(useSmallTitle ? "ContentSection-smallTitle" : "ContentSection-title") + " Wick-row"}>
+            <div className={"ContentSection-title" + (size ? "--" + size : "")}>
                 {title}
-            </Row>
+            </div>
         )}
         {includeUnderline && (
-            <Row className={(useSmallTitle ? "ContentSection-smallUnderline" : "ContentSection-underline") + " Wick-row"} />
+            <div className={"ContentSection-underline" + (size ? "--" + size : "")} />
         )}
         {text && (
-            <Row className={(useSmallTitle ? "ContentSection-smallBody" : "ContentSection-body") + " Wick-row"}>
+            <Row className={"ContentSection-body" + (size ? "--" + size : "") + " Wick-row"}>
                 <Col sm="9" lg="6">
                     {text}
                 </Col>
             </Row>
+        )}
+        {includePadding && (
+            <div className={"ContentSection-padding" + (size ? "--" + size : "")} />
         )}
         {children}
     </Fragment>

@@ -27,11 +27,10 @@ const HomePage = () => (
         <Embed url="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
         <WickSmallSpacer />
         <Title>our latest</Title>
-
         <ContentSection
             title="tutorials"
             text="Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
-            useSmallTitle
+            size="small"
             includeUnderline
         >
             <Row className="HomePage-cardContainer Wick-row">
@@ -52,11 +51,10 @@ const HomePage = () => (
             </Row>
             <WickSmallSpacer />
         </ContentSection>
-
         <ContentSection
             title="examples"
             text="Check out some examples to help you get started using the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
-            useSmallTitle
+            size="small"
             includeUnderline
         >
             <Row className="HomePage-cardContainer Wick-row">
@@ -77,48 +75,44 @@ const HomePage = () => (
             </Row>
             <WickSmallSpacer />
         </ContentSection>
-
         <ContentSection
             title="updates"
-            useSmallTitle
+            size="small"
             includeUnderline
         >
             <UpdateCard />
             <NewsCardDeckContainer />
         </ContentSection>
-
         <WickLargeSpacer />
-
-        <Row className="Wick-row">
-            <Col id="HomePage-supportRow" sm="6">
-                <div id="HomePage-supportWick">Support Wick Editor</div>
-                <div id="HomePage-supportText">
-                    Join the wick editor community with a YouTube membership or Patreon subscription!
-                </div>
-            </Col>
-        </Row>
-        <Row id="HomePage-subscribeRow" className="Wick-row">
-            <Col sm="9" md="4" lg="3">
-                <Button
-                    color="info"
-                    outline
-                    block
-                    onClick={() => window.open("https://www.patreon.com/WickEditor")}
-                >
-                    Become a Patron
-                </Button>
-            </Col>
-            <Col sm="9" md="4" lg="3">
-                <Button
-                    color="info"
-                    outline
-                    block
-                    onClick={() => window.open("https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg")}
-                >
-                    Subscribe on Youtube
-                </Button>
-            </Col>
-        </Row>
+        <ContentSection
+            title="Suuport Wick Editor"
+            text="Join the wick editor community with a YouTube membership or Patreon subscription!"
+            size="large"
+            includePadding
+        >
+            <Row className="Wick-row">
+                <Col sm="9" md="4" lg="3">
+                    <Button
+                        color="info"
+                        outline
+                        block
+                        onClick={() => window.open("https://www.patreon.com/WickEditor")}
+                    >
+                        Become a Patron
+                    </Button>
+                </Col>
+                <Col sm="9" md="4" lg="3">
+                    <Button
+                        color="info"
+                        outline
+                        block
+                        onClick={() => window.open("https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg")}
+                    >
+                        Subscribe on Youtube
+                    </Button>
+                </Col>
+            </Row>
+        </ContentSection>
     </Container>
 );
 
