@@ -27,7 +27,7 @@ const Header = ({title, showButton, showSubtitle, buttonLabel, onClick, children
         />
         <Row id="Header-titleRow" className="fadeIn animated Wick-row">{title}</Row>
         <Row id="Header-buttonRow" className="fadeIn animated Wick-row">
-            <Col xs="7" sm="5" md="4" lg="3" xl="2">
+            <Col xs="auto">
                 {showButton ? (
                     <Button
                         color="primary"
