@@ -11,8 +11,8 @@ import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 import {Button} from 'reactstrap';
 
-import ExampleCardDeckContainer from '../../ContentComponents/PreviewCards/ExampleCardDeckContainer.js';
-import TutorialCardDeckContainer from '../../ContentComponents/PreviewCards/TutorialCardDeckContainer.js';
+import ExampleCardDeckContainer from '../../page_components/examples/ExampleCardDeckContainer.js';
+import TutorialCardDeckContainer from '../../page_components/tutorials/TutorialCardDeckContainer.js';
 import NewsCardDeckContainer from '../../page_components/news/NewsCardDeckContainer.js';
 import UpdateCard from '../../page_components/update/UpdateCard.js';
 import ContentSection from '../../page_components/content_section/ContentSection.js';

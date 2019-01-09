@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 
-import WickCardDeckContainer from '../../pattern_library/card/WickCardDeckContainer.js';
+import WickCardDeckContainer from '../../pattern_library/cards/WickCardDeckContainer.js';
 
 import test from '../../Images/Tutorials/testworld.svg';
 import comingsoon from '../../Images/Misc/comingsoon.png';

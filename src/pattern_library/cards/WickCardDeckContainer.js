@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 
-import WickCardDeck from '../../pattern_library/card/WickCardDeck.js';
+import WickCardDeck from './WickCardDeck.js';
 
 class WickCardDeckContainer extends Component {
     constructor(props) {
