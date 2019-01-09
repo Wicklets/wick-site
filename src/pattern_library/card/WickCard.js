@@ -11,7 +11,7 @@ import Img from 'react-image';
 
 import {Card, CardImg, CardText, CardTitle, CardImgOverlay} from 'reactstrap';
 
-import Arrow from '../../Images/Tutorials/arrow.svg';
+import arrow from '../../Images/Tutorials/arrow.svg';
 
 import '../../scss_styles/WickCard.scss';
 
@@ -24,7 +24,7 @@ const WickCard = ({title, body, image, onClick, toggleContent, isContentExpanded
                 {isContentExpanded && (
                     <Fragment>
                         <CardText className="WickCard-text">{body}</CardText>
-                        <Img src={Arrow} />
+                        <Img src={arrow} />
                     </Fragment>
                 )}
             </CardImgOverlay>

@@ -1,16 +1,16 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    NewsCardContainer.js
+    ContentLinkContainer.js
 
-    Container for News Cards
+    Container for Content Link
 */
 
 import React, {Component} from 'react';
 
-import NewsCard from './NewsCard.js';
+import ContentLink from './ContentLink.js';
 
-class NewsCardContainer extends Component {
+class ContentLinkContainer extends Component {
     constructor(props) {
         super(props);
 
@@ -26,7 +26,7 @@ class NewsCardContainer extends Component {
 
     render() {
         return (
-            <NewsCard
+            <ContentLink
                 {...this.props}
                 onClick={this.launchLink}
                 toggleContent={this.toggleContent}
@@ -35,4 +35,4 @@ class NewsCardContainer extends Component {
     }
 };
 
-export default NewsCardContainer;
+export default ContentLinkContainer;

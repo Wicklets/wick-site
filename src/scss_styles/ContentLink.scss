@@ -1,0 +1,38 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    ContentLink.scss
+
+    Stylings for the Wick Content Links
+*/
+
+.ContentLink {
+    &-arrowLink {
+        padding-top: 20px;
+    }
+
+    &-arrowSpacer {
+        padding-top: 34px; // coded to match height of arrow image
+    }
+
+    &-container {
+        margin-bottom: 40px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-image {
+        padding-bottom: 12px;
+    }
+
+    &-text {
+        font-size: 16px;
+    }
+
+    &-title {
+        font-size: 20px;
+        padding-bottom: 8px;
+    }
+}
