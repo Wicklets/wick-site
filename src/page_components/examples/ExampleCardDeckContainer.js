@@ -18,7 +18,7 @@ class ExampleCardDeckContainer extends Component {
         super(props);
 
         this.state = {
-            examples: [
+            cards: [
                 {
                     title: "Follow Mouse",
                     body: "See how you can get your character to follow your mouse movements around the screen!",
@@ -36,13 +36,20 @@ class ExampleCardDeckContainer extends Component {
                     body: "Check back soon for more awesome Wick Editor Examples!",
                     image: comingsoon
                 }
-            ]
+            ],
+            linkButton: {
+                text: "see more",
+                onClick: () => window.open("http://wickeditor.com/#examples")
+            }
         };
     }
 
     render() {
         return (
-            <WickCardDeckContainer cards={this.state.examples} usePadding />
+            <WickCardDeckContainer
+                {...this.state}
+                usePadding
+            />
         );
     }
 };

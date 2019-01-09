@@ -37,9 +37,8 @@ class WickCardDeckContainer extends Component {
     render() {
         return (
             <WickCardDeck
+                {...this.props}
                 cards={this.props.cards.slice(0, this.state.numberCards)}
-                useNewsCard={this.props.useNewsCard}
-                usePadding={this.props.usePadding}
             />
         );
     }

@@ -15,7 +15,7 @@ class NewsCardDeckContainer extends Component {
         super(props);
 
         this.state = {
-            newsItems: [
+            cards: [
                 {
                     title: "News Item!",
                     text: "News subtitle description",
@@ -39,7 +39,10 @@ class NewsCardDeckContainer extends Component {
 
     render() {
         return (
-            <WickCardDeckContainer cards={this.state.newsItems} useNewsCard />
+            <WickCardDeckContainer
+                {...this.state}
+                useNewsCard
+            />
         );
     }
 };

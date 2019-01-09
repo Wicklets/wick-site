@@ -8,8 +8,7 @@
 
 import React from 'react';
 
-import {Container, Row, Col} from 'reactstrap';
-import {Button} from 'reactstrap';
+import { Container } from 'reactstrap';
 
 import ExampleCardDeckContainer from '../../page_components/examples/ExampleCardDeckContainer.js';
 import TutorialCardDeckContainer from '../../page_components/tutorials/TutorialCardDeckContainer.js';
@@ -20,6 +19,7 @@ import {WickLargeSpacer, WickSmallSpacer} from '../../pattern_library/spacers/Wi
 import Embed from '../../pattern_library/embed/WickEmbed.js';
 import Title from '../../pattern_library/title/WickTitle.js';
 import SocialMedia from '../../page_components/social_media/SocialMedia.js';
+import SupportWick from '../../page_components/support/SupportWick.js';
 
 const HomePage = () => (
     <Container className="fadeIn animated">
@@ -33,19 +33,8 @@ const HomePage = () => (
             includeUnderline
         >
             <TutorialCardDeckContainer />
-            <Row className="Wick-row">
-                <Col xs="6" sm="4" md="3" lg="2">
-                    <Button
-                        color="success"
-                        block
-                        onClick={() => window.open("http://wickeditor.com/#tutorials")}
-                    >
-                        watch more
-                    </Button>
-                </Col>
-            </Row>
-            <WickSmallSpacer />
         </ContentSection>
+        <WickSmallSpacer />
         <ContentSection
             title="examples"
             text="Check out some examples to help you get started using the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
@@ -53,19 +42,8 @@ const HomePage = () => (
             includeUnderline
         >
             <ExampleCardDeckContainer />
-            <Row className="Wick-row">
-                <Col xs="6" sm="4" md="3" lg="2">
-                    <Button
-                        color="success"
-                        block
-                        onClick={() => window.open("http://wickeditor.com/#examples")}
-                    >
-                        see more
-                    </Button>
-                </Col>
-            </Row>
-            <WickSmallSpacer />
         </ContentSection>
+        <WickSmallSpacer />
         <ContentSection
             title="updates"
             size="small"
@@ -81,28 +59,7 @@ const HomePage = () => (
             size="large"
             includePadding
         >
-            <Row className="Wick-row">
-                <Col sm="9" md="4" lg="3">
-                    <Button
-                        color="info"
-                        outline
-                        block
-                        onClick={() => window.open("https://www.patreon.com/WickEditor")}
-                    >
-                        Become a Patron
-                    </Button>
-                </Col>
-                <Col sm="9" md="4" lg="3">
-                    <Button
-                        color="info"
-                        outline
-                        block
-                        onClick={() => window.open("https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg")}
-                    >
-                        Subscribe on Youtube
-                    </Button>
-                </Col>
-            </Row>
+            <SupportWick />
         </ContentSection>
         <SocialMedia />
     </Container>

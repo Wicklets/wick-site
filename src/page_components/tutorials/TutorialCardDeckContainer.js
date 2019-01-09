@@ -18,7 +18,7 @@ class TutorialCardDeckContainer extends Component {
         super(props);
 
         this.state = {
-            tutorials: [
+            cards: [
                 {
                     title: "Getting Started with Wick Editor",
                     body: "In this tutorial, we go over how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
@@ -36,13 +36,20 @@ class TutorialCardDeckContainer extends Component {
                     body: "Check back soon for more awesome Wick Editor Tutorials!",
                     image: comingsoon,
                 }
-            ]
+            ],
+            linkButton: {
+                text: "watch more",
+                onClick: () => window.open("http://wickeditor.com/#tutorials")
+            }
         };
     }
 
     render() {
         return (
-            <WickCardDeckContainer cards={this.state.tutorials} usePadding />
+            <WickCardDeckContainer
+                {...this.state}
+                usePadding
+            />
         );
     }
 };
