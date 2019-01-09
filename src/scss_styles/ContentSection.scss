@@ -9,51 +9,51 @@
 .ContentSection {
     &-body {
         font-size: 16px;
-    }
 
-    &-body--large {
-        font-size: 20px;
-    }
+        &--large {
+            font-size: 20px;
+        }
 
-    &-body--small {
-        font-size: 16px;
-        line-height: 20px;
+        &--small {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 
     &-padding {
-        padding-bottom: 28px;
-    }
+        padding-bottom: 20px;
 
-    &-padding--large {
-        padding-bottom: 40px;
-    }
+        &--large {
+            padding-bottom: 24px;
+        }
 
-    &-padding--small {
-        padding-bottom: 24px;
+        &--small {
+            padding-bottom: 16px;
+        }
     }
 
     &-title {
         font-size: 28px;
-    }
 
-    &-title--large {
-        font-size: 40px;
-    }
+        &--large {
+            font-size: 40px;
+        }
 
-    &-title--small {
-        font-size: 24px;
+        &--small {
+            font-size: 24px;
+        }
     }
 
     &-underline {
         margin: 12px auto 16px;
-    }
 
-    &-underline--large {
-        margin: 16px auto 20px;
-    }
+        &--large {
+            margin: 16px auto 20px;
+        }
 
-    &-underline--small {
-        margin: 4px auto 8px;
+        &--small {
+            margin: 4px auto 8px;
+        }
     }
 
     &-underline--small,

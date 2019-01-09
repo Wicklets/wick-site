@@ -13,6 +13,7 @@ import {Container, Row, Col} from 'reactstrap';
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import CommunityGalleryContainer from '../../CommunityPage/CommunityGalleryContainer.js';
 import {WickSmallSpacer} from '../../pattern_library/spacers/WickSpacers.js';
+import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
 
 import '../../scss_styles/CommunityPage.scss';
 
@@ -37,6 +38,9 @@ const CommunityPage = () => (
                 </Col>
             </Row>
         </ContentSection>
+        <WickSmallSpacer />
+        <ExternalContacts />
+        <WickSmallSpacer />
     </Container>
 );
 

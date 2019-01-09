@@ -12,8 +12,7 @@ import '../../scss_styles/Footer.scss';
 
 const Footer = () => (
     <Fragment>
-        <div id="Footer-padding" className="Wick-row" />
-        <div id="Footer-container" className="Wick-row">
+        <div id="Footer-container">
             <div id="Footer-content">
                 <span className="Footer-item">Product</span>
                 <span className="Footer-item">Company</span>

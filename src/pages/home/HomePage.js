@@ -19,6 +19,7 @@ import ContentSection from '../../page_components/content_section/ContentSection
 import {WickLargeSpacer, WickSmallSpacer} from '../../pattern_library/spacers/WickSpacers.js';
 import Embed from '../../pattern_library/embed/WickEmbed.js';
 import Title from '../../pattern_library/title/WickTitle.js';
+import SocialMedia from '../../page_components/social_media/SocialMedia.js';
 
 import '../../scss_styles/HomePage.scss';
 
@@ -113,6 +114,7 @@ const HomePage = () => (
                 </Col>
             </Row>
         </ContentSection>
+        <SocialMedia />
     </Container>
 );
 
