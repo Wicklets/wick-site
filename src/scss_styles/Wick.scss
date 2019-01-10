@@ -7,11 +7,23 @@
 */
 
 .Wick {
+    position: relative; // set to work with background style
     text-align: center;
     font-family: 'Nunito', sans-serif;
 
     // Center the content of the page
     &-row {
         justify-content: center;
+    }
+
+    // Set in this fashion so the header image isn't hidden
+    &-background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background-color: #F3F8F7;
     }
 }

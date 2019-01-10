@@ -4,10 +4,10 @@ import './scss_styles/animate.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Wick from './Wick';
+import WickContainer from './site_components/wick/WickContainer';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Wick />, document.getElementById('root'));
+ReactDOM.render(<WickContainer />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -49,7 +49,6 @@ const WickRouter = ({page, onClickChangePage, onClickToggleDropdown, onClickLaun
                     <NavbarToggler onClick={onClickToggleDropdown} />
                     <Collapse isOpen={isDropdownOpen} navbar>
                         <Nav className="ml-auto mr-auto" navbar>
-
                             <NavbarBrand
                                 tag={Link}
                                 to="/"
@@ -59,7 +58,6 @@ const WickRouter = ({page, onClickChangePage, onClickToggleDropdown, onClickLaun
                             >
                                 wick editor
                             </NavbarBrand>
-
                             <NavItem>
                                 <NavLink
                                     href="#"
@@ -70,7 +68,6 @@ const WickRouter = ({page, onClickChangePage, onClickToggleDropdown, onClickLaun
                                     create
                                 </NavLink>
                             </NavItem>
-
                             <NavItem>
                                 <NavLink
                                     tag={Link}
@@ -82,7 +79,6 @@ const WickRouter = ({page, onClickChangePage, onClickToggleDropdown, onClickLaun
                                     learn
                                 </NavLink>
                             </NavItem>
-
                             <NavItem>
                                 <NavLink
                                     tag={Link}
@@ -94,7 +90,6 @@ const WickRouter = ({page, onClickChangePage, onClickToggleDropdown, onClickLaun
                                     about
                                 </NavLink>
                             </NavItem>
-
                             <NavItem>
                                 <NavLink
                                     tag={Link}
@@ -106,7 +101,6 @@ const WickRouter = ({page, onClickChangePage, onClickToggleDropdown, onClickLaun
                                     community
                                 </NavLink>
                             </NavItem>
-
                         </Nav>
                     </Collapse>
                 </Navbar>
