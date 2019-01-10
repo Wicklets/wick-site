@@ -21,7 +21,6 @@ class CommunityPageContainer extends Component {
             <Fragment>
                 <Header
                     title="community"
-                    showButton
                     buttonLabel="visit the forum"
                     onClick={() => window.open("https://forum.wickeditor.com/")}
                 />

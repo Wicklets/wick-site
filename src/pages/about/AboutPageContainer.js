@@ -21,7 +21,6 @@ class AboutPageContainer extends Component {
             <Fragment>
                 <Header
                     title="about us"
-                    buttonLabel=""
                 />
                 <AboutPage />
             </Fragment>

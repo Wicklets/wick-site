@@ -18,7 +18,7 @@ import forestpadding from '../../Images/Header/forestpadding.svg';
 
 import '../../scss_styles/Header.scss';
 
-const Header = ({title, showButton, showSubtitle, buttonLabel, onClick, children}) => (
+const Header = ({title, subtitle, buttonLabel, onClick}) => (
     <Fragment>
         <InfiniteScrollImageContainer
                 mainImg={wickworld}
@@ -29,7 +29,7 @@ const Header = ({title, showButton, showSubtitle, buttonLabel, onClick, children
             <div id="Header-titleRow">{title}</div>
             <Row id="Header-buttonRow" className="Wick-row">
                 <Col xs="auto">
-                    {showButton ? (
+                    {buttonLabel ? (
                         <Button
                             color="primary"
                             size="lg"
@@ -43,10 +43,10 @@ const Header = ({title, showButton, showSubtitle, buttonLabel, onClick, children
                     )}
                 </Col>
             </Row>
-            {showSubtitle && (
+            {subtitle && (
                 <Row id="Header-subtitleRow" className="Wick-row">
                     <Col sm="9" lg="6">
-                        {children}
+                        {subtitle}
                     </Col>
                 </Row>
             )}

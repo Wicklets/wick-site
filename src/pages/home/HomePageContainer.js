@@ -21,13 +21,10 @@ class HomePageContainer extends Component {
             <Fragment>
                 <Header
                     title="wick editor"
-                    showButton
-                    showSubtitle
+                    subtitle="The Wick Editor is a free online tool for creating games, animations, and everything in-between."
                     buttonLabel="get started"
                     onClick={() => window.open("http://wickeditor.com/wick-editor/")}
-                >
-                    The Wick Editor is a free online tool for creating games, animations, and everything in-between.
-                </Header>
+                />
                 <HomePage />
             </Fragment>
         );
