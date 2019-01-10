@@ -7,18 +7,18 @@
 */
 
 #AboutPage {
-    &-cannonImageRow {
+    &-cannon {
         padding-bottom: 8px;
     }
 
     // shift the image slightly so that the
     // editor appears centered
-    &-editorPreviewImage {
+    &-editor {
         transform: translateX(-2%);
         width: 100%;
     }
 
-    &-editorPreviewRow {
+    &-editorContainer {
         padding: 32px 0;
     }
 }

@@ -16,9 +16,9 @@ import '../../scss_styles/CreatorsRow.scss';
 
 const CreatorsRow = ({people, title, includeHeadshot}) => (
     <Fragment>
-        <Row className="CreatorsRow-description Wick-row">
+        <div className="CreatorsRow-description">
             {title}
-        </Row>
+        </div>
         <Row className="CreatorsRow-people Wick-row">
             {people.map(person => (
                 <Creator

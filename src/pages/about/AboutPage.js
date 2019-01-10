@@ -13,7 +13,7 @@ import Img from 'react-image';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import CreatorsContainer from '../../page_components/creators/CreatorsContainer.js';
-import {WickLargeSpacer} from '../../pattern_library/spacers/WickSpacers.js';
+import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import SocialMedia from '../../page_components/social_media/SocialMedia.js';
 
 import editorpreview from '../../Images/Misc/editorpreview.svg';
@@ -28,9 +28,9 @@ const AboutPage = () => (
             text="The Wick Editor is a free and open-source tool for creating games, animations, and everything in-between. It's designed to be the most accessible tool for creating multimedia projects."
             includeUnderline
         >
-            <Row id="AboutPage-editorPreviewRow" className="Wick-row">
+            <Row id="AboutPage-editorContainer" className="Wick-row">
                 <Col xs="12" lg="9">
-                    <Img src={editorpreview} id="AboutPage-editorPreviewImage" />
+                    <Img src={editorpreview} id="AboutPage-editor" />
                 </Col>
             </Row>
         </ContentSection>
@@ -45,10 +45,8 @@ const AboutPage = () => (
         >
             <CreatorsContainer />
         </ContentSection>
-        <WickLargeSpacer />
-        <Row id="AboutPage-cannonImageRow" className="Wick-row">
-            <Img src={cannon} />
-        </Row>
+        <WickSmallSpacer />
+        <Img src={cannon} id="AboutPage-cannon" />
         <ContentSection
             title="special thanks to"
             text="Golan Levin, Tom Hughes, Sarah Guthals, Nina Barbuto (and everyone at Assemble including Jess Gold and Lieu Wolfe)"
@@ -60,7 +58,6 @@ const AboutPage = () => (
             text="Shoot us a message, join the wick editor community with a YouTube membership or subscribe on Patreon!"
             includeUnderline
         />
-        <WickLargeSpacer />
         <WickLargeSpacer />
         <SocialMedia />
     </Container>

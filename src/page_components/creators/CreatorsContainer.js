@@ -25,7 +25,6 @@ const CreatorsContainer = () => (
             title="The Wick Editor was created and is led by"
             includeHeadshot
         />
-
         <CreatorsRow
             people={
                 [{name: "Anna Gusman", img: annagusman},
@@ -34,7 +33,6 @@ const CreatorsContainer = () => (
             title="Brand and web design by"
             includeHeadshot
         />
-
         <CreatorsRow
             people={
                 [{name: "Anna Gusman"},

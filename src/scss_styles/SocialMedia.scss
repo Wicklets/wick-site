@@ -7,22 +7,9 @@
 */
 
 .SocialMedia {
-    &-containerRow {
+    &-container {
+        display: flex;
+        justify-content: center;
         padding: 40px 0;
-    }
-
-    &-icon {
-        width: 100%;
-        opacity: 0.7;
-        -webkit-transition: opacity 0.5s;
-        transition: opacity 0.5s;
-    }
-
-    &-icon:hover {
-        opacity: 1;
-    }
-
-    &-iconContainer {
-        margin: 0 6px;
     }
 }
