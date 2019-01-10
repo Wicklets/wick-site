@@ -8,13 +8,14 @@
 
 import React from 'react';
 
-import {Container, Row, Col} from 'reactstrap';
+import { Container } from 'reactstrap';
 import Img from 'react-image';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import CreatorsContainer from '../../page_components/creators/CreatorsContainer.js';
 import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import SocialMedia from '../../page_components/social_media/SocialMedia.js';
+import ResponsiveImage from '../../pattern_library/responsive_image/WickResponsiveImage.js';
 
 import editorpreview from '../../Images/Misc/editorpreview.svg';
 import cannon from '../../Images/Misc/cannon.svg';
@@ -28,11 +29,7 @@ const AboutPage = () => (
             text="The Wick Editor is a free and open-source tool for creating games, animations, and everything in-between. It's designed to be the most accessible tool for creating multimedia projects."
             includeUnderline
         >
-            <Row id="AboutPage-editorContainer" className="Wick-row">
-                <Col xs="12" lg="9">
-                    <Img src={editorpreview} id="AboutPage-editor" />
-                </Col>
-            </Row>
+            <ResponsiveImage id="AboutPage-editor" image={editorpreview} xs="12" lg="9" />
         </ContentSection>
         <ContentSection
             text="The Wick Editor is a hybrid of an animation tool and a coding environment, heavily inspired by similar tools such as Flash, HyperCard, and Scratch. It was developed in response to a growing need for such a tool for the modern web. You can read more about the creation of the Wick Editor here."

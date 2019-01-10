@@ -1,0 +1,17 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    WickResponsiveImage.scss
+
+    Stylings for the Wick Responsive Main Content Images
+*/
+
+.WickResponsiveImage {
+    &-container {
+        padding: 32px 0;
+    }
+
+    &-image {
+        width: 100%;
+    }
+}
