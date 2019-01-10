@@ -17,7 +17,7 @@ const ContentLink = ({image, title, text, onClick, toggleContent, isContentHover
     <div className="ContentLink-container" onMouseEnter={toggleContent} onMouseLeave={toggleContent} onClick={onClick}>
         <Img className="ContentLink-image" src={image} alt="Content Link Image" />
         <div className="ContentLink-title">{title}</div>
-        <div className="ContentLink-text">{text}.</div>
+        <div className="ContentLink-text">{text}</div>
         {(isContentHovered ? (
             <Img className="ContentLink-arrowLink" src={arrow} />
         ) : (

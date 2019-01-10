@@ -24,9 +24,7 @@ const CommunityPage = () => (
             text="See what all the buzz is about and chat with fellow wick users for tips, tricks, and inspiration on your next project."
             includeUnderline
         />
-
         <WickSmallSpacer />
-
         <ContentSection
             title="creators"
             text="Check out what people are making!"
