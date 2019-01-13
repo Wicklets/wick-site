@@ -30,7 +30,7 @@ const ContentSection = ({title, text, size, includeUnderline, includePadding, ch
             </Row>
         )}
         {includePadding && (
-            <div className={"ContentSection-padding" + (size ? "--" + size : "")} />
+            <div className="ContentSection-padding" />
         )}
         {children}
     </Fragment>
