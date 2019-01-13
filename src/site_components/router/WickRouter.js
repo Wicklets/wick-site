@@ -49,6 +49,28 @@ const WickRouter = ({page, onClickChangePage, onClickToggleDropdown, onClickLaun
                     <NavbarToggler onClick={onClickToggleDropdown} />
                     <Collapse isOpen={isDropdownOpen} navbar>
                         <Nav className="ml-auto mr-auto" navbar>
+                            <NavItem>
+                                <NavLink
+                                    tag={Link}
+                                    to="/community/"
+                                    id={(page === "community" ? "WickRouter-activeItem" : "")}
+                                    className="WickRouter-navItem"
+                                    onClick={() => onClickChangePage("community")}
+                                >
+                                    community
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink
+                                    tag={Link}
+                                    to="/supporters/"
+                                    id={(page === "supporters" ? "WickRouter-activeItem" : "")}
+                                    className="WickRouter-navItem"
+                                    onClick={() => onClickChangePage("supporters")}
+                                >
+                                    supporters
+                                </NavLink>
+                            </NavItem>
                             <NavbarBrand
                                 tag={Link}
                                 to="/"
@@ -88,17 +110,6 @@ const WickRouter = ({page, onClickChangePage, onClickToggleDropdown, onClickLaun
                                     onClick={() => onClickChangePage("about")}
                                 >
                                     about
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink
-                                    tag={Link}
-                                    to="/community/"
-                                    id={(page === "community" ? "WickRouter-activeItem" : "")}
-                                    className="WickRouter-navItem"
-                                    onClick={() => onClickChangePage("community")}
-                                >
-                                    community
                                 </NavLink>
                             </NavItem>
                         </Nav>

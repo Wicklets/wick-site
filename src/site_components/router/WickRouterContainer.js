@@ -19,7 +19,8 @@ class WickRouterContainer extends Component {
         this.state = {
             backgroundAnimationClass: "WickRouter-background WickRouter-background--hidden",
             isDropdownOpen: false,
-            pageJustLaunched: true
+            pageJustLaunched: true,
+            page: "home"
         };
     }
 
@@ -37,8 +38,7 @@ class WickRouterContainer extends Component {
     }
 
     handleClickChangePage = (page) => {
-        this.setState({isDropdownOpen: false});
-        this.props.onClickChangePage(page);
+        this.setState({isDropdownOpen: false, page});
     }
 
     toggleDropdown = e => {
@@ -60,7 +60,7 @@ class WickRouterContainer extends Component {
     render() {
         return (
             <WickRouter
-                {...this.props}
+                page={this.state.page}
                 onClickChangePage={this.handleClickChangePage}
                 onClickToggleDropdown={this.toggleDropdown}
                 onClickLaunchEditor={this.launchEditor}

@@ -13,13 +13,10 @@ import Footer from '../footer/Footer.js';
 
 import '../../scss_styles/Wick.scss';
 
-const Wick = ({page, onClickChangePage}) => (
+const Wick = () => (
     <div className="Wick">
         <div className="Wick-background" />
-        <WickRouterContainer
-            page={page}
-            onClickChangePage={onClickChangePage}
-        />
+        <WickRouterContainer />
         <Footer />
     </div>
 );
