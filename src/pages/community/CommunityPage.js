@@ -20,8 +20,14 @@ import '../../scss_styles/CommunityPage.scss';
 const CommunityPage = () => (
     <Container className="fadeIn animated">
         <ContentSection
-            title="wick editor forum"
+            title="wick editor community forum"
             text="See what all the buzz is about and chat with fellow wick users for tips, tricks, and inspiration on your next project."
+            includeUnderline
+        />
+        <WickSmallSpacer />
+        <ContentSection
+            title="creators"
+            text="Check out what people are making! "
             includeUnderline
         />
         <WickSmallSpacer />
