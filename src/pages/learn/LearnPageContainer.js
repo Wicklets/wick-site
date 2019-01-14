@@ -6,7 +6,7 @@
     Container for Learn page
 */
 
-import React, {Component, Fragment} from 'react';
+import React, { Component, Fragment } from 'react';
 
 import LearnPage from './LearnPage.js';
 import Header from '../../site_components/header/Header.js';

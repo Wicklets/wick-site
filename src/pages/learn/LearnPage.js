@@ -8,10 +8,9 @@
 
 import React from 'react';
 
-import {Container, Row, Col} from 'reactstrap';
+import { Container } from 'reactstrap';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
-import LearnCardContainer from '../../LearnPage/LearnCardContainer.js';
 import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
 
