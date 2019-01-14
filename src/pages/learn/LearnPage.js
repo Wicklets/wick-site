@@ -33,6 +33,7 @@ const LearnPage = ({tutorials, examples}) => (
         />
         <WickLargeSpacer />
         <ExternalContacts />
+        <WickSmallSpacer />
     </Container>
 );
 
