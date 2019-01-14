@@ -29,11 +29,11 @@ const CommunityPage = () => (
             title="creators"
             text="Check out what people are making! "
             includeUnderline
+            includePadding
         />
         <WickSmallSpacer />
         <ContentSection
-            title="creators"
-            text="Check out what people are making!"
+            title="project gallery"
             includeUnderline
         >
             <Row id="CommunityPage-galleryContainer" className="Wick-row">
