@@ -12,33 +12,28 @@ import {Container, Row, Col} from 'reactstrap';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import LearnCardContainer from '../../LearnPage/LearnCardContainer.js';
-
-import '../../scss_styles/LearnPage.scss';
+import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
+import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
 
 const LearnPage = ({tutorials, examples}) => (
     <Container className="fadeIn animated">
-        <Row className="LearnPage-spacerRow" />
-        <ContentSection title="Explore Examples" useSmallTitle>
-            Here are a few examples to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
-        </ContentSection>
-        <Row className="LearnPage-contentRow Wick-row">
-            <Col xs="12" lg="9">
-                {examples.map(example => (
-                    <LearnCardContainer key={example.title} {...example} />
-                ))}
-            </Col>
-        </Row>
-        <Row className="LearnPage-spacerRow" />
-        <ContentSection title="Explore Tutorials" useSmallTitle>
-            Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!
-        </ContentSection>
-        <Row className="LearnPage-contentRow Wick-row">
-            <Col xs="12" lg="9">
-                {tutorials.map(tutorial => (
-                    <LearnCardContainer key={tutorial.title} {...tutorial} />
-                ))}
-            </Col>
-        </Row>
+        <ContentSection
+            title="explore tutorials"
+            text="Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
+            size="small"
+            includeUnderline
+            includePadding
+        />
+        <WickSmallSpacer />
+        <ContentSection
+            title="explore examples"
+            text="Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
+            size="small"
+            includeUnderline
+            includePadding
+        />
+        <WickLargeSpacer />
+        <ExternalContacts />
     </Container>
 );
 

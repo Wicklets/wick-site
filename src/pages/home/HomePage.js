@@ -15,7 +15,7 @@ import TutorialCardDeckContainer from '../../page_components/tutorials/TutorialC
 import NewsCardDeckContainer from '../../page_components/news/NewsCardDeckContainer.js';
 import UpdateCard from '../../page_components/update/UpdateCard.js';
 import ContentSection from '../../page_components/content_section/ContentSection.js';
-import {WickLargeSpacer, WickSmallSpacer} from '../../pattern_library/spacers/WickSpacers.js';
+import { WickLargeSpacer, WickSmallSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import Embed from '../../pattern_library/embed/WickEmbed.js';
 import Title from '../../pattern_library/title/WickTitle.js';
 import SocialMedia from '../../page_components/social_media/SocialMedia.js';
