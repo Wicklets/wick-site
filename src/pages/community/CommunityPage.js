@@ -8,12 +8,13 @@
 
 import React from 'react';
 
-import {Container, Row, Col} from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import CommunityGalleryContainer from '../../CommunityPage/CommunityGalleryContainer.js';
-import {WickSmallSpacer} from '../../pattern_library/spacers/WickSpacers.js';
+import { WickSmallSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
+import CreatorCard from '../../pattern_library/cards/CreatorCard.js';
 
 import '../../scss_styles/CommunityPage.scss';
 
@@ -30,7 +31,9 @@ const CommunityPage = () => (
             text="Check out what people are making! "
             includeUnderline
             includePadding
-        />
+        >
+            <CreatorCard />
+        </ContentSection>
         <WickSmallSpacer />
         <ContentSection
             title="project gallery"

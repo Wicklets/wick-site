@@ -21,7 +21,8 @@
         top: auto;
         background-color: white;
         overflow: hidden;
-        border-radius: 3px; // coded to fill the rounded space in the reactstrap card
+        border-bottom-left-radius: 3px; // coded to fill the rounded space in the reactstrap card
+        border-bottom-right-radius: 3px; // coded to fill the rounded space in the reactstrap card
     }
 
     &-text {
