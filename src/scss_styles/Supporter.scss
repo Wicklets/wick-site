@@ -9,18 +9,21 @@
 .Supporter {
     &-container {
         padding: 0 8px;
-        color: #F3F8F7;
         opacity: .8;
         -webkit-transition: opacity 0.5s;
         transition: opacity 0.5s;
 
         &:hover {
-            color: black;
             opacity: 1;
+
+            & .Supporter-name {
+                visibility: visible;
+            }
         }
     }
 
     &-name {
+        visibility: hidden;
         display: flex;
         font-size: 12px;
         padding: 4px 0 8px;
