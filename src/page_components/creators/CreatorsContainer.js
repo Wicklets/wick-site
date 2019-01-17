@@ -1,7 +1,7 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    Creators.js
+    CreatorsContainer.js
 
     Content for the Wick Creators
 */

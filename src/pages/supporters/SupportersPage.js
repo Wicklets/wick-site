@@ -11,9 +11,10 @@ import React from 'react';
 import { Container } from 'reactstrap';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
-import { WickSmallSpacer } from '../../pattern_library/spacers/WickSpacers.js';
+import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import SupportWick from '../../page_components/support/SupportWick.js';
 import SupporterBrands from '../../page_components/supporter_brands/SupporterBrands.js';
+import SupportersContainer from '../../page_components/supporters/SupportersContainer.js';
 
 const SupportersPage = () => (
     <Container className="fadeIn animated">
@@ -33,7 +34,8 @@ const SupportersPage = () => (
         >
             <SupportWick />
         </ContentSection>
-        <WickSmallSpacer />
+        <WickLargeSpacer />
+        <SupportersContainer />
         <ContentSection
             text="thank you"
             size="large"
