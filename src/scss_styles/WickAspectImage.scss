@@ -1,0 +1,37 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    CommunityGalleryImage.scss
+
+    Stylings for the Wick User Content Gallery Images
+*/
+
+.WickAspectImage {
+    &-aspectContainer {
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px;
+        width: 100%;
+        margin-bottom: 30px;
+
+        &--100 {
+            padding-top: 100%;
+        }
+
+        &--50 {
+            padding-top: calc(50% - 15px);
+        }
+    }
+
+    &-image {
+        width: 100%;
+    }
+
+    &-imageContainer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%
+    }
+}

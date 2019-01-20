@@ -11,7 +11,7 @@ import React from 'react';
 import { Container } from 'reactstrap';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
-import CommunityGallery from '../../CommunityPage/CommunityGallery.js';
+import CommunityGallery from '../../page_components/gallery/CommunityGallery.js';
 import { WickSmallSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
 import CreatorCard from '../../pattern_library/cards/CreatorCard.js';
