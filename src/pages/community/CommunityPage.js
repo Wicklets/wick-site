@@ -8,15 +8,13 @@
 
 import React from 'react';
 
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
-import CommunityGalleryContainer from '../../CommunityPage/CommunityGalleryContainer.js';
+import CommunityGallery from '../../CommunityPage/CommunityGallery.js';
 import { WickSmallSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
 import CreatorCard from '../../pattern_library/cards/CreatorCard.js';
-
-import '../../scss_styles/CommunityPage.scss';
 
 const CommunityPage = () => (
     <Container className="fadeIn animated">
@@ -28,7 +26,7 @@ const CommunityPage = () => (
         <WickSmallSpacer />
         <ContentSection
             title="creators"
-            text="Check out what people are making! "
+            text="Check out what people are making!"
             includeUnderline
             includePadding
         >
@@ -38,12 +36,9 @@ const CommunityPage = () => (
         <ContentSection
             title="project gallery"
             includeUnderline
+            includePadding
         >
-            <Row id="CommunityPage-galleryContainer" className="Wick-row">
-                <Col sm="9" md="12" lg="9">
-                    <CommunityGalleryContainer />
-                </Col>
-            </Row>
+            <CommunityGallery />
         </ContentSection>
         <WickSmallSpacer />
         <ExternalContacts />

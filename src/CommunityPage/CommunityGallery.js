@@ -6,7 +6,7 @@
     Grid of user-created content
 */
 
-import React, {Fragment} from 'react';
+import React from 'react';
 
 import {Row, Col} from 'reactstrap';
 import Img from 'react-image';
@@ -20,124 +20,117 @@ import community6 from '../Images/Projects/community6.png';
 
 import '../scss_styles/CommunityGallery.scss';
 
-const CommunityGallery = ({showGridText}) => (
-    <Fragment>
-        <Row>
-            <Col xs="12" md="4">
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="6"><Img src={community1} className="CommunityGallery-image" /></Col>
-                    <Col xs="6"><Img src={community1} className="CommunityGallery-image" /></Col>
-                </Row>
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12"><Img src={community2} className="CommunityGallery-image" /></Col>
-                </Row>
-            </Col>
-            <Col xs="12" md="4">
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12"><Img src={community3} className="CommunityGallery-image" /></Col>
-                </Row>
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12"><Img src={community4} className="CommunityGallery-image" /></Col>
-                </Row>
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="6"><Img src={community1} className="CommunityGallery-image" /></Col>
-                    <Col xs="6"><Img src={community2} className="CommunityGallery-image" /></Col>
-                </Row>
-            </Col>
-            <Col xs="12" md="4">
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12">
-                        <Img src={community2} className="CommunityGallery-image" />
-                    </Col>
-                </Row>
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="6"><Img src={community2} className="CommunityGallery-image" /></Col>
-                    <Col xs="6"><Img src={community1} className="CommunityGallery-image" /></Col>
-                </Row>
-            </Col>
-        </Row>
-        <Row>
-            <Col xs="12" md="4">
-                {showGridText && (
-                    <Row className="CommunityGallery-galleryRow">
-                        <Col xs="12"><div className="CommunityGallery-gridTitle"><div>Wick Worlds</div></div></Col>
-                    </Row>
-                )}
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="6"><Img src={community1} className="CommunityGallery-image" /></Col>
-                    <Col xs="6"><Img src={community1} className="CommunityGallery-image" /></Col>
-                </Row>
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12"><Img src={community4} className="CommunityGallery-image" /></Col>
-                </Row>
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="6"><Img src={community1} className="CommunityGallery-image" /></Col>
-                    <Col xs="6"><Img src={community2} className="CommunityGallery-image" /></Col>
-                </Row>
-            </Col>
-            <Col xs="12" md="4">
-                {showGridText && (
-                    <Row className="CommunityGallery-galleryRow">
-                        <Col xs="12"><div className="CommunityGallery-gridSubtitle"><div>The possibilities are endless! Here's what people around the world are creating with wick editor.</div></div></Col>
-                    </Row>
-                )}
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12"><Img src={community2} className="CommunityGallery-image" /></Col>
-                </Row>
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="6"><Img src={community2} className="CommunityGallery-image" /></Col>
-                    <Col xs="6"><Img src={community1} className="CommunityGallery-image" /></Col>
-                </Row>
-            </Col>
-            <Col xs="12" md="4">
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="6">
-                        <Img src={community5} className="CommunityGallery-image" />
-                    </Col>
-                    <Col xs="6">
-                        <Img src={community6} className="CommunityGallery-image" />
-                    </Col>
-                </Row>
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12">
-                        <Img src={community2} className="CommunityGallery-image" />
-                    </Col>
-                </Row>
-            </Col>
-        </Row>
-        <Row>
-            <Col xs="12" md="4">
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12"><Img src={community1} className="CommunityGallery-image" /></Col>
-                </Row>
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12"><Img src={community4} className="CommunityGallery-image" /></Col>
-                </Row>
-            </Col>
-            <Col xs="12" md="4">
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12"><Img src={community3} className="CommunityGallery-image" /></Col>
-                </Row>
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="12"><Img src={community4} className="CommunityGallery-image" /></Col>
-                </Row>
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="6"><Img src={community1} className="CommunityGallery-image" /></Col>
-                    <Col xs="6"><Img src={community1} className="CommunityGallery-image" /></Col>
-                </Row>
-            </Col>
-            <Col xs="12" md="4">
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="6"><Img src={community2} className="CommunityGallery-image" /></Col>
-                    <Col xs="6"><Img src={community2} className="CommunityGallery-image" /></Col>
-                </Row>
-                <Row className="CommunityGallery-galleryRow">
-                    <Col xs="6"><Img src={community6} className="CommunityGallery-image" /></Col>
-                    <Col xs="6"><Img src={community5} className="CommunityGallery-image" /></Col>
-                </Row>
-            </Col>
-        </Row>
-    </Fragment>
+const CommunityGallery = () => (
+    <Row className="Wick-row">
+        <Col sm="9" md="12" lg="9">
+                        <Row>
+                            <Col xs="8">
+                                <Row>
+                                    <Col xs="3">
+                                        <div className="CommunityGallery-test11" />
+                                    </Col>
+                                    <Col xs="3">
+                                        <div className="CommunityGallery-test11" />
+                                    </Col>
+                                    <Col xs="6">
+                                        <div className="CommunityGallery-test21" />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col xs="12">
+                                        <div className="CommunityGallery-test21" />
+                                    </Col>
+                                </Row>
+                            </Col>
+                            <Col xs="4">
+                                <Row>
+                                    <Col xs="12">
+                                        <div className="CommunityGallery-test11" />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col xs="6">
+                                        <div className="CommunityGallery-test11" />
+                                    </Col>
+                                    <Col xs="6">
+                                        <div className="CommunityGallery-test11" />
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
+
+
+                        <Row>
+                            <Col xs="4">
+                                <Row>
+                                    <Col xs="6">
+                                        <div className="CommunityGallery-test11" />
+                                    </Col>
+                                    <Col xs="6">
+                                        <div className="CommunityGallery-test11" />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col xs="12">
+                                        <div className="CommunityGallery-test21" />
+                                    </Col>
+                                </Row>
+                            </Col>
+                            <Col xs="4">
+                                <div className="CommunityGallery-test11" />
+                            </Col>
+                            <Col xs="4">
+                                <Row>
+                                    <Col xs="12">
+                                        <div className="CommunityGallery-test21" />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col xs="6">
+                                        <div className="CommunityGallery-test11" />
+                                    </Col>
+                                    <Col xs="6">
+                                        <div className="CommunityGallery-test11" />
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
+
+
+                        <Row>
+                            <Col xs="4">
+                                <Row>
+                                    <Col xs="6">
+                                        <div className="CommunityGallery-test11" />
+                                    </Col>
+                                    <Col xs="6">
+                                        <div className="CommunityGallery-test11" />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col xs="12">
+                                        <div className="CommunityGallery-test11" />
+                                    </Col>
+                                </Row>
+                            </Col>
+                            <Col xs="8">
+                                <Row>
+                                    <Col xs="12">
+                                        <div className="CommunityGallery-test21" />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col xs="6">
+                                        <div className="CommunityGallery-test21" />
+                                    </Col>
+                                    <Col xs="6">
+                                        <div className="CommunityGallery-test21" />
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
+        </Col>
+    </Row>
 );
 
 export default CommunityGallery;

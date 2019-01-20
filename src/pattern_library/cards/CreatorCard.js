@@ -18,7 +18,7 @@ import '../../scss_styles/CreatorCard.scss';
 
 const CreatorCard = () => (
     <Row className="Wick-row">
-        <Col sm="6">
+        <Col sm="8" md="6">
             <Card className="CreatorCard-container">
                 <Img className="CreatorCard-projectImage" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" />
                 <CardBody className="CreatorCard-content">
