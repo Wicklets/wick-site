@@ -14,7 +14,7 @@ import ContentSection from '../../page_components/content_section/ContentSection
 import CommunityGallery from '../../page_components/gallery/CommunityGallery.js';
 import { WickSmallSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
-import CreatorCard from '../../pattern_library/cards/CreatorCard.js';
+import WickCarouselContainer from '../../pattern_library/carousel/WickCarouselContainer.js';
 
 const CommunityPage = () => (
     <Container className="fadeIn animated">
@@ -30,7 +30,7 @@ const CommunityPage = () => (
             includeUnderline
             includePadding
         >
-            <CreatorCard />
+            <WickCarouselContainer />
         </ContentSection>
         <WickSmallSpacer />
         <ContentSection

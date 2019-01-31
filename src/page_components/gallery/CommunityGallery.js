@@ -9,7 +9,6 @@
 import React from 'react';
 
 import {Row, Col} from 'reactstrap';
-import Img from 'react-image';
 
 import AspectImage from '../../pattern_library/images/WickAspectImage.js';
 
