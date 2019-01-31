@@ -8,6 +8,7 @@
 */
 
 import React, {Component} from 'react';
+import {withRouter} from 'react-router-dom';
 
 import WickRouter from './WickRouter.js';
 
@@ -19,8 +20,7 @@ class WickRouterContainer extends Component {
         this.state = {
             backgroundAnimationClass: "WickRouter-background WickRouter-background--hidden",
             isDropdownOpen: false,
-            pageJustLaunched: true,
-            page: "home"
+            pageJustLaunched: true
         };
     }
 
@@ -37,12 +37,8 @@ class WickRouterContainer extends Component {
         }
     }
 
-    handleClickChangePage = (page) => {
-        this.setState({isDropdownOpen: false, page});
-    }
-
     toggleDropdown = e => {
-        this.setState({isDropdownOpen: !this.state.isDropdownOpen});
+        this.setState(prevState => ({isDropdownOpen: !prevState.isDropdownOpen}));
     }
 
     launchEditor = () => {
@@ -60,8 +56,7 @@ class WickRouterContainer extends Component {
     render() {
         return (
             <WickRouter
-                page={this.state.page}
-                onClickChangePage={this.handleClickChangePage}
+                page={this.props.location.pathname}
                 onClickToggleDropdown={this.toggleDropdown}
                 onClickLaunchEditor={this.launchEditor}
                 backgroundAnimationClass={this.state.backgroundAnimationClass}
@@ -71,4 +66,4 @@ class WickRouterContainer extends Component {
     }
 };
 
-export default WickRouterContainer;
+export default withRouter(WickRouterContainer);

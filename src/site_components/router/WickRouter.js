@@ -7,7 +7,7 @@
 */
 
 import React, {Fragment} from 'react';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 
 import {
   Collapse,
@@ -33,98 +33,96 @@ const learn = () => (<LearnPageContainer />)
 const community = () => (<CommunityPageContainer />)
 const supporters = () => (<SupportersPageContainer />)
 
-const WickRouter = ({page, onClickChangePage, onClickToggleDropdown, onClickLaunchEditor, backgroundAnimationClass, isDropdownOpen}) => (
-    <Router>
-        <Fragment>
-            <div id="WickRouter-container">
-                <Navbar light expand="sm">
-                    <div className={backgroundAnimationClass} />
-                    <NavbarBrand
-                        tag={Link}
-                        to="/"
-                        id={(page === "home" ? "WickRouter-activeItem" : "")}
-                        className="WickRouter-brand--narrow"
-                        onClick={() => onClickChangePage("home")}
-                    >
-                        wick editor
-                    </NavbarBrand>
-                    <NavbarToggler onClick={onClickToggleDropdown} />
-                    <Collapse isOpen={isDropdownOpen} navbar>
-                        <Nav className="ml-auto mr-auto" navbar>
-                            <NavItem>
-                                <NavLink
-                                    tag={Link}
-                                    to="/community/"
-                                    id={(page === "community" ? "WickRouter-activeItem" : "")}
-                                    className="WickRouter-navItem"
-                                    onClick={() => onClickChangePage("community")}
-                                >
-                                    community
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink
-                                    tag={Link}
-                                    to="/supporters/"
-                                    id={(page === "supporters" ? "WickRouter-activeItem" : "")}
-                                    className="WickRouter-navItem"
-                                    onClick={() => onClickChangePage("supporters")}
-                                >
-                                    supporters
-                                </NavLink>
-                            </NavItem>
-                            <NavbarBrand
+const WickRouter = ({page, onClickToggleDropdown, onClickLaunchEditor, backgroundAnimationClass, isDropdownOpen}) => (
+    <Fragment>
+        <div id="WickRouter-container">
+            <Navbar light expand="sm">
+                <div className={backgroundAnimationClass} />
+                <NavbarBrand
+                    tag={Link}
+                    to="/"
+                    id={(page === "/" ? "WickRouter-activeItem" : "")}
+                    className="WickRouter-brand--narrow"
+                    onClick={onClickToggleDropdown}
+                >
+                    wick editor
+                </NavbarBrand>
+                <NavbarToggler onClick={onClickToggleDropdown} />
+                <Collapse isOpen={isDropdownOpen} navbar>
+                    <Nav className="ml-auto mr-auto" navbar>
+                        <NavItem>
+                            <NavLink
                                 tag={Link}
-                                to="/"
-                                id={(page === "home" ? "WickRouter-activeItem" : "")}
-                                className="WickRouter-brand--wide"
-                                onClick={() => onClickChangePage("home")}
+                                to="/community/"
+                                id={(page === "/community/" ? "WickRouter-activeItem" : "")}
+                                className="WickRouter-navItem"
+                                onClick={onClickToggleDropdown}
                             >
-                                wick editor
-                            </NavbarBrand>
-                            <NavItem>
-                                <NavLink
-                                    href="#"
-                                    id={(page === "create" ? "WickRouter-activeItem" : "")}
-                                    className="WickRouter-navItem"
-                                    onClick={onClickLaunchEditor}
-                                >
-                                    create
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink
-                                    tag={Link}
-                                    to="/learn/"
-                                    id={(page === "learn" ? "WickRouter-activeItem" : "")}
-                                    className="WickRouter-navItem"
-                                    onClick={() => onClickChangePage("learn")}
-                                >
-                                    learn
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink
-                                    tag={Link}
-                                    to="/about/"
-                                    id={(page === "about" ? "WickRouter-activeItem" : "")}
-                                    className="WickRouter-navItem"
-                                    onClick={() => onClickChangePage("about")}
-                                >
-                                    about
-                                </NavLink>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
-            </div>
-            <Route path="/" exact component={home} />
-            <Route path="/about/" component={about} />
-            <Route path="/learn/" component={learn} />
-            <Route path="/community/" component={community} />
-            <Route path="/supporters/" component={supporters} />
-        </Fragment>
-    </Router>
+                                community
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                tag={Link}
+                                to="/supporters/"
+                                id={(page === "/supporters/" ? "WickRouter-activeItem" : "")}
+                                className="WickRouter-navItem"
+                                onClick={onClickToggleDropdown}
+                            >
+                                supporters
+                            </NavLink>
+                        </NavItem>
+                        <NavbarBrand
+                            tag={Link}
+                            to="/"
+                            id={(page === "/" ? "WickRouter-activeItem" : "")}
+                            className="WickRouter-brand--wide"
+                            onClick={onClickToggleDropdown}
+                        >
+                            wick editor
+                        </NavbarBrand>
+                        <NavItem>
+                            <NavLink
+                                href="#"
+                                className="WickRouter-navItem"
+                                onClick={onClickLaunchEditor}
+                            >
+                                create
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                tag={Link}
+                                to="/learn/"
+                                id={(page === "/learn/" ? "WickRouter-activeItem" : "")}
+                                className="WickRouter-navItem"
+                                onClick={onClickToggleDropdown}
+                            >
+                                learn
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                tag={Link}
+                                to="/about/"
+                                id={(page === "/about/" ? "WickRouter-activeItem" : "")}
+                                className="WickRouter-navItem"
+                                onClick={onClickToggleDropdown}
+                            >
+                                about
+                            </NavLink>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
+            </Navbar>
+        </div>
+        {console.log(page)}
+        <Route path="/" exact component={home} />
+        <Route path="/about/" component={about} />
+        <Route path="/learn/" component={learn} />
+        <Route path="/community/" component={community} />
+        <Route path="/supporters/" component={supporters} />
+    </Fragment>
 );
 
 export default WickRouter;
