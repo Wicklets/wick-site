@@ -23,9 +23,9 @@ const WickCarousel = ({activeIndex, content, next, previous, onExiting, onExited
         <CarouselItem
             onExiting={onExiting}
             onExited={onExited}
-            key={card}
+            key={card.username}
         >
-            <CreatorCard />
+            <CreatorCard {...card} />
         </CarouselItem>
     )));
 
