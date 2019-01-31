@@ -19,7 +19,7 @@ const Footer = () => (
                 <span className="Footer-item">Learn & Support</span>
                 <span className="Footer-item">Contact</span>
             </div>
-            <div id="Footer-copyright">© 2018, Wicklets, LLC.</div>
+            <div id="Footer-copyright">© 2019, Wicklets, LLC.</div>
         </div>
     </Fragment>
 );
