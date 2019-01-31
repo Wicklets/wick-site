@@ -33,7 +33,7 @@ const learn = () => (<LearnPageContainer />)
 const community = () => (<CommunityPageContainer />)
 const supporters = () => (<SupportersPageContainer />)
 
-const WickRouter = ({page, onClickToggleDropdown, onClickLaunchEditor, backgroundAnimationClass, isDropdownOpen}) => (
+const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickLaunchEditor, backgroundAnimationClass, isDropdownOpen}) => (
     <Fragment>
         <div id="WickRouter-container">
             <Navbar light expand="sm">
@@ -43,7 +43,7 @@ const WickRouter = ({page, onClickToggleDropdown, onClickLaunchEditor, backgroun
                     to="/"
                     id={(page === "/" ? "WickRouter-activeItem" : "")}
                     className="WickRouter-brand--narrow"
-                    onClick={onClickToggleDropdown}
+                    onClick={onClickCloseDropdown}
                 >
                     wick editor
                 </NavbarBrand>
@@ -56,7 +56,7 @@ const WickRouter = ({page, onClickToggleDropdown, onClickLaunchEditor, backgroun
                                 to="/community/"
                                 id={(page === "/community/" ? "WickRouter-activeItem" : "")}
                                 className="WickRouter-navItem"
-                                onClick={onClickToggleDropdown}
+                                onClick={onClickCloseDropdown}
                             >
                                 community
                             </NavLink>
@@ -67,7 +67,7 @@ const WickRouter = ({page, onClickToggleDropdown, onClickLaunchEditor, backgroun
                                 to="/supporters/"
                                 id={(page === "/supporters/" ? "WickRouter-activeItem" : "")}
                                 className="WickRouter-navItem"
-                                onClick={onClickToggleDropdown}
+                                onClick={onClickCloseDropdown}
                             >
                                 supporters
                             </NavLink>
@@ -77,7 +77,7 @@ const WickRouter = ({page, onClickToggleDropdown, onClickLaunchEditor, backgroun
                             to="/"
                             id={(page === "/" ? "WickRouter-activeItem" : "")}
                             className="WickRouter-brand--wide"
-                            onClick={onClickToggleDropdown}
+                            onClick={onClickCloseDropdown}
                         >
                             wick editor
                         </NavbarBrand>
@@ -96,7 +96,7 @@ const WickRouter = ({page, onClickToggleDropdown, onClickLaunchEditor, backgroun
                                 to="/learn/"
                                 id={(page === "/learn/" ? "WickRouter-activeItem" : "")}
                                 className="WickRouter-navItem"
-                                onClick={onClickToggleDropdown}
+                                onClick={onClickCloseDropdown}
                             >
                                 learn
                             </NavLink>
@@ -107,7 +107,7 @@ const WickRouter = ({page, onClickToggleDropdown, onClickLaunchEditor, backgroun
                                 to="/about/"
                                 id={(page === "/about/" ? "WickRouter-activeItem" : "")}
                                 className="WickRouter-navItem"
-                                onClick={onClickToggleDropdown}
+                                onClick={onClickCloseDropdown}
                             >
                                 about
                             </NavLink>
