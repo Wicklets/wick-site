@@ -25,6 +25,30 @@
         border-bottom-right-radius: 3px; // coded to fill the rounded space in the reactstrap card
     }
 
+    &-modal {
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    &-modalHeader {
+        justify-content: center;
+    }
+
+    &-modalNumber {
+        color: gray;
+        font-size: 16px;
+    }
+
+    &-modalTitle {
+        font-size: 20px
+    }
+
+    &-modalUnderline {
+        width: 48px;
+        border: solid 2px #1EE29A;
+        margin: 4px auto 4px;
+    }
+
     &-text {
         font-size: 12px;
     }

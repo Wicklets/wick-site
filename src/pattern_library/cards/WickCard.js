@@ -38,7 +38,11 @@ const WickCard = ({title, body, image, onClick, includeModal, modalOpen, onMouse
                 toggle={onClick}
                 size="lg"
             >
-                <ModalHeader />
+                <ModalHeader className="WickCard-modalHeader">
+                    <div className="WickCard-modalNumber">Tutorial #</div>
+                    <div className="WickCard-modalUnderline" />
+                    <div className="WickCard-modalTitle">{title}</div>
+                </ModalHeader>
                 <ModalBody>
                     <ResponsiveEmbed src="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
                 </ModalBody>
