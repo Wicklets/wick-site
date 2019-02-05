@@ -116,7 +116,6 @@ const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickL
                 </Collapse>
             </Navbar>
         </div>
-        {console.log(page)}
         <Route path="/" exact component={home} />
         <Route path="/about/" component={about} />
         <Route path="/learn/" component={learn} />

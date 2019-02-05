@@ -13,10 +13,11 @@ import {Button} from 'reactstrap';
 import {CardDeck} from 'reactstrap';
 
 import WickCardContainer from './WickCardContainer.js';
+import WickPaddingCard from './WickPaddingCard.js';
 
 import '../../scss_styles/WickCardDeck.scss';
 
-const WickCardDeck = ({cards, linkButton, useNewsCard, usePadding}) => (
+const WickCardDeck = ({cards, numberPaddingCards, linkButton, useNewsCard, usePadding}) => (
     <Fragment>
         <Row className={(usePadding ? "WickCardDeck-paddingContainer" : "") + " Wick-row"}>
             <Col md="9">
@@ -24,6 +25,9 @@ const WickCardDeck = ({cards, linkButton, useNewsCard, usePadding}) => (
                     {cards.map(card => (
                         <WickCardContainer key={card.title} useNewsCard={useNewsCard} {...card} />
                     ))}
+                    {!!numberPaddingCards && ([...Array(numberPaddingCards).keys()].map(cardNumber => (
+                        <WickPaddingCard key={cardNumber} />
+                    )))}
                 </CardDeck>
             </Col>
         </Row>

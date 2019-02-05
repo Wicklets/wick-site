@@ -13,6 +13,7 @@ import { Container } from 'reactstrap';
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
+import ExampleCardBlockContainer from '../../page_components/examples/ExampleCardBlockContainer.js';
 
 const LearnPage = ({tutorials, examples}) => (
     <Container className="fadeIn animated">
@@ -30,7 +31,9 @@ const LearnPage = ({tutorials, examples}) => (
             size="small"
             includeUnderline
             includePadding
-        />
+        >
+            <ExampleCardBlockContainer />
+        </ContentSection>
         <WickLargeSpacer />
         <ExternalContacts />
         <WickSmallSpacer />

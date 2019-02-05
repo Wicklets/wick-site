@@ -39,6 +39,7 @@ class WickCardDeckContainer extends Component {
             <WickCardDeck
                 {...this.props}
                 cards={this.props.cards.slice(0, this.state.numberCards)}
+                numberPaddingCards={this.state.numberCards - this.props.cards.slice(0, this.state.numberCards).length}
             />
         );
     }
