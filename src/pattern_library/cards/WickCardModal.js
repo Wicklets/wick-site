@@ -9,7 +9,6 @@
 import React from 'react';
 import ResponsiveEmbed from 'react-responsive-embed';
 
-import { Card, CardImg, CardText, CardTitle, CardImgOverlay } from 'reactstrap';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import '../../scss_styles/WickCardModal.scss';
