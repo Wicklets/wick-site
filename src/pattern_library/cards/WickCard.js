@@ -11,7 +11,7 @@ import Img from 'react-image';
 import ResponsiveEmbed from 'react-responsive-embed';
 
 import { Card, CardImg, CardText, CardTitle, CardImgOverlay } from 'reactstrap';
-import { Modal } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import arrow from '../../Images/Tutorials/arrow.svg';
 
@@ -38,7 +38,11 @@ const WickCard = ({title, body, image, onClick, includeModal, modalOpen, onMouse
                 toggle={onClick}
                 size="lg"
             >
-                <ResponsiveEmbed src="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
+                <ModalHeader />
+                <ModalBody>
+                    <ResponsiveEmbed src="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
+                </ModalBody>
+                <ModalFooter />
             </Modal>
         )}
     </Fragment>

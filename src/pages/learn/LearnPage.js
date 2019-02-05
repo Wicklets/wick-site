@@ -14,6 +14,7 @@ import ContentSection from '../../page_components/content_section/ContentSection
 import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
 import ExampleCardBlockContainer from '../../page_components/examples/ExampleCardBlockContainer.js';
+import TutorialCardBlockContainer from '../../page_components/tutorials/TutorialCardBlockContainer.js';
 
 const LearnPage = ({tutorials, examples}) => (
     <Container className="fadeIn animated">
@@ -23,7 +24,9 @@ const LearnPage = ({tutorials, examples}) => (
             size="small"
             includeUnderline
             includePadding
-        />
+        >
+            <TutorialCardBlockContainer />
+        </ContentSection>
         <WickSmallSpacer />
         <ContentSection
             title="explore examples"

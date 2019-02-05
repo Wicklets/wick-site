@@ -3,7 +3,7 @@
     WickEditor Website
     ExampleCardBlockContainer.js
 
-    Container for Learn Page Example Card Block
+    Container for Learn Page Tutorial Card Block
 */
 
 import React, { Fragment, Component } from 'react';
@@ -13,7 +13,7 @@ import WickCardDeckContainer from '../../pattern_library/cards/WickCardDeckConta
 import test from '../../Images/Tutorials/testworld.svg';
 import comingsoon from '../../Images/Misc/comingsoon.png';
 
-class ExampleCardBlockContainer extends Component {
+class TutorialCardBlockContainer extends Component {
     constructor(props) {
         super(props);
 
@@ -22,27 +22,33 @@ class ExampleCardBlockContainer extends Component {
             numberRows: 1,
             cards: [
                 {
-                    title: "Follow Mouse",
-                    body: "See how you can get your character to follow your mouse movements around the screen!",
+                    title: "Getting Started with Wick Editor",
+                    body: "In this tutorial, we go over how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
                     image: test,
-                    onClick: () => window.open("http://wickeditor.com/wick-editor/index.html?demo=FollowMouse.json")
+                    onClick: () => window.open("https://www.youtube.com/watch?v=bhN2VxyWJiU")
                 },
                 {
-                    title: "Multiple Rooms",
-                    body: "Learn about how you can insert multiple different scenes into your animation.",
+                    title: "Sounds in Wick Editor",
+                    body: "Here's a tutorial to get you started using sounds in your wickeditor.com projects. I show you how to add sounds to the timeline as well as with code!",
                     image: test,
-                    onClick: () => window.open("http://wickeditor.com/wick-editor/index.html?demo=MultipleRooms.json")
+                    onClick: () => window.open("https://www.youtube.com/watch?v=T08B0KkEAZA")
                 },
                 {
-                    title: "More Examples Coming Soon!",
-                    body: "Check back soon for more awesome Wick Editor Examples!",
-                    image: comingsoon
+                    title: "More Tutorials Coming Soon!",
+                    body: "Check back soon for more awesome Wick Editor Tutorials!",
+                    image: comingsoon,
                 },
                 {
-                    title: "Follow Mousi",
-                    body: "See how you can get your character to follow your mouse movements around the screen!",
+                    title: "Getting Started with Wick Editors",
+                    body: "In this tutorial, we go over how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
                     image: test,
-                    onClick: () => window.open("http://wickeditor.com/wick-editor/index.html?demo=FollowMouse.json")
+                    onClick: () => window.open("https://www.youtube.com/watch?v=bhN2VxyWJiU")
+                },
+                {
+                    title: "Sounds in Wick Editors",
+                    body: "Here's a tutorial to get you started using sounds in your wickeditor.com projects. I show you how to add sounds to the timeline as well as with code!",
+                    image: test,
+                    onClick: () => window.open("https://www.youtube.com/watch?v=T08B0KkEAZA")
                 }
             ]
         };
@@ -80,4 +86,4 @@ class ExampleCardBlockContainer extends Component {
     }
 };
 
-export default ExampleCardBlockContainer;
+export default TutorialCardBlockContainer;
