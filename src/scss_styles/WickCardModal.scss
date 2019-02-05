@@ -1,0 +1,35 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    WickCardModal.scss
+
+    Stylings for the Wick Card Modals
+*/
+
+.WickCardModal {
+    &-container {
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    &-header {
+        justify-content: center;
+        padding-bottom: 0;
+        border: none;
+    }
+
+    &-number {
+        color: gray;
+        font-size: 16px;
+    }
+
+    &-title {
+        font-size: 20px
+    }
+
+    &-underline {
+        width: 48px;
+        border: solid 2px #1EE29A;
+        margin: 4px auto 4px;
+    }
+}
