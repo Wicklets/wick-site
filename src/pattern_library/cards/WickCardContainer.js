@@ -17,27 +17,38 @@ class WickCardContainer extends Component {
 
         // display overlay for card
         this.state = {
-            isContentHovered: false
+            isContentHovered: false,
+            modalOpen: false
         };
     }
 
-    toggleContent = () => this.setState(prevState => ({isContentHovered: !prevState.isContentHovered}));
+    handleMouseEnter = () => this.setState({isContentHovered: true});
 
-    shouldUseNewsCard = () => this.props.useNewsCard
+    handleMouseLeave = () => this.setState({isContentHovered: false});
+
+    shouldUseNewsCard = () => this.props.useNewsCard;
+
+    handleClick = () => (this.props.includeModal ?
+        this.setState(prevState => ({modalOpen: !prevState.modalOpen})) :
+        this.props.onClick());
 
     render() {
         return (
             (this.shouldUseNewsCard() ? (
                 <NewsCard
                     {...this.props}
-                    toggleContent={this.toggleContent}
-                    isContentHovered={this.state.isContentHovered}
+                    {...this.state}
+                    onClick={this.handleClick}
+                    onMouseEnter={this.handleMouseEnter}
+                    onMouseLeave={this.handleMouseLeave}
                 />
             ) : (
                 <WickCard
                     {...this.props}
-                    toggleContent={this.toggleContent}
-                    isContentHovered={this.state.isContentHovered}
+                    {...this.state}
+                    onClick={this.handleClick}
+                    onMouseEnter={this.handleMouseEnter}
+                    onMouseLeave={this.handleMouseLeave}
                 />
             ))
         );

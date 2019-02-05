@@ -15,8 +15,8 @@ import arrow from '../../Images/Tutorials/arrow.svg';
 
 import '../../scss_styles/NewsCard.scss';
 
-const NewsCard = ({title, text, date, link, onClick, toggleContent, isContentHovered}) => (
-    <Card className="NewsCard-container" onMouseEnter={toggleContent} onMouseLeave={toggleContent} onClick={onClick}>
+const NewsCard = ({title, text, date, link, onClick, onMouseEnter, onMouseLeave, isContentHovered}) => (
+    <Card className="NewsCard-container" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
         <CardBody>
             <CardTitle className="NewsCard-title">{title}</CardTitle>
             <CardText className="NewsCard-text">{text}</CardText>

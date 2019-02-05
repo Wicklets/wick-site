@@ -72,6 +72,7 @@ class ExampleCardDeckContainer extends Component {
                         key={rowInd}
                         cards={this.state.cards.slice(this.state.numberCards*rowInd, this.state.numberCards*(rowInd + 1))}
                         usePadding
+                        includeModal
                     />
                 ))}
             </Fragment>
