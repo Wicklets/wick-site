@@ -18,7 +18,7 @@ class WickCardContainer extends Component {
         // display overlay for card
         this.state = {
             isContentHovered: false,
-            modalOpen: false
+            isModalOpen: false
         };
     }
 
@@ -29,7 +29,7 @@ class WickCardContainer extends Component {
     shouldUseNewsCard = () => this.props.useNewsCard;
 
     handleClick = () => (this.props.includeModal ?
-        this.setState(prevState => ({modalOpen: !prevState.modalOpen})) :
+        this.setState(prevState => ({isModalOpen: !prevState.isModalOpen})) :
         this.props.onClick());
 
     render() {

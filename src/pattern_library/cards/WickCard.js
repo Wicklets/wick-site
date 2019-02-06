@@ -17,7 +17,7 @@ import WickCardModal from './WickCardModal.js';
 
 import '../../scss_styles/WickCard.scss';
 
-const WickCard = ({title, body, image, onClick, includeModal, modalOpen, onMouseEnter, onMouseLeave, isContentHovered}) => (
+const WickCard = ({title, body, image, onClick, includeModal, isModalOpen, onMouseEnter, onMouseLeave, isContentHovered}) => (
     <Fragment>
         <Card className="WickCard-container" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
             <CardImg width="100%" src={image} alt="Card image cap" />
@@ -32,7 +32,7 @@ const WickCard = ({title, body, image, onClick, includeModal, modalOpen, onMouse
             </CardImgOverlay>
         </Card>
         {includeModal && (
-            <WickCardModal title={title} onClick={onClick} modalOpen={modalOpen} />
+            <WickCardModal title={title} onClick={onClick} isModalOpen={isModalOpen} />
         )}
     </Fragment>
 );

@@ -13,10 +13,10 @@ import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import '../../scss_styles/WickCardModal.scss';
 
-const WickCardModal = ({title, onClick, modalOpen}) => (
+const WickCardModal = ({title, onClick, isModalOpen}) => (
     <Modal
         className="WickCardModal-container"
-        isOpen={modalOpen}
+        isOpen={isModalOpen}
         toggle={onClick}
         size="lg"
     >
