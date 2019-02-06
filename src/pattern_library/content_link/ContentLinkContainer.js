@@ -20,7 +20,9 @@ class ContentLinkContainer extends Component {
         };
     }
 
-    toggleContent = () => this.setState(prevState => ({isContentHovered: !prevState.isContentHovered}));
+    showContent = () => this.setState({isContentHovered: true});
+
+    hideContent = () => this.setState({isContentHovered: false});
 
     launchLink = () => window.open(this.props.link);
 
@@ -29,7 +31,8 @@ class ContentLinkContainer extends Component {
             <ContentLink
                 {...this.props}
                 onClick={this.launchLink}
-                toggleContent={this.toggleContent}
+                showContent={this.showContent}
+                hideContent={this.hideContent}
                 isContentHovered={this.state.isContentHovered}/>
         );
     }
