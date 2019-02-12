@@ -11,7 +11,7 @@ import React from 'react';
 import { Container } from 'reactstrap';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
-import CommunityGallery from '../../page_components/gallery/CommunityGallery.js';
+//import CommunityGallery from '../../page_components/gallery/CommunityGallery.js';
 import { WickSmallSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
 import WickCarouselContainer from '../../pattern_library/carousel/WickCarouselContainer.js';
@@ -33,6 +33,7 @@ const CommunityPage = () => (
             <WickCarouselContainer />
         </ContentSection>
         <WickSmallSpacer />
+        {/* THIS SECTION COMMENTED OUT FOR INITIAL RELEASE UNTIL CONTENT CAN BE SOURCED
         <ContentSection
             title="project gallery"
             includeUnderline
@@ -41,6 +42,7 @@ const CommunityPage = () => (
             <CommunityGallery />
         </ContentSection>
         <WickSmallSpacer />
+        */}
         <ExternalContacts />
         <WickSmallSpacer />
     </Container>

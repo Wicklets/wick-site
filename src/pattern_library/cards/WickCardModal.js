@@ -13,7 +13,7 @@ import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import '../../scss_styles/WickCardModal.scss';
 
-const WickCardModal = ({title, onClick, isModalOpen}) => (
+const WickCardModal = ({title, embed, number, onClick, isModalOpen}) => (
     <Modal
         className="WickCardModal-container"
         isOpen={isModalOpen}
@@ -21,12 +21,12 @@ const WickCardModal = ({title, onClick, isModalOpen}) => (
         size="lg"
     >
         <ModalHeader className="WickCardModal-header">
-            <div className="WickCardModal-number">Tutorial #</div>
+            <div className="WickCardModal-number">{number}</div>
             <div className="WickCardModal-underline" />
             <div className="WickCardModal-title">{title}</div>
         </ModalHeader>
         <ModalBody>
-            <ResponsiveEmbed src="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
+            <ResponsiveEmbed src={embed} ratio="16:9" />
         </ModalBody>
         <ModalFooter />
     </Modal>

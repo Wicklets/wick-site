@@ -25,30 +25,36 @@ class TutorialCardBlockContainer extends Component {
                     title: "Getting Started with Wick Editor",
                     body: "In this tutorial, we go over how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
                     image: test,
-                    onClick: () => window.open("https://www.youtube.com/watch?v=bhN2VxyWJiU")
+                    embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
+                    number: "Tutorial 1"
                 },
                 {
                     title: "Sounds in Wick Editor",
                     body: "Here's a tutorial to get you started using sounds in your wickeditor.com projects. I show you how to add sounds to the timeline as well as with code!",
                     image: test,
-                    onClick: () => window.open("https://www.youtube.com/watch?v=T08B0KkEAZA")
+                    embed: "https://www.youtube.com/embed/T08B0KkEAZA",
+                    number: "Tutorial 2"
                 },
                 {
                     title: "More Tutorials Coming Soon!",
                     body: "Check back soon for more awesome Wick Editor Tutorials!",
                     image: comingsoon,
+                    embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
+                    number: "Tutorial 3"
                 },
                 {
                     title: "Getting Started with Wick Editors",
                     body: "In this tutorial, we go over how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
                     image: test,
-                    onClick: () => window.open("https://www.youtube.com/watch?v=bhN2VxyWJiU")
+                    embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
+                    number: "Tutorial 4"
                 },
                 {
                     title: "Sounds in Wick Editors",
                     body: "Here's a tutorial to get you started using sounds in your wickeditor.com projects. I show you how to add sounds to the timeline as well as with code!",
                     image: test,
-                    onClick: () => window.open("https://www.youtube.com/watch?v=T08B0KkEAZA")
+                    embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
+                    number: "Tutorial 5"
                 }
             ]
         };
@@ -78,7 +84,6 @@ class TutorialCardBlockContainer extends Component {
                         key={rowInd}
                         cards={this.state.cards.slice(this.state.numberCards*rowInd, this.state.numberCards*(rowInd + 1))}
                         usePadding
-                        includeModal
                     />
                 ))}
             </Fragment>

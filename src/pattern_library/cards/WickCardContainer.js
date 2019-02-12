@@ -28,9 +28,7 @@ class WickCardContainer extends Component {
 
     shouldUseNewsCard = () => this.props.useNewsCard;
 
-    handleClick = () => (this.props.includeModal ?
-        this.setState(prevState => ({isModalOpen: !prevState.isModalOpen})) :
-        this.props.onClick());
+    handleClick = () => this.setState(prevState => ({isModalOpen: !prevState.isModalOpen}));
 
     render() {
         return (

@@ -17,13 +17,13 @@ import WickPaddingCard from './WickPaddingCard.js';
 
 import '../../scss_styles/WickCardDeck.scss';
 
-const WickCardDeck = ({cards, numberPaddingCards, linkButton, includeModal, useNewsCard, usePadding}) => (
+const WickCardDeck = ({cards, numberPaddingCards, linkButton, useNewsCard, usePadding}) => (
     <Fragment>
         <Row className={(usePadding ? "WickCardDeck-paddingContainer" : "") + " Wick-row"}>
             <Col md="9">
                 <CardDeck>
                     {cards.map(card => (
-                        <WickCardContainer key={card.title} useNewsCard={useNewsCard} includeModal={includeModal} {...card} />
+                        <WickCardContainer key={card.title} useNewsCard={useNewsCard} {...card} />
                     ))}
                     {!!numberPaddingCards && ([...Array(numberPaddingCards).keys()].map(cardNumber => (
                         <WickPaddingCard key={cardNumber} />
