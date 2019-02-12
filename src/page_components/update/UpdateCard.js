@@ -20,13 +20,15 @@ const UpdateCard = () => (
             <Card className="UpdateCard-container">
                 <CardBody>
                     <CardTitle className="UpdateCard-version">update 0.15.2</CardTitle>
-                    <CardSubtitle className="UpdateCard-text">It's mean. It's lean. It makes animations and games. Try it out!</CardSubtitle>
+                    <CardSubtitle className="UpdateCard-text">
+                        We’ve posted a major update to the Wick Editor 1.0 Alpha. You can test it out at <a href="http://alpha.wickeditor.com" target="_blank" rel="noopener noreferrer">alpha.wickeditor.com</a>!
+                    </CardSubtitle>
                     <Button
                         className="UpdateCard-button"
                         outline
                         color="success"
                         size="sm"
-                        onClick={() => window.open("http://wickeditor.com/wick-editor/")}
+                        onClick={() => window.open("http://alpha.wickeditor.com")}
                     >
                         try it
                     </Button>

@@ -17,21 +17,22 @@ class NewsCardDeckContainer extends Component {
         this.state = {
             cards: [
                 {
-                    title: "News Item!",
-                    text: "News subtitle description",
-                    date: "11/30/18"
+                    title: "Support Wick Editor on Patreon!",
+                    text: "Become a supporter and help Wick Editor continue to develop!",
+                    date: "02/15/19",
+                    onClick: () => window.open("https://forum.wickeditor.com/t/support-the-wick-editor-on-patreon/1072")
                 },
                 {
-                    title: "News Item",
-                    text: "Longer news subtitle description. This is what it looks like.",
-                    date: "10/15/18",
-                    onClick: () => window.open("https://www.cmu.edu/news/stories/archives/2018/october/wick-editor.html")
+                    title: "Wick Editor Alpha update v3",
+                    text: "We’ve posted a major update to the Wick Editor 1.0 Alpha",
+                    date: "01/30/19",
+                    onClick: () => window.open("https://forum.wickeditor.com/t/wick-editor-alpha-update-v3/1404")
                 },
                 {
-                    title: "News Item?",
-                    text: "Longer news subtitle description. This is what it looks like.",
-                    date: "06/28/18",
-                    onClick: () => window.open("https://forum.wickeditor.com/t/wick-0-15-update-thread-video-export/461")
+                    title: "Wick Editor Alpha: Update v2",
+                    text: "We’ve posted an update to the Wick Editor Alpha.",
+                    date: "12/01/18",
+                    onClick: () => window.open("https://forum.wickeditor.com/t/wick-editor-alpha-update-v2/1236")
                 }
             ]
         };

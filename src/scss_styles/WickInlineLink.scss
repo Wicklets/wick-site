@@ -1,0 +1,13 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    WickInlineLink.scss
+
+    Stylings for inline links
+*/
+
+.WickInlineLink {
+    &-container:hover {
+        text-decoration: none;
+    }
+}

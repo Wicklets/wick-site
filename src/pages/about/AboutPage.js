@@ -6,7 +6,7 @@
     Top-Level Content for the Wick About page
 */
 
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import { Container } from 'reactstrap';
 import Img from 'react-image';
@@ -16,11 +16,18 @@ import CreatorsContainer from '../../page_components/creators/CreatorsContainer.
 import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import SocialMedia from '../../page_components/social_media/SocialMedia.js';
 import ResponsiveImage from '../../pattern_library/responsive_image/WickResponsiveImage.js';
+import InlineLink from '../../pattern_library/inline_link/WickInlineLink.js';
 
 import editorpreview from '../../Images/Misc/editorpreview.svg';
 import cannon from '../../Images/Misc/cannon.svg';
 
 import '../../scss_styles/AboutPage.scss';
+
+const thanks = (
+    <Fragment>
+        <InlineLink text="Golan Levin" link="http://flong.com/" />, <InlineLink text="Tom Hughes" link="http://studioforcreativeinquiry.org/peoples/thomas-hughes" />, <InlineLink text="Sarah Guthals" link="https://guthals.com/sarah" />, <InlineLink text="Nina Barbuto" link="https://remakelearning.org/person/barbuto-nina/" /> (and everyone at Assemble including Jess Gold and Lieu Wolfe)
+    </Fragment>
+);
 
 const AboutPage = () => (
     <Container className="fadeIn animated">
@@ -46,7 +53,7 @@ const AboutPage = () => (
         <Img src={cannon} id="AboutPage-cannon" />
         <ContentSection
             title="special thanks to"
-            text="Golan Levin, Tom Hughes, Sarah Guthals, Nina Barbuto (and everyone at Assemble including Jess Gold and Lieu Wolfe)"
+            text={thanks}
             includeUnderline
         />
         <WickLargeSpacer />
