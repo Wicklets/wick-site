@@ -7,14 +7,19 @@
 */
 
 .WickCard {
-    &-container {
+    &-container,
+    &-container--disabled {
         border-width: 0;
         box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+    }
 
-        &:hover {
-            cursor: pointer;
-            box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.6);
-        }
+    &-container:hover {
+        cursor: pointer;
+        box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    &-container--disabled {
+        opacity: 0.5;
     }
 
     &-content {

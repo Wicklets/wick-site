@@ -35,10 +35,8 @@ class TutorialCardDeckContainer extends Component {
                 },
                 {
                     title: "More Tutorials Coming Soon!",
-                    body: "Check back soon for more awesome Wick Editor Tutorials!",
                     image: comingsoon,
-                    embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
-                    number: "Tutorial 3"
+                    disabled: true
                 }
             ],
             linkButton: {

@@ -14,10 +14,11 @@ const Footer = () => (
     <Fragment>
         <div id="Footer-container">
             <div id="Footer-content">
+                {/* COMMENTED OUT UNTIL FOOTER CONTENT IS DETERMINED. ONE ELEMENT LEFT FOR SPACING PURPOSES
                 <span className="Footer-item">Product</span>
                 <span className="Footer-item">Company</span>
-                <span className="Footer-item">Learn & Support</span>
-                <span className="Footer-item">Contact</span>
+                <span className="Footer-item">Learn & Support</span>*/}
+                <span className="Footer-item"></span>
             </div>
             <div id="Footer-copyright">© 2019, Wicklets, LLC.</div>
         </div>

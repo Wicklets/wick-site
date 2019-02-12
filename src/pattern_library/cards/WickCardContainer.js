@@ -22,13 +22,19 @@ class WickCardContainer extends Component {
         };
     }
 
-    handleMouseEnter = () => this.setState({isContentHovered: true});
+    handleMouseEnter = () => (this.props.disabled ?
+        {} :
+        this.setState({isContentHovered: true}));
 
-    handleMouseLeave = () => this.setState({isContentHovered: false});
+    handleMouseLeave = () => (this.props.disabled ?
+        {} :
+        this.setState({isContentHovered: false}));
 
     shouldUseNewsCard = () => this.props.useNewsCard;
 
-    handleClick = () => this.setState(prevState => ({isModalOpen: !prevState.isModalOpen}));
+    handleClick = () => (this.props.disabled ?
+        {} :
+        this.setState(prevState => ({isModalOpen: !prevState.isModalOpen})));
 
     render() {
         return (
