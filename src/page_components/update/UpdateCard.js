@@ -12,6 +12,8 @@ import {Card, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import {Row, Col} from 'reactstrap';
 import {Button} from 'reactstrap';
 
+import InlineLink from '../../pattern_library/inline_link/WickInlineLink.js';
+
 import '../../scss_styles/UpdateCard.scss';
 
 const UpdateCard = () => (
@@ -21,7 +23,7 @@ const UpdateCard = () => (
                 <CardBody>
                     <CardTitle className="UpdateCard-version">update 0.15.2</CardTitle>
                     <CardSubtitle className="UpdateCard-text">
-                        We’ve posted a major update to the Wick Editor 1.0 Alpha. You can test it out at <a href="http://alpha.wickeditor.com" target="_blank" rel="noopener noreferrer">alpha.wickeditor.com</a>!
+                        We’ve posted a major update to the Wick Editor 1.0 Alpha. You can test it out at <InlineLink text="alpha.wickeditor.com" link="http://alpha.wickeditor.com" />!
                     </CardSubtitle>
                     <Button
                         className="UpdateCard-button"

@@ -12,6 +12,10 @@
         font-family: 'Nunito', sans-serif;
     }
 
+    &-footer {
+        align-items: flex-start;
+    }
+
     &-header {
         justify-content: center;
         padding-bottom: 0;
@@ -21,6 +25,13 @@
     &-number {
         color: gray;
         font-size: 16px;
+    }
+
+    &-test {
+        padding: 2px 16px;
+        border-radius: 3px;
+        background-color: lightgreen;
+        color: white;
     }
 
     &-title {

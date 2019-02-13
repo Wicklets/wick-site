@@ -11,11 +11,11 @@
         justify-content: flex-end;
         text-align: left;
         border-width: 0;
-        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+        box-shadow: 2px 3px rgba(0, 0, 0, 0.4);
     }
 
     &-container:hover {
-        box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.6);
+        box-shadow: 3px 4px #1EE29A;
         cursor: pointer;
     }
 

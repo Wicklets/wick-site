@@ -29,6 +29,12 @@ const thanks = (
     </Fragment>
 );
 
+const contact = (
+    <Fragment>
+        Shoot us a <InlineLink text="message" link="mailto:contact@wickeditor.com" />, join the wick editor community with a <InlineLink text="YouTube membership" link="https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg" /> or subscribe on <InlineLink text="Patreon" link="https://www.patreon.com/WickEditor" />!
+    </Fragment>
+);
+
 const AboutPage = () => (
     <Container className="fadeIn animated">
         <ContentSection
@@ -59,7 +65,7 @@ const AboutPage = () => (
         <WickLargeSpacer />
         <ContentSection
             title="contact us!"
-            text="Shoot us a message, join the wick editor community with a YouTube membership or subscribe on Patreon!"
+            text={contact}
             includeUnderline
         />
         <WickLargeSpacer />
