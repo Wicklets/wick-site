@@ -83,6 +83,7 @@ class TutorialCardBlockContainer extends Component {
                     <WickCardDeckContainer
                         key={rowInd}
                         cards={this.state.cards.slice(this.state.numberCards*rowInd, this.state.numberCards*(rowInd + 1))}
+                        type="tutorial"
                         usePadding
                     />
                 ))}

@@ -42,7 +42,7 @@ class NewsCardDeckContainer extends Component {
         return (
             <WickCardDeckContainer
                 {...this.state}
-                useNewsCard
+                type="news"
             />
         );
     }

@@ -6,9 +6,9 @@
     Container for Cards
 */
 
-import React, {Component} from 'react';
+import React, { Fragment, Component } from 'react';
 
-import WickCard from './WickCard.js';
+import ExampleCard from './ExampleCard.js';
 import NewsCard from './NewsCard.js';
 
 class WickCardContainer extends Component {
@@ -30,31 +30,41 @@ class WickCardContainer extends Component {
         {} :
         this.setState({isContentHovered: false}));
 
-    shouldUseNewsCard = () => this.props.useNewsCard;
-
     handleClick = () => (this.props.disabled ?
         {} :
         this.setState(prevState => ({isModalOpen: !prevState.isModalOpen})));
 
     render() {
         return (
-            (this.shouldUseNewsCard() ? (
-                <NewsCard
-                    {...this.props}
-                    {...this.state}
-                    onClick={this.handleClick}
-                    onMouseEnter={this.handleMouseEnter}
-                    onMouseLeave={this.handleMouseLeave}
-                />
-            ) : (
-                <WickCard
-                    {...this.props}
-                    {...this.state}
-                    onClick={this.handleClick}
-                    onMouseEnter={this.handleMouseEnter}
-                    onMouseLeave={this.handleMouseLeave}
-                />
-            ))
+            <Fragment>
+                {this.props.type === "news" && (
+                    <NewsCard
+                        {...this.props}
+                        {...this.state}
+                        onClick={this.handleClick}
+                        onMouseEnter={this.handleMouseEnter}
+                        onMouseLeave={this.handleMouseLeave}
+                    />
+                )}
+                {this.props.type === "example" && (
+                    <ExampleCard
+                        {...this.props}
+                        {...this.state}
+                        onClick={this.handleClick}
+                        onMouseEnter={this.handleMouseEnter}
+                        onMouseLeave={this.handleMouseLeave}
+                    />
+                )}
+                {this.props.type === "tutorial" && (
+                    <ExampleCard
+                        {...this.props}
+                        {...this.state}
+                        onClick={this.handleClick}
+                        onMouseEnter={this.handleMouseEnter}
+                        onMouseLeave={this.handleMouseLeave}
+                    />
+                )}
+            </Fragment>
         );
     }
 };

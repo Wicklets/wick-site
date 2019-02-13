@@ -1,37 +1,36 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    WickCard.js
+    ExampleCard.js
 
-    Component for Cards
+    Component for Example Cards
 */
 
 import React, { Fragment } from 'react';
 import Img from 'react-image';
 
-import { Card, CardImg, CardText, CardTitle, CardImgOverlay } from 'reactstrap';
+import { Card, CardImg, CardTitle, CardImgOverlay } from 'reactstrap';
 
 import arrow from '../../Images/Tutorials/arrow.svg';
 
 import WickCardModal from './WickCardModal.js';
 
-import '../../scss_styles/WickCard.scss';
+import '../../scss_styles/ExampleCard.scss';
 
-const WickCard = ({title, body, image, embed, number, disabled, onClick, isModalOpen, onMouseEnter, onMouseLeave, isContentHovered}) => (
+const ExampleCard = ({title, body, image, embed, number, disabled, onClick, isModalOpen, onMouseEnter, onMouseLeave, isContentHovered}) => (
     <Fragment>
         <Card
-            className={(disabled ? "WickCard-container--disabled" : "WickCard-container")}
+            className={(disabled ? "ExampleCard-container--disabled" : "ExampleCard-container")}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             onClick={onClick}
         >
             <CardImg width="100%" src={image} alt="Card image cap" />
-            <CardImgOverlay className="WickCard-content">
-                <CardTitle className={isContentHovered ? "WickCard-title" : "WickCard-title WickCard-title--collapsed"}>{title}</CardTitle>
+            <CardImgOverlay className="ExampleCard-content">
+                <CardTitle className={isContentHovered ? "ExampleCard-title" : "ExampleCard-title ExampleCard-title--collapsed"}>{title}</CardTitle>
                 {isContentHovered && (
                     <Fragment>
-                        <CardText className="WickCard-text">{body}</CardText>
-                        <Img src={arrow} />
+                        <Img className="ExampleCard-arrow" src={arrow} />
                     </Fragment>
                 )}
             </CardImgOverlay>
@@ -40,4 +39,4 @@ const WickCard = ({title, body, image, embed, number, disabled, onClick, isModal
     </Fragment>
 );
 
-export default WickCard;
+export default ExampleCard;

@@ -50,6 +50,7 @@ class TutorialCardDeckContainer extends Component {
         return (
             <WickCardDeckContainer
                 {...this.state}
+                type="tutorial"
                 usePadding
             />
         );

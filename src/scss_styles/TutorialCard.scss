@@ -1,16 +1,16 @@
 /*
     Corey Emery (cemery@andrew.cmu.edu)
     WickEditor Website
-    PreviewCard.scss
+    TutorialCard.scss
 
     Stylings for the Wick Homepage Preview Cards
 */
 
-.WickCard {
+.TutorialCard {
     &-container,
     &-container--disabled {
         border-width: 0;
-        box-shadow: 2px 3px rgba(0, 0, 0, 0.4);
+        box-shadow: 2px 3px #B4ECE6;
         transition: 0.5s;
     }
 
