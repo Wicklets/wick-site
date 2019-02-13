@@ -8,7 +8,11 @@
 
 #WickRouter {
     &-activeItem {
-        color: blue !important;
+        color: #3E3E3E !important;
+
+        &--brand {
+            color: #1EE29A !important;
+        }
     }
 
     &-container {
@@ -21,7 +25,7 @@
 
 .WickRouter {
     &-background {
-        background-color: #d2f6ec !important;
+        background-color: #F3F8F7 !important;
         position: absolute;
         left: 0;
         top: 0;
@@ -36,12 +40,12 @@
 
     &-brand--wide,
     &-brand--narrow {
-        color: green !important;
+        color: #1EE29A !important;
     }
 
     &-brand--wide:hover,
     &-brand--narrow:hover {
-        color: lightgreen !important;
+        color: #01C094 !important;
     }
 
     &-brand--wide {
@@ -62,13 +66,14 @@
 
     &-navItem {
         margin: 0 16px;
+        color: #4ECEC1 !important;
 
         @media screen and (max-width: 575px) {
             text-align: left;
         }
-    }
 
-    &-navItem:hover {
-        color: lightblue !important;
+        &:hover {
+            color: #3D9B91 !important;
+        }
     }
 }
