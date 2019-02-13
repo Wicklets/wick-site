@@ -10,6 +10,7 @@ import React, { Fragment, Component } from 'react';
 
 import ExampleCard from './ExampleCard.js';
 import NewsCard from './NewsCard.js';
+import TutorialCard from './TutorialCard.js';
 
 class WickCardContainer extends Component {
     constructor(props) {
@@ -56,7 +57,7 @@ class WickCardContainer extends Component {
                     />
                 )}
                 {this.props.type === "tutorial" && (
-                    <ExampleCard
+                    <TutorialCard
                         {...this.props}
                         {...this.state}
                         onClick={this.handleClick}

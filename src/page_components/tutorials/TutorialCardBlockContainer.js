@@ -10,7 +10,7 @@ import React, { Fragment, Component } from 'react';
 
 import WickCardDeckContainer from '../../pattern_library/cards/WickCardDeckContainer.js';
 
-import test from '../../Images/Tutorials/testworld.svg';
+import test from '../../Images/Tutorials/testworld2.svg';
 import comingsoon from '../../Images/Misc/comingsoon.png';
 
 class TutorialCardBlockContainer extends Component {
