@@ -12,11 +12,13 @@
         text-align: left;
         border-width: 0;
         box-shadow: 2px 3px rgba(0, 0, 0, 0.4);
-    }
+        transition: 0.5s;
 
-    &-container:hover {
-        box-shadow: 3px 4px #1EE29A;
-        cursor: pointer;
+        &:hover {
+            cursor: pointer;
+            box-shadow: 5px 5px #1EE29A;
+            transform: translateX(-3px) translateY(-2px);
+        }
     }
 
     &-date {
