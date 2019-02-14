@@ -19,13 +19,13 @@ import WickCarouselContainer from '../../pattern_library/carousel/WickCarouselCo
 const CommunityPage = () => (
     <Container className="fadeIn animated">
         <ContentSection
-            title="wick editor community forum"
+            title="Wick Editor Community Forum"
             text="See what all the buzz is about and chat with fellow wick users for tips, tricks, and inspiration on your next project."
             includeUnderline
         />
         <WickSmallSpacer />
         <ContentSection
-            title="creators"
+            title="Creators"
             text="Check out what people are making!"
             includeUnderline
             includePadding
@@ -35,7 +35,7 @@ const CommunityPage = () => (
         <WickSmallSpacer />
         {/* THIS SECTION COMMENTED OUT FOR INITIAL RELEASE UNTIL CONTENT CAN BE SOURCED
         <ContentSection
-            title="project gallery"
+            title="Project Gallery"
             includeUnderline
             includePadding
         >

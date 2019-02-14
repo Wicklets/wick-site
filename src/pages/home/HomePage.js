@@ -54,10 +54,11 @@ const HomePage = () => (
         </ContentSection>
         <WickLargeSpacer />
         <ContentSection
-            title="Support Wick Editor!"
+            title="support wick editor!"
             text="Join the wick editor community with a YouTube membership or Patreon subscription!"
             size="large"
             includePadding
+            includeTitlePadding
         >
             <SupportWick />
         </ContentSection>

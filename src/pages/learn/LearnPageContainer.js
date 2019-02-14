@@ -63,7 +63,7 @@ class LearnPageContainer extends Component {
                 <Header
                     title="get started"
                     subtitle="Hit the ground running with the basics of wick editor by trying out our starter tutorial."
-                    buttonLabel="try the tutorial"
+                    buttonLabel="Try the Tutorial"
                     onClick={() => window.open("http://wickeditor.com/#tutorials")}
                 />
                 <LearnPage {...this.state} />

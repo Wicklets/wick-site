@@ -20,7 +20,7 @@ import SupportersContainer from '../../page_components/supporters/SupportersCont
 const SupportersPage = () => (
     <Container className="fadeIn animated">
         <ContentSection
-            title="our supporters"
+            title="Our Supporters"
             text="The Wick Editor is supported by generous grants from organizations which support our mission, as well as donations from the community."
             includeUnderline
             includePadding

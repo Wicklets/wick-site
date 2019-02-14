@@ -21,7 +21,7 @@ class SupportersPageContainer extends Component {
             <Fragment>
                 <Header
                     title="supporters"
-                    buttonLabel="support us"
+                    buttonLabel="Support Us"
                     onClick={() => window.open("https://www.patreon.com/WickEditor")}
                 />
                 <SupportersPage />

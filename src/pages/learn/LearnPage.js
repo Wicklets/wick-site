@@ -19,7 +19,7 @@ import TutorialCardBlockContainer from '../../page_components/tutorials/Tutorial
 const LearnPage = ({tutorials, examples}) => (
     <Container className="fadeIn animated">
         <ContentSection
-            title="explore tutorials"
+            title="Explore Tutorials"
             text="Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
             size="small"
             includeUnderline
@@ -29,7 +29,7 @@ const LearnPage = ({tutorials, examples}) => (
         </ContentSection>
         <WickSmallSpacer />
         <ContentSection
-            title="explore examples"
+            title="Explore Examples"
             text="Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
             size="small"
             includeUnderline

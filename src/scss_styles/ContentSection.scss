@@ -24,8 +24,16 @@
         padding-bottom: 24px;
     }
 
+    &-titlePadding {
+        padding-bottom: 12px;
+    }
+
     &-title {
         font: 400 30px 'Nunito Sans', sans-serif;
+
+        &--semibold {
+            font: 600 30px 'Nunito Sans', sans-serif;
+        }
 
         &--large {
             font: 300 40px 'Nunito', sans-serif;

@@ -12,12 +12,15 @@ import {Row, Col} from 'reactstrap';
 
 import '../../scss_styles/ContentSection.scss';
 
-const ContentSection = ({title, text, size, includeUnderline, includePadding, children}) => (
+const ContentSection = ({title, text, size, includeUnderline, includePadding, includeTitlePadding, titleWeight, children}) => (
     <Fragment>
         {title && (
-            <div className={(size ? "ContentSection-title ContentSection-title--" + size : "ContentSection-title")}>
+            <div className={"ContentSection-title" + (titleWeight ? "--" + titleWeight : "") + (size ? " ContentSection-title--" + size : "")}>
                 {title}
             </div>
+        )}
+        {includeTitlePadding && (
+            <div className="ContentSection-titlePadding" />
         )}
         {includeUnderline && (
             <div className={"ContentSection-underline" + (size ? "--" + size : "")} />

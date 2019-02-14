@@ -10,25 +10,25 @@
     &-container {
         padding: 0 8px;
         opacity: .8;
-        -webkit-transition: opacity 0.5s;
         transition: opacity 0.5s;
 
         &:hover {
             opacity: 1;
 
             & .Supporter-name {
-                visibility: visible;
+                opacity: 1;
             }
         }
     }
 
     &-name {
-        visibility: hidden;
+        opacity: 0;
         display: flex;
         font: 400 14px 'Nunito Sans', sans-serif;
         padding: 4px 0 8px;
         justify-content: center;
         white-space: nowrap;
+        transition: opacity 0.5s;
     }
 
     &-picture {

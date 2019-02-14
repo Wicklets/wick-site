@@ -25,7 +25,7 @@ import '../../scss_styles/AboutPage.scss';
 
 const thanks = (
     <Fragment>
-        <InlineLink text="Golan Levin" link="http://flong.com/" />, <InlineLink text="Tom Hughes" link="http://studioforcreativeinquiry.org/peoples/thomas-hughes" />, <InlineLink text="Sarah Guthals" link="https://guthals.com/sarah" />, <InlineLink text="Nina Barbuto" link="https://remakelearning.org/person/barbuto-nina/" /> (and everyone at Assemble including Jess Gold and Lieu Wolfe)
+        <InlineLink text="Golan Levin" link="http://flong.com/" />, <InlineLink text="Tom Hughes" link="http://studioforcreativeinquiry.org/peoples/thomas-hughes" />, <InlineLink text="Sarah Guthals" link="https://guthals.com/sarah" />, <InlineLink text="Nina Barbuto" link="https://remakelearning.org/person/barbuto-nina/" /> (and everyone at <InlineLink text="Assemble" link="http://assemblepgh.org/" /> including Jess Gold and Lieu Wolfe)
     </Fragment>
 );
 
@@ -60,12 +60,14 @@ const AboutPage = () => (
         <ContentSection
             title="special thanks to"
             text={thanks}
+            titleWeight="semibold"
             includeUnderline
         />
         <WickLargeSpacer />
         <ContentSection
             title="contact us!"
             text={contact}
+            titleWeight="semibold"
             includeUnderline
         />
         <WickSmallSpacer />
