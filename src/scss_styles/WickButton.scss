@@ -1,0 +1,42 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    WickButton.scss
+
+    Stylings for the Wick Buttons
+*/
+
+.WickButton {
+    &-button--body {
+        font: 600 16px 'Nunito Sans', sans-serif;
+    }
+
+    &-button--header {
+        font: 600 22px 'Nunito', sans-serif
+    }
+
+    &-button {
+        background-color: #1EE29A;
+        border: none;
+        box-shadow: 2px 3px #B4ECE6;
+        transition: 0.5s;
+
+        &:hover,
+        &:focus {
+            background-color: #1EE29A;
+            transform: translateX(-3px) translateY(-2px);
+            box-shadow: 5px 5px #1BC687;
+        }
+
+        &:active {
+            background-color: #1EE29A !important;
+            transform: translateX(3px) translateY(2px);
+            transition: 0.25s;
+        }
+
+        &:active,
+        &:active:focus {
+            box-shadow: none !important;
+        }
+    }
+}

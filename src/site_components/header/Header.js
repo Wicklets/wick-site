@@ -9,9 +9,10 @@
 import React, { Fragment } from 'react';
 
 import {Container, Row, Col} from 'reactstrap';
-import {Button} from 'reactstrap';
 
 import InfiniteScrollImageContainer from '../../InfiniteScrollImage/InfiniteScrollImageContainer.js';
+import WickButton from '../../pattern_library/button/WickButton.js';
+
 import wickworld from '../../Images/Header/wickworld.svg';
 import mountainpadding from '../../Images/Header/mountainpadding.svg';
 import forestpadding from '../../Images/Header/forestpadding.svg';
@@ -30,14 +31,7 @@ const Header = ({title, subtitle, buttonLabel, onClick}) => (
             <Row id="Header-buttonRow" className="Wick-row">
                 <Col xs="auto">
                     {buttonLabel ? (
-                        <Button
-                            className="Header-test"
-                            size="lg"
-                            block
-                            onClick={onClick}
-                        >
-                            {buttonLabel}
-                        </Button>
+                        <WickButton text={buttonLabel} size="lg" block type="header" onClick={onClick} />
                     ) : (
                         <div id="Header-buttonSpacer" />
                     )}

@@ -10,8 +10,8 @@ import React from 'react';
 
 import {Card, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import {Row, Col} from 'reactstrap';
-import {Button} from 'reactstrap';
 
+import WickButton from '../../pattern_library/button/WickButton.js';
 import InlineLink from '../../pattern_library/inline_link/WickInlineLink.js';
 
 import '../../scss_styles/UpdateCard.scss';
@@ -25,15 +25,9 @@ const UpdateCard = () => (
                     <CardSubtitle className="UpdateCard-text">
                         We’ve posted a major update to the Wick Editor 1.0 Alpha. You can test it out at <InlineLink text="alpha.wickeditor.com" link="http://alpha.wickeditor.com" />!
                     </CardSubtitle>
-                    <Button
-                        className="UpdateCard-button"
-                        outline
-                        color="success"
-                        size="sm"
-                        onClick={() => window.open("http://alpha.wickeditor.com")}
-                    >
-                        try it
-                    </Button>
+                    <div className="UpdateCard-button">
+                        <WickButton text="try it" size="sm" type="body" onClick={() => window.open("http://alpha.wickeditor.com")} />
+                    </div>
                 </CardBody>
             </Card>
         </Col>

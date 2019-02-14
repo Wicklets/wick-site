@@ -9,29 +9,28 @@
 import React from 'react';
 
 import {Row, Col} from 'reactstrap';
-import {Button} from 'reactstrap';
+
+import WickButton from '../../pattern_library/button/WickButton.js';
 
 const SupportWick = () => (
     <Row className="Wick-row">
         <Col sm="9" md="4" lg="3">
-            <Button
-                color="info"
-                outline
+            <WickButton
+                text="Become a Patron"
+                size="lg"
                 block
+                type="body"
                 onClick={() => window.open("https://www.patreon.com/WickEditor")}
-            >
-                Become a Patron
-            </Button>
+            />
         </Col>
         <Col sm="9" md="4" lg="3">
-            <Button
-                color="info"
-                outline
+            <WickButton
+                text="Subscribe on Youtube"
+                size="lg"
+                type="body"
                 block
                 onClick={() => window.open("https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg")}
-            >
-                Subscribe on Youtube
-            </Button>
+            />
         </Col>
     </Row>
 );
