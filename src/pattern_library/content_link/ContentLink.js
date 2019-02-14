@@ -13,17 +13,12 @@ import arrow from '../../Images/Tutorials/arrow.svg';
 
 import '../../scss_styles/ContentLink.scss';
 
-const ContentLink = ({image, title, text, onClick, showContent, hideContent, isContentHovered}) => (
-    <div className="ContentLink-container" onMouseEnter={showContent} onMouseLeave={hideContent} onClick={onClick}>
+const ContentLink = ({image, title, text, onClick}) => (
+    <div className="ContentLink-container" onClick={onClick}>
         <Img className="ContentLink-image" src={image} alt="Content Link Image" />
         <div className="ContentLink-title">{title}</div>
         <div className="ContentLink-text">{text}</div>
-        {(isContentHovered ? (
-            <Img className="ContentLink-arrowLink" src={arrow} />
-        ) : (
-            <div className="ContentLink-arrowSpacer" />
-        ))}
-
+        <Img className="ContentLink-arrow" src={arrow} />
     </div>
 );
 

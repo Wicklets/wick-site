@@ -7,19 +7,22 @@
 */
 
 .ContentLink {
-    &-arrowLink {
+    &-arrow {
         padding-top: 20px;
-    }
-
-    &-arrowSpacer {
-        padding-top: 34px; // coded to match height of arrow image
+        opacity: 0;
+        transition: opacity 0.5s;
     }
 
     &-container {
         margin-bottom: 40px;
+        font-family: 'Nunito Sans', sans-serif;
 
         &:hover {
             cursor: pointer;
+
+            & .ContentLink-arrow {
+                opacity: 1;
+            }
         }
     }
 
@@ -29,10 +32,12 @@
 
     &-text {
         font-size: 16px;
+        font-weight: 400;
     }
 
     &-title {
         font-size: 20px;
+        font-weight: 600;
         padding-bottom: 8px;
     }
 }

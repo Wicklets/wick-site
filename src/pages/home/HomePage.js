@@ -17,7 +17,7 @@ import UpdateCard from '../../page_components/update/UpdateCard.js';
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import { WickLargeSpacer, WickSmallSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import Embed from '../../pattern_library/embed/WickEmbed.js';
-import Title from '../../pattern_library/title/WickTitle.js';
+import {WickTitle} from '../../pattern_library/title/WickTitles.js';
 import SocialMedia from '../../page_components/social_media/SocialMedia.js';
 import SupportWick from '../../page_components/support/SupportWick.js';
 
@@ -25,7 +25,7 @@ const HomePage = () => (
     <Container className="fadeIn animated">
         <Embed url="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
         <WickSmallSpacer />
-        <Title>our latest</Title>
+        <WickTitle>our latest</WickTitle>
         <ContentSection
             title="Tutorials"
             text="Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"

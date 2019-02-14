@@ -29,9 +29,7 @@ const ExampleCard = ({title, image, embed, number, disabled, onClick, isModalOpe
             <CardImgOverlay className="ExampleCard-content">
                 <CardTitle className={isContentHovered ? "ExampleCard-title" : "ExampleCard-title ExampleCard-title--collapsed"}>{title}</CardTitle>
                 {isContentHovered && (
-                    <Fragment>
-                        <Img className="ExampleCard-arrow" src={arrow} />
-                    </Fragment>
+                    <Img className="ExampleCard-arrow" src={arrow} />
                 )}
             </CardImgOverlay>
         </Card>

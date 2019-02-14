@@ -1,0 +1,20 @@
+/*
+    Corey Emery (cemery@andrew.cmu.edu)
+    WickEditor Website
+    WickTitle.scss
+
+    Stylings for the Wick Title
+*/
+
+.WickTitles {
+    &-title {
+        padding-bottom: 20px;
+        font: 400 40px 'Nunito', sans-serif;
+        color: #1EE29A;
+    }
+
+    &-subtitle {
+        padding-bottom: 40px;
+        font: 700 20px 'Nunito Sans', sans-serif;
+    }
+}
