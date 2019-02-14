@@ -18,18 +18,9 @@ class WickCardContainer extends Component {
 
         // display overlay for card
         this.state = {
-            isContentHovered: false,
             isModalOpen: false
         };
     }
-
-    handleMouseEnter = () => (this.props.disabled ?
-        {} :
-        this.setState({isContentHovered: true}));
-
-    handleMouseLeave = () => (this.props.disabled ?
-        {} :
-        this.setState({isContentHovered: false}));
 
     handleClick = () => (this.props.disabled ?
         {} :
@@ -50,8 +41,6 @@ class WickCardContainer extends Component {
                         {...this.props}
                         {...this.state}
                         onClick={this.handleClick}
-                        onMouseEnter={this.handleMouseEnter}
-                        onMouseLeave={this.handleMouseLeave}
                     />
                 )}
                 {this.props.type === "tutorial" && (

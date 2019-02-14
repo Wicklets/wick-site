@@ -9,12 +9,15 @@
 .ExampleCard {
     &-arrow {
         margin-top: 4px;
+        opacity: 0;
+        transition: opacity 0.75s;
     }
 
     &-container,
     &-container--disabled {
         border-width: 0;
         box-shadow: 2px 3px #B4ECE6;
+        overflow: hidden;
         transition: 0.5s;
         font-family: 'Nunito Sans', sans-serif;
     }
@@ -23,6 +26,14 @@
         cursor: pointer;
         box-shadow: 5px 5px #1EE29A;
         transform: translateX(-3px) translateY(-2px);
+
+        & .ExampleCard-content {
+            transform: none;
+
+            .ExampleCard-arrow {
+                opacity: 1;
+            }
+        }
     }
 
     &-container--disabled {
@@ -35,6 +46,8 @@
         overflow: hidden;
         border-bottom-left-radius: 3px; // coded to fill the rounded space in the reactstrap card
         border-bottom-right-radius: 3px; // coded to fill the rounded space in the reactstrap card
+        transform: translateY(20px);
+        transition: transform 0.75s;
     }
 
     &-title {
