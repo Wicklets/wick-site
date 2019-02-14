@@ -27,7 +27,7 @@ const HomePage = () => (
         <WickSmallSpacer />
         <Title>our latest</Title>
         <ContentSection
-            title="tutorials"
+            title="Tutorials"
             text="Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
             size="small"
             includeUnderline
@@ -36,7 +36,7 @@ const HomePage = () => (
         </ContentSection>
         <WickSmallSpacer />
         <ContentSection
-            title="examples"
+            title="Examples"
             text="Check out some examples to help you get started using the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
             size="small"
             includeUnderline
@@ -45,7 +45,7 @@ const HomePage = () => (
         </ContentSection>
         <WickSmallSpacer />
         <ContentSection
-            title="updates"
+            title="Updates"
             size="small"
             includeUnderline
         >
@@ -54,7 +54,7 @@ const HomePage = () => (
         </ContentSection>
         <WickLargeSpacer />
         <ContentSection
-            title="Suport Wick Editor"
+            title="Support Wick Editor!"
             text="Join the wick editor community with a YouTube membership or Patreon subscription!"
             size="large"
             includePadding

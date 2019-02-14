@@ -7,6 +7,11 @@
 */
 
 .NewsCard {
+    &-arrow {
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
     &-container {
         justify-content: flex-end;
         font-family: 'Nunito Sans', sans-serif;
@@ -19,6 +24,10 @@
             cursor: pointer;
             box-shadow: 5px 5px #1EE29A;
             transform: translateX(-3px) translateY(-2px);
+        }
+
+        &:hover .NewsCard-footer .NewsCard-arrow {
+            opacity: 1;
         }
     }
 

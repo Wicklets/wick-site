@@ -9,23 +9,21 @@
 import React from 'react';
 import Img from 'react-image';
 
-import {Card, CardBody, CardTitle, CardText, CardFooter} from 'reactstrap';
+import { Card, CardBody, CardTitle, CardText, CardFooter } from 'reactstrap';
 
 import arrow from '../../Images/Tutorials/arrow.svg';
 
 import '../../scss_styles/NewsCard.scss';
 
-const NewsCard = ({title, text, date, link, onClick, onMouseEnter, onMouseLeave, isContentHovered}) => (
-    <Card className="NewsCard-container" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
+const NewsCard = ({title, text, date, link, onClick}) => (
+    <Card className="NewsCard-container" onClick={onClick}>
         <CardBody>
             <CardTitle className="NewsCard-title">{title}</CardTitle>
             <CardText className="NewsCard-text">{text}</CardText>
         </CardBody>
         <CardFooter className="NewsCard-footer">
             <CardText className="NewsCard-date">{date}</CardText>
-            {isContentHovered && (
-                <Img src={arrow} />
-            )}
+            <Img className="NewsCard-arrow" src={arrow} />
         </CardFooter>
     </Card>
 );

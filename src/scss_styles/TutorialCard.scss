@@ -7,6 +7,12 @@
 */
 
 .TutorialCard {
+    &-arrow {
+        margin-top: 8px;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
     &-container,
     &-container--disabled {
         border-width: 0;
@@ -19,6 +25,10 @@
         cursor: pointer;
         box-shadow: 5px 5px #1EE29A;
         transform: translateX(-3px) translateY(-2px);
+
+        & .TutorialCard-content .TutorialCard-arrow {
+            opacity: 1;
+        }
     }
 
     &-container--disabled {
@@ -31,19 +41,17 @@
         overflow: hidden;
         border-bottom-left-radius: 3px; // coded to fill the rounded space in the reactstrap card
         border-bottom-right-radius: 3px; // coded to fill the rounded space in the reactstrap card
+        padding-bottom: 16px;
     }
 
     &-text {
         font-size: 12px;
         font-weight: 400;
+        margin: 0;
     }
 
     &-title {
         font-size: 16px;
         font-weight: 600;
-
-        &--collapsed {
-            margin: 0;
-        }
     }
 }

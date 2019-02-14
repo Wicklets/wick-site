@@ -17,7 +17,7 @@ import WickCardModal from './WickCardModal.js';
 
 import '../../scss_styles/ExampleCard.scss';
 
-const ExampleCard = ({title, body, image, embed, number, disabled, onClick, isModalOpen, onMouseEnter, onMouseLeave, isContentHovered}) => (
+const ExampleCard = ({title, image, embed, number, disabled, onClick, isModalOpen, onMouseEnter, onMouseLeave, isContentHovered}) => (
     <Fragment>
         <Card
             className={(disabled ? "ExampleCard-container--disabled" : "ExampleCard-container")}

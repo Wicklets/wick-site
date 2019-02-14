@@ -7,6 +7,11 @@
 */
 
 .WickCardModal {
+    &-body {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
     &-container {
         text-align: center;
         font-family: 'Nunito Sans', sans-serif;
@@ -21,11 +26,15 @@
 
     &-footer {
         align-items: flex-start;
+        padding: 0 60px 30px;
+        border: none;
     }
 
     &-header {
         justify-content: center;
         padding-bottom: 0;
+        padding-left: 60px;
+        padding-right: 60px;
         border: none;
     }
 

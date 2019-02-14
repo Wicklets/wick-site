@@ -43,8 +43,6 @@ class WickCardContainer extends Component {
                         {...this.props}
                         {...this.state}
                         onClick={this.handleClick}
-                        onMouseEnter={this.handleMouseEnter}
-                        onMouseLeave={this.handleMouseLeave}
                     />
                 )}
                 {this.props.type === "example" && (
@@ -61,8 +59,6 @@ class WickCardContainer extends Component {
                         {...this.props}
                         {...this.state}
                         onClick={this.handleClick}
-                        onMouseEnter={this.handleMouseEnter}
-                        onMouseLeave={this.handleMouseLeave}
                     />
                 )}
             </Fragment>

@@ -68,7 +68,7 @@ const AboutPage = () => (
             text={contact}
             includeUnderline
         />
-        <WickLargeSpacer />
+        <WickSmallSpacer />
         <SocialMedia />
     </Container>
 );

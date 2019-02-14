@@ -25,7 +25,7 @@ const WickCardModal = ({title, embed, number, onClick, isModalOpen}) => (
             <div className="WickCardModal-underline" />
             <div className="WickCardModal-title">{title}</div>
         </ModalHeader>
-        <ModalBody>
+        <ModalBody className="WickCardModal-body">
             <ResponsiveEmbed src={embed} ratio="16:9" />
         </ModalBody>
         <ModalFooter className="WickCardModal-footer">
