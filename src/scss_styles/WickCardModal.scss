@@ -51,11 +51,24 @@
 
     &-tag {
         padding: 2px 16px;
+        margin: 0 4px;
         border-radius: 3px;
         background-color: #1EE29A;
         color: white;
         font-size: 14px;
         font-weight: 400;
+    }
+
+    &-tagContainer {
+        display: flex;
+        direction: column;
+    }
+
+    &-time {
+        margin: 8px 4px 0;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     &-title {

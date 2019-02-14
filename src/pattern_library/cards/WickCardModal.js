@@ -25,15 +25,20 @@ const WickCardModal = ({title, embed, number, onClick, isModalOpen}) => (
             <div className="WickCardModal-underline" />
             <div className="WickCardModal-title">{title}</div>
         </ModalHeader>
-        <ModalBody>
+        <ModalBody className="WickCardModal-body">
             <div className="WickCardModal-embed">
                 <ResponsiveEmbed src={embed} ratio="16:9" />
             </div>
         </ModalBody>
         <ModalFooter className="WickCardModal-footer">
-            <div className="WickCardModal-tag">#tag1</div>
-            <div className="WickCardModal-tag">#tag2</div>
-            <div className="WickCardModal-tag">#tag3</div>
+            <div>
+                <div className="WickCardModal-tagContainer">
+                    <div className="WickCardModal-tag">#tag1</div>
+                    <div className="WickCardModal-tag">#tag2</div>
+                    <div className="WickCardModal-tag">#tag3</div>
+                </div>
+                <div className="WickCardModal-time">7 Mins</div>
+            </div>
             <div className="WickCardModal-description">Here is a tutorial to help you get started with the Wick Editor. Here is a tutorial to help you get started with the Wick Editor. Here is a tutorial to help you get started with the Wick Editor. Here is a tutorial to help you get started with the Wick Editor. </div>
         </ModalFooter>
     </Modal>
