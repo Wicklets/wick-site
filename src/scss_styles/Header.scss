@@ -31,3 +31,31 @@
         padding-bottom: 40px;
     }
 }
+
+.Header {
+    &-test {
+        font: 600 22px 'Nunito', sans-serif;
+        background-color: #1EE29A;
+        border: none;
+        box-shadow: 2px 3px #B4ECE6;
+        transition: 0.5s;
+
+        &:hover,
+        &:focus {
+            background-color: #1EE29A;
+            transform: translateX(-3px) translateY(-2px);
+            box-shadow: 5px 5px #1BC687;
+        }
+
+        &:active {
+            background-color: #1EE29A !important;
+            transform: translateX(3px) translateY(2px);
+            transition: 0.25s;
+        }
+
+        &:active,
+        &:active:focus {
+            box-shadow: none !important;
+        }
+    }
+}

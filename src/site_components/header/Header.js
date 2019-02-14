@@ -31,7 +31,7 @@ const Header = ({title, subtitle, buttonLabel, onClick}) => (
                 <Col xs="auto">
                     {buttonLabel ? (
                         <Button
-                            color="primary"
+                            className="Header-test"
                             size="lg"
                             block
                             onClick={onClick}
