@@ -12,6 +12,7 @@
         border-width: 0;
         box-shadow: 2px 3px #B4ECE6;
         transition: 0.5s;
+        font-family: 'Nunito Sans', sans-serif;
     }
 
     &-container:hover {
@@ -34,10 +35,12 @@
 
     &-text {
         font-size: 12px;
+        font-weight: 400;
     }
 
     &-title {
         font-size: 16px;
+        font-weight: 600;
 
         &--collapsed {
             margin: 0;

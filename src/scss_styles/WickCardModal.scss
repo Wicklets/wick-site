@@ -9,7 +9,14 @@
 .WickCardModal {
     &-container {
         text-align: center;
-        font-family: 'Nunito', sans-serif;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    &-description {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        padding-left: 16px;
     }
 
     &-footer {
@@ -23,24 +30,28 @@
     }
 
     &-number {
-        color: gray;
-        font-size: 16px;
+        color: #C3C3C3;
+        font-size: 14px;
+        font-weight: 400;
     }
 
-    &-test {
+    &-tag {
         padding: 2px 16px;
         border-radius: 3px;
-        background-color: lightgreen;
+        background-color: #1EE29A;
         color: white;
+        font-size: 14px;
+        font-weight: 400;
     }
 
     &-title {
-        font-size: 20px
+        font-size: 18px;
+        font-weight: 600;
     }
 
     &-underline {
         width: 48px;
         border: solid 2px #1EE29A;
-        margin: 4px auto 4px;
+        margin: 8px auto;
     }
 }

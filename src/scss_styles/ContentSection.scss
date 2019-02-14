@@ -8,10 +8,10 @@
 
 .ContentSection {
     &-body {
-        font-size: 16px;
+        font: 400 18px 'Nunito Sans', sans-serif;
 
         &--large {
-            font-size: 20px;
+            font-size: 18px;
         }
 
         &--small {
@@ -25,14 +25,14 @@
     }
 
     &-title {
-        font-size: 28px;
+        font: 400 30px 'Nunito Sans', sans-serif;
 
         &--large {
-            font-size: 40px;
+            font: 300 40px 'Nunito', sans-serif;
         }
 
         &--small {
-            font-size: 24px;
+            font-size: 26px;
         }
     }
 

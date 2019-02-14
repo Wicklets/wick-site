@@ -9,6 +9,7 @@
 .CreatorCard {
     &-container {
         flex-direction: row;
+        font-family: 'Nunito Sans', sans-serif;
     }
 
     &-content {
@@ -29,9 +30,11 @@
 
     &-text {
         font-size: 16px;
+        font-weight: 400;
     }
 
     &-username {
-        font-size: 28px;
+        font-size: 30px;
+        font-weight: 400;
     }
 }

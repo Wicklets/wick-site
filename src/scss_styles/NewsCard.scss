@@ -9,6 +9,7 @@
 .NewsCard {
     &-container {
         justify-content: flex-end;
+        font-family: 'Nunito Sans', sans-serif;
         text-align: left;
         border-width: 0;
         box-shadow: 2px 3px #B4ECE6;
@@ -32,13 +33,16 @@
         justify-content: space-between;
         border: none;
         background-color: inherit;
+        padding-top: 0;
     }
 
     &-text {
         font-size: 12px;
+        font-weight: 400;
     }
 
     &-title {
         font-size: 22px;
+        font-weight: 700;
     }
 }

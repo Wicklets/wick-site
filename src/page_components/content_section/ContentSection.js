@@ -15,7 +15,7 @@ import '../../scss_styles/ContentSection.scss';
 const ContentSection = ({title, text, size, includeUnderline, includePadding, children}) => (
     <Fragment>
         {title && (
-            <div className={"ContentSection-title" + (size ? "--" + size : "")}>
+            <div className={(size ? "ContentSection-title ContentSection-title--" + size : "ContentSection-title")}>
                 {title}
             </div>
         )}
@@ -23,7 +23,7 @@ const ContentSection = ({title, text, size, includeUnderline, includePadding, ch
             <div className={"ContentSection-underline" + (size ? "--" + size : "")} />
         )}
         {text && (
-            <Row className={"ContentSection-body" + (size ? "--" + size : "") + " Wick-row"}>
+            <Row className={(size ? "ContentSection-body ContentSection-body--" + size : "ContentSection-body") + " Wick-row"}>
                 <Col sm="9" lg="6">
                     {text}
                 </Col>

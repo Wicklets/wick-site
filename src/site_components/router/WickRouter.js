@@ -41,7 +41,7 @@ const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickL
                 <NavbarBrand
                     tag={Link}
                     to="/"
-                    id={(page === "/" ? "WickRouter-activeItem" : "")}
+                    id={(page === "/" ? "WickRouter-activeItem--brand" : "")}
                     className="WickRouter-brand--narrow"
                     onClick={onClickCloseDropdown}
                 >
@@ -54,7 +54,7 @@ const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickL
                             <NavLink
                                 tag={Link}
                                 to="/community/"
-                                id={(page === "/community/" ? "WickRouter-activeItem--brand" : "")}
+                                id={(page === "/community/" ? "WickRouter-activeItem" : "")}
                                 className="WickRouter-navItem"
                                 onClick={onClickCloseDropdown}
                             >
