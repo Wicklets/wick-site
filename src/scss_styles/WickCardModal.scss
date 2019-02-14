@@ -24,6 +24,11 @@
         padding-left: 16px;
     }
 
+    &-embed div {
+        border-radius: 3px;
+        box-shadow: 2px 3px #B4ECE6;
+    }
+
     &-footer {
         align-items: flex-start;
         padding: 0 60px 30px;
