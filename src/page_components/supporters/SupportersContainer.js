@@ -10,7 +10,7 @@ import React, { Component, Fragment } from 'react';
 
 import SupportersRow from './SupportersRow.js';
 
-import coreyemery from '../../Images/People/CoreyEmery.jpg';
+import coreyemery from '../../Images/People/CoreyEmery.svg';
 
 class SupportersContainer extends Component {
     constructor(props) {
