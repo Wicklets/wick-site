@@ -7,27 +7,30 @@
 */
 
 import React, { Fragment } from 'react';
+import Img from 'react-image';
 
 import {Container, Row, Col} from 'reactstrap';
 
-import InfiniteScrollImageContainer from '../../InfiniteScrollImage/InfiniteScrollImageContainer.js';
 import WickButton from '../../pattern_library/button/WickButton.js';
 
-import wickworld from '../../Images/Header/wickworld.svg';
-import mountainpadding from '../../Images/Header/mountainpadding.svg';
-import forestpadding from '../../Images/Header/forestpadding.svg';
+import wickworld from '../../Images/Header/wickworldwide2.svg';
 
 import '../../scss_styles/Header.scss';
 
-const Header = ({title, subtitle, buttonLabel, onClick}) => (
+const Header = ({title, tagline, subtitle, buttonLabel, onClick}) => (
     <Fragment>
-        <InfiniteScrollImageContainer
-                mainImg={wickworld}
-                leftImg={mountainpadding}
-                rightImg={forestpadding}
-        />
+        <div id="Header-imageContainer">
+            <div id="Header-image">
+                <Img src={wickworld} />
+            </div>
+        </div>
         <Container className="fadeIn animated">
             <div id="Header-titleRow">{title}</div>
+            {(tagline ? (
+                <div id="Header-tagline">{tagline}</div>
+            ) : (
+                <div id="Header-taglineSpacer" />
+            ))}
             <Row id="Header-buttonRow" className="Wick-row">
                 <Col xs="auto">
                     {buttonLabel ? (

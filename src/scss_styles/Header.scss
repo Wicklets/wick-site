@@ -8,7 +8,7 @@
 
 #Header {
     &-buttonRow {
-        padding: 20px 0 40px;
+        padding: 76px 0 60px;
     }
 
     // Button Space Placeholder
@@ -16,46 +16,43 @@
         height: 48px; // coded to match height of reactstrap button
     }
 
+    &-image {
+        display: flex; // force images to sit next to each other
+        position: absolute;
+        top: 0;
+        // center images
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &-imageContainer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1; // force behind the Page title and Nav Bar
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden; // don't show parts of image offscreen
+    }
+
+    &-tagline {
+        font: 400 16px 'Nunito', sans-serif;
+        color: #688E54;
+    }
+
+    &-taglineSpacer {
+        padding-bottom: 22px;
+    }
+
     &-titleRow {
-        font: 400 40px 'Nunito', sans-serif;
+        font: 400 60px 'Nunito', sans-serif;
         line-height: 40px;
         color: #1EE29A;
+        padding-bottom: 20px;
     }
 
     &-subtitleRow {
         font: 400 20px 'Nunito Sans', sans-serif;
-    }
-
-    &-titleRow,
-    &-subtitleRow {
         padding-bottom: 40px;
-    }
-}
-
-.Header {
-    &-test {
-        font: 600 22px 'Nunito', sans-serif;
-        background-color: #1EE29A;
-        border: none;
-        box-shadow: 2px 3px #B4ECE6;
-        transition: 0.5s;
-
-        &:hover,
-        &:focus {
-            background-color: #1EE29A;
-            transform: translateX(-3px) translateY(-2px);
-            box-shadow: 5px 5px #1BC687;
-        }
-
-        &:active {
-            background-color: #1EE29A !important;
-            transform: translateX(3px) translateY(2px);
-            transition: 0.25s;
-        }
-
-        &:active,
-        &:active:focus {
-            box-shadow: none !important;
-        }
     }
 }
