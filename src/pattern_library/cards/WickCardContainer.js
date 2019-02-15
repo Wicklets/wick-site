@@ -33,7 +33,7 @@ class WickCardContainer extends Component {
                     <NewsCard
                         {...this.props}
                         {...this.state}
-                        onClick={this.handleClick}
+                        onClick={this.props.onClick}
                     />
                 )}
                 {this.props.type === "example" && (
