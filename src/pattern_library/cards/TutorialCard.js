@@ -9,7 +9,7 @@
 import React, { Fragment } from 'react';
 import Img from 'react-image';
 
-import { Card, CardImg, CardText, CardTitle, CardImgOverlay } from 'reactstrap';
+import { Card, CardImg, CardText, CardTitle, CardBody } from 'reactstrap';
 
 import arrow from '../../Images/Tutorials/arrow.svg';
 
@@ -23,12 +23,12 @@ const TutorialCard = ({title, body, image, embed, number, disabled, onClick, isM
             className={(disabled ? "TutorialCard-container--disabled" : "TutorialCard-container")}
             onClick={onClick}
         >
-            <CardImg width="100%" src={image} alt="Card image cap" />
-            <CardImgOverlay className="TutorialCard-content">
+            <CardImg top width="100%" src={image} alt="Card image cap" />
+            <CardBody className="TutorialCard-content">
                 <CardTitle className="TutorialCard-title">{title}</CardTitle>
                 <CardText className="TutorialCard-text">{body}</CardText>
                     <Img className="TutorialCard-arrow" src={arrow} />
-            </CardImgOverlay>
+            </CardBody>
         </Card>
         <WickCardModal title={title} embed={embed} number={number} onClick={onClick} isModalOpen={isModalOpen} />
     </Fragment>

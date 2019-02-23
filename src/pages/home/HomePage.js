@@ -50,6 +50,13 @@ const HomePage = () => (
             includeUnderline
         >
             <UpdateCard />
+        </ContentSection>
+        <WickSmallSpacer />
+        <ContentSection
+            title="News"
+            size="small"
+            includeUnderline
+        >
             <NewsCardDeckContainer />
         </ContentSection>
         <WickLargeSpacer />

@@ -10,8 +10,7 @@ import React, { Fragment, Component } from 'react';
 
 import WickCardDeckContainer from '../../pattern_library/cards/WickCardDeckContainer.js';
 
-import test from '../../Images/Tutorials/testworld2.svg';
-import comingsoon from '../../Images/Misc/comingsoon.png';
+import test from '../../Images/Tutorials/testworld3.svg';
 
 class TutorialCardBlockContainer extends Component {
     constructor(props) {
@@ -38,7 +37,7 @@ class TutorialCardBlockContainer extends Component {
                 {
                     title: "More Tutorials Coming Soon!",
                     body: "Check back soon for more awesome Wick Editor Tutorials!",
-                    image: comingsoon,
+                    image: test,
                     embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
                     number: "Tutorial 3"
                 },

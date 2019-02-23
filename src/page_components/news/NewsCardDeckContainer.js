@@ -43,6 +43,7 @@ class NewsCardDeckContainer extends Component {
             <WickCardDeckContainer
                 {...this.state}
                 type="news"
+                usePadding
             />
         );
     }
