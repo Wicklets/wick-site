@@ -8,9 +8,17 @@
 
 .TutorialCard {
     &-arrow {
-        margin-top: 8px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
         opacity: 0;
         transition: opacity 0.5s;
+    }
+
+    &-arrowSpacer {
+        height: 24px;
     }
 
     &-container,
@@ -36,12 +44,9 @@
     }
 
     &-content {
-        top: auto;
         background-color: white;
-        overflow: hidden;
         border-bottom-left-radius: 3px; // coded to fill the rounded space in the reactstrap card
         border-bottom-right-radius: 3px; // coded to fill the rounded space in the reactstrap card
-        padding-bottom: 16px;
     }
 
     &-text {

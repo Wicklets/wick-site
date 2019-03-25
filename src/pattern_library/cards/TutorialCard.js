@@ -27,7 +27,8 @@ const TutorialCard = ({title, body, image, embed, number, disabled, onClick, isM
             <CardBody className="TutorialCard-content">
                 <CardTitle className="TutorialCard-title">{title}</CardTitle>
                 <CardText className="TutorialCard-text">{body}</CardText>
-                    <Img className="TutorialCard-arrow" src={arrow} />
+                <div className="TutorialCard-arrowSpacer" />
+                <Img className="TutorialCard-arrow" src={arrow} />
             </CardBody>
         </Card>
         <WickCardModal title={title} embed={embed} number={number} onClick={onClick} isModalOpen={isModalOpen} />
