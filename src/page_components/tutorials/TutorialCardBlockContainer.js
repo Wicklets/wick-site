@@ -10,7 +10,7 @@ import React, { Fragment, Component } from 'react';
 
 import WickCardDeckContainer from '../../pattern_library/cards/WickCardDeckContainer.js';
 
-import test from '../../Images/Tutorials/testworld3.svg';
+import { tutorials } from '../../data/SiteData.js';
 
 class TutorialCardBlockContainer extends Component {
     constructor(props) {
@@ -19,43 +19,7 @@ class TutorialCardBlockContainer extends Component {
         this.state = {
             numberCards: 3,
             numberRows: 1,
-            cards: [
-                {
-                    title: "Getting Started with Wick Editor",
-                    body: "In this tutorial, we go over how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
-                    image: test,
-                    embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
-                    number: "Tutorial 1"
-                },
-                {
-                    title: "Sounds in Wick Editor",
-                    body: "Here's a tutorial to get you started using sounds in your wickeditor.com projects. I show you how to add sounds to the timeline as well as with code!",
-                    image: test,
-                    embed: "https://www.youtube.com/embed/T08B0KkEAZA",
-                    number: "Tutorial 2"
-                },
-                {
-                    title: "More Tutorials Coming Soon!",
-                    body: "Check back soon for more awesome Wick Editor Tutorials!",
-                    image: test,
-                    embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
-                    number: "Tutorial 3"
-                },
-                {
-                    title: "Getting Started with Wick Editors",
-                    body: "In this tutorial, we go over how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
-                    image: test,
-                    embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
-                    number: "Tutorial 4"
-                },
-                {
-                    title: "Sounds in Wick Editors",
-                    body: "Here's a tutorial to get you started using sounds in your wickeditor.com projects. I show you how to add sounds to the timeline as well as with code!",
-                    image: test,
-                    embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
-                    number: "Tutorial 5"
-                }
-            ]
+            cards: tutorials
         };
     }
 
