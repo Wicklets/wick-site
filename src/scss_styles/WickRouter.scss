@@ -54,14 +54,14 @@
         margin: 0 24px;
 
         // hide for narrow screens
-        @media screen and (max-width: 575px) {
+        @media screen and (max-width: 767px) {
             display: none;
         }
     }
 
     &-brand--narrow {
         // hide for wide screens
-        @media screen and (min-width: 576px) {
+        @media screen and (min-width: 768px) {
             display: none;
         }
     }
@@ -72,7 +72,7 @@
         font: 400 16px 'Nunito Sans', sans-serif;
         color: #4ECEC1 !important;
 
-        @media screen and (max-width: 575px) {
+        @media screen and (max-width: 767px) {
             text-align: left;
         }
 

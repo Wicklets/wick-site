@@ -36,7 +36,7 @@ const supporters = () => (<SupportersPageContainer />)
 const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickLaunchEditor, backgroundAnimationClass, isDropdownOpen}) => (
     <Fragment>
         <div id="WickRouter-container">
-            <Navbar light expand="sm">
+            <Navbar light expand="md">
                 <div className={backgroundAnimationClass} />
                 <NavbarBrand
                     tag={Link}
