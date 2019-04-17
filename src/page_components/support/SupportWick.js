@@ -18,8 +18,9 @@ const SupportWick = () => (
             <WickButton
                 text="Become a Patron"
                 size="lg"
-                block
                 type="body"
+                block
+                thicc
                 onClick={() => window.open("https://www.patreon.com/WickEditor")}
             />
         </Col>
@@ -29,6 +30,7 @@ const SupportWick = () => (
                 size="lg"
                 type="body"
                 block
+                thicc
                 onClick={() => window.open("https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg")}
             />
         </Col>

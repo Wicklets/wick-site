@@ -7,12 +7,19 @@
 */
 
 .WickButton {
-    &-button--body {
-        font: 600 16px 'Nunito Sans', sans-serif;
-    }
+    &-button {
+        &--body {
+            font: 600 16px 'Nunito Sans', sans-serif;
+        }
 
-    &-button--header {
-        font: 600 22px 'Nunito', sans-serif
+        &--header {
+            font: 600 22px 'Nunito', sans-serif
+        }
+
+        &--thicc {
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
     }
 
     &-button {

@@ -7,9 +7,21 @@
 */
 
 .WickCardModal {
-    &-body {
+    &-body,
+    &-footer,
+    &-header {
         padding-left: 60px;
         padding-right: 60px;
+
+        @media screen and (max-width: 991px) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 
     &-container {
@@ -31,15 +43,13 @@
 
     &-footer {
         align-items: flex-start;
-        padding: 0 60px 30px;
+        padding-bottom: 30px;
         border: none;
     }
 
     &-header {
         justify-content: center;
         padding-bottom: 0;
-        padding-left: 60px;
-        padding-right: 60px;
         border: none;
     }
 
@@ -51,7 +61,7 @@
 
     &-tag {
         padding: 2px 16px;
-        margin: 0 4px;
+        margin: 0 4px 8px;
         border-radius: 3px;
         background-color: #1EE29A;
         color: white;
@@ -61,11 +71,14 @@
 
     &-tagContainer {
         display: flex;
-        direction: column;
+
+        @media screen and (max-width: 991px) {
+            flex-direction: column;
+        }
     }
 
     &-time {
-        margin: 8px 4px 0;
+        margin: 0 4px;
         text-align: left;
         font-size: 16px;
         font-weight: 600;

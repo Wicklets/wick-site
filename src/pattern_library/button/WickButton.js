@@ -12,9 +12,9 @@ import {Button} from 'reactstrap';
 
 import '../../scss_styles/WickButton.scss';
 
-const WickButton = ({text, size, block, type, onClick}) => (
+const WickButton = ({text, size, block, type, thicc, onClick}) => (
     <Button
-        className={"WickButton-button WickButton-button--" + type}
+        className={"WickButton-button " + (thicc ? "WickButton-button--thicc " : "") + "WickButton-button--" + type}
         size={size}
         block={block}
         onClick={onClick}
