@@ -13,7 +13,7 @@ import WickCarousel from './WickCarousel.js';
 import coreyemery from '../../Images/People/CoreyEmery.svg';
 import lucadamasco from '../../Images/People/LucaDamasco.svg';
 import zachrispoli from '../../Images/People/ZachRispoli.svg';
-import community3 from '../../Images/Projects/community3.png';
+import community1 from '../../Images/Projects/community1.png';
 import community4 from '../../Images/Projects/community4.png';
 import community5 from '../../Images/Projects/community5.png';
 
@@ -25,7 +25,7 @@ class WickCarouselContainer extends Component {
             cards: [{
                 username: "Corey Emery",
                 userImage: coreyemery,
-                projectImage: community3,
+                projectImage: community1,
                 description: "project description blah blah blah"
             },
             {
