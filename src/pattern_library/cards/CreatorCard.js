@@ -18,8 +18,10 @@ const CreatorCard = ({username, userImage, projectImage, description}) => (
     <Row className="Wick-row">
         <Col sm="12" md="9" lg="7" xl="6">
             <Card className="CreatorCard-container">
-                <div className="CreatorCard-projectImageContainer">
-                    <Img className="CreatorCard-projectImage" src={projectImage} />
+                <div className="CreatorCard-imageContainer">
+                    <div className="CreatorCard-projectImageContainer">
+                        <Img className="CreatorCard-projectImage" src={projectImage} />
+                    </div>
                 </div>
                 <CardBody className="CreatorCard-content">
                     <Img className="CreatorCard-creatorImage" src={userImage} />

@@ -22,20 +22,25 @@
         margin-bottom: 12px;
     }
 
+    &-imageContainer {
+        position: relative;
+        width: 45%;
+    }
+
     &-projectImage {
+        height: 100%;
+    }
+
+    &-projectImageContainer {
         position: absolute;
         overflow: hidden;
         height: 100%;
+        width: 100%;
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-
-    &-projectImageContainer {
-        position: relative;
-        width: 45%;
     }
 
     &-text {

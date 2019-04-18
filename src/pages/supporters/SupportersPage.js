@@ -36,7 +36,7 @@ const SupportersPage = () => (
             <SupportWick />
         </ContentSection>
         <WickLargeSpacer />
-        <SupportersContainer />
+        {/*<SupportersContainer />*/}
         <WickSubTitle>Thank you!</WickSubTitle>
     </Container>
 );
