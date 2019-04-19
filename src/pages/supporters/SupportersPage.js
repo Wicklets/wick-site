@@ -36,7 +36,9 @@ const SupportersPage = () => (
             <SupportWick />
         </ContentSection>
         <WickLargeSpacer />
-        {/*<SupportersContainer />*/}
+        {/* THIS SECTION COMMENTED OUT FOR INITIAL RELEASE UNTIL MORE SUPPORTERS ARE ACQUIRED
+        <SupportersContainer />
+        */}
         <WickSubTitle>Thank you!</WickSubTitle>
     </Container>
 );

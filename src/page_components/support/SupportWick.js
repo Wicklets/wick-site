@@ -12,9 +12,11 @@ import {Row, Col} from 'reactstrap';
 
 import WickButton from '../../pattern_library/button/WickButton.js';
 
+import '../../scss_styles/SupportWick.scss';
+
 const SupportWick = () => (
     <Row className="Wick-row">
-        <Col sm="9" md="4" lg="3">
+        <Col className="SupportWick-button" sm="9" md="4" lg="3">
             <WickButton
                 text="Become a Patron"
                 size="lg"
@@ -24,7 +26,7 @@ const SupportWick = () => (
                 onClick={() => window.open("https://www.patreon.com/WickEditor")}
             />
         </Col>
-        <Col sm="9" md="4" lg="3">
+        <Col className="SupportWick-button" sm="9" md="4" lg="3">
             <WickButton
                 text="Subscribe on Youtube"
                 size="lg"
