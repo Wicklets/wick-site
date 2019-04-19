@@ -25,7 +25,7 @@ class WickRouterContainer extends Component {
     }
 
     toggleHeaderContainer = () => {
-        if (window.scrollY > 48) {
+        if (window.scrollY > 48 || this.state.isDropdownOpen) {
             this.setState({
                 backgroundAnimationClass: "slideInDown animated WickRouter-background",
                 pageJustLaunched: false
@@ -42,7 +42,7 @@ class WickRouterContainer extends Component {
     }
 
     toggleDropdown = () => {
-        this.setState(prevState => ({isDropdownOpen: !prevState.isDropdownOpen}));
+        this.setState(prevState => ({isDropdownOpen: !prevState.isDropdownOpen}), this.toggleHeaderContainer);
     }
 
     launchEditor = () => {
