@@ -15,7 +15,7 @@ import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/
 import { WickSubTitle } from '../../pattern_library/title/WickTitles.js';
 import SupportWick from '../../page_components/support/SupportWick.js';
 import SupporterBrands from '../../page_components/supporter_brands/SupporterBrands.js';
-import SupportersContainer from '../../page_components/supporters/SupportersContainer.js';
+//import SupportersContainer from '../../page_components/supporters/SupportersContainer.js';
 
 const SupportersPage = () => (
     <Container className="fadeIn animated">

@@ -8,12 +8,21 @@
 
 #Header {
     &-buttonRow {
-        padding: 76px 0 60px;
+        padding: 76px 0 12px;
     }
 
     // Button Space Placeholder
     &-buttonSpacer {
         height: 48px; // coded to match height of reactstrap button
+    }
+
+    &-buttonSubSpacer {
+        padding-bottom: 52px;
+    }
+
+    &-buttonSubtext {
+        font: 400 14px 'Nunito', sans-serif;
+        padding-bottom: 32px;
     }
 
     &-image {

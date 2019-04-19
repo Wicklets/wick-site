@@ -10,6 +10,7 @@ import React, {Component, Fragment} from 'react';
 
 import HomePage from './HomePage.js';
 import Header from '../../site_components/header/Header.js';
+import InlineLink from '../../pattern_library/inline_link/WickInlineLink.js';
 
 class HomePageContainer extends Component {
     componentDidMount = () => {
@@ -24,6 +25,7 @@ class HomePageContainer extends Component {
                     tagline="games, animations and everything in-between."
                     subtitle="The Wick Editor is a free online tool for creating games, animations, and everything in-between."
                     buttonLabel="Launch Editor"
+                    buttonSub={<InlineLink text="or launch Legacy Editor" link="http://wickeditor.com/wick-editor/" />}
                     onClick={() => window.open("http://wickeditor.com/wick-editor/")}
                 />
                 <HomePage />

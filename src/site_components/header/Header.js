@@ -17,8 +17,9 @@ import wickworld from '../../Images/Header/wickworldwide2.svg';
 
 import '../../scss_styles/Header.scss';
 
-const Header = ({title, tagline, subtitle, buttonLabel, onClick}) => (
+const Header = ({title, tagline, subtitle, buttonLabel, buttonSub, onClick}) => (
     <Fragment>
+        {console.log(buttonSub)}
         <div id="Header-imageContainer">
             <div id="Header-image">
                 <Img src={wickworld} />
@@ -40,6 +41,11 @@ const Header = ({title, tagline, subtitle, buttonLabel, onClick}) => (
                     )}
                 </Col>
             </Row>
+            {(buttonSub ? (
+                <div id="Header-buttonSubtext">{buttonSub}</div>
+            ) : (
+                <div id="Header-buttonSubSpacer" />
+            ))}
             {subtitle && (
                 <Row id="Header-subtitleRow" className="Wick-row">
                     <Col sm="9" lg="6">
