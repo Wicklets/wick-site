@@ -43,11 +43,11 @@
     &-brand--narrow {
         font: 600 22px 'Nunito', sans-serif;
         color: #1EE29A !important;
-    }
+        transition: color 0.5s;
 
-    &-brand--wide:hover,
-    &-brand--narrow:hover {
-        color: #01C094 !important;
+        &:hover {
+            color: #01C094 !important;
+        }
     }
 
     &-brand--wide {
@@ -71,6 +71,7 @@
         padding: 10px 8px 6px;
         font: 400 16px 'Nunito Sans', sans-serif;
         color: #4ECEC1 !important;
+        transition: color 0.5s;
 
         @media screen and (max-width: 767px) {
             text-align: left;

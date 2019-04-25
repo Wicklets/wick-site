@@ -19,7 +19,6 @@ import '../../scss_styles/Header.scss';
 
 const Header = ({title, tagline, subtitle, buttonLabel, buttonSub, onClick}) => (
     <Fragment>
-        {console.log(buttonSub)}
         <div id="Header-imageContainer">
             <div id="Header-image">
                 <Img src={wickworld} />
