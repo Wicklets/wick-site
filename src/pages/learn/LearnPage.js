@@ -18,7 +18,7 @@ import ExampleCardDeckContainer from '../../page_components/examples/ExampleCard
 import TutorialCardBlockContainer from '../../page_components/tutorials/TutorialCardBlockContainer.js';
 import TutorialCardDeckContainer from '../../page_components/tutorials/TutorialCardDeckContainer.js';
 
-const LearnPage = ({areTutorialsExpanded, expandTutorials, areExamplesExpanded, expandExamples}) => (
+const LearnPage = ({shouldCollapseCards, areTutorialsExpanded, expandTutorials, areExamplesExpanded, expandExamples}) => (
     <Container className="fadeIn animated">
         <ContentSection
             title="Explore Tutorials"
@@ -27,13 +27,13 @@ const LearnPage = ({areTutorialsExpanded, expandTutorials, areExamplesExpanded, 
             includeUnderline
             includePadding
         >
-            {(areTutorialsExpanded ?
-                <TutorialCardBlockContainer />
-            :
+            {(shouldCollapseCards && !areTutorialsExpanded ?
                 <TutorialCardDeckContainer
                     text={"see more"}
                     onClick={expandTutorials}
                 />
+            :
+                <TutorialCardBlockContainer />
             )}
         </ContentSection>
         <WickSmallSpacer />
@@ -44,13 +44,13 @@ const LearnPage = ({areTutorialsExpanded, expandTutorials, areExamplesExpanded, 
             includeUnderline
             includePadding
         >
-            {(areExamplesExpanded ?
-                <ExampleCardBlockContainer />
-            :
+            {(shouldCollapseCards && !areExamplesExpanded ?
                 <ExampleCardDeckContainer
                     text={"see more"}
                     onClick={expandExamples}
                 />
+            :
+                <ExampleCardBlockContainer />
             )}
         </ContentSection>
         <WickLargeSpacer />

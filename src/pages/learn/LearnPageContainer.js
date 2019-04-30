@@ -17,9 +17,16 @@ class LearnPageContainer extends Component {
 
         this.state = {
             areExamplesExpanded: false,
-            areTutorialsExpanded: false
+            areTutorialsExpanded: false,
+            shouldCollapseCards: false
         };
 
+    }
+
+    shouldCollapseCards = () => {
+        var width = window.innerWidth;
+        var shouldCollapseCards = width < 992 // coded to match reactstrap cutoff
+        this.setState({shouldCollapseCards});
     }
 
     expandExamples = () => this.setState({areExamplesExpanded: true});
@@ -28,6 +35,12 @@ class LearnPageContainer extends Component {
 
     componentDidMount = () => {
         window.scrollTo({top: 0, left: 0, behvaior: "smooth"})
+        window.addEventListener('resize', this.shouldCollapseCards);
+        this.shouldCollapseCards();
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.shouldCollapseCards);
     }
 
     render() {
