@@ -14,9 +14,11 @@ import ContentSection from '../../page_components/content_section/ContentSection
 import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
 import ExampleCardBlockContainer from '../../page_components/examples/ExampleCardBlockContainer.js';
+import ExampleCardDeckContainer from '../../page_components/examples/ExampleCardDeckContainer.js';
 import TutorialCardBlockContainer from '../../page_components/tutorials/TutorialCardBlockContainer.js';
+import TutorialCardDeckContainer from '../../page_components/tutorials/TutorialCardDeckContainer.js';
 
-const LearnPage = ({tutorials, examples}) => (
+const LearnPage = ({areTutorialsExpanded, expandTutorials, areExamplesExpanded, expandExamples}) => (
     <Container className="fadeIn animated">
         <ContentSection
             title="Explore Tutorials"
@@ -25,7 +27,14 @@ const LearnPage = ({tutorials, examples}) => (
             includeUnderline
             includePadding
         >
-            <TutorialCardBlockContainer />
+            {(areTutorialsExpanded ?
+                <TutorialCardBlockContainer />
+            :
+                <TutorialCardDeckContainer
+                    text={"see more"}
+                    onClick={expandTutorials}
+                />
+            )}
         </ContentSection>
         <WickSmallSpacer />
         <ContentSection
@@ -35,7 +44,14 @@ const LearnPage = ({tutorials, examples}) => (
             includeUnderline
             includePadding
         >
-            <ExampleCardBlockContainer />
+            {(areExamplesExpanded ?
+                <ExampleCardBlockContainer />
+            :
+                <ExampleCardDeckContainer
+                    text={"see more"}
+                    onClick={expandExamples}
+                />
+            )}
         </ContentSection>
         <WickLargeSpacer />
         <ExternalContacts />

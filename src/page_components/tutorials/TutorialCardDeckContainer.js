@@ -19,8 +19,8 @@ class TutorialCardDeckContainer extends Component {
         this.state = {
             cards: tutorials.slice(0,3),
             linkButton: {
-                text: "watch more",
-                onClick: () => window.open("http://wickeditor.com/#tutorials")
+                text: this.props.text,
+                onClick: this.props.onClick
             }
         };
     }

@@ -32,7 +32,10 @@ const HomePage = () => (
             size="small"
             includeUnderline
         >
-            <TutorialCardDeckContainer />
+            <TutorialCardDeckContainer
+                text={"watch more"}
+                onClick={() => window.open("http://wickeditor.com/#tutorials")}
+            />
         </ContentSection>
         <WickSmallSpacer />
         <ContentSection
@@ -41,7 +44,10 @@ const HomePage = () => (
             size="small"
             includeUnderline
         >
-            <ExampleCardDeckContainer />
+            <ExampleCardDeckContainer
+                text={"see more"}
+                onClick={() => window.open("http://wickeditor.com/#examples")}
+            />
         </ContentSection>
         <WickSmallSpacer />
         <ContentSection
