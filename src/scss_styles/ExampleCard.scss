@@ -11,6 +11,10 @@
         margin-top: 4px;
         opacity: 0;
         transition: opacity 0.5s;
+
+        @media screen and (max-width: 991px) {
+            opacity: 1;
+        }
     }
 
     &-container,
@@ -48,6 +52,10 @@
         border-bottom-right-radius: 3px; // coded to fill the rounded space in the reactstrap card
         transform: translateY(20px);
         transition: transform 0.5s;
+
+        @media screen and (max-width: 991px) {
+            transform: none;
+        }
     }
 
     &-title {
