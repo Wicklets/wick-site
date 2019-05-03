@@ -8,7 +8,7 @@
 
 #Header {
     &-buttonRow {
-        padding: 76px 0 12px;
+        padding: 64px 0 12px;
     }
 
     // Button Space Placeholder
@@ -28,7 +28,7 @@
     &-image {
         display: flex; // force images to sit next to each other
         position: absolute;
-        top: 0;
+        top: -16px;
         // center images
         left: 50%;
         transform: translateX(-50%);
