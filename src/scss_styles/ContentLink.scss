@@ -16,9 +16,11 @@
     &-container {
         margin-bottom: 40px;
         font-family: 'Nunito Sans', sans-serif;
+        transition: transform 0.5s;
 
         &:hover {
             cursor: pointer;
+            transform: translateX(-3px) translateY(-2px);
 
             & .ContentLink-arrow {
                 opacity: 1;
