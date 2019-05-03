@@ -9,6 +9,12 @@
 import test from '../Images/Tutorials/testworld.svg';
 import test2 from '../Images/Tutorials/testworld3.svg';
 import comingsoon from '../Images/Misc/comingsoon.png';
+import coreyemery from '../Images/People/CoreyEmery.svg';
+import lucadamasco from '../Images/People/LucaDamasco.svg';
+import zachrispoli from '../Images/People/ZachRispoli.svg';
+import community1 from '../Images/Projects/community1.png';
+import community4 from '../Images/Projects/community4.png';
+import community5 from '../Images/Projects/community5.png';
 
 export const examples = [
     {
@@ -98,5 +104,29 @@ export const news = [
         text: "We’ve posted an update to the Wick Editor Alpha.",
         date: "12/01/18",
         onClick: () => window.open("https://forum.wickeditor.com/t/wick-editor-alpha-update-v2/1236")
+    }
+];
+
+export const carouselProjects = [
+    {
+        src: "Corey Emery",
+        projectName: "Corey Emery",
+        userImage: coreyemery,
+        projectImage: community1,
+        description: "project description blah blah blah"
+    },
+    {
+        src: "Luca Damasco",
+        projectName: "Luca Damasco",
+        userImage: lucadamasco,
+        projectImage: community4,
+        description: "project description blah blah blah"
+    },
+    {
+        src: "Zach Rispoli",
+        projectName: "Zach Rispoli",
+        userImage: zachrispoli,
+        projectImage: community5,
+        description: "project description blah blah blah"
     }
 ];

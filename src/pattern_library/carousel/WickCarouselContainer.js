@@ -9,37 +9,14 @@
 import React, { Component } from 'react';
 
 import WickCarousel from './WickCarousel.js';
-
-import coreyemery from '../../Images/People/CoreyEmery.svg';
-import lucadamasco from '../../Images/People/LucaDamasco.svg';
-import zachrispoli from '../../Images/People/ZachRispoli.svg';
-import community1 from '../../Images/Projects/community1.png';
-import community4 from '../../Images/Projects/community4.png';
-import community5 from '../../Images/Projects/community5.png';
+import { carouselProjects } from '../../data/SiteData.js';
 
 class WickCarouselContainer extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            cards: [{
-                username: "Corey Emery",
-                userImage: coreyemery,
-                projectImage: community1,
-                description: "project description blah blah blah"
-            },
-            {
-                username: "Luca Damasco",
-                userImage: lucadamasco,
-                projectImage: community4,
-                description: "project description blah blah blah"
-            },
-            {
-                username: "Zach Rispoli",
-                userImage: zachrispoli,
-                projectImage: community5,
-                description: "project description blah blah blah"
-            }],
+            cards: carouselProjects,
             index: 0
         };
     }
@@ -62,6 +39,11 @@ class WickCarouselContainer extends Component {
         this.setState(prevState => ({index: prevState.index === 0 ? prevState.cards.length - 1 : prevState.index - 1}));
     }
 
+    goToIndex = newIndex => {
+        if (this.animating) return;
+        this.setState({index: newIndex});
+      }
+
     render() {
         return (
             <WickCarousel
@@ -69,6 +51,7 @@ class WickCarouselContainer extends Component {
                 content={this.state.cards}
                 next={this.nextCard}
                 previous={this.prevCard}
+                goToIndex={this.goToIndex}
                 onExited={this.onExited}
                 onExiting={this.onExiting}
             />

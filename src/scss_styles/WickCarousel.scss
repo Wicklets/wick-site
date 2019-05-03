@@ -24,5 +24,17 @@
             cursor: pointer;
         }
     }
+
+    &-indicators {
+        margin-bottom: 4px;
+
+        & li {
+            background-color: #1EE29A;
+        }
+
+        & .active {
+            background-color: #1BC687;
+        }
+    }
 }
 

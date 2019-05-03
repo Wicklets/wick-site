@@ -11,7 +11,7 @@ import React from 'react';
 import { Container } from 'reactstrap';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
-import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
+import { WickSmallSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import { WickSubTitle } from '../../pattern_library/title/WickTitles.js';
 import SupportWick from '../../page_components/support/SupportWick.js';
 import SupporterBrands from '../../page_components/supporter_brands/SupporterBrands.js';
@@ -35,7 +35,7 @@ const SupportersPage = () => (
         >
             <SupportWick />
         </ContentSection>
-        <WickLargeSpacer />
+        <WickSmallSpacer />
         {/* THIS SECTION COMMENTED OUT FOR INITIAL RELEASE UNTIL MORE SUPPORTERS ARE ACQUIRED
         <SupportersContainer />
         */}

@@ -25,7 +25,7 @@ const CommunityPage = () => (
         />
         <WickSmallSpacer />
         <ContentSection
-            title="Creators"
+            title="Community Projects"
             text="Check out what people are making!"
             includeUnderline
             includePadding
