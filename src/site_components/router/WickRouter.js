@@ -47,7 +47,11 @@ const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickL
                 >
                     wick editor
                 </NavbarBrand>
-                <NavbarToggler onClick={onClickToggleDropdown} className="ml-auto" />
+                {(isDropdownOpen ? (
+                    <NavbarToggler onClick={onClickToggleDropdown} className="WickRouter-toggle ml-auto">X</NavbarToggler>
+                ):(
+                    <NavbarToggler onClick={onClickToggleDropdown} className="ml-auto" />
+                ))}
                 <Collapse isOpen={isDropdownOpen} navbar>
                     <Nav className="ml-auto mr-auto" navbar>
                         <NavItem>
