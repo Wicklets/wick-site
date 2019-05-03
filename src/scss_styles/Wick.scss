@@ -13,6 +13,11 @@
     // Center the content of the page
     &-row {
         justify-content: center;
+
+        @media screen and (max-width: 575px) {
+            padding-left: 28px;
+            padding-right: 28px;
+        }
     }
 
     // Set in this fashion so the header image isn't hidden
