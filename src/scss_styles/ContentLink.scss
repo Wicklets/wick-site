@@ -11,6 +11,10 @@
         padding-top: 20px;
         opacity: 0;
         transition: opacity 0.5s;
+
+        @media screen and (max-width: 991px) {
+            opacity: 1;
+        }
     }
 
     &-container {
