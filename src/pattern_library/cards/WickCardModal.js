@@ -40,6 +40,7 @@ const WickCardModal = ({title, embed, number, onClick, isModalOpen}) => (
                 <div className="WickCardModal-time">7 Mins</div>
             </div>
             <div className="WickCardModal-description">Here is a tutorial to help you get started with the Wick Editor. Here is a tutorial to help you get started with the Wick Editor. Here is a tutorial to help you get started with the Wick Editor. Here is a tutorial to help you get started with the Wick Editor. </div>
+            <button className="WickCardModal-close close" onClick={onClick}>X</button>
         </ModalFooter>
     </Modal>
 );

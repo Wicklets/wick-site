@@ -24,6 +24,21 @@
         }
     }
 
+    &-close {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color: #1EE29A;
+        transition: 0.5s;
+
+        &:hover {
+            color: #1BC687 !important;
+        }
+    }
+
     &-container {
         text-align: center;
         font-family: 'Nunito Sans', sans-serif;
@@ -45,6 +60,7 @@
         align-items: flex-start;
         padding-bottom: 30px;
         border: none;
+        padding-bottom: 56px;
     }
 
     &-header {
