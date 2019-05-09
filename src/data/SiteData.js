@@ -73,6 +73,8 @@ export const tutorials = [
     {
         title: "Legacy Editor | Getting Started",
         body: "In this tutorial, we go over how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
+        body_extended: "Learn how to use the new Wick Editor 1.0 to create animations and navigate the new interface! Learn how the new toolbar, inspector and timeline work, and see our new settings menu.",
+        tags: ["Intro", "Beginner", "Animation"],
         image: test2,
         embed: "https://www.youtube.com/embed/bhN2VxyWJiU&t",
         number: "Legacy 1"
@@ -80,6 +82,8 @@ export const tutorials = [
     {
         title: "Legacy Editor | Using Sounds",
         body: "Here's a tutorial to get you started using sounds in your wickeditor.com projects. I show you how to add sounds to the timeline as well as with code!",
+        body_extended: "Learn how to use the new Wick Editor 1.0 to create animations and navigate the new interface! Learn how the new toolbar, inspector and timeline work, and see our new settings menu.",
+        tags: ["Intro", "Beginner", "Animation"],
         image: test2,
         embed: "https://www.youtube.com/embed/T08B0KkEAZA&t",
         number: "Legacy 2"
@@ -87,6 +91,8 @@ export const tutorials = [
     {
         title: "Legacy Editor | Sharing your projects",
         body: "Learn how to share your projects on websites like Newgrounds, Itch.io, and more!",
+        body_extended: "Learn how to use the new Wick Editor 1.0 to create animations and navigate the new interface! Learn how the new toolbar, inspector and timeline work, and see our new settings menu.",
+        tags: ["Intro", "Beginner", "Animation"],
         image: test2,
         embed: "https://www.youtube.com/embed/IpF8fMXN6To&t",
         number: "Legacy 3"
