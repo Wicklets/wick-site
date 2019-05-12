@@ -46,12 +46,12 @@ class CreatorsContainer extends Component {
                 />
                 <CreatorsRow
                     people={this.state.webDesigners}
-                    title="Brand and web design by"
+                    title="1.0 Brand and web design by"
                     includeHeadshot
                 />
                 <CreatorsRow
                     people={this.state.editorDesigners}
-                    title="Editor Interface design by"
+                    title="Original editor interface design by"
                 />
             </Fragment>
         )

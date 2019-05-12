@@ -31,7 +31,7 @@ const thanks = (
 
 const contact = (
     <Fragment>
-        Shoot us a <InlineLink text="message" link="mailto:contact@wickeditor.com" />, join the wick editor community with a <InlineLink text="YouTube membership" link="https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg" /> or subscribe on <InlineLink text="Patreon" link="https://www.patreon.com/WickEditor" />!
+        Shoot us a <InlineLink text="message" link="mailto:contact@wickeditor.com" />, join the wick editor community with a <InlineLink text="YouTube subscription" link="https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg" /> or membership on <InlineLink text="Patreon" link="https://www.patreon.com/WickEditor" />!
     </Fragment>
 );
 
@@ -39,18 +39,18 @@ const AboutPage = () => (
     <Container className="fadeIn animated">
         <ContentSection
             title="What is Wick Editor?"
-            text="The Wick Editor is a free and open-source tool for creating games, animations, and everything in-between. It's designed to be the most accessible tool for creating multimedia projects."
+            text="The Wick Editor is a free and open-source tool for creating games, animations, and everything in-between. It's designed to be the most accessible tool for creating multimedia projects on the web."
             includeUnderline
         >
             <ResponsiveImage id="AboutPage-editor" image={editorpreview} xs="12" lg="9" />
         </ContentSection>
         <ContentSection
-            text="The Wick Editor is a hybrid of an animation tool and a coding environment, heavily inspired by similar tools such as Flash, HyperCard, and Scratch. It was developed in response to a growing need for such a tool for the modern web. You can read more about the creation of the Wick Editor here."
+            text="The Wick Editor is a hybrid of an animation tool and a coding environment, heavily inspired by similar tools such as Flash, HyperCard, and Scratch. It was developed in response to a growing need for such a tool for the modern web."
         />
         <WickLargeSpacer />
         <ContentSection
             title="Who is Wick Editor?"
-            text="The Wick Editor is a free and open-source tool for creating games, animations, and everything in-between. It's designed to be the most accessible tool for creating multimedia projects."
+            text="The Wick Editor has been in development since 2016 with support, suggestions, and improvements provided by its entire community of users."
             includeUnderline
         >
             <CreatorsContainer />

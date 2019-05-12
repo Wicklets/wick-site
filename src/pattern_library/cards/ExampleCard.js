@@ -17,19 +17,22 @@ import WickCardModal from './WickCardModal.js';
 
 import '../../scss_styles/ExampleCard.scss';
 
-const ExampleCard = ({title, image, embed, number, disabled, onClick, isModalOpen}) => (
+const ExampleCard = ({cardData, disabled, onClick, isModalOpen}) => (
     <Fragment>
         <Card
             className={(disabled ? "ExampleCard-container--disabled" : "ExampleCard-container")}
             onClick={onClick}
         >
-            <CardImg width="100%" src={image} alt="Card image cap" />
+            <CardImg width="100%" src={cardData.image} alt="Card image cap" />
             <CardImgOverlay className="ExampleCard-content">
-                <CardTitle className="ExampleCard-title">{title}</CardTitle>
+                <CardTitle className="ExampleCard-title">{cardData.title}</CardTitle>
                 <Img className="ExampleCard-arrow" src={arrow} />
             </CardImgOverlay>
         </Card>
-        <WickCardModal title={title} embed={embed} number={number} onClick={onClick} isModalOpen={isModalOpen} />
+        <WickCardModal 
+        cardData={cardData}
+        onClick={onClick} 
+        isModalOpen={isModalOpen} />
     </Fragment>
 );
 

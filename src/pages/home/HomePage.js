@@ -24,7 +24,7 @@ import InlineLink from '../../pattern_library/inline_link/WickInlineLink.js';
 
 const HomePage = () => (
     <Container className="fadeIn animated">
-        <Embed url="https://www.youtube.com/embed/IpF8fMXN6To" ratio="16:9" />
+        <Embed url="https://youtube.com/embed/pAsrXT8KIrI" ratio="16:9" />
         <WickSmallSpacer />
         <WickTitle>our latest</WickTitle>
         <ContentSection
@@ -69,7 +69,7 @@ const HomePage = () => (
         <WickLargeSpacer />
         <ContentSection
             title="support wick editor!"
-            text="Join the wick editor community with a YouTube membership or Patreon subscription!"
+            text="Support the wick editor community with a YouTube membership or Patreon subscription!"
             size="large"
             includePadding
             includeTitlePadding
