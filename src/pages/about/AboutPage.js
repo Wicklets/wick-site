@@ -13,13 +13,14 @@ import Img from 'react-image';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import CreatorsContainer from '../../page_components/creators/CreatorsContainer.js';
-import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
+import { WickSmallSpacer, WickLargeSpacer, WickXLSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import SocialMedia from '../../page_components/social_media/SocialMedia.js';
 import ResponsiveImage from '../../pattern_library/responsive_image/WickResponsiveImage.js';
 import InlineLink from '../../pattern_library/inline_link/WickInlineLink.js';
 
 import editorpreview from '../../Images/Misc/editorpreview.svg';
 import cannon from '../../Images/Misc/cannon.svg';
+import stars from '../../Images/Icons/stars.svg';
 
 import '../../scss_styles/AboutPage.scss';
 
@@ -63,12 +64,14 @@ const AboutPage = () => (
             titleWeight="semibold"
             includeUnderline
         />
-        <WickLargeSpacer />
+        <WickXLSpacer />
         <ContentSection
             title="contact us!"
             text={contact}
             titleWeight="semibold"
             includeUnderline
+            icon={stars}
+            iconOffset
         />
         <WickSmallSpacer />
         <SocialMedia />
