@@ -11,6 +11,11 @@ import React, { Component, Fragment } from 'react';
 import LearnPage from './LearnPage.js';
 import Header from '../../site_components/header/Header.js';
 
+import { tutorials } from '../../data/SiteData.js';
+import WickCardModal from '../../pattern_library/cards/WickCardModal.js';
+
+const tutorial = tutorials[0];
+
 class LearnPageContainer extends Component {
     constructor(props) {
         super(props);
@@ -18,10 +23,12 @@ class LearnPageContainer extends Component {
         this.state = {
             areExamplesExpanded: false,
             areTutorialsExpanded: false,
-            shouldCollapseCards: false
+            shouldCollapseCards: false,
+            isModalOpen: false
         };
-
     }
+
+    handleClick = () => this.setState(prevState => ({isModalOpen: !prevState.isModalOpen}));
 
     shouldCollapseCards = () => {
         var width = window.innerWidth;
@@ -50,9 +57,10 @@ class LearnPageContainer extends Component {
                     title="get started"
                     subtitle="Hit the ground running with the basics of wick editor by trying out our starter tutorial."
                     buttonLabel="Try the Tutorial"
-                    onClick={() => window.open("http://wickeditor.com/#tutorials")}
+                    onClick={this.handleClick}
                 />
                 <LearnPage {...this.state} expandExamples={this.expandExamples} expandTutorials={this.expandTutorials} />
+                <WickCardModal cardData={tutorial} onClick={this.handleClick} isModalOpen={this.state.isModalOpen} />
             </Fragment>
         );
     }
