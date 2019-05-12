@@ -6,10 +6,11 @@
     Card Decks for Wick Items
 */
 
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
+import { Link } from "react-router-dom";
 
-import {Row, Col} from 'reactstrap';
-import {CardDeck} from 'reactstrap';
+import { Row, Col } from 'reactstrap';
+import { CardDeck } from 'reactstrap';
 
 import WickCardContainer from './WickCardContainer.js';
 import WickPaddingCard from './WickPaddingCard.js';
@@ -34,7 +35,14 @@ const WickCardDeck = ({cards, type, numberPaddingCards, linkButton, usePadding})
         {linkButton && (
             <Row className="Wick-row">
                 <Col xs="6" sm="4" md="3" lg="2">
-                    <WickButton text={linkButton.text} block type="body" onClick={linkButton.onClick} />
+                    {(linkButton.routerLink ? (
+                        <Link to="/learn/" className="WickCardDeck-linkButton">
+                            <WickButton text={linkButton.text} block type="body" />
+                        </Link>
+                    ) : (
+                        <WickButton text={linkButton.text} block type="body" onClick={linkButton.onClick} />
+                    ))}
+
                 </Col>
             </Row>
         )}
