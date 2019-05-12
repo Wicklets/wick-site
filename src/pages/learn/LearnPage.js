@@ -18,6 +18,9 @@ import ExampleCardDeckContainer from '../../page_components/examples/ExampleCard
 import TutorialCardBlockContainer from '../../page_components/tutorials/TutorialCardBlockContainer.js';
 import TutorialCardDeckContainer from '../../page_components/tutorials/TutorialCardDeckContainer.js';
 
+import tutorial from '../../Images/Icons/tutorial.svg';
+import example from '../../Images/Icons/example.svg';
+
 const LearnPage = ({shouldCollapseCards, areTutorialsExpanded, expandTutorials, areExamplesExpanded, expandExamples}) => (
     <Container className="fadeIn animated">
         <ContentSection
@@ -26,6 +29,7 @@ const LearnPage = ({shouldCollapseCards, areTutorialsExpanded, expandTutorials, 
             size="small"
             includeUnderline
             includePadding
+            icon={tutorial}
         >
             {(shouldCollapseCards && !areTutorialsExpanded ?
                 <TutorialCardDeckContainer
@@ -43,6 +47,7 @@ const LearnPage = ({shouldCollapseCards, areTutorialsExpanded, expandTutorials, 
             size="small"
             includeUnderline
             includePadding
+            icon={example}
         >
             {(shouldCollapseCards && !areExamplesExpanded ?
                 <ExampleCardDeckContainer

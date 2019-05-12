@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="51px" viewBox="0 0 58 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 32</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-11.6%" y="-12.3%" width="123.2%" height="124.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="2" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.705882353   0 0 0 0 0.925490196   0 0 0 0 0.901960784  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-2" cx="39" cy="41" r="3"></circle>
+        <filter x="-16.7%" y="-16.7%" width="150.0%" height="166.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M24.2257919,18.348084 L24.2257919,29.6520105 C24.2257919,29.9281529 24.4496496,30.1520105 24.7257919,30.1520105 C24.8189587,30.1520105 24.9102723,30.1259799 24.9894349,30.0768544 L34.0972146,24.4248912 C34.3318494,24.2792852 34.4040216,23.9710391 34.2584155,23.7364043 C34.217812,23.6709743 34.1626446,23.6158068 34.0972146,23.5752033 L24.9894349,17.9232401 C24.7548001,17.7776341 24.446554,17.8498062 24.300948,18.084441 C24.2518225,18.1636037 24.2257919,18.2549173 24.2257919,18.348084 Z" id="path-4"></path>
+        <filter x="-9.9%" y="-8.1%" width="119.8%" height="132.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Hi-Fi-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-132.000000, -461.000000)">
+            <g id="Group-32" filter="url(#filter-1)" transform="translate(132.000000, 456.000000)">
+                <path d="M3,5 L53,5 C54.6568542,5 56,6.34314575 56,8 L56,50 C56,51.6568542 54.6568542,53 53,53 L3,53 C1.34314575,53 2.02906125e-16,51.6568542 0,50 L0,8 C-2.02906125e-16,6.34314575 1.34314575,5 3,5 Z" id="Rectangle-15" fill="#D8D8D8"></path>
+                <path d="M0,39 L56,39 L56,50 C56,51.6568542 54.6568542,53 53,53 L3,53 C1.34314575,53 2.02906125e-16,51.6568542 0,50 L0,39 Z" id="Rectangle-15-Copy" fill="#615555"></path>
+                <polygon id="Rectangle-16-Copy" fill="#FFFFFF" transform="translate(30.569810, 22.765606) rotate(39.000000) translate(-30.569810, -22.765606) " points="34.7117564 -3.0940179 34.81074 44.2783243 26.4427591 48.6252295 26.3288801 3.69430147"></polygon>
+                <rect id="Rectangle-3" fill="#1EE29A" x="0" y="39" width="39.8793668" height="4"></rect>
+                <g id="Oval-5">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#F7F7F7" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <g id="Path-32">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <use fill="#1EE29A" fill-rule="evenodd" xlink:href="#path-4"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
