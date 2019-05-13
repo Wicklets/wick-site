@@ -6,7 +6,7 @@
     Container for Example Card Decks
 */
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import WickCardDeckContainer from '../../pattern_library/cards/WickCardDeckContainer.js';
 
@@ -20,7 +20,8 @@ class ExampleCardDeckContainer extends Component {
             cards: examples.slice(0,3),
             linkButton: {
                 text: this.props.text,
-                onClick: this.props.onClick
+                onClick: this.props.onClick,
+                routerLink: this.props.routerLink
             }
         };
     }

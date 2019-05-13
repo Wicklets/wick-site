@@ -28,7 +28,7 @@ const TutorialCard = ({cardData, disabled, onClick, isModalOpen}) => (
                 <CardTitle className="TutorialCard-title">{cardData.title}</CardTitle>
                 <CardText className="TutorialCard-text">{cardData.body}</CardText>
                 <div className="TutorialCard-arrowSpacer" />
-                <Img className="TutorialCard-arrow" src={arrow} />
+                <Img className={"TutorialCard-arrow" + (disabled ? " TutorialCard-arrow--disabled" : "")} src={arrow} />
             </CardBody>
         </Card>
         <WickCardModal cardData={cardData} onClick={onClick} isModalOpen={isModalOpen} />

@@ -6,7 +6,7 @@
     Top-Level Content for the Wick Homepage
 */
 
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import { Container } from 'reactstrap';
 
@@ -20,6 +20,12 @@ import Embed from '../../pattern_library/embed/WickEmbed.js';
 import {WickTitle} from '../../pattern_library/title/WickTitles.js';
 import SocialMedia from '../../page_components/social_media/SocialMedia.js';
 import SupportWick from '../../page_components/support/SupportWick.js';
+import InlineLink from '../../pattern_library/inline_link/WickInlineLink.js';
+
+import tutorial from '../../Images/Icons/tutorial.svg';
+import example from '../../Images/Icons/example.svg';
+import updates from '../../Images/Icons/updates.svg';
+import support from '../../Images/Icons/support.svg';
 
 const HomePage = () => (
     <Container className="fadeIn animated">
@@ -28,25 +34,27 @@ const HomePage = () => (
         <WickTitle>our latest</WickTitle>
         <ContentSection
             title="Tutorials"
-            text="Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
+            text={<Fragment>Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the <InlineLink text="Wick Editor forums!" link="https://forum.wickeditor.com/" /></Fragment>}
             size="small"
             includeUnderline
+            icon={tutorial}
         >
             <TutorialCardDeckContainer
                 text={"watch more"}
-                onClick={() => window.open("http://wickeditor.com/#tutorials")}
+                routerLink
             />
         </ContentSection>
         <WickSmallSpacer />
         <ContentSection
             title="Examples"
-            text="Check out some examples to help you get started using the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
+            text={<Fragment>Check out some examples to help you get started using the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the <InlineLink text="Wick Editor forums!" link="https://forum.wickeditor.com/" /></Fragment>}
             size="small"
             includeUnderline
+            icon={example}
         >
             <ExampleCardDeckContainer
                 text={"see more"}
-                onClick={() => window.open("http://wickeditor.com/#examples")}
+                routerLink
             />
         </ContentSection>
         <WickSmallSpacer />
@@ -54,6 +62,7 @@ const HomePage = () => (
             title="Updates"
             size="small"
             includeUnderline
+            icon={updates}
         >
             <UpdateCard />
         </ContentSection>
@@ -72,6 +81,7 @@ const HomePage = () => (
             size="large"
             includePadding
             includeTitlePadding
+            icon={support}
         >
             <SupportWick />
         </ContentSection>

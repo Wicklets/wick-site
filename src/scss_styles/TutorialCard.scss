@@ -16,6 +16,10 @@
         opacity: 0;
         transition: opacity 0.5s;
 
+        &--disabled {
+            opacity: 0 !important;
+        }
+
         @media screen and (max-width: 991px) {
             opacity: 1;
         }

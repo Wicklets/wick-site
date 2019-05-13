@@ -7,6 +7,12 @@
 */
 
 .WickCardDeck {
+    &-linkButton {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
     &-paddingContainer {
         padding-top: 20px;
         padding-bottom: 20px;

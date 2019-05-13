@@ -20,7 +20,8 @@ class TutorialCardDeckContainer extends Component {
             cards: tutorials.slice(0,3),
             linkButton: {
                 text: this.props.text,
-                onClick: this.props.onClick
+                onClick: this.props.onClick,
+                routerLink: this.props.routerLink
             }
         };
     }
