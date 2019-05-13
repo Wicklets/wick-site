@@ -13,10 +13,10 @@ import { Row, Col } from 'reactstrap';
 
 import '../../scss_styles/ContentSection.scss';
 
-const ContentSection = ({title, text, size, icon, iconOffset, includeUnderline, includePadding, includeTitlePadding, titleWeight, children}) => (
+const ContentSection = ({title, text, size, icon, iconOffset, iconMobile, includeUnderline, includePadding, includeTitlePadding, titleWeight, children}) => (
     <Fragment>
         {icon && (
-            <Img src={icon} className={"ContentSection-icon" + (iconOffset ? " ContentSection-iconOffset" : "")} />
+            <Img src={icon} className={"ContentSection-icon" + (iconOffset ? " ContentSection-icon--iconOffset" : "") + (iconMobile ? " ContentSection-icon--mobile" : "")} />
         )}
         {title && (
             <div className={"ContentSection-title" + (titleWeight ? "--" + titleWeight : "") + (size ? " ContentSection-title--" + size : "")}>

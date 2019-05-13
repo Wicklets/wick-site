@@ -9,7 +9,6 @@
 import React, { Fragment } from 'react';
 
 import { Container } from 'reactstrap';
-import Img from 'react-image';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import CreatorsContainer from '../../page_components/creators/CreatorsContainer.js';
@@ -57,12 +56,12 @@ const AboutPage = () => (
             <CreatorsContainer />
         </ContentSection>
         <WickSmallSpacer />
-        <Img src={cannon} id="AboutPage-cannon" />
         <ContentSection
             title="special thanks to"
             text={thanks}
             titleWeight="semibold"
             includeUnderline
+            icon={cannon}
         />
         <WickXLSpacer />
         <ContentSection

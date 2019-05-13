@@ -30,6 +30,7 @@ const LearnPage = ({shouldCollapseCards, areTutorialsExpanded, expandTutorials, 
             includeUnderline
             includePadding
             icon={tutorial}
+            iconMobile
         >
             {(shouldCollapseCards && !areTutorialsExpanded ?
                 <TutorialCardDeckContainer
@@ -48,6 +49,7 @@ const LearnPage = ({shouldCollapseCards, areTutorialsExpanded, expandTutorials, 
             includeUnderline
             includePadding
             icon={example}
+            iconMobile
         >
             {(shouldCollapseCards && !areExamplesExpanded ?
                 <ExampleCardDeckContainer

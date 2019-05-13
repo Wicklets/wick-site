@@ -22,14 +22,20 @@
 
     &-icon {
         padding-bottom: 4px;
-    }
 
-    &-iconOffset {
-        position: absolute;
-        overflow: hidden;
-        left: 50%;
-        transform: translate(-50%, -48px);
-        max-width: 100%;
+        &--iconOffset {
+            position: absolute;
+            overflow: hidden;
+            left: 50%;
+            transform: translate(-50%, -48px);
+            max-width: 100%;
+        }
+
+        &--mobile {
+            @media screen and (min-width: 992px) {
+                display: none;
+            }
+        }
     }
 
     &-padding {

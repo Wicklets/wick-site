@@ -38,6 +38,7 @@ const HomePage = () => (
             size="small"
             includeUnderline
             icon={tutorial}
+            iconMobile
         >
             <TutorialCardDeckContainer
                 text={"watch more"}
@@ -51,6 +52,7 @@ const HomePage = () => (
             size="small"
             includeUnderline
             icon={example}
+            iconMobile
         >
             <ExampleCardDeckContainer
                 text={"see more"}
@@ -63,6 +65,7 @@ const HomePage = () => (
             size="small"
             includeUnderline
             icon={updates}
+            iconMobile
         >
             <UpdateCard />
         </ContentSection>
@@ -82,6 +85,7 @@ const HomePage = () => (
             includePadding
             includeTitlePadding
             icon={support}
+            iconMobile
         >
             <SupportWick />
         </ContentSection>
