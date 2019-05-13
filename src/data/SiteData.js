@@ -73,7 +73,7 @@ export const tutorials = [
     {
         title: "Legacy Editor | Getting Started",
         body: "Legacy Editor | Learn how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
-        body_extended: "THIS TUTORIAL IS FOR THE LEGACY EDITOR! Learn how to use the legacy editor to create a basic animation.",
+        body_extended: "In this Legacy tutorial, learn how to use the legacy editor to create a basic animation, create a basic interactive project, and how to save that project to your computer.",
         tags: ["Legacy", "Beginner", "Animation"],
         image: test2,
         embed: "https://www.youtube.com/embed/bhN2VxyWJiU&t",
@@ -82,7 +82,7 @@ export const tutorials = [
     {
         title: "Legacy Editor | Using Sounds",
         body: "Legacy Editor | Learn how to use sounds in your legacy Wick Editor projects!",
-        body_extended: "THIS TUTORIAL IS FOR THE LEGACY EDITOR! Learn how to use sounds in your legacy Wick Editor projects by adding them to your timeline and by using code!",
+        body_extended: "In this legacy tutorial, learn how to use sounds in your legacy Wick Editor projects by adding them to your timeline and by using code!",
         tags: ["Beginner", "Sound", "Timeline"],
         image: test2,
         embed: "https://www.youtube.com/embed/T08B0KkEAZA&t",
@@ -91,7 +91,7 @@ export const tutorials = [
     {
         title: "Legacy Editor | Sharing your projects",
         body: "Legacy Editor | Learn how to share your legacy Wick Editor projects on other websites!",
-        body_extended: "THIS TUTORIAL IS FOR THE LEGACY EDITOR! Learn how to share your legacy Wick Editor projects on other websites like Newgrounds.com, Itch.io, and more!",
+        body_extended: "In this legacy tutorial, learn how to share your legacy Wick Editor projects on other websites like Newgrounds.com, Itch.io, and more!",
         tags: ["Beginner", "Sharing", "Newgrounds"],
         image: test2,
         embed: "https://www.youtube.com/embed/IpF8fMXN6To&t",
