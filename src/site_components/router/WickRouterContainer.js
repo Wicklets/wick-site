@@ -38,7 +38,7 @@ class WickRouterContainer extends Component {
     }
 
     handleClickCloseDropdown = () => {
-        this.setState({isDropdownOpen: false});
+        this.setState({isDropdownOpen: false}, this.toggleHeaderContainer);
     }
 
     toggleDropdown = () => {
