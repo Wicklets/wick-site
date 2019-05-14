@@ -18,6 +18,10 @@
 
     &-buttonSubSpacer {
         padding-bottom: 52px;
+
+        @media screen and (max-width: 991px) {
+            padding-bottom: 0px;
+        }
     }
 
     &-buttonSubtext {
