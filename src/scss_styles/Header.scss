@@ -9,6 +9,10 @@
 #Header {
     &-buttonRow {
         padding: 64px 0 12px;
+
+        @media screen and (max-width: 991px) {
+            padding-top: 52px;
+        }
     }
 
     // Button Space Placeholder
