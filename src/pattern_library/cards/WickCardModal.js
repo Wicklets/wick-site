@@ -19,7 +19,11 @@ let renderTag = (tag, i) => {
     )
 }
 
-const WickCardModal = ({cardData, onClick, isModalOpen}) => (
+const WickCardModal = ({cardData, onClick, isModalOpen, cardType}) => {
+    let embed = cardType === "example" ? ('/examples/'+ cardData.exampleName + "/index.html") : cardData.embed;
+    console.log(embed);
+
+    return (
     <Modal
         className="WickCardModal-container"
         isOpen={isModalOpen}
@@ -33,7 +37,7 @@ const WickCardModal = ({cardData, onClick, isModalOpen}) => (
         </ModalHeader>
         <ModalBody className="WickCardModal-body">
             <div className="WickCardModal-embed">
-                <ResponsiveEmbed src={cardData.embed} ratio="16:9" />
+                <ResponsiveEmbed src={embed} ratio="16:9" />
             </div>
         </ModalBody>
         <ModalFooter className="WickCardModal-footer">
@@ -47,6 +51,6 @@ const WickCardModal = ({cardData, onClick, isModalOpen}) => (
             <button className="WickCardModal-close close" onClick={onClick}>X</button>
         </ModalFooter>
     </Modal>
-);
+)};
 
 export default WickCardModal;

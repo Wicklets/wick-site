@@ -18,36 +18,58 @@ import community5 from '../Images/Projects/community5.png';
 
 // Tutorial Images
 import img_gettingStartedWithAnimation from '../Images/Tutorials/gettingStartedWithAnimation.png';
+import img_makingInteractiveProjects from '../Images/Tutorials/makingInteractiveProjects.png'
 
 export const examples = [
     {
         title: "Follow Mouse",
+        exampleName: "followMouse",
         body: "See how you can get your character to follow your mouse movements around the screen!",
         image: defaultWorld,
-        embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
         number: "Example 1"
     },
     {
         title: "Multiple Rooms",
-        body: "Learn about how you can insert multiple different scenes into your animation.",
+        exampleName: "multipleRooms",
+        body: "Learn how to create a project with multiple rooms for a point and click game!",
         image: defaultWorld,
-        embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
         number: "Example 2"
+    },
+    {
+        title: "Drag and Drop",
+        exampleName: "dragAndDrop",
+        body: "Learn how to drag characters and items around the screen.",
+        image: defaultWorld,
+        number: "Example 3"
+    },
+    {
+        title: "PlayingTheTimeline",
+        exampleName: "playingTheTimeline",
+        body: "Learn how to control the main timeline with a button.",
+        image: defaultWorld,
+        number: "Example 4"
+    },
+    {
+        title: "Playing Clips",
+        exampleName: "playingClips",
+        body: "Learn how to control the timeline of a clip.",
+        image: defaultWorld,
+        number: "Example 5"
+    },
+    {
+        title: "Popups",
+        exampleName: "popups",
+        body: "Learn how to make a popup in an interactive game.",
+        image: defaultWorld,
+        number: "Example 6"
     },
     {
         title: "More Examples Coming Soon!",
         body: "Check back soon for more awesome Wick Editor Examples!",
         image: comingsoon,
-        embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
-        number: "Example 3"
+        number: "Example 7",
+        disable: true, 
     },
-    {
-        title: "Follow Mousi",
-        body: "See how you can get your character to follow your mouse movements around the screen!",
-        image: defaultWorld,
-        embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
-        number: "Example 4"
-    }
 ];
 
 export const tutorials = [
@@ -61,13 +83,22 @@ export const tutorials = [
         number: "1.0 Tutorial 1"
     },
     {
+        title: "Editor 1.0 | Making Interactive Projects",
+        body: "In this Wick Editor 1.0 tutorial we create an interactive point and click game and learn about scripting!",
+        body_extended: "Learn how to use the new Wick Editor 1.0 to create an interactive point and click game. We'll learn about the tab coding system, how to name a frame, gotoAndStop, and the single-tab coding system.",
+        tags: ["Intro", "Beginner", "Games"],
+        image: img_makingInteractiveProjects,
+        embed: "https://youtube.com/embed/cvANBF43KsY",
+        number: "1.0 Tutorial 2"
+    },
+    {
         title: "Editor 1.0 | More Tutorials Coming Soon!",
         body: "Check back soon for more awesome Wick Editor Tutorials!",
         body_extended: "This is a test, this is only a test.",
         tags: ["Coming", "Soon"],
         image: defaultWorld,
         embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
-        number: "1.0 Tutorial 2",
+        number: "1.0 Tutorial 3",
         disabled: true
     },
     {

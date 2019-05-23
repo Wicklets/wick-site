@@ -30,6 +30,7 @@ const ExampleCard = ({cardData, disabled, onClick, isModalOpen}) => (
             </CardImgOverlay>
         </Card>
         <WickCardModal 
+        cardType="example"
         cardData={cardData}
         onClick={onClick} 
         isModalOpen={isModalOpen} />
