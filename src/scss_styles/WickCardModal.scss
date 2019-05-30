@@ -26,6 +26,22 @@
 
     &-close {
         position: absolute;
+        right: 0px;
+        top: 18px; 
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color: #1EE29A;
+        transition: 0.5s;
+
+        &:hover {
+            color: #1BC687 !important;
+        }
+    }
+
+    &-download {
+        position: absolute;
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
@@ -57,10 +73,16 @@
     }
 
     &-footer {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    &-infoContainer {
         align-items: flex-start;
-        padding-bottom: 30px;
+        display: flex; 
+        flex-direction: row; 
+        padding-bottom: 15px;
         border: none;
-        padding-bottom: 56px;
     }
 
     &-header {

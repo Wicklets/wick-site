@@ -17,14 +17,17 @@ import community4 from '../Images/Projects/community4.png';
 import community5 from '../Images/Projects/community5.png';
 
 // Tutorial Images
-import img_gettingStartedWithAnimation from '../Images/Tutorials/gettingStartedWithAnimation.png';
-import img_makingInteractiveProjects from '../Images/Tutorials/makingInteractiveProjects.png'
+import img_gettingStartedWithAnimation from '../Images/Tutorials/gettingStartedWithAnimation_site.png';
+import img_makingInteractiveProjects from '../Images/Tutorials/makingThingsInteractive_site.png';
+import img_usingKeyboardInteractions from '../Images/Tutorials/usingKeyboardInteractions_site.png';
 
 export const examples = [
     {
         title: "Follow Mouse",
         exampleName: "followMouse",
         body: "See how you can get your character to follow your mouse movements around the screen!",
+        body_extended: "Have a character follow the mouse around the screen using an 'Update' event!",
+        tags: ["Follow", "Beginner", "Interactive"],
         image: defaultWorld,
         number: "Example 1"
     },
@@ -32,6 +35,8 @@ export const examples = [
         title: "Multiple Rooms",
         exampleName: "multipleRooms",
         body: "Learn how to create a project with multiple rooms for a point and click game!",
+        body_extended: "Set up the basic structure for a point and click adventure game with this multi-room example. Clicking a button sends you to a unique room.",
+        tags: ["Rooms", "Beginner", "Interactive"],
         image: defaultWorld,
         number: "Example 2"
     },
@@ -39,6 +44,8 @@ export const examples = [
         title: "Drag and Drop",
         exampleName: "dragAndDrop",
         body: "Learn how to drag characters and items around the screen.",
+        body_extended: "Using the 'MouseDrag' event, we can move characters around the screen by clicking and dragging.",
+        tags: ["Dragging", "Beginner", "Interactive"],
         image: defaultWorld,
         number: "Example 3"
     },
@@ -46,6 +53,8 @@ export const examples = [
         title: "PlayingTheTimeline",
         exampleName: "playingTheTimeline",
         body: "Learn how to control the main timeline with a button.",
+        body_extended: "Control the timeline using a button! When the play button is pressed, the main timeline plays.",
+        tags: ["Timeline", "Beginner", "Interactive"],
         image: defaultWorld,
         number: "Example 4"
     },
@@ -53,6 +62,8 @@ export const examples = [
         title: "Playing Clips",
         exampleName: "playingClips",
         body: "Learn how to control the timeline of a clip.",
+        body_extended: "Control clip timelines using a button! Each character has their own button that controls their timeline.",
+        tags: ["Clips", "Intermediate", "Interactive"],
         image: defaultWorld,
         number: "Example 5"
     },
@@ -60,6 +71,8 @@ export const examples = [
         title: "Popups",
         exampleName: "popups",
         body: "Learn how to make a popup in an interactive game.",
+        body_extended: "A basic popup example using clips and buttons. By combining the two, we get an interactive, toggleable, chat bubble.",
+        tags: ["Popups", "Intermediate", "Interactive"],
         image: defaultWorld,
         number: "Example 6"
     },
@@ -68,7 +81,7 @@ export const examples = [
         body: "Check back soon for more awesome Wick Editor Examples!",
         image: comingsoon,
         number: "Example 7",
-        disable: true, 
+        disabled: true, 
     },
 ];
 
@@ -83,13 +96,22 @@ export const tutorials = [
         number: "1.0 Tutorial 1"
     },
     {
-        title: "Editor 1.0 | Making Interactive Projects",
+        title: "Editor 1.0 | Making Things Interactive",
         body: "In this Wick Editor 1.0 tutorial we create an interactive point and click game and learn about scripting!",
         body_extended: "Learn how to use the new Wick Editor 1.0 to create an interactive point and click game. We'll learn about the tab coding system, how to name a frame, gotoAndStop, and the single-tab coding system.",
         tags: ["Intro", "Beginner", "Games"],
         image: img_makingInteractiveProjects,
         embed: "https://youtube.com/embed/cvANBF43KsY",
         number: "1.0 Tutorial 2"
+    },
+    {
+        title: "Editor 1.0 | Using Keyboard Interactions",
+        body: "Learn how to use the keyboard in your interactive Wick Editor 1.0 projects!",
+        body_extended: "In this Wick Editor 1.0 tutorial, we learn how to use keyboard controls in our interactive projects. We'll go over the basics of keyboard events, conditionals, and moving objects in x,y space!",
+        tags: ["Intro", "Beginner", "Games"],
+        image: img_usingKeyboardInteractions,
+        embed: "https://youtube.com/embed/mpJOY1-qshU",
+        number: "1.0 Tutorial 3"
     },
     {
         title: "Editor 1.0 | More Tutorials Coming Soon!",
