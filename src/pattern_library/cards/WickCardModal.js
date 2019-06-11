@@ -34,7 +34,6 @@ let downloadLink = (link, fileName) => {
 const WickCardModal = ({cardData, onClick, isModalOpen, cardType}) => {
     let embed = cardType === "example" ? ('/examples/'+ cardData.exampleName + "/index.html") : cardData.embed;
     let download = cardType === "example" ? ('/examples/' + cardData.exampleName + '.wick') : null;
-    console.log(embed);
 
     return (
     <Modal
