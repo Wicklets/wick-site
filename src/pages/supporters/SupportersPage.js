@@ -29,7 +29,7 @@ const SupportersPage = () => (
         </ContentSection>
         <WickSmallSpacer />
         <ContentSection
-            text="You can become a supporter too"
+            text="You can become a supporter too!"
             size="large"
             includePadding
         >

@@ -20,10 +20,11 @@ const CommunityPage = () => (
     <Container className="fadeIn animated">
         <ContentSection
             title="Wick Editor Community Forum"
-            text="See what all the buzz is about and chat with fellow wick users for tips, tricks, and inspiration on your next project."
+            text="Read about the latest updates, post your projects, make suggestions, and chat with other Wick Editor users on the Wick Editor Community Forum!"
             includeUnderline
         />
         <WickSmallSpacer />
+        {/* THIS SECTION COMMENTED OUT FOR INITIAL RELEASE UNTIL DESIGN IS FINALIZED
         <ContentSection
             title="Community Projects"
             text="Check out what people are making!"
@@ -33,6 +34,7 @@ const CommunityPage = () => (
             <WickCarouselContainer />
         </ContentSection>
         <WickSmallSpacer />
+        */}
         {/* THIS SECTION COMMENTED OUT FOR INITIAL RELEASE UNTIL CONTENT CAN BE SOURCED
         <ContentSection
             title="Project Gallery"

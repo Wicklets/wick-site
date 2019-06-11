@@ -21,13 +21,13 @@ class ExternalContactLinksContainer extends Component {
             forum: {
                 image: messages,
                 title: "Community Forum",
-                text: "Insert useful suggestion description right in here",
+                text: "Check out the Forum here!",
                 link: "https://forum.wickeditor.com/"
             },
             email: {
                 image: email,
                 title: "Contact Us",
-                text: "Insert useful suggestion description right in here",
+                text: "Have a specific question or suggestion? Email us!",
                 link: "mailto:contact@wickeditor.com"
             }
         };
