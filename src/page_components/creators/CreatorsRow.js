@@ -24,6 +24,7 @@ const CreatorsRow = ({people, title, includeHeadshot}) => (
                 <Creator
                     key={person.name}
                     name={person.name}
+                    role={person.role}
                     img={person.img}
                     includeHeadshot={includeHeadshot}
                 />

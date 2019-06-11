@@ -21,12 +21,12 @@ class CreatorsContainer extends Component {
 
         this.state = {
             creators: [
-                {name: "Zach Rispoli", img: zachrispoli},
-                {name: "Luca Damasco", img: lucadamasco}
+                {name: "Zach Rispoli", role:'Co-creator', img: zachrispoli},
+                {name: "Luca Damasco", role:'Co-creator', img: lucadamasco}
             ],
-            webDesigners: [
-                {name: "Anna Gusman", img: annagusman},
-                {name: "Corey Emery", img: coreyemery}
+            designers: [
+                {name: "Anna Gusman", role:'Brand, web, and UX design', img: annagusman},
+                {name: "Corey Emery", role:'Web Developer', img: coreyemery}
             ],
             editorDesigners: [
                 {name: "Anna Gusman"},
@@ -41,12 +41,12 @@ class CreatorsContainer extends Component {
             <Fragment>
                 <CreatorsRow
                     people={this.state.creators}
-                    title="The Wick Editor was created and is led by"
+                    title=""
                     includeHeadshot
                 />
                 <CreatorsRow
-                    people={this.state.webDesigners}
-                    title="1.0 Brand and web design by"
+                    people={this.state.designers}
+                    title=""
                     includeHeadshot
                 />
                 <CreatorsRow
