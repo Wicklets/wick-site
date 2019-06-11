@@ -24,7 +24,7 @@ const WickCardDeck = ({cards, type, numberPaddingCards, linkButton, usePadding})
             <Col md="9">
                 <CardDeck>
                     {cards.map(card => (
-                        <WickCardContainer key={card.title} type={type} cardData={card} disabled={card.disabled} />
+                        <WickCardContainer key={card.title} type={type} cardData={card} disabled={card.disabled} onClick={card.onClick} />
                     ))}
                     {!!numberPaddingCards && ([...Array(numberPaddingCards).keys()].map(cardNumber => (
                         <WickPaddingCard key={cardNumber} />
