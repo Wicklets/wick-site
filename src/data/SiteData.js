@@ -7,6 +7,16 @@
 */
 
 import defaultWorld from '../Images/Tutorials/testworld.svg';
+import followMouse from '../Images/Examples/followMouse.png';
+import multipleRooms from '../Images/Examples/multipleRooms.png';
+import dragAndDrop from '../Images/Examples/dragAndDrop.png';
+import playingTheTimeline from '../Images/Examples/playingTheTimeline.png';
+import playingClips from '../Images/Examples/playingClips.png';
+import popups from '../Images/Examples/popups.png';
+import clickerGame from '../Images/Examples/clickerGame.png';
+import hauntedHouse from '../Images/Examples/hauntedHouse.png';
+import wellDressedGhost from '../Images/Examples/wellDressedGhost.png';
+import DJSpookyman from '../Images/Examples/DJSpookyman.png';
 import test2 from '../Images/Tutorials/testworld3.svg';
 import comingsoon from '../Images/Misc/comingsoon.png';
 import coreyemery from '../Images/People/CoreyEmery.svg';
@@ -24,7 +34,7 @@ export const examples = [
         body: "See how you can get your character to follow your mouse movements around the screen!",
         body_extended: "Have a character follow the mouse around the screen using an 'Update' event!",
         tags: ["Follow", "Beginner", "Interactive"],
-        image: defaultWorld,
+        image: followMouse,
         number: "Example 1"
     },
     {
@@ -33,7 +43,7 @@ export const examples = [
         body: "Learn how to create a project with multiple rooms for a point and click game!",
         body_extended: "Set up the basic structure for a point and click adventure game with this multi-room example. Clicking a button sends you to a unique room.",
         tags: ["Rooms", "Beginner", "Interactive"],
-        image: defaultWorld,
+        image: multipleRooms,
         number: "Example 2"
     },
     {
@@ -42,16 +52,16 @@ export const examples = [
         body: "Learn how to drag characters and items around the screen.",
         body_extended: "Using the 'MouseDrag' event, we can move characters around the screen by clicking and dragging.",
         tags: ["Dragging", "Beginner", "Interactive"],
-        image: defaultWorld,
+        image: dragAndDrop,
         number: "Example 3"
     },
     {
-        title: "PlayingTheTimeline",
+        title: "Playing the Timeline",
         exampleName: "playingTheTimeline",
         body: "Learn how to control the main timeline with a button.",
         body_extended: "Control the timeline using a button! When the play button is pressed, the main timeline plays.",
         tags: ["Timeline", "Beginner", "Interactive"],
-        image: defaultWorld,
+        image: playingTheTimeline,
         number: "Example 4"
     },
     {
@@ -60,7 +70,7 @@ export const examples = [
         body: "Learn how to control the timeline of a clip.",
         body_extended: "Control clip timelines using a button! Each character has their own button that controls their timeline.",
         tags: ["Clips", "Intermediate", "Interactive"],
-        image: defaultWorld,
+        image: playingClips,
         number: "Example 5"
     },
     {
@@ -69,7 +79,7 @@ export const examples = [
         body: "Learn how to make a popup in an interactive game.",
         body_extended: "A basic popup example using clips and buttons. By combining the two, we get an interactive, toggleable, chat bubble.",
         tags: ["Popups", "Intermediate", "Interactive"],
-        image: defaultWorld,
+        image: popups,
         number: "Example 6"
     },
     {
@@ -78,15 +88,42 @@ export const examples = [
         body: "Check out an interactive clicker game.",
         body_extended: "An interactive clicker game where a player can try to rack up as many points as possible before time runs out!",
         tags: ["Clicker", "Intermediate", "Interactive"],
-        image: defaultWorld,
+        image: clickerGame,
         number: "Example 7"
+    },
+    {
+        title: "Haunted House",
+        exampleName: "hauntedHouse",
+        body: "A point-and-click adventure game.",
+        body_extended: "On a stormy night there is a haunted house... do you dare enter?",
+        tags: ["Intermediate", "Interactive"],
+        image: hauntedHouse,
+        number: "Example 8"
+    },
+    {
+        title: "Well-Dressed Ghost",
+        exampleName: "wellDressedGhost",
+        body: "A dress-up game.",
+        body_extended: "Put some clothes on this ghost! Select from hats, wigs, noses, mouth, and more.",
+        tags: ["Intermediate", "Interactive"],
+        image: wellDressedGhost,
+        number: "Example 9"
+    },
+    {
+        title: "DJ Spookyman",
+        exampleName: "DJSpookyman",
+        body: "A soundboard project.",
+        body_extended: "DJ Spookyman is in the house! Press the buttons and drop a sick beat!",
+        tags: ["Intermediate", "Interactive"],
+        image: DJSpookyman,
+        number: "Example 10"
     },
     {
         title: "More Examples Coming Soon!",
         body: "Check back soon for more awesome Wick Editor Examples!",
         image: comingsoon,
-        number: "Example 8",
-        disabled: true, 
+        number: "Example 11",
+        disabled: true,
     },
 ];
 
