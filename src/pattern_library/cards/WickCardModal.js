@@ -10,7 +10,7 @@ import React from 'react';
 import ResponsiveEmbed from 'react-responsive-embed';
 
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import { saveAs } from 'file-saver'; 
+import { saveAs } from 'file-saver';
 import WickButton from '../button/WickButton';
 
 import '../../scss_styles/WickCardModal.scss';
@@ -63,9 +63,9 @@ const WickCardModal = ({cardData, onClick, isModalOpen, cardType}) => {
                 </div>
                 <div className="WickCardModal-description">{cardData.body_extended}</div>
             </div>
-            {download && <WickButton 
+            {download && <WickButton
             text="Download Example"
-            className="WickCardModal-download" 
+            className="WickCardModal-download"
             onClick={() => {downloadLink(download, cardData.exampleName + '.wick')}}/>}
         </ModalFooter>
     </Modal>
