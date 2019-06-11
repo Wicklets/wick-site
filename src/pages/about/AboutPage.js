@@ -31,7 +31,7 @@ const thanks = (
 
 const contact = (
     <Fragment>
-        Shoot us a <InlineLink text="message" link="mailto:contact@wickeditor.com" />, join the wick editor community with a <InlineLink text="YouTube subscription" link="https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg" /> or membership on <InlineLink text="Patreon" link="https://www.patreon.com/WickEditor" />!
+        Shoot us a <InlineLink text="message" link="mailto:contact@wickeditor.com" />, join the wick editor community with a <InlineLink text="YouTube subscription" link="https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg" /> or become a patron on <InlineLink text="Patreon" link="https://www.patreon.com/WickEditor" />!
     </Fragment>
 );
 
