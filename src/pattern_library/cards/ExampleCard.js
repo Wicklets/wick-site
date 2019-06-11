@@ -9,7 +9,7 @@
 import React, { Fragment } from 'react';
 import Img from 'react-image';
 
-import { Card, CardImg, CardTitle, CardBody, CardText, CardImgOverlay } from 'reactstrap';
+import { Card, CardImg, CardTitle, CardBody, CardText } from 'reactstrap';
 
 import arrow from '../../Images/Tutorials/arrow.svg';
 

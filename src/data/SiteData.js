@@ -6,7 +6,6 @@
     Store for News, Examples, Tutorials, etc. for Wick Editor
 */
 
-import defaultWorld from '../Images/Tutorials/testworld.svg';
 import followMouse from '../Images/Examples/followMouse.png';
 import multipleRooms from '../Images/Examples/multipleRooms.png';
 import dragAndDrop from '../Images/Examples/dragAndDrop.png';
@@ -17,8 +16,9 @@ import clickerGame from '../Images/Examples/clickerGame.png';
 import hauntedHouse from '../Images/Examples/hauntedHouse.png';
 import wellDressedGhost from '../Images/Examples/wellDressedGhost.png';
 import DJSpookyman from '../Images/Examples/DJSpookyman.png';
-import test2 from '../Images/Tutorials/testworld3.svg';
+import legacyEditorTutorialThumbnail from '../Images/Tutorials/testworld3.svg';
 import comingsoon from '../Images/Misc/comingsoon.png';
+
 import coreyemery from '../Images/People/CoreyEmery.svg';
 import community1 from '../Images/Projects/community1.png';
 
@@ -170,7 +170,7 @@ export const tutorials = [
         body: "Legacy Editor | Learn how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
         body_extended: "In this Legacy tutorial, learn how to use the legacy editor to create a basic animation, create a basic interactive project, and how to save that project to your computer.",
         tags: ["Legacy", "Beginner", "Animation"],
-        image: test2,
+        image: legacyEditorTutorialThumbnail,
         embed: "https://www.youtube.com/embed/bhN2VxyWJiU&t",
         number: "Legacy 1"
     },
@@ -179,7 +179,7 @@ export const tutorials = [
         body: "Legacy Editor | Learn how to use sounds in your legacy Wick Editor projects!",
         body_extended: "In this legacy tutorial, learn how to use sounds in your legacy Wick Editor projects by adding them to your timeline and by using code!",
         tags: ["Beginner", "Sound", "Timeline"],
-        image: test2,
+        image: legacyEditorTutorialThumbnail,
         embed: "https://www.youtube.com/embed/T08B0KkEAZA&t",
         number: "Legacy 2"
     },
@@ -188,7 +188,7 @@ export const tutorials = [
         body: "Legacy Editor | Learn how to share your legacy Wick Editor projects on other websites!",
         body_extended: "In this legacy tutorial, learn how to share your legacy Wick Editor projects on other websites like Newgrounds.com, Itch.io, and more!",
         tags: ["Beginner", "Sharing", "Newgrounds"],
-        image: test2,
+        image: legacyEditorTutorialThumbnail,
         embed: "https://www.youtube.com/embed/IpF8fMXN6To&t",
         number: "Legacy 3"
     }
