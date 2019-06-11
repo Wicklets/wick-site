@@ -42,7 +42,7 @@ const WickCardModal = ({cardData, onClick, isModalOpen, cardType}) => {
         toggle={onClick}
         size="lg"
     >
-        <ModalHeader className="WickCardModal-header">
+        <ModalHeader className="WickCardModal-header"> 
             <div className="WickCardModal-number">{cardData.number}</div>
             <div className="WickCardModal-underline" />
             <div className="WickCardModal-title">{cardData.title}</div>

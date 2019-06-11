@@ -27,8 +27,8 @@
     &-close {
         position: absolute;
         right: 0px;
-        top: 18px; 
-        left: 50%;
+        top: 18px;
+        left: 95%;
         transform: translateX(-50%);
         font-family: 'Nunito', sans-serif;
         font-weight: 600;
@@ -74,13 +74,13 @@
 
     &-footer {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     &-infoContainer {
         align-items: flex-start;
-        display: flex; 
-        flex-direction: row; 
+        display: flex;
+        flex-direction: row;
         padding-bottom: 15px;
         border: none;
     }
