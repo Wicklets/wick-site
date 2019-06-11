@@ -9,7 +9,7 @@
 import React, { Fragment } from 'react';
 import Img from 'react-image';
 
-import { Card, CardImg, CardTitle, CardImgOverlay } from 'reactstrap';
+import { Card, CardImg, CardTitle, CardBody, CardText, CardImgOverlay } from 'reactstrap';
 
 import arrow from '../../Images/Tutorials/arrow.svg';
 
@@ -23,16 +23,18 @@ const ExampleCard = ({cardData, disabled, onClick, isModalOpen}) => (
             className={(disabled ? "ExampleCard-container--disabled" : "ExampleCard-container")}
             onClick={onClick}
         >
-            <CardImg width="100%" src={cardData.image} alt="Card image cap" />
-            <CardImgOverlay className="ExampleCard-content">
-                <CardTitle className="ExampleCard-title">{cardData.title}</CardTitle>
-                <Img className="ExampleCard-arrow" src={arrow} />
-            </CardImgOverlay>
+          <CardImg top width="100%" src={cardData.image} alt="Card image cap" />
+          <CardBody className="TutorialCard-content">
+              <CardTitle className="TutorialCard-title">{cardData.title}</CardTitle>
+              <CardText className="TutorialCard-text">{cardData.body}</CardText>
+              <div className="TutorialCard-arrowSpacer" />
+              <Img className={"TutorialCard-arrow" + (disabled ? " TutorialCard-arrow--disabled" : "")} src={arrow} />
+          </CardBody>
         </Card>
-        <WickCardModal 
+        <WickCardModal
         cardType="example"
         cardData={cardData}
-        onClick={onClick} 
+        onClick={onClick}
         isModalOpen={isModalOpen} />
     </Fragment>
 );

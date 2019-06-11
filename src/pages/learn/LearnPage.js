@@ -24,7 +24,7 @@ import example from '../../Images/Icons/example.svg';
 const LearnPage = ({shouldCollapseCards, areTutorialsExpanded, expandTutorials, areExamplesExpanded, expandExamples}) => (
     <Container className="fadeIn animated">
         <ContentSection
-            title="Explore Tutorials"
+            title="Tutorials"
             text="Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
             size="small"
             includeUnderline
@@ -43,8 +43,8 @@ const LearnPage = ({shouldCollapseCards, areTutorialsExpanded, expandTutorials, 
         </ContentSection>
         <WickSmallSpacer />
         <ContentSection
-            title="Explore Examples"
-            text="Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
+            title="Examples"
+            text="Here are a few examples that you can download and open in the Wick Editor! All code in these examples can be used in your own projects."
             size="small"
             includeUnderline
             includePadding

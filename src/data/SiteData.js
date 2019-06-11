@@ -85,7 +85,7 @@ export const examples = [
     {
         title: "Clicker Game",
         exampleName: "biscuitDestroyer",
-        body: "Check out an interactive clicker game.",
+        body: "An interactive clicker game that keeps track of how many times a button is clicked.",
         body_extended: "An interactive clicker game where a player can try to rack up as many points as possible before time runs out!",
         tags: ["Clicker", "Intermediate", "Interactive"],
         image: clickerGame,
@@ -94,16 +94,16 @@ export const examples = [
     {
         title: "Haunted House",
         exampleName: "hauntedHouse",
-        body: "A point-and-click adventure game.",
+        body: "A simple example of a point-and-click adventure game.",
         body_extended: "On a stormy night there is a haunted house... do you dare enter?",
-        tags: ["Intermediate", "Interactive"],
+        tags: ["Intermediate", "Interactive", "Sound"],
         image: hauntedHouse,
         number: "Example 8"
     },
     {
         title: "Well-Dressed Ghost",
         exampleName: "wellDressedGhost",
-        body: "A dress-up game.",
+        body: "A simple example of a dress-up game.",
         body_extended: "Put some clothes on this ghost! Select from hats, wigs, noses, mouth, and more.",
         tags: ["Intermediate", "Interactive"],
         image: wellDressedGhost,
@@ -112,9 +112,9 @@ export const examples = [
     {
         title: "DJ Spookyman",
         exampleName: "DJSpookyman",
-        body: "A soundboard project.",
+        body: "A simple example of a soundboard project.",
         body_extended: "DJ Spookyman is in the house! Press the buttons and drop a sick beat!",
-        tags: ["Intermediate", "Interactive"],
+        tags: ["Intermediate", "Interactive", "Sound"],
         image: DJSpookyman,
         number: "Example 10"
     },
@@ -155,7 +155,7 @@ export const tutorials = [
         embed: "https://youtube.com/embed/mpJOY1-qshU",
         number: "1.0 Tutorial 3"
     },
-    {
+    /*{
         title: "Editor 1.0 | More Tutorials Coming Soon!",
         body: "Check back soon for more awesome Wick Editor Tutorials!",
         body_extended: "This is a test, this is only a test.",
@@ -164,7 +164,7 @@ export const tutorials = [
         embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
         number: "1.0 Tutorial 3",
         disabled: true
-    },
+    },*/
     {
         title: "Legacy Editor | Getting Started",
         body: "Legacy Editor | Learn how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
