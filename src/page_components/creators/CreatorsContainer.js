@@ -25,8 +25,8 @@ class CreatorsContainer extends Component {
                 {name: "Luca Damasco", role:'Co-creator', img: lucadamasco}
             ],
             designers: [
-                {name: "Anna Gusman", role:'Brand, web, and UX design', img: annagusman},
-                {name: "Corey Emery", role:'Web Developer', img: coreyemery}
+                {name: "Anna Gusman", role:'Brand, Web, and UX design', img: annagusman},
+                {name: "Corey Emery", role:'Website Programming', img: coreyemery}
             ],
             editorDesigners: [
                 {name: "Anna Gusman"},
@@ -41,12 +41,12 @@ class CreatorsContainer extends Component {
             <Fragment>
                 <CreatorsRow
                     people={this.state.creators}
-                    title=""
+                    title="The Wick Editor was created and is led by"
                     includeHeadshot
                 />
                 <CreatorsRow
                     people={this.state.designers}
-                    title=""
+                    title="Wick Editor 1.0 was developed in part with"
                     includeHeadshot
                 />
                 <CreatorsRow
