@@ -12,6 +12,9 @@ import HomePage from './HomePage.js';
 import Header from '../../site_components/header/Header.js';
 import InlineLink from '../../pattern_library/inline_link/WickInlineLink.js';
 
+import ReactGA from 'react-ga'; 
+
+
 class HomePageContainer extends Component {
     constructor(props) {
         super(props);
@@ -33,6 +36,7 @@ class HomePageContainer extends Component {
     }
 
     render() {
+        ReactGA.pageview('www.wickeditor.com/');
         return (
             <Fragment>
                 {(this.state.windowSize < 992 ? (

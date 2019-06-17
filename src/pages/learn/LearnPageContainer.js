@@ -14,6 +14,9 @@ import Header from '../../site_components/header/Header.js';
 import { tutorials } from '../../data/SiteData.js';
 import WickCardModal from '../../pattern_library/cards/WickCardModal.js';
 
+import ReactGA from 'react-ga'; 
+
+
 const tutorial = tutorials[0];
 
 class LearnPageContainer extends Component {
@@ -51,6 +54,7 @@ class LearnPageContainer extends Component {
     }
 
     render() {
+        ReactGA.pageview('www.wickeditor.com/learn');
         return (
             <Fragment>
                 <Header
