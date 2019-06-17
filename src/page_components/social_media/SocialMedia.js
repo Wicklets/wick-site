@@ -27,7 +27,7 @@ const SocialMedia = () => (
     <div className="SocialMedia-container">
         <SocialMediaIcon image={facebook} highlight={facebookdark} link="https://www.facebook.com/wickeditor/" />
         <SocialMediaIcon image={twitter} highlight={twitterdark} link="https://twitter.com/wickeditor" />
-        <SocialMediaIcon image={instagram} highlight={instagramdark} link="https://www.instagram.com/" />
+        <SocialMediaIcon image={instagram} highlight={instagramdark} link="https://www.instagram.com/wickeditor" />
         <SocialMediaIcon image={youtube} highlight={youtubedark} link="https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg" />
         <SocialMediaIcon image={patreon} highlight={patreondark} link="https://www.patreon.com/WickEditor" />
     </div>
