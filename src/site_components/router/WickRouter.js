@@ -121,10 +121,14 @@ const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickL
             </Navbar>
         </div>
         <Route path="/" exact component={home} />
+        <Route path="/updates/" component={home} />
         <Route path="/about/" component={about} />
         <Route path="/learn/" component={learn} />
+        <Route path="/tutorials/" component={learn} />
+        <Route path="/examples/" component={learn} />
         <Route path="/community/" component={community} />
         <Route path="/supporters/" component={supporters} />
+
     </Fragment>
 );
 
