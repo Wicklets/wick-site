@@ -9,6 +9,7 @@
 import React from 'react';
 
 import { Container } from 'reactstrap';
+import { Helmet } from 'react-helmet';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import { WickSmallSpacer } from '../../pattern_library/spacers/WickSpacers.js';
@@ -19,6 +20,10 @@ import SupporterBrands from '../../page_components/supporter_brands/SupporterBra
 
 const SupportersPage = () => (
     <Container className="fadeIn animated">
+        <Helmet>
+            <title>The Wick Editor - Supporters</title>
+            <meta name="description" content="The Wick Editor is supported by generous grants from organizations which support our mission, as well as donations from the community." />
+        </Helmet>
         <ContentSection
             title="Our Supporters"
             text="The Wick Editor is supported by generous grants from organizations which support our mission, as well as donations from the community."

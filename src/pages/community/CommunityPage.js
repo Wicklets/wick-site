@@ -9,6 +9,7 @@
 import React from 'react';
 
 import { Container } from 'reactstrap';
+import { Helmet } from 'react-helmet';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 //import CommunityGallery from '../../page_components/gallery/CommunityGallery.js';
@@ -18,6 +19,10 @@ import ExternalContacts from '../../page_components/external_contact/ExternalCon
 
 const CommunityPage = () => (
     <Container className="fadeIn animated">
+        <Helmet>
+            <title>The Wick Editor - Community</title>
+            <meta name="description" content="Links to the forum, our contact info, and more." />
+        </Helmet>
         <ContentSection
             title="Wick Editor Community Forum"
             text="Read about the latest updates, post your projects, make suggestions, and chat with other Wick Editor users on the Wick Editor Community Forum!"

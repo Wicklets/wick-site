@@ -9,6 +9,7 @@
 import React, { Fragment } from 'react';
 
 import { Container } from 'reactstrap';
+import { Helmet } from 'react-helmet';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import CreatorsContainer from '../../page_components/creators/CreatorsContainer.js';
@@ -37,6 +38,10 @@ const contact = (
 
 const AboutPage = () => (
     <Container className="fadeIn animated">
+        <Helmet>
+            <title>The Wick Editor - About</title>
+            <meta name="description" content="The Wick Editor is a free and open-source tool for creating games, animations, and everything in-between." />
+        </Helmet>
         <ContentSection
             title="What is Wick Editor?"
             text="The Wick Editor is a free and open-source tool for creating games, animations, and everything in-between. It's designed to be the most accessible tool for creating multimedia projects on the web."

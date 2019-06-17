@@ -9,6 +9,7 @@
 import React, { Fragment } from 'react';
 
 import { Container } from 'reactstrap';
+import { Helmet } from 'react-helmet';
 
 import ExampleCardDeckContainer from '../../page_components/examples/ExampleCardDeckContainer.js';
 import TutorialCardDeckContainer from '../../page_components/tutorials/TutorialCardDeckContainer.js';
@@ -29,6 +30,10 @@ import support from '../../Images/Icons/support.svg';
 
 const HomePage = () => (
     <Container className="fadeIn animated">
+        <Helmet>
+            <title>The Wick Editor</title>
+            <meta name="description" content="The Wick Editor: Make games, animations, and everything in-between." />
+        </Helmet>
         <Embed url="https://youtube.com/embed/pAsrXT8KIrI" ratio="16:9" />
         <WickSmallSpacer />
         <WickTitle>our latest</WickTitle>

@@ -9,6 +9,7 @@
 import React from 'react';
 
 import { Container } from 'reactstrap';
+import { Helmet } from 'react-helmet';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
 import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
@@ -23,6 +24,10 @@ import example from '../../Images/Icons/example.svg';
 
 const LearnPage = ({shouldCollapseCards, areTutorialsExpanded, expandTutorials, areExamplesExpanded, expandExamples}) => (
     <Container className="fadeIn animated">
+        <Helmet>
+            <title>The Wick Editor - Learn</title>
+            <meta name="description" content="Here are a few tutorials to help you get started with the Wick Editor." />
+        </Helmet>
         <ContentSection
             title="Tutorials"
             text="Here are a few tutorials to help you get started with the Wick Editor. Have an idea for an example, or want to submit your own? Post it on the Wick Editor forums!"
