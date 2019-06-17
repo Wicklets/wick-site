@@ -7,7 +7,7 @@
 */
 
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 import WickRouterContainer from '../router/WickRouterContainer.js';
 import Footer from '../footer/Footer.js';
@@ -17,9 +17,9 @@ import '../../scss_styles/Wick.scss';
 const Wick = () => (
     <div className="Wick">
         <div className="Wick-background" />
-        <Router>
+        <HashRouter>
             <WickRouterContainer />
-        </Router>
+        </HashRouter>
         <Footer />
     </div>
 );
