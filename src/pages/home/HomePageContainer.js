@@ -48,7 +48,7 @@ class HomePageContainer extends Component {
                         subtitle="The Wick Editor is a free online tool for creating games, animations, and everything in-between!"
                         buttonLabel="Launch Editor"
                         buttonSub={<Fragment>or launch the <InlineLink text="Legacy Editor" link="http://legacy.wickeditor.com/" /></Fragment>}
-                        onClick={() => window.open("https://editor.wickeditor.com")}
+                        onClick={() => window.open("https://alpha.wickeditor.com")}
                     />
                 ))}
                 <HomePage />
