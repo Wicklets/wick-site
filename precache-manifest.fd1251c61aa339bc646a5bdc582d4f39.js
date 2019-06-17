@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/facebook_dark.76e305d7.svg"
   },
   {
-    "revision": "a8c1eb8c80f86b3f9544",
-    "url": "/static/css/main.93a2f2a4.chunk.css"
+    "revision": "0ce448e1c845f263c383",
+    "url": "/static/css/main.e90854a3.chunk.css"
   },
   {
     "revision": "50ec19cb2f0b5e5852a7880dac960bff",
@@ -104,8 +104,8 @@ self.__precacheManifest = [
     "url": "/static/media/facebook.ea32e916.svg"
   },
   {
-    "revision": "a8c1eb8c80f86b3f9544",
-    "url": "/static/js/main.a8c1eb8c.chunk.js"
+    "revision": "0ce448e1c845f263c383",
+    "url": "/static/js/main.0ce448e1.chunk.js"
   },
   {
     "revision": "02014e6d3cf65561c5b27a8f6eef3bb2",
@@ -208,7 +208,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.75a2eeb7.chunk.css"
   },
   {
-    "revision": "6f99e20a54cf110552b65220338f83ad",
+    "revision": "9d8d6395786f9d0f8d1dd613d03f9ebe",
     "url": "/index.html"
   }
 ];
