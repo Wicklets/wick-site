@@ -1,0 +1,100 @@
+$button-height: 300px;
+$button-width: 225px;
+$image-height: calc(calc(#{$button-width} / 4) * 3);
+
+.community-project-button {
+    height: $button-height;
+    width: $button-width;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    box-shadow: 2px 3px #B4ECE6;
+    transition: 0.5s;
+    margin-bottom: 6px; 
+    margin-top: 6px; 
+    margin-left: 6px;
+}
+
+.community-project-button:hover {
+    box-shadow: 5px 5px #1EE29A;
+    transform: translateX(-3px) translateY(-2px);
+}
+
+.project-button-overlay {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    z-index: 10;
+}
+
+.project-button-overlay:hover {
+    opacity: 0.3;
+}
+
+.project-description-container {
+    position: absolute;
+    top: $image-height;
+    bottom: 0;
+    left: 0; 
+    width: 100%;
+    background-color: #FFFFFF; 
+}
+
+.project-preview-image-container {
+    height: $image-height;
+    width: 100%;
+    background-color: black; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.project-preview-image-background {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0;
+    width: 100%;
+    opacity: .3; 
+}
+
+.project-preview-image-foreground {
+    height: 100%;
+    opacity: 1; 
+    z-index: 1; 
+}
+
+.project-description-container {
+    font-family: Nunito; 
+}
+
+.project-text {
+    margin-left: 8px; 
+    margin-right: 8px; 
+}
+
+.project-title {
+    font-size: 20px; 
+    font-weight: 600; 
+    margin-bottom: 6px; 
+    margin-top: 6px; 
+}
+
+.project-author {
+    font-size: 14px; 
+    font-weight: 600;
+    text-align: center; 
+}
+
+.project-description {
+    font-size: 12px; 
+    font-weight: 400;
+    text-align: center; 
+}

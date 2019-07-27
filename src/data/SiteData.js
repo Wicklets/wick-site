@@ -19,13 +19,14 @@ import DJSpookyman from '../Images/Examples/DJSpookyman.png';
 import legacyEditorTutorialThumbnail from '../Images/Tutorials/testworld3.svg';
 import comingsoon from '../Images/Misc/comingsoon.png';
 
-import coreyemery from '../Images/People/CoreyEmery.svg';
-import community1 from '../Images/Projects/community1.png';
-
 // Tutorial Images
 import img_gettingStartedWithAnimation from '../Images/Tutorials/gettingStartedWithAnimation_site.png';
 import img_makingInteractiveProjects from '../Images/Tutorials/makingThingsInteractive_site.png';
 import img_usingKeyboardInteractions from '../Images/Tutorials/usingKeyboardInteractions_site.png';
+
+// Community Projects
+import img_goodEggs from '../Images/Community/goodEggs.png';
+import img_lockUp from '../Images/Community/lockUpDungeon.png';
 
 export const examples = [
     {
@@ -215,19 +216,40 @@ export const news = [
     }
 ];
 
-export const carouselProjects = [
+/*
+* Community Projects
+* Required Properties
+* author {string} Author's name
+* projectName {string} Project's Name
+* projectImage {imgSource} The source of the image to display for the project.
+* description {string} A short description of the project.
+* instructions {string} Optional: A list of instructions for the game.
+* src: {string} Embeddable source for the project.
+* type: {string} One of Video, Interactive, Gif
+* tags: {string[]} A list of tags associated with the project, can include animation, game, interactive, art, or custom tags.
+*/
+
+export const communityProjects = [
     {
         author: "Peter Sheehan",
-        projectName: "Minotaur",
-        userImage: coreyemery,
-        projectImage: community1,
-        description: "project description blah blah blah"
+        projectName: "Lock Up Dungeon",
+        projectImage: img_lockUp,
+        description: "Lock all the doors in the dungeon and allow the minotaur to finally rest.",
+        src: "https://itch.io/embed-upload/1557507?color=333333", 
+        instructions: "Controls:\nX: Ram \n\n WASD: Movement"
     },
     {
-        src: "You1",
+        author: "Kate Chaudoin",
+        projectName: "Good Eggs",
+        projectImage: img_goodEggs,
+        description: "The story of a good egg just havin' a good time.",
+        src: "https://www.youtube.com/embed/okMQGBEuroo", 
+    },
+    {
         projectName: "Your Project!",
-        userImage: coreyemery,
-        projectImage: community1,
-        description: "Do you have a project you want to see here? Send the .wick file to contact@wickeditor.com!"
+        author: "You!",
+        projectImage: legacyEditorTutorialThumbnail,
+        description: "Want your project featured? Send the .wick file to contact@wickeditor.com!"
     },
 ];
+

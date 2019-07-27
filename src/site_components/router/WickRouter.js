@@ -24,13 +24,14 @@ import AboutPageContainer from '../../pages/about/AboutPageContainer.js';
 import LearnPageContainer from '../../pages/learn/LearnPageContainer.js';
 import CommunityPageContainer from '../../pages/community/CommunityPageContainer.js';
 import SupportersPageContainer from '../../pages/supporters/SupportersPageContainer.js';
+import { communityProjects } from '../../data/SiteData.js';
 
 import '../../scss_styles/WickRouter.scss';
 
 const home = () => (<HomePageContainer />)
 const about = () => (<AboutPageContainer />)
 const learn = () => (<LearnPageContainer />)
-const community = () => (<CommunityPageContainer />)
+const community = () => (<CommunityPageContainer projects={communityProjects}/>)
 const supporters = () => (<SupportersPageContainer />)
 
 const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickLaunchEditor, backgroundAnimationClass, isDropdownOpen}) => (

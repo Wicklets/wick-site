@@ -37,19 +37,23 @@ class HomePageContainer extends Component {
 
     render() {
         ReactGA.pageview('www.wickeditor.com/');
+
+        let title = "wick editor";
+        let tagline = "games, animations and everything in-between.";
+        let subtitle = "The Wick Editor is a free, open-source tool for creating games, animations, and everything in-between!";
         return (
             <Fragment>
-                {(this.state.windowSize < 992 ? (
+                {(this.state.windowSize < 768 ? (
                     <Header
-                        title="wick editor"
-                        tagline="games, animations and everything in-between."
-                        subtitle="The Wick Editor is a free online tool for creating games, animations, and everything in-between!"
+                        title={title}
+                        tagline={tagline}
+                        subtitle={subtitle}
                     />
                 ) : (
                     <Header
-                        title="wick editor"
-                        tagline="games, animations and everything in-between."
-                        subtitle="The Wick Editor is a free online tool for creating games, animations, and everything in-between!"
+                        title={title}
+                        tagline={tagline}
+                        subtitle={subtitle}
                         buttonLabel="Launch Editor"
                         buttonSub={<Fragment>or launch the <InlineLink text="Legacy Editor" link="http://legacy.wickeditor.com/" /></Fragment>}
                         onClick={() => window.open("https://alpha.wickeditor.com")}

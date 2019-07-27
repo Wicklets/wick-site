@@ -28,7 +28,7 @@ class CommunityPageContainer extends Component {
                     buttonLabel="Visit the Forum"
                     onClick={() => window.open("https://forum.wickeditor.com/")}
                 />
-                <CommunityPage />
+                <CommunityPage projects={this.props.projects}/>
             </Fragment>
         );
     }

@@ -12,47 +12,39 @@ import { Container } from 'reactstrap';
 import { Helmet } from 'react-helmet';
 
 import ContentSection from '../../page_components/content_section/ContentSection.js';
-//import CommunityGallery from '../../page_components/gallery/CommunityGallery.js';
 import { WickSmallSpacer } from '../../pattern_library/spacers/WickSpacers.js';
 import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
-//import WickCarouselContainer from '../../pattern_library/carousel/WickCarouselContainer.js';
+import CommunityProjectBoard from './CommunityProjectBoard/CommunityProjectBoard';
 
-const CommunityPage = () => (
-    <Container className="fadeIn animated">
-        <Helmet>
-            <title>The Wick Editor - Community</title>
-            <meta name="description" content="Links to the forum, our contact info, and more." />
-        </Helmet>
-        <ContentSection
-            title="Wick Editor Community Forum"
-            text="Read about the latest updates, post your projects, make suggestions, and chat with other Wick Editor users on the Wick Editor Community Forum!"
-            includeUnderline
-        />
-        <WickSmallSpacer />
-        {/* THIS SECTION COMMENTED OUT FOR INITIAL RELEASE UNTIL DESIGN IS FINALIZED
-        <ContentSection
-            title="Community Projects"
-            text="Check out what people are making!"
-            includeUnderline
-            includePadding
-        >
-            <WickCarouselContainer />
-        </ContentSection>
-        <WickSmallSpacer />
-        */}
-        {/* THIS SECTION COMMENTED OUT FOR INITIAL RELEASE UNTIL CONTENT CAN BE SOURCED
-        <ContentSection
-            title="Project Gallery"
-            includeUnderline
-            includePadding
-        >
-            <CommunityGallery />
-        </ContentSection>
-        <WickSmallSpacer />
-        */}
-        <ExternalContacts />
-        <WickSmallSpacer />
-    </Container>
-);
+// Edited to partial React 16 style by Luca 7/26/2019.
+class CommunityPage extends React.Component {
+    render () {
+        return (
+            <Container className="fadeIn animated">
+                <Helmet>
+                    <title>The Wick Editor - Community</title>
+                    <meta name="description" content="Links to the forum, our contact info, and more." />
+                </Helmet>
+                <ContentSection
+                    title="Wick Editor Community Forum"
+                    text="Read about the latest updates, post your projects, make suggestions, and chat with other Wick Editor users on the Wick Editor Community Forum!"
+                    includeUnderline
+                />
+                <WickSmallSpacer />
+                    <ContentSection
+                        title="Community Projects"
+                        text="Check out what people are making!"
+                        includeUnderline
+                        includePadding
+                    >
+                        <CommunityProjectBoard projects={this.props.projects}/>
+                    </ContentSection>
+                <WickSmallSpacer />
+                <ExternalContacts />
+                <WickSmallSpacer />
+            </Container>
+        ); 
+    }
+}
 
 export default CommunityPage;

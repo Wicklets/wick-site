@@ -43,13 +43,19 @@
         transform: translate(-50%, -50%);
     }
 
-    &-text {
+    &-description {
         font-size: 16px;
         font-weight: 400;
+        margin-bottom: 20px !important; 
     }
 
-    &-username {
+    &-projectName {
         font-size: 30px;
-        font-weight: 400;
+        font-weight: 600;
+    }
+
+    &-userName {
+        font-size: 22px;
+        font-weight: 500;
     }
 }
