@@ -27,6 +27,7 @@ import img_usingKeyboardInteractions from '../Images/Tutorials/usingKeyboardInte
 // Community Projects
 import img_goodEggs from '../Images/Community/goodEggs.png';
 import img_lockUp from '../Images/Community/lockUpDungeon.png';
+import img_clickMeIfYouCan from '../Images/Community/clickMeIfYouCan.png';
 
 export const examples = [
     {
@@ -227,6 +228,7 @@ export const news = [
 * src: {string} Embeddable source for the project.
 * type: {string} One of Video, Interactive, Gif
 * tags: {string[]} A list of tags associated with the project, can include animation, game, interactive, art, or custom tags.
+* res {number[]} A array with two values representing the width and height of the embed.
 */
 
 export const communityProjects = [
@@ -235,8 +237,9 @@ export const communityProjects = [
         projectName: "Lock Up Dungeon",
         projectImage: img_lockUp,
         description: "Lock all the doors in the dungeon and allow the minotaur to finally rest.",
-        src: "https://itch.io/embed-upload/1557507?color=333333", 
-        instructions: "Controls:\nX: Ram \n\n WASD: Movement"
+        src: "https://itch.io/embed-upload/1559006?color=333333", 
+        instructions: "Controls:\nX: Ram \n\n WASD: Movement",
+        res: [1,1], 
     },
     {
         author: "Kate Chaudoin",
@@ -246,10 +249,11 @@ export const communityProjects = [
         src: "https://www.youtube.com/embed/okMQGBEuroo", 
     },
     {
-        projectName: "Your Project!",
-        author: "You!",
-        projectImage: legacyEditorTutorialThumbnail,
-        description: "Want your project featured? Send the .wick file to contact@wickeditor.com!"
+        author: "Nick Diamant",
+        projectName: "Click Me If You Can",
+        projectImage: img_clickMeIfYouCan,
+        description: "Follow a curious cat around the globe!",
+        src: "https://itch.io/embed-upload/1559077?color=333333", 
     },
 ];
 
