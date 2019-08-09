@@ -33,7 +33,7 @@ class CommunityPage extends React.Component {
                 <WickSmallSpacer />
                     <ContentSection
                         title="Community Projects"
-                        text="Check out what people are making!"
+                        text="Check out what people are making with Wick Editor!"
                         includeUnderline
                         includePadding
                     >

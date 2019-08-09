@@ -28,6 +28,8 @@ import img_usingKeyboardInteractions from '../Images/Tutorials/usingKeyboardInte
 import img_goodEggs from '../Images/Community/goodEggs.png';
 import img_lockUp from '../Images/Community/lockUpDungeon.png';
 import img_clickMeIfYouCan from '../Images/Community/clickMeIfYouCan.png';
+import img_happyApples from '../Images/Community/happyApples.png';
+import img_bunnyTunnels from '../Images/Community/bunnyTunnels.png';
 
 export const examples = [
     {
@@ -239,7 +241,6 @@ export const communityProjects = [
         description: "Lock all the doors in the dungeon and allow the minotaur to finally rest.",
         src: "https://itch.io/embed-upload/1559006?color=333333", 
         instructions: "Controls:\nX: Ram \n\n WASD: Movement",
-        res: [1,1], 
     },
     {
         author: "Kate Chaudoin",
@@ -253,7 +254,22 @@ export const communityProjects = [
         projectName: "Click Me If You Can",
         projectImage: img_clickMeIfYouCan,
         description: "Follow a curious cat around the globe!",
-        src: "https://itch.io/embed-upload/1559077?color=333333", 
+        src: "https://itch.io/embed-upload/1586282?color=333333", 
+    },
+    {
+        author: "Lucia (9)",
+        projectName: "Bunny Tunnels",
+        projectImage: img_bunnyTunnels,
+        description: "Guide your bunny friend to victory!",
+        src: "https://itch.io/embed-upload/1590277?color=333333", 
+    },
+    {
+        author: "Lucia (9)",
+        projectName: "Happy Apples",
+        projectImage: img_happyApples,
+        description: "What's that? It's two happy apples!",
+        src: "https://itch.io/embed-upload/1590280?color=333333", 
     },
 ];
+
 

@@ -25,8 +25,8 @@ class CommunityProjectButton extends React.Component {
             <div className="community-project-button" onClick={this.toggle}>
                 <div className="project-button-overlay" />
                 <div className="project-preview-image-container">
-                    <img className="project-preview-image-background" src={project.projectImage} />
-                    <img className="project-preview-image-foreground" src={project.projectImage} />
+                    <img alt="project.projectName" className="project-preview-image-background" src={project.projectImage} />
+                    <img alt="project.projectName" className="project-preview-image-foreground" src={project.projectImage} />
                 </div>
                 <div className="project-description-container">
                     <div className="project-text project-title">{project.projectName}</div>

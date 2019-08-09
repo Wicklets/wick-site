@@ -2,7 +2,6 @@ import React from 'react';
 import CommunityProjectButton from '../CommunityProjectButton/CommunityProjectButton';
 
 import './communityprojectboard.scss';
-import { timingSafeEqual } from 'crypto';
 
 class CommunityProjectBoard extends React.Component {
     render () {
@@ -11,6 +10,8 @@ class CommunityProjectBoard extends React.Component {
                 <CommunityProjectButton project={this.props.projects[0]}/>
                 <CommunityProjectButton project={this.props.projects[1]}/>
                 <CommunityProjectButton project={this.props.projects[2]}/>
+                <CommunityProjectButton project={this.props.projects[3]}/>
+                <CommunityProjectButton project={this.props.projects[4]}/>
             </div>
         )
     }
