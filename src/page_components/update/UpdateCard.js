@@ -21,12 +21,12 @@ const UpdateCard = () => (
         <Col md="9">
             <Card className="UpdateCard-container">
                 <CardBody>
-                    <CardTitle className="UpdateCard-version">Alpha Update 8.6</CardTitle>
+                    <CardTitle className="UpdateCard-version">Version 1.13 is up!</CardTitle>
                     <CardSubtitle className="UpdateCard-text">
-                        We’ve posted a major update to the Wick Editor 1.0 Alpha, including over 160 new fonts and dynamic text! You can test it out at <InlineLink text="alpha.wickeditor.com" link="http://alpha.wickeditor.com" />!
+                        Take a look at version 1.13 which includes sound and quality of life improvements. You can test it out at <InlineLink text="editor.wickeditor.com" link="http://editor.wickeditor.com" />!
                     </CardSubtitle>
                     <div className="UpdateCard-button">
-                        <WickButton text="try it" size="sm" type="body" onClick={() => window.open("http://alpha.wickeditor.com")} />
+                        <WickButton text="try it" size="sm" type="body" onClick={() => window.open("http://editor.wickeditor.com")} />
                     </div>
                 </CardBody>
             </Card>

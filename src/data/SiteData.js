@@ -202,14 +202,14 @@ export const news = [
     {
         title: "Support the Wick Editor Patreon!",
         text: "Become a supporter and help the Wick Editor developers!",
-        date: "02/15/19",
+        date: "2/15/19",
         onClick: () => window.open("https://forum.wickeditor.com/t/support-the-wick-editor-on-patreon/1072")
     },
     {
-        title: "Wick Editor Alpha update v8.6",
-        text: "Check out our updates for the Newgrounds Game Jam!",
-        date: "05/30/19",
-        onClick: () => window.open("https://forum.wickeditor.com/t/new-wick-editor-alpha-update-v8-6/1608")
+        title: "Wrapping A Successful Mozilla Grant!",
+        text: "We've concluded our Mozilla Open Source Support Grant. Read about it here!",
+        date: "8/8/19",
+        onClick: () => window.open("https://medium.com/@lucadamasco/the-wick-editor-is-wrapping-up-our-mozilla-open-source-support-grant-7289ca7c8ba2")
     },
     {
         title: "Mozilla Supports the Wick Editor!",
