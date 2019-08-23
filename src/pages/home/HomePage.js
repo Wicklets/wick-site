@@ -85,7 +85,7 @@ const HomePage = () => (
         <WickLargeSpacer />
         <ContentSection
             title="support wick editor!"
-            text="Support the wick editor community with a YouTube membership or Patreon subscription!"
+            text="Support Wick Editor development with a YouTube subscription or Patreon membership!"
             size="large"
             includePadding
             includeTitlePadding

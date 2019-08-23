@@ -21,9 +21,9 @@ const UpdateCard = () => (
         <Col md="9">
             <Card className="UpdateCard-container">
                 <CardBody>
-                    <CardTitle className="UpdateCard-version">Version 1.13 is up!</CardTitle>
+                    <CardTitle className="UpdateCard-version">Version 1.14 is out!</CardTitle>
                     <CardSubtitle className="UpdateCard-text">
-                        Take a look at version 1.13 which includes sound and quality of life improvements. You can test it out at <InlineLink text="editor.wickeditor.com" link="http://editor.wickeditor.com" />!
+                        Take a look at version 1.14 which includes a new timeline, shape tool, video exporter and more! You can test it out at <InlineLink text="editor.wickeditor.com" link="http://editor.wickeditor.com" />!
                     </CardSubtitle>
                     <div className="UpdateCard-button">
                         <WickButton text="try it" size="sm" type="body" onClick={() => window.open("http://editor.wickeditor.com")} />
