@@ -24,6 +24,9 @@ import img_gettingStartedWithAnimation from '../Images/Tutorials/gettingStartedW
 import img_makingInteractiveProjects from '../Images/Tutorials/makingThingsInteractive_site.png';
 import img_usingKeyboardInteractions from '../Images/Tutorials/usingKeyboardInteractions_site.png';
 import img_advancedTextTutorial from '../Images/Tutorials/advancedTextTutorial_site.png';
+import img_textWithCode from '../Images/Tutorials/controllingTextWithCode_site.png';
+
+
 
 // Community Projects
 import img_goodEggs from '../Images/Community/goodEggs.png';
@@ -134,7 +137,7 @@ export const examples = [
 
 export const tutorials = [
     {
-        title: "Editor 1.0 | Getting Started with Animation",
+        title: "Getting Started with Animation | Editor 1.0",
         body: "Learn how to use the new Wick Editor 1.0 to create animations and navigate the new interface!",
         body_extended: "Learn how to use the new Wick Editor 1.0 to create animations and navigate the new interface! Learn how the new toolbar, inspector and timeline work, and see our new settings menu.",
         tags: ["Intro", "Beginner", "Animation"],
@@ -143,7 +146,7 @@ export const tutorials = [
         number: "1.0 Tutorial 1"
     },
     {
-        title: "Editor 1.0 | Making Things Interactive",
+        title: "Making Things Interactive | Editor 1.0",
         body: "In this Wick Editor 1.0 tutorial we create an interactive point and click game and learn about scripting!",
         body_extended: "Learn how to use the new Wick Editor 1.0 to create an interactive point and click game. We'll learn about the tab coding system, how to name a frame, gotoAndStop, and the single-tab coding system.",
         tags: ["Intro", "Beginner", "Games"],
@@ -152,7 +155,7 @@ export const tutorials = [
         number: "1.0 Tutorial 2"
     },
     {
-        title: "Editor 1.0 | Using Keyboard Interactions",
+        title: "Using Keyboard Interactions | Editor 1.0",
         body: "Learn how to use the keyboard in your interactive Wick Editor 1.0 projects!",
         body_extended: "In this Wick Editor 1.0 tutorial, we learn how to use keyboard controls in our interactive projects. We'll go over the basics of keyboard events, conditionals, and moving objects in x,y space!",
         tags: ["Intro", "Beginner", "Games"],
@@ -161,13 +164,22 @@ export const tutorials = [
         number: "1.0 Tutorial 3"
     },
     {
-        title: "Editor 1.0 | Using Advanced Text Settings",
+        title: "Using Advanced Text Settings | Editor 1.0",
         body: "Learn how to use the advanced text settings in Wick Editor 1.0 projects!",
         body_extended: "In this Wick Editor 1.0 tutorial, learn how to use advanced text settings such as changing the font, text size, text style and more!",
         tags: ["Intermediate", "Beginner", "Text"],
         image: img_advancedTextTutorial,
         embed: "https://www.youtube.com/embed/vw6z_72o_uA",
         number: "1.0 Tutorial 4"
+    },
+    {
+        title: "Controlling Text with Code | Editor 1.0",
+        body: "Learn how to use code to interactively update a text box!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to control text objects with code to change their contents dynamically!",
+        tags: ["Programming", "Intermediate", "Text"],
+        image: img_textWithCode,
+        embed: "https://www.youtube.com/embed/baNjzbfE_I8",
+        number: "1.0 Tutorial 5"
     },
     /*{
         title: "Editor 1.0 | More Tutorials Coming Soon!",
