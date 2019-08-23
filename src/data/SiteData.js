@@ -23,6 +23,7 @@ import comingsoon from '../Images/Misc/comingsoon.png';
 import img_gettingStartedWithAnimation from '../Images/Tutorials/gettingStartedWithAnimation_site.png';
 import img_makingInteractiveProjects from '../Images/Tutorials/makingThingsInteractive_site.png';
 import img_usingKeyboardInteractions from '../Images/Tutorials/usingKeyboardInteractions_site.png';
+import img_advancedTextTutorial from '../Images/Tutorials/advancedTextTutorial_site.png';
 
 // Community Projects
 import img_goodEggs from '../Images/Community/goodEggs.png';
@@ -158,6 +159,15 @@ export const tutorials = [
         image: img_usingKeyboardInteractions,
         embed: "https://youtube.com/embed/mpJOY1-qshU",
         number: "1.0 Tutorial 3"
+    },
+    {
+        title: "Editor 1.0 | Using Advanced Text Settings",
+        body: "Learn how to use the advanced text settings in Wick Editor 1.0 projects!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to use advanced text settings such as changing the font, text size, text style and more!",
+        tags: ["Intermediate", "Beginner", "Text"],
+        image: img_advancedTextTutorial,
+        embed: "https://www.youtube.com/embed/vw6z_72o_uA",
+        number: "1.0 Tutorial 4"
     },
     /*{
         title: "Editor 1.0 | More Tutorials Coming Soon!",
