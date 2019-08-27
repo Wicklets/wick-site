@@ -20,7 +20,7 @@ class CommunityPageContainer extends Component {
     }
 
     render() {
-        ReactGA.pageview('www.wickeditor.com/community');
+        ReactGA.pageview('/community');
         return (
             <Fragment>
                 <Header

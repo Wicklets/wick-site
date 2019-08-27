@@ -18,7 +18,7 @@ class AboutPageContainer extends Component {
     }
 
     render() {
-        ReactGA.pageview('www.wickeditor.com/about');
+        ReactGA.pageview('/about');
         return (
             <Fragment>
                 <Header
