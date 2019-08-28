@@ -25,7 +25,8 @@ import img_makingInteractiveProjects from '../Images/Tutorials/makingThingsInter
 import img_usingKeyboardInteractions from '../Images/Tutorials/usingKeyboardInteractions_site.png';
 import img_advancedTextTutorial from '../Images/Tutorials/advancedTextTutorial_site.png';
 import img_textWithCode from '../Images/Tutorials/controllingTextWithCode_site.png';
-
+import img_soundOnTimeline from '../Images/Tutorials/soundOnTimeline_site.png';
+import img_makingInteractiveButtons from '../Images/Tutorials/makingInteractiveButtons_site.png';
 
 
 // Community Projects
@@ -180,6 +181,24 @@ export const tutorials = [
         image: img_textWithCode,
         embed: "https://www.youtube.com/embed/baNjzbfE_I8",
         number: "1.0 Tutorial 5"
+    },
+    {
+        title: "Making Interactive Buttons | Editor 1.0",
+        body: "Learn how to create dynamic interactive buttons!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to create dynamic interactive buttons that react to the user's mouse!",
+        tags: ["Mouse", "Intermediate", "Button"],
+        image: img_makingInteractiveButtons,
+        embed: "https://www.youtube.com/embed/E4uNy6jgXp8",
+        number: "1.0 Tutorial 6"
+    },
+    {
+        title: "Adding Sounds to Animation | Editor 1.0",
+        body: "Learn how to add sounds onto the timeline for your animations!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to add sounds to your animations by uploading and dragging sounds onto the timeline!",
+        tags: ["Timeline", "Intermediate", "Sound"],
+        image: img_soundOnTimeline,
+        embed: "https://www.youtube.com/embed/CzgDiU2P2Oo",
+        number: "1.0 Tutorial 7"
     },
     /*{
         title: "Editor 1.0 | More Tutorials Coming Soon!",
