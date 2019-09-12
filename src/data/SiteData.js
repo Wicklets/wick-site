@@ -25,7 +25,8 @@ import img_makingInteractiveProjects from '../Images/Tutorials/makingThingsInter
 import img_usingKeyboardInteractions from '../Images/Tutorials/usingKeyboardInteractions_site.png';
 import img_advancedTextTutorial from '../Images/Tutorials/advancedTextTutorial_site.png';
 import img_textWithCode from '../Images/Tutorials/controllingTextWithCode_site.png';
-
+import img_soundOnTimeline from '../Images/Tutorials/soundOnTimeline_site.png';
+import img_makingInteractiveButtons from '../Images/Tutorials/makingInteractiveButtons_site.png';
 
 
 // Community Projects
@@ -183,10 +184,10 @@ export const tutorials = [
     },
     {
         title: "Making Interactive Buttons | Editor 1.0",
-        body: "Learn how to create interactive buttons in your projects!",
-        body_extended: "In this Wick Editor 1.0 tutorial, learn how to create dynamic interactive buttons with hover, active and down states!",
-        tags: ["Programming", "Intermediate", "Buttons"],
-        image: img_textWithCode,
+        body: "Learn how to create dynamic interactive buttons!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to create dynamic interactive buttons that react to the user's mouse!",
+        tags: ["Mouse", "Intermediate", "Button"],
+        image: img_makingInteractiveButtons,
         embed: "https://www.youtube.com/embed/E4uNy6jgXp8",
         number: "1.0 Tutorial 6"
     },
@@ -226,7 +227,7 @@ export const tutorials = [
         embed: "https://www.youtube.com/embed/uNcSZQds6C0",
         number: "1.0 Tutorial 10"
     },
-    
+
     /*{
         title: "Editor 1.0 | More Tutorials Coming Soon!",
         body: "Check back soon for more awesome Wick Editor Tutorials!",
@@ -307,7 +308,7 @@ export const communityProjects = [
         projectName: "Lock Up Dungeon",
         projectImage: img_lockUp,
         description: "Lock all the doors in the dungeon and allow the minotaur to finally rest.",
-        src: "https://itch.io/embed-upload/1559006?color=333333", 
+        src: "https://itch.io/embed-upload/1559006?color=333333",
         instructions: "Controls:\nX: Ram \n\n WASD: Movement",
     },
     {
@@ -315,29 +316,27 @@ export const communityProjects = [
         projectName: "Good Eggs",
         projectImage: img_goodEggs,
         description: "The story of a good egg just havin' a good time.",
-        src: "https://www.youtube.com/embed/okMQGBEuroo", 
+        src: "https://www.youtube.com/embed/okMQGBEuroo",
     },
     {
         author: "Nick Diamant",
         projectName: "Click Me If You Can",
         projectImage: img_clickMeIfYouCan,
         description: "Follow a curious cat around the globe!",
-        src: "https://itch.io/embed-upload/1586282?color=333333", 
+        src: "https://itch.io/embed-upload/1586282?color=333333",
     },
     {
         author: "Lucia (9)",
         projectName: "Bunny Tunnels",
         projectImage: img_bunnyTunnels,
         description: "Guide your bunny friend to victory!",
-        src: "https://itch.io/embed-upload/1590277?color=333333", 
+        src: "https://itch.io/embed-upload/1590277?color=333333",
     },
     {
         author: "Lucia (9)",
         projectName: "Happy Apples",
         projectImage: img_happyApples,
         description: "What's that? It's two happy apples!",
-        src: "https://itch.io/embed-upload/1590280?color=333333", 
+        src: "https://itch.io/embed-upload/1590280?color=333333",
     },
 ];
-
-

@@ -19,7 +19,7 @@ class SupportersPageContainer extends Component {
     }
 
     render() {
-        ReactGA.pageview('www.wickeditor.com/supporters');
+        ReactGA.pageview('/supporters');
         return (
             <Fragment>
                 <Header

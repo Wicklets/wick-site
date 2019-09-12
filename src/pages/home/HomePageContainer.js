@@ -36,7 +36,7 @@ class HomePageContainer extends Component {
     }
 
     render() {
-        ReactGA.pageview('www.wickeditor.com/');
+        ReactGA.pageview("/");
 
         let title = "wick editor";
         let tagline = "games, animations and everything in-between.";

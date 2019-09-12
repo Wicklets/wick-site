@@ -54,7 +54,7 @@ class LearnPageContainer extends Component {
     }
 
     render() {
-        ReactGA.pageview('www.wickeditor.com/learn');
+        ReactGA.pageview('/learn');
         return (
             <Fragment>
                 <Header
