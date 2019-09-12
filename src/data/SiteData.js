@@ -181,6 +181,52 @@ export const tutorials = [
         embed: "https://www.youtube.com/embed/baNjzbfE_I8",
         number: "1.0 Tutorial 5"
     },
+    {
+        title: "Making Interactive Buttons | Editor 1.0",
+        body: "Learn how to create interactive buttons in your projects!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to create dynamic interactive buttons with hover, active and down states!",
+        tags: ["Programming", "Intermediate", "Buttons"],
+        image: img_textWithCode,
+        embed: "https://www.youtube.com/embed/E4uNy6jgXp8",
+        number: "1.0 Tutorial 6"
+    },
+    {
+        title: "Adding Sounds to Animations | Editor 1.0",
+        body: "Learn how to add sounds to animations using the timeline!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to upload and use sounds in your animations by using the asset library and the timeline!",
+        tags: ["Animation", "Intermediate", "Sound"],
+        image: img_textWithCode,
+        embed: "https://www.youtube.com/embed/CzgDiU2P2Oo",
+        number: "1.0 Tutorial 7"
+    },
+    {
+        title: "Adding Sounds with Code | Editor 1.0",
+        body: "Learn how to add sounds to games and interactive projects using code!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to upload and use sounds in your games by using the playSound() command in code!",
+        tags: ["Interactive", "Intermediate", "Sound"],
+        image: img_textWithCode,
+        embed: "https://www.youtube.com/embed/V-wiuJPEbKs",
+        number: "1.0 Tutorial 8"
+    },
+    {
+        title: "Controlling the Canvas | Editor 1.0",
+        body: "Learn how to control the canvas while making games and animations!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to control the canvas using the pan, zoom, onion skinning, and recenter tools!",
+        tags: ["Canvas", "Intermediate", "Pan"],
+        image: img_textWithCode,
+        embed: "https://www.youtube.com/embed/6UtRPX0eUZU",
+        number: "1.0 Tutorial 9"
+    },
+    {
+        title: "Using Mouse Interactions | Editor 1.0",
+        body: "Learn how to use all of the different mouse interactions in your projects!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to use all 8 of the different mouse events including mousePressed, mouseReleased, mouseHover and more!",
+        tags: ["Mouse", "Intermediate", "Games"],
+        image: img_textWithCode,
+        embed: "https://www.youtube.com/embed/uNcSZQds6C0",
+        number: "1.0 Tutorial 10"
+    },
+    
     /*{
         title: "Editor 1.0 | More Tutorials Coming Soon!",
         body: "Check back soon for more awesome Wick Editor Tutorials!",
