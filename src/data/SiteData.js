@@ -25,8 +25,17 @@ import img_makingInteractiveProjects from '../Images/Tutorials/makingThingsInter
 import img_usingKeyboardInteractions from '../Images/Tutorials/usingKeyboardInteractions_site.png';
 import img_advancedTextTutorial from '../Images/Tutorials/advancedTextTutorial_site.png';
 import img_textWithCode from '../Images/Tutorials/controllingTextWithCode_site.png';
-import img_soundOnTimeline from '../Images/Tutorials/soundOnTimeline_site.png';
 import img_makingInteractiveButtons from '../Images/Tutorials/makingInteractiveButtons_site.png';
+import img_addingSoundsToAnimation from '../Images/Tutorials/addingSoundsToAnimation_site.png';
+import img_addingSoundsWithCode from '../Images/Tutorials/addingSoundsWithCode_site.png';
+import img_controllingTheCanvas from '../Images/Tutorials/controllingTheCanvas_site.png';
+import img_changingProjectSettings from '../Images/Tutorials/changingProjectSettings_site.png';
+import img_mouseEvents from '../Images/Tutorials/mouseEvents_site.png';
+import img_whatsATween from '../Images/Tutorials/whatsATween_site.png';
+import img_usingImagesInProjects from '../Images/Tutorials/usingImagesInProjects_site.png';
+import img_advancedToolSettings from '../Images/Tutorials/advancedToolSettings_site.png';
+
+
 
 
 // Community Projects
@@ -184,9 +193,9 @@ export const tutorials = [
     },
     {
         title: "Making Interactive Buttons | Editor 1.0",
-        body: "Learn how to create dynamic interactive buttons!",
-        body_extended: "In this Wick Editor 1.0 tutorial, learn how to create dynamic interactive buttons that react to the user's mouse!",
-        tags: ["Mouse", "Intermediate", "Button"],
+        body: "Learn how to create interactive buttons in your projects!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to create dynamic interactive buttons with hover, active and down states!",
+        tags: ["Programming", "Intermediate", "Buttons"],
         image: img_makingInteractiveButtons,
         embed: "https://www.youtube.com/embed/E4uNy6jgXp8",
         number: "1.0 Tutorial 6"
@@ -196,7 +205,7 @@ export const tutorials = [
         body: "Learn how to add sounds to animations using the timeline!",
         body_extended: "In this Wick Editor 1.0 tutorial, learn how to upload and use sounds in your animations by using the asset library and the timeline!",
         tags: ["Animation", "Intermediate", "Sound"],
-        image: img_textWithCode,
+        image: img_addingSoundsToAnimation,
         embed: "https://www.youtube.com/embed/CzgDiU2P2Oo",
         number: "1.0 Tutorial 7"
     },
@@ -205,7 +214,7 @@ export const tutorials = [
         body: "Learn how to add sounds to games and interactive projects using code!",
         body_extended: "In this Wick Editor 1.0 tutorial, learn how to upload and use sounds in your games by using the playSound() command in code!",
         tags: ["Interactive", "Intermediate", "Sound"],
-        image: img_textWithCode,
+        image: img_addingSoundsWithCode,
         embed: "https://www.youtube.com/embed/V-wiuJPEbKs",
         number: "1.0 Tutorial 8"
     },
@@ -214,7 +223,7 @@ export const tutorials = [
         body: "Learn how to control the canvas while making games and animations!",
         body_extended: "In this Wick Editor 1.0 tutorial, learn how to control the canvas using the pan, zoom, onion skinning, and recenter tools!",
         tags: ["Canvas", "Intermediate", "Pan"],
-        image: img_textWithCode,
+        image: img_controllingTheCanvas,
         embed: "https://www.youtube.com/embed/6UtRPX0eUZU",
         number: "1.0 Tutorial 9"
     },
@@ -223,21 +232,37 @@ export const tutorials = [
         body: "Learn how to use all of the different mouse interactions in your projects!",
         body_extended: "In this Wick Editor 1.0 tutorial, learn how to use all 8 of the different mouse events including mousePressed, mouseReleased, mouseHover and more!",
         tags: ["Mouse", "Intermediate", "Games"],
-        image: img_textWithCode,
+        image: img_mouseEvents,
         embed: "https://www.youtube.com/embed/uNcSZQds6C0",
         number: "1.0 Tutorial 10"
     },
-
-    /*{
-        title: "Editor 1.0 | More Tutorials Coming Soon!",
-        body: "Check back soon for more awesome Wick Editor Tutorials!",
-        body_extended: "This is a test, this is only a test.",
-        tags: ["Coming", "Soon"],
-        image: defaultWorld,
-        embed: "https://www.youtube.com/embed/bhN2VxyWJiU",
-        number: "1.0 Tutorial 3",
-        disabled: true
-    },*/
+    {
+        title: "Using Tweens in Animation | Editor 1.0",
+        body: "Learn how to use tweens to create smooth animations!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to use tweening on extended frames! Tweening allows Wick Editor to automatically animatie movement, size, opacity and rotation changes!",
+        tags: ["Tween", "Intermediate", "Animation"],
+        image: img_whatsATween,
+        embed: "https://www.youtube.com/embed/fiTimi02PEg",
+        number: "1.0 Tutorial 11"
+    },
+    {
+        title: "Using Images in Projects | Editor 1.0",
+        body: "Learn how to import and use images in your animations and games!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to import images for animations, games and interactive projects!",
+        tags: ["Images", "Intermediate", "Animation"],
+        image: img_usingImagesInProjects,
+        embed: "https://www.youtube.com/embed/EvlqBiD79Us",
+        number: "1.0 Tutorial 12"
+    },
+    {
+        title: "Advanced Tool Settings | Editor 1.0",
+        body: "Learn how to use all the advanced tool settings on the toolbar!",
+        body_extended: "In this Wick Editor 1.0 tutorial, learn how to use all of the advanced tool settings for the tools in the Wick Editor!",
+        tags: ["Tools", "Intermediate", "Settings"],
+        image: img_advancedToolSettings,
+        embed: "https://www.youtube.com/embed/7JQlKDADlOs",
+        number: "1.0 Tutorial 13"
+    },
     {
         title: "Legacy Editor | Getting Started",
         body: "Legacy Editor | Learn how to make a basic animation, how to create an interactive project, and how to save a project to your computer.",
@@ -308,7 +333,7 @@ export const communityProjects = [
         projectName: "Lock Up Dungeon",
         projectImage: img_lockUp,
         description: "Lock all the doors in the dungeon and allow the minotaur to finally rest.",
-        src: "https://itch.io/embed-upload/1559006?color=333333",
+        src: "https://itch.io/embed-upload/1559006?color=333333", 
         instructions: "Controls:\nX: Ram \n\n WASD: Movement",
     },
     {
@@ -316,27 +341,29 @@ export const communityProjects = [
         projectName: "Good Eggs",
         projectImage: img_goodEggs,
         description: "The story of a good egg just havin' a good time.",
-        src: "https://www.youtube.com/embed/okMQGBEuroo",
+        src: "https://www.youtube.com/embed/okMQGBEuroo", 
     },
     {
         author: "Nick Diamant",
         projectName: "Click Me If You Can",
         projectImage: img_clickMeIfYouCan,
         description: "Follow a curious cat around the globe!",
-        src: "https://itch.io/embed-upload/1586282?color=333333",
+        src: "https://itch.io/embed-upload/1586282?color=333333", 
     },
     {
         author: "Lucia (9)",
         projectName: "Bunny Tunnels",
         projectImage: img_bunnyTunnels,
         description: "Guide your bunny friend to victory!",
-        src: "https://itch.io/embed-upload/1590277?color=333333",
+        src: "https://itch.io/embed-upload/1590277?color=333333", 
     },
     {
         author: "Lucia (9)",
         projectName: "Happy Apples",
         projectImage: img_happyApples,
         description: "What's that? It's two happy apples!",
-        src: "https://itch.io/embed-upload/1590280?color=333333",
+        src: "https://itch.io/embed-upload/1590280?color=333333", 
     },
 ];
+
+
