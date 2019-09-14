@@ -30,6 +30,12 @@ const thanks = (
     </Fragment>
 );
 
+const libraries = (
+    <Fragment>
+        <InlineLink text="Paper.js" link="http://paperjs.org/" />, <InlineLink text="React" link="https://reactjs.org/" />, <InlineLink text="Croquis" link="https://github.com/disjukr/croquis.js/tree/master" />, <InlineLink text="Potrace" link="https://github.com/oov/potrace" />, <InlineLink text="ffmpeg" link="https://ffmpeg.org/" />, <InlineLink text="videoconverter.js" link="https://github.com/bgrins/videoconverter.js" />, <InlineLink text="howler" link="https://howlerjs.com/" />, <InlineLink text="Tween.js" link="https://github.com/tweenjs/tween.js" />, <InlineLink text="Gif.js" link="https://github.com/jnordberg/gif.js" />, <InlineLink text="and so many more..." link="https://github.com/Wicklets/wick-editor/blob/master/CREDITS.md" />. Without these libraries the Wick Editor, and so much more, would not be possible.
+    </Fragment>
+);
+
 const contact = (
     <Fragment>
         Shoot us a <InlineLink text="message" link="mailto:contact@wickeditor.com" />, join the wick editor community with a <InlineLink text="YouTube subscription" link="https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg" /> or become a patron on <InlineLink text="Patreon" link="https://www.patreon.com/WickEditor" />!
@@ -67,6 +73,13 @@ const AboutPage = () => (
             titleWeight="semibold"
             includeUnderline
             icon={cannon}
+        />
+        <WickXLSpacer />
+        <ContentSection
+            title="and these libraries"
+            text={libraries}
+            titleWeight="semibold"
+            includeUnderline
         />
         <WickXLSpacer />
         <ContentSection
