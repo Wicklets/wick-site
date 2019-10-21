@@ -23,7 +23,7 @@ const UpdateCard = () => (
                 <CardBody>
                     <CardTitle className="UpdateCard-version">Version 1.15!</CardTitle>
                     <CardSubtitle className="UpdateCard-text">
-                        Take a look at version 1.15 which has a brand new, redesigned timeline, a new button and clip workflow, and a hotkeys menu! Try it now ate <InlineLink text="test.wickeditor.com" link="http://test.wickeditor.com" />!
+                        Take a look at version 1.15 which has a brand new, redesigned timeline, a new button and clip workflow, and a hotkeys menu! Try it now at <InlineLink text="test.wickeditor.com" link="http://test.wickeditor.com" />!
                     </CardSubtitle>
                     <div className="UpdateCard-button">
                         <WickButton text="try it" size="sm" type="body" onClick={() => window.open("http://test.wickeditor.com")} />
