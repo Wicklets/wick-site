@@ -4,36 +4,36 @@ self.__precacheManifest = [
     "url": "/static/media/lockUpDungeon.f3094c5b.png"
   },
   {
-    "revision": "ab26b3cc42635613c852",
-    "url": "/static/css/main.da94a82c.chunk.css"
+    "revision": "e5538a743b11a2122a90",
+    "url": "/static/css/main.d6788388.chunk.css"
   },
   {
     "revision": "cf3d3e47f9271df5d217d182edeaf86e",
     "url": "/static/media/changingProjectSettings_site.cf3d3e47.png"
   },
   {
-    "revision": "80d28e4b4f2a7af7a1ea",
-    "url": "/static/js/1.80d28e4b.chunk.js"
+    "revision": "46e3c23bde90917deb3a",
+    "url": "/static/js/1.46e3c23b.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "5a83071a1c32ce225fff276ccb83b18e",
-    "url": "/static/media/arrow.5a83071a.svg"
+    "revision": "9f103444735acf6d6575889c66f572ce",
+    "url": "/static/media/arrow.9f103444.svg"
   },
   {
-    "revision": "123f2a68449078be7068af2b1ef5a4bb",
-    "url": "/static/media/tutorial.123f2a68.svg"
+    "revision": "d663149bd7fd479011574f217c0bbbfa",
+    "url": "/static/media/tutorial.d663149b.svg"
   },
   {
-    "revision": "15dae9c3fcaaccbe75905412503b132b",
-    "url": "/static/media/example.15dae9c3.svg"
+    "revision": "f0f5a0a216482d102ec19e467558dec4",
+    "url": "/static/media/example.f0f5a0a2.svg"
   },
   {
-    "revision": "c193c5fe745e98af3130fbfdafe09657",
-    "url": "/static/media/testworld3.c193c5fe.svg"
+    "revision": "86fe8e7276ef2c990ccdbb04415f56c1",
+    "url": "/static/media/testworld3.86fe8e72.svg"
   },
   {
     "revision": "601cf1b160163d298a91e4fd0c5db0d6",
@@ -136,8 +136,8 @@ self.__precacheManifest = [
     "url": "/static/media/goodEggs.411ccab4.png"
   },
   {
-    "revision": "ab26b3cc42635613c852",
-    "url": "/static/js/main.ab26b3cc.chunk.js"
+    "revision": "e5538a743b11a2122a90",
+    "url": "/static/js/main.e5538a74.chunk.js"
   },
   {
     "revision": "e91264042415bb3d5b43acd52e3d2033",
@@ -152,123 +152,123 @@ self.__precacheManifest = [
     "url": "/static/media/bunnyTunnels.31b06456.png"
   },
   {
-    "revision": "ea32e916242cb6c1965e6aac7afc021c",
-    "url": "/static/media/facebook.ea32e916.svg"
+    "revision": "5e5b234ed34e8c40e1f8c84e8a8455a7",
+    "url": "/static/media/facebook.5e5b234e.svg"
   },
   {
-    "revision": "76e305d7b09b8ce1055785138cea5d6e",
-    "url": "/static/media/facebook_dark.76e305d7.svg"
+    "revision": "9b6745a499ca3fc2c057d0c03dc9b6b9",
+    "url": "/static/media/facebook_dark.9b6745a4.svg"
   },
   {
-    "revision": "02014e6d3cf65561c5b27a8f6eef3bb2",
-    "url": "/static/media/twitter.02014e6d.svg"
+    "revision": "ff96634cd45c683f24b2b53a9843c91f",
+    "url": "/static/media/twitter.ff96634c.svg"
   },
   {
-    "revision": "dc19254db05186dd27437d93744029e6",
-    "url": "/static/media/twitter_dark.dc19254d.svg"
+    "revision": "3de44f9fa1e7d77f8cf22b5e80279f39",
+    "url": "/static/media/twitter_dark.3de44f9f.svg"
   },
   {
-    "revision": "e7e8288950a18a83e9eabecfaf874dcf",
-    "url": "/static/media/instagram.e7e82889.svg"
+    "revision": "19f92df3775ec7d02ef7208444216c17",
+    "url": "/static/media/instagram.19f92df3.svg"
   },
   {
-    "revision": "8dae08c1b734f568017220c95192051d",
-    "url": "/static/media/instagram_dark.8dae08c1.svg"
+    "revision": "c69ec6e12c3667ae2c4af9564052997b",
+    "url": "/static/media/instagram_dark.c69ec6e1.svg"
   },
   {
-    "revision": "144a34f049b1ad8a2a85d888f9a5aba5",
-    "url": "/static/media/youtube.144a34f0.svg"
+    "revision": "fb346f17d153fd191ea1754ddda585b1",
+    "url": "/static/media/youtube.fb346f17.svg"
   },
   {
-    "revision": "b27cbbb5392eb4f6e62e72cb240a2350",
-    "url": "/static/media/youtube_dark.b27cbbb5.svg"
+    "revision": "be9d1e62e7a1efd8b4ac7c32dce70037",
+    "url": "/static/media/youtube_dark.be9d1e62.svg"
   },
   {
-    "revision": "d9f51ac25d5b8a635e1916fbff30e012",
-    "url": "/static/media/patreon.d9f51ac2.svg"
+    "revision": "1ec933b58198ae3484bea12a7f9cd8a3",
+    "url": "/static/media/patreon.1ec933b5.svg"
   },
   {
-    "revision": "0f004b59cc8c7e1cf6cfddedc9e5c82d",
-    "url": "/static/media/patreon_dark.0f004b59.svg"
+    "revision": "c23662b035f1a1915404d39787112e64",
+    "url": "/static/media/patreon_dark.c23662b0.svg"
   },
   {
-    "revision": "206dbfa28c23123958c918d190232242",
-    "url": "/static/media/updates.206dbfa2.svg"
+    "revision": "4108dd13df44fa07a53eeb3dc6a805f6",
+    "url": "/static/media/updates.4108dd13.svg"
   },
   {
-    "revision": "7ba55594ae741d7b232249f96fa82b2f",
-    "url": "/static/media/support.7ba55594.svg"
+    "revision": "882cce2f032812682d858e44611684a8",
+    "url": "/static/media/support.882cce2f.svg"
   },
   {
-    "revision": "60b2bb859b3e90ee99e01d62bbaa6567",
-    "url": "/static/media/wickworldwide2.60b2bb85.svg"
+    "revision": "88d5e1717961b640ea814df2d4305977",
+    "url": "/static/media/wickworldwide2.88d5e171.svg"
   },
   {
-    "revision": "6e1ba17106c110be2764566abda17f89",
-    "url": "/static/media/CoreyEmery.6e1ba171.svg"
+    "revision": "21b28b7edffb59cc31aa3ea21a0ab7ac",
+    "url": "/static/media/CoreyEmery.21b28b7e.svg"
   },
   {
-    "revision": "8a34888a774fc2fb492dafd38cbeb28d",
-    "url": "/static/media/LucaDamasco.8a34888a.svg"
+    "revision": "3c7e5cc6ca2d9716d59b8c4c8aa20062",
+    "url": "/static/media/LucaDamasco.3c7e5cc6.svg"
   },
   {
-    "revision": "c6d9b71d0983aef97e6bfc6ba4f6f313",
-    "url": "/static/media/ZachRispoli.c6d9b71d.svg"
+    "revision": "43bb363c44125cd2393e7e2a2457617c",
+    "url": "/static/media/ZachRispoli.43bb363c.svg"
   },
   {
-    "revision": "2a044ad93f6ed57a2f04376f3bb1036e",
-    "url": "/static/media/AnnaGusman.2a044ad9.svg"
+    "revision": "9e499eb4a878f613b57855bcf14404ce",
+    "url": "/static/media/AnnaGusman.9e499eb4.svg"
   },
   {
-    "revision": "eabb1eb015228bf0b72fef8de024df34",
-    "url": "/static/media/editorpreview.eabb1eb0.svg"
+    "revision": "226c6f7a1dd77a01fcc1dcabb5673d02",
+    "url": "/static/media/editorpreview.226c6f7a.svg"
   },
   {
-    "revision": "beb3d0a3681916f67621fec96068d955",
-    "url": "/static/media/cannon.beb3d0a3.svg"
+    "revision": "814db1eaccd0b21d2130ac6a6a139502",
+    "url": "/static/media/cannon.814db1ea.svg"
   },
   {
-    "revision": "d03367cbe0325dc0383042a107989f69",
-    "url": "/static/media/stars.d03367cb.svg"
+    "revision": "0185760a8df56389dca504376c4778ee",
+    "url": "/static/media/stars.0185760a.svg"
   },
   {
-    "revision": "ff2f577f50ed0e70eb6ea5db53bca12d",
-    "url": "/static/media/email.ff2f577f.svg"
+    "revision": "d072608188682d14cfdf98417af0dc10",
+    "url": "/static/media/email.d0726081.svg"
   },
   {
-    "revision": "7e099e9e823978499eab1913a799b366",
-    "url": "/static/media/messages.7e099e9e.svg"
+    "revision": "221ab28c6cf3cd38c5f0045b81f491b0",
+    "url": "/static/media/messages.221ab28c.svg"
   },
   {
-    "revision": "787ef555d46abf4403db0ebd7aa73466",
-    "url": "/static/media/mozilla.787ef555.svg"
+    "revision": "06d87e7460f9c31a720ceb7de886852f",
+    "url": "/static/media/mozilla.06d87e74.svg"
   },
   {
-    "revision": "35c7a92ee4acfef71af31a902b6e68fb",
-    "url": "/static/media/studio.35c7a92e.svg"
+    "revision": "aad576e344074da8af83ec44f2592c15",
+    "url": "/static/media/studio.aad576e3.svg"
   },
   {
-    "revision": "ba112ed51fad889277e00db2e9da5ab1",
-    "url": "/static/media/henryarmero.ba112ed5.svg"
+    "revision": "51b9c9ef04be3f2dbcd8cd5457623fef",
+    "url": "/static/media/henryarmero.51b9c9ef.svg"
   },
   {
-    "revision": "4047a7604d63776a9b44dde815449b51",
-    "url": "/static/media/olympus.4047a760.svg"
+    "revision": "66a87f8864068205ffbc916d497210a4",
+    "url": "/static/media/olympus.66a87f88.svg"
   },
   {
-    "revision": "32e5a1ca0dc233b2347f04fab94b0f75",
-    "url": "/static/media/bxa.32e5a1ca.svg"
+    "revision": "7f3de66fbbad5a4d53f4375947f064a8",
+    "url": "/static/media/bxa.7f3de66f.svg"
   },
   {
-    "revision": "50ec19cb2f0b5e5852a7880dac960bff",
-    "url": "/static/media/clouds.50ec19cb.svg"
+    "revision": "f75c2735329ccd5423c7f9d60c94045e",
+    "url": "/static/media/clouds.f75c2735.svg"
   },
   {
-    "revision": "80d28e4b4f2a7af7a1ea",
-    "url": "/static/css/1.08273639.chunk.css"
+    "revision": "46e3c23bde90917deb3a",
+    "url": "/static/css/1.d2bf2ced.chunk.css"
   },
   {
-    "revision": "a6f9cf998cdaea3eb39054e327d480c8",
+    "revision": "7cce1572fb94c3180c9456a432beaf89",
     "url": "/index.html"
   }
 ];
