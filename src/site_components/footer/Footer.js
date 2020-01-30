@@ -13,9 +13,24 @@ import clouds from '../../Images/clouds.svg';
 
 import '../../scss_styles/Footer.scss';
 
-// let displayCookiePreferences = () => {
-//     displayPreferenceModal();
-// }
+/**
+ * Create a default preference modal which is overridden when loading the termly banner.
+ */
+let displayPreferenceModal = () => {
+    console.warn("Preference Modal Not downloaded, contact site manager for assistance.");
+}
+
+// Embed the termly cookie banner.
+(function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'https://app.termly.io/embed.min.js';
+    s.id = '6f456f6b-6324-4fed-99b7-b603532d30a5';
+    s.setAttribute("data-name", "termly-embed-banner");
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+})();
 
 const Footer = () => (
     <Fragment>
@@ -35,8 +50,7 @@ const Footer = () => (
             <div id="footer-cookie-policy"><a href='/#/privacy-policy/'>Privacy Policy</a></div>
             <div id="footer-cookie-policy"><a href='/#/terms-of-service/'>Terms of Service</a></div>
             <div id="footer-cookie-policy"><a href='/#/cookie-policy/'>Cookie Policy</a></div>
-            {/* <button onClick={displayCookiePreferences}>Manage Cookie Preferences</button> */}
-            {/* <div id="footer-cookie-policy" onClick={() => displayPreferenceModal()}>Manage Cookie Preferences</div> */}
+            <div id="footer-cookie-policy" onClick={() => displayPreferenceModal()}>Manage Cookie Preferences</div>
             <div id="Footer-copyright">© 2019, Wicklets, LLC.</div>
         </div>
     </Fragment>
