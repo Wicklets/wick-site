@@ -13,6 +13,10 @@ import clouds from '../../Images/clouds.svg';
 
 import '../../scss_styles/Footer.scss';
 
+// let displayCookiePreferences = () => {
+//     displayPreferenceModal();
+// }
+
 const Footer = () => (
     <Fragment>
         <div id="Footer-imageContainer">
@@ -28,6 +32,11 @@ const Footer = () => (
                 <span className="Footer-item">Learn & Support</span>*/}
                 <span className="Footer-item"></span>
             </div>
+            <div id="footer-cookie-policy"><a href='/#/privacy-policy/'>Privacy Policy</a></div>
+            <div id="footer-cookie-policy"><a href='/#/terms-of-service/'>Terms of Service</a></div>
+            <div id="footer-cookie-policy"><a href='/#/cookie-policy/'>Cookie Policy</a></div>
+            {/* <button onClick={displayCookiePreferences}>Manage Cookie Preferences</button> */}
+            {/* <div id="footer-cookie-policy" onClick={() => displayPreferenceModal()}>Manage Cookie Preferences</div> */}
             <div id="Footer-copyright">© 2019, Wicklets, LLC.</div>
         </div>
     </Fragment>

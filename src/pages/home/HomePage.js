@@ -28,6 +28,18 @@ import example from '../../Images/Icons/example.svg';
 import updates from '../../Images/Icons/updates.svg';
 import support from '../../Images/Icons/support.svg';
 
+// Embed the termly cookie banner.
+(function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'https://app.termly.io/embed.min.js';
+    s.id = '6f456f6b-6324-4fed-99b7-b603532d30a5';
+    s.setAttribute("data-name", "termly-embed-banner");
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+})();
+
 const HomePage = () => (
     <Container className="fadeIn animated">
         <Helmet>
