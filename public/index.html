@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <meta charset="utf-8">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,6 +28,29 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700|Nunito:300,400,600" rel="stylesheet">
   </head>
   <body>
+    <!-- Cookie Banner -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#eaeaea"
+          },
+          "button": {
+            "background": "#00d9a7"
+          }
+        },
+        "revokable": true,
+        "theme": "classic",
+        "position": "bottom-right",
+        "content": {
+          "message": "We use cookies to improve your experience, know how many people are using the Wick Editor, and generally improve our website. By using our website, you agree to our use of cookies.",
+          "dismiss": "Accept",
+          "link": "Learn More",
+          "href": "https://www.wickeditor.com/#/cookie-policy"
+        }
+      });
+    </script>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>

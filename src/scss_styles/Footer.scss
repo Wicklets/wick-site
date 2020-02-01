@@ -29,6 +29,11 @@
         padding-bottom: 24px;
     }
 
+    &-notices {
+        display: flex;
+        flex-direction: row; 
+    }
+
     &-image {
         display: flex; // force images to sit next to each other
         position: absolute;

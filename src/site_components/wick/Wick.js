@@ -18,6 +18,7 @@ import '../../scss_styles/Wick.scss';
 
 const Wick = () => {
     ReactGA.initialize('UA-88233944-1');
+    ReactGA.set({ anonymizeIp: true }); // Anonymize IP information.
     return (
         <div className="Wick">
             <div className="Wick-background" />

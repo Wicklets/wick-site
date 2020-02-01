@@ -25,6 +25,8 @@ import LearnPageContainer from '../../pages/learn/LearnPageContainer.js';
 import CommunityPageContainer from '../../pages/community/CommunityPageContainer.js';
 import SupportersPageContainer from '../../pages/supporters/SupportersPageContainer.js';
 import CookiePolicyPageContainer from '../../pages/cookie/CookiePolicyPageContainer.js';
+import PrivacyPolicyPageContainer from '../../pages/privacy/PrivacyPolicyPageContainer.js';
+import TermsAndConditionsPageContainer from '../../pages/termsAndConditions/TermsAndConditionsPageContainer.js';
 import { communityProjects } from '../../data/SiteData.js';
 
 import '../../scss_styles/WickRouter.scss';
@@ -35,6 +37,8 @@ const learn = () => (<LearnPageContainer />)
 const community = () => (<CommunityPageContainer projects={communityProjects}/>)
 const supporters = () => (<SupportersPageContainer />)
 const cookie = () => (<CookiePolicyPageContainer />)
+const privacy = () => (<PrivacyPolicyPageContainer />)
+const terms = () => (<TermsAndConditionsPageContainer />)
 
 const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickLaunchEditor, backgroundAnimationClass, isDropdownOpen}) => (
     <Fragment>
@@ -132,6 +136,8 @@ const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickL
         <Route path="/community/" component={community} />
         <Route path="/supporters/" component={supporters} />
         <Route path="/cookie-policy/" component={cookie} />
+        <Route path="/privacy-policy/" component={privacy} />
+        <Route path="/terms-and-conditions" component={terms} />
 
     </Fragment>
 );
