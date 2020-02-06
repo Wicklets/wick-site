@@ -25,9 +25,11 @@ const Footer = () => (
             <div id="Footer-content">
                 <span className="Footer-item"></span>
             </div>
-            <div id="footer-cookie-policy"><a href='/#/privacy-policy/'>Privacy Policy</a></div>
-            <div id="footer-cookie-policy"><a href='/#/terms-of-service/'>Terms of Service</a></div>
-            <div id="footer-cookie-policy"><a href='/#/cookie-policy/'>Cookie Policy</a></div>
+            <div className="Footer-links">
+                <div className="Footer-link-item"><a className="Footer-link" href='/#/privacy-policy/'>Privacy Policy</a></div>
+                <div className="Footer-link-item"><a className="Footer-link" href='/#/terms-of-service/'>Terms of Service</a></div>
+                <div className="Footer-link-item"><a className="Footer-link" href='/#/cookie-policy/'>Cookie Policy</a></div>
+            </div>
             <div id="Footer-copyright">© 2019, Wicklets, LLC.</div>
         </div>
     </Fragment>

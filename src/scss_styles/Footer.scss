@@ -59,4 +59,20 @@
     &-item {
         padding: 0 28px;
     }
+
+    &-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-link-item {
+        padding: 8px; 
+        color: white;
+    }
+
+    &-link {
+        color: white;
+    }
 }
