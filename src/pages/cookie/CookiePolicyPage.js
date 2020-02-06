@@ -16,7 +16,8 @@ class CookiePolicyPage extends React.Component {
                 </Helmet>
                 <div className="terms-body">
                 <h1>Cookie Policy for Wick Editor </h1>
-                    <p>This is the Cookie Policy for the Wick Editor including the editor (<a href="https://editor.wickeditor.com">https://editor.wickeditor.com</a>), the Wick Editor forum (<a href="https://forum.wickeditor.com">https://forum.wickeditor.com</a>), and the Wick Editor website (<a href="https://www.wickeditor.com">https://www.wickeditor.com</a>)</p>
+                    <p>This is the Cookie Policy for the Wick Editor including the editor (<a href="https://editor.wickeditor.com">https://editor.wickeditor.com</a>), the Wick Editor forum (<a href="https://forum.wickeditor.com">https://forum.wickeditor.com</a>), and the Wick Editor website (<a href="https://www.wickeditor.com">https://www.wickeditor.com</a>)
+                    This policy is part of our Privacy Statements, and is intended to be read in conjunction with our <a href="https://www.wickeditor.com/#/terms-of-service">Terms of Service</a> and <a href="https://www.wickeditor.com/#/privacy-policy">Privacy Policy.</a></p>
 
                     <p><strong>What Are Cookies</strong></p>
                     <p>As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.</p>
