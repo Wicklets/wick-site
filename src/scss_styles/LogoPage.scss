@@ -1,0 +1,31 @@
+.logo-rules {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-list {
+    text-align: left;
+    width: 40%;
+    margin: 0 auto; 
+    margin-bottom: 20px; 
+}
+
+.good-list-item {
+    list-style: none;
+}
+
+.good-list-item::before {
+    content: '✔️';
+    margin-left: -35px;
+    margin-right: 10px;
+}
+
+.bad-list-item {
+    list-style: none;
+}
+
+.bad-list-item::before {
+    content: '❌';
+    margin-left: -35px;
+    margin-right: 10px;
+}
