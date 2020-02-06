@@ -3,6 +3,7 @@ import React from 'react';
 
 import { Container } from 'reactstrap';
 import { Helmet } from 'react-helmet';
+import LogoDownloadButton from './LogoDownloadButton.js';
 
 import '../../scss_styles/LogoPage.scss';
 
@@ -11,34 +12,35 @@ class LogoPage extends React.Component {
         return (
             <Container className="fadeIn animated">
                 <Helmet>
-                    <title>The Wick Editor - Terms and Conditions</title>
+                    <title>The Wick Editor - Logos</title>
                     <meta name="description" content="The Wick Editor Terms and Conditions." />
                 </Helmet>
+                <h1>Wick Editor Logo and Usage</h1>
+                <h3 className="logo-page-subtitle">Show that your project is made with Wick Editor! Read below for our logo policy.</h3>
                 <div className="logo-page">
                     <div className="logo-container">
-                        <div className="logo-element">Logo</div>
-                        <div className="logo-element">Combined Logo Mark</div>
-                        <div className="logo-element"></div>
-                        <div className="logo-element"></div>
+                        <LogoDownloadButton fileName="WickEditor_logos.zip" downloadLink="/logos/WickEditor_logos.zip" imgSrc="/logos/BrickWickEditorLogo.png" text="Download Logo" />
+                        <LogoDownloadButton fileName="WickEditor_combined.zip" downloadLink="/logos/WickEditor_combined.zip" imgSrc="/logos/LogoMascotCombination.png" text="Download Combined Mark" />
+                        <LogoDownloadButton fileName="WickEditor_mascots.zip" downloadLink="/logos/WickEditor_mascots.zip" imgSrc="/logos/WickEditor_Mascot.png" text="Download Mascot" />
                     </div>
                     <div className="logo-rules">
                         <div className="logo-list logo-dos">
                             <h3>Do these things:</h3>
                             <ul>
-                                <li className="good-list-item">Use the Logo, Mascot, or Logo Mark to link to Wick Editor</li>
-                                <li className="good-list-item">Use the Logo, Mascot, or Logo Mark to show that your project uses Wick Editor</li>
-                                <li className="good-list-item">Use the Logo, Mascot, or Logo Mark in a blog post or news article about Wick Editor</li>
+                                <li className="list-item good-list-item">Use the Logo, Mascot, or Combined Mark to link to Wick Editor</li>
+                                <li className="list-item good-list-item">Use the Logo, Mascot, or Combined Mark to show that your project was made in Wick Editor</li>
+                                <li className="list-item good-list-item">Use the Logo, Mascot, or Combined Mark in a blog post or news article about Wick Editor</li>
                             </ul>
                         </div>
                         <div className="logo-list logo-donts">
-                            <h3>Don't do these things:</h3>
+                            <h3>Please don't do these things:</h3>
                             <ul>
-                                <li className="bad-list-item">Use the Logo, Mascot, or Logo Mark as your application's icon</li>
-                                <li className="bad-list-item">Create a modified version of the Logo, Mascot, or Logo Mark</li>
-                                <li className="bad-list-item">Integrate the Logo, Mascot, or Logo Mark into your logo</li>
-                                <li className="bad-list-item">Use the Logo, Mascot, or Logo Mark without permission</li>
-                                <li className="bad-list-item">Sell the Logo, Mascot, or Logo Mark without permission</li>
-                                <li className="bad-list-item">Change the colors, dimensions or add your own text/images</li>
+                                <li className="list-item bad-list-item">Use the Logo, Mascot, or Combined Mark as your application's icon</li>
+                                <li className="list-item bad-list-item">Create a modified version of the Logo, Mascot, or Combined Mark</li>
+                                <li className="list-item bad-list-item">Integrate the Logo, Mascot, or Combined Mark into your logo</li>
+                                <li className="list-item bad-list-item">Use the Logo, Mascot, or Combined Mark without permission</li>
+                                <li className="list-item bad-list-item">Sell the Logo, Mascot, or Combined Mark without permission</li>
+                                <li className="list-item bad-list-item">Change the colors, dimensions or add your own text/images</li>
                             </ul>
                         </div>
                     </div>
@@ -47,7 +49,7 @@ class LogoPage extends React.Component {
                             <h3>Contact us if:</h3>
                             <ul>
                                 <li>You want to use these images in a video, or mainstream media piece.</li>
-                                <li>You're unsure if your use of the Logo, Mascot or Logo Mark is acceptable</li>
+                                <li>You're unsure if your use of the Logo, Mascot or Combined Mark is acceptable</li>
                             </ul>
                         </div>
                         <div className="logo-list logo-contact">

@@ -10,14 +10,21 @@
     margin-bottom: 20px; 
 }
 
+.list-item {
+    margin-bottom: 8px;
+}
+
+.list-item::before {
+    margin-left: -35px;
+    margin-right: 10px;
+}
+
 .good-list-item {
     list-style: none;
 }
 
 .good-list-item::before {
     content: '✔️';
-    margin-left: -35px;
-    margin-right: 10px;
 }
 
 .bad-list-item {
@@ -26,6 +33,64 @@
 
 .bad-list-item::before {
     content: '❌';
-    margin-left: -35px;
-    margin-right: 10px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px; 
+    margin-bottom: 3em; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.logo-download-image-container {
+    height: 220px;
+    width: 100%;
+}
+
+.logo-download-button {
+    width: 320px;
+    height: 260px;
+    border-radius: 4px;
+    border: 1px solid #bababa;
+}
+
+.logo-download-interactor {
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid #bababa;
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.logo-download-interactor:hover {
+    cursor: pointer;
+    background-color: #1ee29a;
+    color: #191919;
+}
+
+.logo-download-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 218px;
+}
+
+.logo-image {
+    object-fit: contain;
+    height: 80%; 
+    width: 80%;
+}
+
+.logo-page-subtitle {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 3em;
 }
