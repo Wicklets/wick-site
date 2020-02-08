@@ -29,7 +29,6 @@ import img_makingInteractiveButtons from '../Images/Tutorials/makingInteractiveB
 import img_addingSoundsToAnimation from '../Images/Tutorials/addingSoundsToAnimation_site.png';
 import img_addingSoundsWithCode from '../Images/Tutorials/addingSoundsWithCode_site.png';
 import img_controllingTheCanvas from '../Images/Tutorials/controllingTheCanvas_site.png';
-import img_changingProjectSettings from '../Images/Tutorials/changingProjectSettings_site.png';
 import img_mouseEvents from '../Images/Tutorials/mouseEvents_site.png';
 import img_whatsATween from '../Images/Tutorials/whatsATween_site.png';
 import img_usingImagesInProjects from '../Images/Tutorials/usingImagesInProjects_site.png';
@@ -44,6 +43,8 @@ import img_lockUp from '../Images/Community/lockUpDungeon.png';
 import img_clickMeIfYouCan from '../Images/Community/clickMeIfYouCan.png';
 import img_happyApples from '../Images/Community/happyApples.png';
 import img_bunnyTunnels from '../Images/Community/bunnyTunnels.png';
+import img_hermanos from '../Images/Community/hermanos.png';
+import img_theInspirator from '../Images/Community/theInspirator.png';
 
 export const examples = [
     {
@@ -351,6 +352,13 @@ export const communityProjects = [
         src: "https://itch.io/embed-upload/1586282?color=333333", 
     },
     {
+        author: "Xavier Apostol",
+        projectName: "Hermanos",
+        projectImage: img_hermanos,
+        description: "Two brothers, Raul and Chico, mourn among the stars.",
+        src: "https://itch.io/embed-upload/1864672?color=333333", 
+    },
+    {
         author: "Lucia (9)",
         projectName: "Bunny Tunnels",
         projectImage: img_bunnyTunnels,
@@ -364,6 +372,13 @@ export const communityProjects = [
         description: "What's that? It's two happy apples!",
         src: "https://itch.io/embed-upload/1590280?color=333333", 
     },
+    {
+        author: "Luca Damasco",
+        projectName: "The Inspirator",
+        projectImage: img_theInspirator,
+        description: "Time to get inspired!",
+        src: "https://itch.io/embed-upload/1949334?color=333333", 
+    }, 
 ];
 
 
