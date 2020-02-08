@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "4d69136fbfdeb4dca6f1",
-    "url": "/static/css/main.0bbcad0a.chunk.css"
+    "revision": "f3094c5b9b3fecaeb87b208e42fecd32",
+    "url": "/static/media/lockUpDungeon.f3094c5b.png"
   },
   {
-    "revision": "4d69136fbfdeb4dca6f1",
-    "url": "/static/js/main.4d69136f.chunk.js"
+    "revision": "07f418e5f4818a5541c7",
+    "url": "/static/css/main.e7b1f151.chunk.css"
   },
   {
-    "revision": "0f49ecc9719fddbb1bfe",
-    "url": "/static/css/1.fa038200.chunk.css"
+    "revision": "50ec19cb2f0b5e5852a7880dac960bff",
+    "url": "/static/media/clouds.50ec19cb.svg"
   },
   {
-    "revision": "0f49ecc9719fddbb1bfe",
-    "url": "/static/js/1.0f49ecc9.chunk.js"
+    "revision": "f20ef4b2bd8d9f825b32",
+    "url": "/static/js/1.f20ef4b2.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -136,8 +136,8 @@ self.__precacheManifest = [
     "url": "/static/media/goodEggs.411ccab4.png"
   },
   {
-    "revision": "f3094c5b9b3fecaeb87b208e42fecd32",
-    "url": "/static/media/lockUpDungeon.f3094c5b.png"
+    "revision": "07f418e5f4818a5541c7",
+    "url": "/static/js/main.07f418e5.chunk.js"
   },
   {
     "revision": "e91264042415bb3d5b43acd52e3d2033",
@@ -150,6 +150,14 @@ self.__precacheManifest = [
   {
     "revision": "31b06456c701f90086cca9e9dec8a696",
     "url": "/static/media/bunnyTunnels.31b06456.png"
+  },
+  {
+    "revision": "463919a592b198f44df5795ba6ecc877",
+    "url": "/static/media/hermanos.463919a5.png"
+  },
+  {
+    "revision": "1550eefa60d74e39da961379fa2cfbb2",
+    "url": "/static/media/theInspirator.1550eefa.png"
   },
   {
     "revision": "ea32e916242cb6c1965e6aac7afc021c",
@@ -260,15 +268,11 @@ self.__precacheManifest = [
     "url": "/static/media/bxa.32e5a1ca.svg"
   },
   {
-    "revision": "50ec19cb2f0b5e5852a7880dac960bff",
-    "url": "/static/media/clouds.50ec19cb.svg"
+    "revision": "f20ef4b2bd8d9f825b32",
+    "url": "/static/css/1.1d9ab91c.chunk.css"
   },
   {
-    "revision": "cf3d3e47f9271df5d217d182edeaf86e",
-    "url": "/static/media/changingProjectSettings_site.cf3d3e47.png"
-  },
-  {
-    "revision": "a939d60486a786a9aa73ea0dd463c628",
+    "revision": "dc3243d58265bd029f18cd410c2c8c12",
     "url": "/index.html"
   }
 ];
