@@ -33,7 +33,7 @@ import img_mouseEvents from '../Images/Tutorials/mouseEvents_site.png';
 import img_whatsATween from '../Images/Tutorials/whatsATween_site.png';
 import img_usingImagesInProjects from '../Images/Tutorials/usingImagesInProjects_site.png';
 import img_advancedToolSettings from '../Images/Tutorials/advancedToolSettings_site.png';
-
+import img_followTheMouse from '../Images/Tutorials/followingTheMouse_site.png';
 
 
 
@@ -263,6 +263,15 @@ export const tutorials = [
         image: img_advancedToolSettings,
         embed: "https://www.youtube.com/embed/7JQlKDADlOs",
         number: "1.0 Tutorial 13"
+    },
+    {
+        title: "Following the Mouse | Editor 1.0",
+        body: "Learn how to create an animated character that follows the mouse!",
+        body_extended: "In this Wick Editor Tutorial, learn how to create an animated character that follows the movements of the mouse!",
+        tags: ["Mouse", "Beginner", "Animation", "Interactive"],
+        image: img_followTheMouse,
+        embed: "https://www.youtube.com/embed/r9j-3Ka09U8",
+        number: "1.0 Tutorial 14"
     },
     {
         title: "Legacy Editor | Getting Started",
