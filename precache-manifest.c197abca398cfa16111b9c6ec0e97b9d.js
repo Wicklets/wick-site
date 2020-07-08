@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "f37e898e3bc245ad5293",
-    "url": "/static/css/main.815b5473.chunk.css"
+    "revision": "8dc82efbb887fa5f420b",
+    "url": "/static/css/main.209136d9.chunk.css"
   },
   {
-    "revision": "f37e898e3bc245ad5293",
-    "url": "/static/js/main.f37e898e.chunk.js"
+    "revision": "8dc82efbb887fa5f420b",
+    "url": "/static/js/main.8dc82efb.chunk.js"
   },
   {
-    "revision": "a2ac04d6fe427f6d3831",
-    "url": "/static/css/1.5f83c58f.chunk.css"
+    "revision": "4de2e9937427c721261a",
+    "url": "/static/css/1.891b7c79.chunk.css"
   },
   {
-    "revision": "a2ac04d6fe427f6d3831",
-    "url": "/static/js/1.a2ac04d6.chunk.js"
+    "revision": "4de2e9937427c721261a",
+    "url": "/static/js/1.4de2e993.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -272,11 +272,15 @@ self.__precacheManifest = [
     "url": "/static/media/bxa.32e5a1ca.svg"
   },
   {
+    "revision": "9af883a9f1e18445778601432871967e",
+    "url": "/static/media/cosa_logo.9af883a9.png"
+  },
+  {
     "revision": "50ec19cb2f0b5e5852a7880dac960bff",
     "url": "/static/media/clouds.50ec19cb.svg"
   },
   {
-    "revision": "a1a862a5d5c59de5fdc4c8d829b04215",
+    "revision": "0f4eba185b0d5a776944de7da9ef2aaa",
     "url": "/index.html"
   }
 ];
