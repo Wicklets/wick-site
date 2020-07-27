@@ -28,10 +28,8 @@ class WickCardContainer extends Component {
 
     onKeyPressed(e) {
         if (this.props.type === "news"){
-            console.log(e.key);
             if (e.key == "Enter"){
-                console.log(this.props.onClick);
-                return this.props.onClick
+                return this.props.onClick()
             }
         }
         else {
