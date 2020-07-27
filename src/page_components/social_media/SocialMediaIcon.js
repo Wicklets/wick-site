@@ -12,10 +12,10 @@ import Img from 'react-image';
 
 import '../../scss_styles/SocialMediaIcon.scss';
 
-const SocialMediaIcon = ({image, highlight, link}) => (
+const SocialMediaIcon = ({image, highlight, link, alt}) => (
     <a className="SocialMediaIcon-container" href={link} target="_blank" rel="noopener noreferrer">
-        <Img src={image} className="SocialMediaIcon-icon" />
-        <Img src={highlight} className="SocialMediaIcon-highlight" />
+        <Img src={image} className="SocialMediaIcon-icon" alt={alt}/>
+        <Img src={highlight} className="SocialMediaIcon-highlight" alt={alt}/>
     </a>
 );
 

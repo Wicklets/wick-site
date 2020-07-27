@@ -54,7 +54,7 @@
 
     &-tagline {
         font: 400 16px 'Nunito', sans-serif;
-        color: #007a4b;
+        color: #004D2F; //#007a4b;
     }
 
     &-taglineSpacer {
@@ -64,8 +64,9 @@
     &-titleRow {
         font: 400 60px 'Nunito', sans-serif;
         line-height: 40px;
-        color: #1EE29A;
+        color: #0A4D32; //#1EE29A;
         padding-bottom: 20px;
+        box-shadow: #1EE29A;
     }
 
     &-subtitleRow {

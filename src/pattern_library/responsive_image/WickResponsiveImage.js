@@ -16,7 +16,7 @@ import '../../scss_styles/WickResponsiveImage.scss';
 const WickResponsiveImage = ({image, ...sizes}) => (
     <Row className="WickResponsiveImage-container Wick-row">
         <Col {...sizes}>
-            <Img src={image} className="WickResponsiveImage-image" />
+            <Img src={image} className="WickResponsiveImage-image" alt="screenshot of wick editor"/>
         </Col>
     </Row>
 );

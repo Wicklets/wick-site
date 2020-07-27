@@ -11,7 +11,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        color: white;
+        color: black; //white;
         font: 600 14px 'Nunito Sans', sans-serif;
         background-color: #1EE29A;
     }
@@ -69,10 +69,13 @@
 
     &-link-item {
         padding: 8px; 
-        color: white;
+        color: black; //white;
     }
 
     &-link {
-        color: white;
+        color: black; //white;
+    }
+    &-link:hover{
+        color: black;
     }
 }

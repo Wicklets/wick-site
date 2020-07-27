@@ -16,12 +16,12 @@ import '../../scss_styles/ContentSection.scss';
 const ContentSection = ({title, text, size, icon, iconOffset, iconMobile, includeUnderline, includePadding, includeTitlePadding, titleWeight, children}) => (
     <Fragment>
         {icon && (
-            <Img src={icon} className={"ContentSection-icon" + (iconOffset ? " ContentSection-icon--iconOffset" : "") + (iconMobile ? " ContentSection-icon--mobile" : "")} />
+            <Img src={icon} alt="" className={"ContentSection-icon" + (iconOffset ? " ContentSection-icon--iconOffset" : "") + (iconMobile ? " ContentSection-icon--mobile" : "")} />
         )}
         {title && (
-            <div className={"ContentSection-title" + (titleWeight ? "--" + titleWeight : "") + (size ? " ContentSection-title--" + size : "")}>
+            <h3 className={"ContentSection-title" + (titleWeight ? "--" + titleWeight : "") + (size ? " ContentSection-title--" + size : "")}>
                 {title}
-            </div>
+            </h3>
         )}
         {includeTitlePadding && (
             <div className="ContentSection-titlePadding" />

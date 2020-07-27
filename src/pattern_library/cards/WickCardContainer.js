@@ -26,6 +26,21 @@ class WickCardContainer extends Component {
         {} :
         this.setState(prevState => ({isModalOpen: !prevState.isModalOpen})));
 
+    onKeyPressed(e) {
+        if (this.props.type === "news"){
+            console.log(e.key);
+            if (e.key == "Enter"){
+                console.log(this.props.onClick);
+                return this.props.onClick
+            }
+        }
+        else {
+            if (!this.props.disabled && e.key == "Enter"){
+                this.setState(prevState => ({isModalOpen: !prevState.isModalOpen}));
+            }
+        }
+    }
+
     render() {
         return (
             <Fragment>
@@ -34,6 +49,7 @@ class WickCardContainer extends Component {
                         {...this.props}
                         {...this.state}
                         onClick={this.props.onClick}
+                        onKeyDown={(e) => this.onKeyPressed(e)}
                     />
                 )}
                 {this.props.type === "example" && (
@@ -41,6 +57,7 @@ class WickCardContainer extends Component {
                         {...this.props}
                         {...this.state}
                         onClick={this.handleClick}
+                        onKeyDown={(e) => this.onKeyPressed(e)}
                     />
                 )}
                 {this.props.type === "tutorial" && (
@@ -48,6 +65,7 @@ class WickCardContainer extends Component {
                         {...this.props}
                         {...this.state}
                         onClick={this.handleClick}
+                        onKeyDown={(e) => this.onKeyPressed(e)}
                     />
                 )}
             </Fragment>

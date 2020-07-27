@@ -16,7 +16,7 @@ import '../../scss_styles/Creator.scss';
 const Creator = ({name, role, img, includeHeadshot}) => (
     <Col xs="4" sm="3" lg="2">
         {includeHeadshot && (
-            <Img src={img} className="Creator-picture" />
+            <Img src={img} className="Creator-picture" alt={name+" photo"}/>
         )}
         <div className="Creator-name">{name}</div>
         <div className="Creator-role">{role}</div>

@@ -3,6 +3,8 @@ $button-width: 225px;
 $image-height: calc(calc(#{$button-width} / 4) * 3);
 
 .community-project-button {
+    background: transparent;
+    border: none;
     height: $button-height;
     width: $button-width;
     border-radius: 4px;
@@ -51,7 +53,9 @@ $image-height: calc(calc(#{$button-width} / 4) * 3);
     height: $image-height;
     width: 100%;
     background-color: black; 
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0; 
     display: flex;
     justify-content: center;
 }

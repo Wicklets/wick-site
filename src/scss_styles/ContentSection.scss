@@ -21,6 +21,9 @@
     }
 
     &-icon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         padding-bottom: 4px;
 
         &--iconOffset {
@@ -47,9 +50,12 @@
     }
 
     &-title {
+        text-align: center !important;
+
         font: 400 30px 'Nunito Sans', sans-serif;
 
         &--semibold {
+            display: inline-block;
             font: 600 30px 'Nunito Sans', sans-serif;
         }
 

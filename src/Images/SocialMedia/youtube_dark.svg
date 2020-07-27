@@ -1,16 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 4</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Hi-Fi-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-Copy-14" transform="translate(-536.000000, -2515.000000)">
-            <g id="Group-9" transform="translate(414.000000, 2515.000000)">
-                <g id="Group-4" transform="translate(122.000000, 0.000000)">
-                    <rect id="Rectangle-Copy-3" stroke="#1BC687" stroke-width="3" x="1.5" y="1.5" width="26" height="26" rx="5"></rect>
-                    <polygon id="Path-39" fill="#1BC687" points="9.99674633 8.41190868 9.99674633 20.7138523 21.5048952 14.5628805"></polygon>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="451" height="451" viewBox="0 0 451 451" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M133 126V325.353L319.486 225.676L133 126Z" fill="#0F573F"/>
+<path d="M105.167 30H345.7C387.192 30 420.867 63.6747 420.867 105.167V345.7C420.867 387.192 387.192 420.867 345.7 420.867H105.167C63.6747 420.867 30 387.192 30 345.7V105.167C30 63.6747 63.6747 30 105.167 30Z" stroke="#0F573F" stroke-width="45.1" stroke-miterlimit="2"/>
 </svg>
