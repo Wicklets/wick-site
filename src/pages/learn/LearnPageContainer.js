@@ -8,16 +8,21 @@
 
 import React, { Component, Fragment } from 'react';
 
-import LearnPage from './LearnPage.js';
-import Header from '../../site_components/header/Header.js';
+import { Container } from 'reactstrap';
+import { Helmet } from 'react-helmet';
 
-import { tutorials } from '../../data/SiteData.js';
-import WickCardModal from '../../pattern_library/cards/WickCardModal.js';
+import Header from '../../site_components/header/Header.js';
+import TabbedInterface from '../../page_components/TabbedInterface/TabbedInterface.js';
+
+import { WickSmallSpacer, WickLargeSpacer } from '../../pattern_library/spacers/WickSpacers.js';
+import ExternalContacts from '../../page_components/external_contact/ExternalContactLinksContainer.js';
+import ExampleCardBlockContainer from '../../page_components/examples/ExampleCardBlockContainer.js';
+import TutorialCardBlockContainer from '../../page_components/tutorials/TutorialCardBlockContainer.js';
+import ReferenceList from '../../page_components/reference/ReferenceList.js';
+
+import './LearnPage.scss';
 
 import ReactGA from 'react-ga'; 
-
-
-const tutorial = tutorials[0];
 
 class LearnPageContainer extends Component {
     constructor(props) {
@@ -31,40 +36,56 @@ class LearnPageContainer extends Component {
         };
     }
 
-    handleClick = () => this.setState(prevState => ({isModalOpen: !prevState.isModalOpen}));
-
-    shouldCollapseCards = () => {
-        var width = window.innerWidth;
-        var shouldCollapseCards = width < 992 // coded to match reactstrap cutoff
-        this.setState({shouldCollapseCards});
+    renderTutorials = () => {
+        return(
+            <Fragment>
+                <p class="subtext">Here are a few tutorials to help you get started with the Wick Editor.</p>
+                <TutorialCardBlockContainer />
+            </Fragment>
+        )
     }
-
-    expandExamples = () => this.setState({areExamplesExpanded: true});
-
-    expandTutorials = () => this.setState({areTutorialsExpanded: true});
-
-    componentDidMount = () => {
-        window.scrollTo({top: 0, left: 0, behvaior: "smooth"})
-        window.addEventListener('resize', this.shouldCollapseCards);
-        this.shouldCollapseCards();
+    renderExamples = () => {
+        return(
+            <Fragment>
+                <p class="subtext">Here are a few examples that you can download and open in the Wick Editor!</p>
+                <ExampleCardBlockContainer />
+            </Fragment>
+        )
     }
-
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.shouldCollapseCards);
+    renderReference = () => {
+        return(
+            <Fragment>
+                <p class="subtext">Here is the reference to programming in the Wick Editor!</p>
+                <ReferenceList />
+            </Fragment>
+        )
     }
 
     render() {
         ReactGA.pageview('/learn');
+
         return (
             <Fragment>
+                <Helmet>
+                <title>The Wick Editor - Learn</title>
+                <meta name="description" content="Here are a few tutorials to help you get started with the Wick Editor." />
+                </Helmet>
+
                 <Header
                     title="get started"
-                    subtitle="Hit the ground running with the basics of wick editor by trying out our starter tutorial."
-                    buttonLabel="Try the Tutorial"
-                    onClick={this.handleClick}
+                    tagline="Hit the ground running with the basics of wick editor by trying out our starter tutorial."
                 />
-                <LearnPage {...this.state} expandExamples={this.expandExamples} expandTutorials={this.expandTutorials} />
-                <WickCardModal cardData={tutorial} onClick={this.handleClick} isModalOpen={this.state.isModalOpen} />
+                <Container className="fadeIn animated">
+                    <TabbedInterface class="tab-interface"
+                        tabNames={["Tutorials", "Examples", "Reference"]}>
+                        {this.renderTutorials()}
+                        {this.renderExamples()}
+                        {this.renderReference()}
+                    </TabbedInterface>
+                    <WickLargeSpacer />
+                    <ExternalContacts />
+                    <WickSmallSpacer />
+                </Container>
             </Fragment>
         );
     }

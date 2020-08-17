@@ -8,7 +8,7 @@
 
 #Footer {
     &-container {
-        display: flex;
+        //display: flex;
         justify-content: center;
         position: relative;
         color: black; //white;
@@ -17,16 +17,17 @@
     }
 
     &-copyright {
-        display: inline-block;
-        position: absolute;
-        right: 0;
+        display: block;
+        //position: absolute;
+        //right: 0;
+        margin: 0 auto;
         padding-right: 24px;
+        padding-bottom: 1em;
     }
 
-    &-content,
-    &-copyright {
-        padding-top: 24px;
-        padding-bottom: 24px;
+    &-content {
+        padding: 0;
+        height: 1em;
     }
 
     &-notices {
