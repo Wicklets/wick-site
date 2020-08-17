@@ -86,12 +86,11 @@
         margin-bottom: 1.5em;
     }
 
-    &-code {
-        width: 100%;
-        height: 80px;
-        background-color: black;
-        margin-bottom: 1.5em;
-    }
+    // &-code {
+    //     width: 100%;
+    //     height: 80px;
+    //     margin-bottom: 1.5em;
+    // }
 
     &-syntax {
         font-size: 14px;
@@ -186,4 +185,22 @@
         font-weight: 800;
         margin-bottom: 0.1em;
     }
+}
+
+.ReactCodeMirror {
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+.CodeMirror {
+    height: 80px !important;
+    text-align: left;
+}
+.cm-keyword {
+    color: #FC92B9 !important;
+}
+.cm-def {
+    color: #FD9D30 !important;
+}
+.cm-atom {
+    color: #C3A3FF !important;
 }

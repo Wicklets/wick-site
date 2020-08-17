@@ -9,12 +9,17 @@
 import React from 'react';
 import ResponsiveEmbed from 'react-responsive-embed';
 
-import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody} from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 import { saveAs } from 'file-saver';
-import WickButton from '../../pattern_library/button/WickButton';
 
 import './WickReferenceModal.scss';
+
+// code snippet
+var CodeMirror = require('react-codemirror');
+require('codemirror/mode/javascript/javascript.js');
+require('codemirror/lib/codemirror.css');
+require('codemirror/theme/monokai.css');
 
 let downloadLink = (link, fileName) => {
     let url = process.env.PUBLIC_URL + link;
@@ -43,11 +48,16 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
 
     let descriptionText = "";
 
+    let code = "this.x = mouseX;\nthis.y = mouseY;"
+    let updateCode = (newCode) => {
+        code = newCode;
+    }
+
     let syntaxDislay = [];
     let syntaxText = "";
 
     let parameterDisplay = [];
-
+    
     if (referenceData && JSON.stringify(referenceData) !== '{}'){
         console.log(referenceData)
         numberText = referenceData.group + " Reference Item";
@@ -114,7 +124,7 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
                         <h3 class="WickReferenceModal-subheader">Description</h3>
                         <p class="WickReferenceModal-description">{descriptionText}</p>
                         <h3 class="WickReferenceModal-subheader">Code Snippet</h3>
-                        <div class="WickReferenceModal-code">code snippet placeholder</div>
+                        <CodeMirror class="WickReferenceModal-code" value={code} onChange={updateCode} options={{mode:"javascript", lineNumbers: true, readOnly: true, theme: "monokai"}}/>
                         <div>{syntaxDislay}</div>
                         <div class="WickReferenceModal-parameters">{parameterDisplay}</div>
                     </Col>

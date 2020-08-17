@@ -37,8 +37,9 @@ class TabbedInterface extends Component {
         super(props);
 
         this.state = {
-          selectedTab: this.props.tabNames[0],
+          selectedTab: this.props.currentTab,
         }
+        console.log(this.state.selectedTab);
     }
 
     // Selects the tab of the given name.

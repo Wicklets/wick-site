@@ -7,6 +7,7 @@
 */
 
 import React, { Component, Fragment } from 'react';
+import {withRouter} from 'react-router-dom';
 
 import { Container } from 'reactstrap';
 import { Helmet } from 'react-helmet';
@@ -24,11 +25,21 @@ import './LearnPage.scss';
 
 import ReactGA from 'react-ga'; 
 
+
+
 class LearnPageContainer extends Component {
     constructor(props) {
         super(props);
 
+        let location = this.props.location.pathname;
+        let currentPageRoute = "tutorials";
+        if (location.toString().replace('/learn','')){
+            let trimmedLocation = location.toString().replace('/learn','');
+            currentPageRoute = trimmedLocation.slice(1, trimmedLocation.length);
+        }
+
         this.state = {
+            currentPage: currentPageRoute,
             areExamplesExpanded: false,
             areTutorialsExpanded: false,
             shouldCollapseCards: false,
@@ -37,6 +48,7 @@ class LearnPageContainer extends Component {
     }
 
     renderTutorials = () => {
+        this.state.currentPage = "tutorials";
         return(
             <Fragment>
                 <p class="subtext">Here are a few tutorials to help you get started with the Wick Editor.</p>
@@ -45,6 +57,7 @@ class LearnPageContainer extends Component {
         )
     }
     renderExamples = () => {
+        this.state.currentPage = "examples";
         return(
             <Fragment>
                 <p class="subtext">Here are a few examples that you can download and open in the Wick Editor!</p>
@@ -53,6 +66,7 @@ class LearnPageContainer extends Component {
         )
     }
     renderReference = () => {
+        this.state.currentPage = "reference";
         return(
             <Fragment>
                 <p class="subtext">Here is the reference to programming in the Wick Editor!</p>
@@ -77,7 +91,8 @@ class LearnPageContainer extends Component {
                 />
                 <Container className="fadeIn animated">
                     <TabbedInterface class="tab-interface"
-                        tabNames={["Tutorials", "Examples", "Reference"]}>
+                        tabNames={["Tutorials", "Examples", "Reference"]} 
+                        currentTab={this.state.currentPage.charAt(0).toUpperCase() + this.state.currentPage.slice(1)}>          
                         {this.renderTutorials()}
                         {this.renderExamples()}
                         {this.renderReference()}
@@ -91,4 +106,4 @@ class LearnPageContainer extends Component {
     }
 };
 
-export default LearnPageContainer;
+export default withRouter(LearnPageContainer);
