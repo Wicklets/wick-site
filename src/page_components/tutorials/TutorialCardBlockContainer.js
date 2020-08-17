@@ -58,6 +58,7 @@ class TutorialCardBlockContainer extends Component {
                 this.state.toggledTags = this.state.toggledTags.filter(toggledTag => toggledTag !==e.target.innerHTML);
             //});
         }
+        this.state.toggledTags = this.state.toggledTags.filter(tag => !tag.includes("<"));
         console.log(this.state.toggledTags);
         this.forceUpdate();
     }

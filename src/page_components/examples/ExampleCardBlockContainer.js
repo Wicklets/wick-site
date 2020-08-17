@@ -51,6 +51,7 @@ class ExampleCardBlockContainer extends Component {
         else if (e.target.outerHTML.includes("toggle-button-on")){
             this.state.toggledTags = this.state.toggledTags.filter(toggledTag => toggledTag !==e.target.innerHTML);
         }
+        this.state.toggledTags = this.state.toggledTags.filter(tag => !tag.includes("<"));
         console.log(this.state.toggledTags);
         this.forceUpdate();
     }
