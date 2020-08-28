@@ -42,16 +42,17 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
     let numberText = "";
     let titleText = "";
 
+    let fileName = "";
     let embed = null;
     let download = null;
     let openLink = null;
 
     let descriptionText = "";
 
-    let code = "this.x = mouseX;\nthis.y = mouseY;"
-    let updateCode = (newCode) => {
-        code = newCode;
-    }
+    let code = ""
+    // let updateCode = (newCode) => {
+    //     code = newCode;
+    // }
 
     let syntaxDislay = [];
     let syntaxText = "";
@@ -61,13 +62,22 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
     if (referenceData && JSON.stringify(referenceData) !== '{}'){
         console.log(referenceData)
         numberText = referenceData.group + " Reference Item";
-        titleText = referenceData.name;
+        titleText = ("deprecated" in referenceData) ? referenceData.name + " [deprecated]" : referenceData.name;
 
-        embed = "/examples/followMouse/index.html";
-        download = "/examples/followmouse.wick";
-        openLink = "https://editor.wickeditor.com/?project=wickeditor.com/examples/followmouse.wick";
+        if (referenceData.group === "Script"){
+            fileName = referenceData.name.replace(/[()]/g, '').replace(/\s+/g, '') + "-script";
+        }
+        else {
+            fileName = referenceData.name.replace(/[()]/g, '').replace(/\s+/g, '');
+        }
+        embed = "/examples/reference-"+fileName+".html";
+        download = "/examples/reference-"+fileName+".wick";
+        openLink = "https://editor.wickeditor.com/?project=wickeditor.com/examples/"+fileName+".wick";
 
         descriptionText = referenceData.type + ". " + referenceData.description;
+
+        code = referenceData.snippet;
+
         syntaxText = referenceData.syntax;
 
         if (syntaxText){
@@ -80,7 +90,7 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
             let typeText = "{";
             // go through each type for each parameter
             for (let j=0; j<referenceData.parameters[i].type.length; j++){
-                if (j == referenceData.parameters[i].type.length-1){
+                if (j === referenceData.parameters[i].type.length-1){
                     typeText += referenceData.parameters[i].type[j].name + "}";
                 }
                 else{
@@ -113,7 +123,7 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
                 <Row>
                     <Col>
                         <div className="WickReferenceModal-embed">
-                            <ResponsiveEmbed tabindex="0" src={embed} ratio="16:9" />
+                            <ResponsiveEmbed tabindex="0" src={embed} ratio="3:2" />
                         </div>
                         <button onClick={() => {downloadLink(download, referenceData.exampleName + '.wick')}}
                         class = "WickReferenceModal-button WickReferenceModal-download">Download Example</button>
@@ -121,10 +131,12 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
                         class = "WickReferenceModal-button WickReferenceModal-open">Open in Editor</button>
                     </Col>
                     <Col>
+                        {(referenceData && JSON.stringify(referenceData) !== '{}' && "deprecated" in referenceData) 
+                        && <p class="WickReferenceModal-note">{referenceData.deprecated}</p>}
                         <h3 class="WickReferenceModal-subheader">Description</h3>
                         <p class="WickReferenceModal-description">{descriptionText}</p>
                         <h3 class="WickReferenceModal-subheader">Code Snippet</h3>
-                        <CodeMirror class="WickReferenceModal-code" value={code} onChange={updateCode} options={{mode:"javascript", lineNumbers: true, readOnly: true, theme: "monokai"}}/>
+                        <CodeMirror class="WickReferenceModal-code" value={code} options={{mode:"javascript", lineNumbers: true, readOnly: true, theme: "monokai", lineWrapping: true, scrollbarStyle: "null"}}/>
                         <div>{syntaxDislay}</div>
                         <div class="WickReferenceModal-parameters">{parameterDisplay}</div>
                     </Col>

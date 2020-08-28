@@ -33,7 +33,7 @@ class LearnPageContainer extends Component {
 
         let location = this.props.location.pathname;
         let currentPageRoute = "tutorials";
-        if (location.toString().replace('/learn','')){
+        if (location.toString().replace('/learn','') && location.toString().replace('/learn','') !='/'){
             let trimmedLocation = location.toString().replace('/learn','');
             currentPageRoute = trimmedLocation.slice(1, trimmedLocation.length);
         }
