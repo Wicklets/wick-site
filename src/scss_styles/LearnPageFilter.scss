@@ -1,0 +1,98 @@
+.wick-filter {
+    width: 50%;
+    margin-bottom: 1em;
+    padding: 3px;
+    font-size: 16px;
+    border: 2px solid #106546;
+    border-radius: 5px;
+}
+
+.tags-group {
+    width: 60%;
+    margin: auto;
+    button {
+        cursor: pointer;
+    }
+}
+
+.guide-text{
+    margin-top: 10%;
+    width: 50%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// Reference Page
+.reference-groups-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    margin: 0 auto 2em auto;
+}
+
+.reference-groups-list-item{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+.reference-groups-list-item a{
+    font: 600 16px 'Nunito';
+    color: #0B5B3E;
+}
+
+// .content-display-container {
+//     margin: auto !important;
+//     width: 60%;
+// }
+
+.content-display-container {
+    .container {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .row {
+        margin: 0 -20% 0 0;
+    }
+}
+
+.reference-list-container {
+    padding: 0;
+    margin-bottom: 1.5em;
+}
+
+.referece-list-title{
+    font: 800 24px 'Nunito';
+    // margin-top: -56px;
+    // padding-top: 56px;
+}
+
+.reference-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.reference-list-item {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.reference-list-item button{
+    cursor: pointer;
+    font: 400 16px 'Nunito';
+    line-height: 2em;
+    border: none;
+    background: transparent;
+    color: #0B5B3E;
+    padding: 0;
+
+    &:hover, &:focus{
+        text-decoration: underline;
+    }
+}
+.deprecated button{
+    color: #545454;
+}

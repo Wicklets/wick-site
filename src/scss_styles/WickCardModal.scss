@@ -32,11 +32,12 @@
         transform: translateX(-50%);
         font-family: 'Nunito', sans-serif;
         font-weight: 600;
-        color: #1EE29A;
+        opacity: 1;
+        color: #106546; //#1EE29A;
         transition: 0.5s;
 
-        &:hover {
-            color: #1BC687 !important;
+        &:hover, &:focus {
+            color: #0B563B !important; //#1BC687 !important;
         }
     }
 
@@ -92,7 +93,7 @@
     }
 
     &-number {
-        color: #C3C3C3;
+        color: #000000; //#C3C3C3;
         font-size: 14px;
         font-weight: 400;
     }
@@ -102,7 +103,7 @@
         margin: 0 4px 8px;
         border-radius: 3px;
         background-color: #1EE29A;
-        color: white;
+        color: black; //white;
         font-size: 14px;
         font-weight: 400;
     }

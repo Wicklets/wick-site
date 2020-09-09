@@ -1,0 +1,79 @@
+/*
+ * Copyright 2020 WICKLETS LLC
+ *
+ * This file is part of Wick Editor.
+ *
+ * Wick Editor is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Wick Editor is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Wick Editor.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+
+ 
+$header-height: 30px;
+
+// .tabbed-interface {
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .tabbed-interface-body {
+//     width: 100%;
+//     height: calc(100% - #{$header-height});
+// }
+
+// .tabbed-interface-main-tab-container {
+//     height: $header-height; 
+//     min-height: $header-height; 
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: flex-end;
+//     justify-content: left;
+//     overflow: auto; 
+// }
+
+.tabbed-interface-main-tab {
+    font: 400 26px 'Nunito Sans', sans-serif;
+    margin: auto;
+    padding-bottom: 2px;
+    background: none;
+    border: none;
+    margin-left: 5%; 
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid #9C9C9C;
+    color: black;
+    font-size: 26px;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+
+    &:hover, &:focus{
+        border-bottom: 4px solid #484747;
+    }
+
+}
+
+.tabbed-interface-main-tab:first-child {
+    margin-left: 1em; 
+    margin-right: 1em;
+}
+
+.tabbed-interface-main-tab.selected {
+    transition: .4s;
+    border-bottom: 4px solid #1ee49a; 
+    color: black; 
+
+    &:hover, &:focus{
+        border-bottom: 4px solid #01C094;
+    }
+}

@@ -20,12 +20,14 @@ class ExternalContactLinksContainer extends Component {
         this.state = {
             forum: {
                 image: messages,
+                alt: "Discussion Forum",
                 title: "Community Forum",
                 text: "Check out the Forum here!",
                 link: "https://forum.wickeditor.com/"
             },
             email: {
                 image: email,
+                alt: "Email Us",
                 title: "Contact Us",
                 text: "Have a specific question or suggestion? Email us!",
                 link: "mailto:contact@wickeditor.com"

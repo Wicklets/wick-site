@@ -23,6 +23,7 @@
     }
 
     &-button {
+        color: black;
         background-color: #1EE29A;
         border: none;
         box-shadow: 2px 3px #B4ECE6;
@@ -30,12 +31,14 @@
 
         &:hover,
         &:focus {
+            color: black;
             background-color: #1EE29A;
             transform: translateX(-3px) translateY(-2px);
             box-shadow: 5px 5px #1BC687;
         }
 
         &:active {
+            color: black;
             background-color: #1EE29A !important;
             transform: translateX(3px) translateY(2px);
             transition: 0.25s;
@@ -43,6 +46,7 @@
 
         &:active,
         &:active:focus {
+            color: black !important;
             box-shadow: none !important;
         }
     }

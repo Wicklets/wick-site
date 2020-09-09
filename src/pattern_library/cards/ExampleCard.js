@@ -17,19 +17,20 @@ import WickCardModal from './WickCardModal.js';
 
 import '../../scss_styles/ExampleCard.scss';
 
-const ExampleCard = ({cardData, disabled, onClick, isModalOpen}) => (
+const ExampleCard = ({cardData, disabled, onClick, onKeyDown, isModalOpen}) => (
     <Fragment>
-        <Card
+        <Card role="button" tabindex="0" aria-pressed={isModalOpen}
             className={(disabled ? "ExampleCard-container--disabled" : "ExampleCard-container")}
             onClick={onClick}
+            onKeyDown={onKeyDown}
         >
-          <CardImg top width="100%" src={cardData.image} alt="Card image cap" />
-          <CardBody className="TutorialCard-content">
-              <CardTitle className="TutorialCard-title">{cardData.title}</CardTitle>
-              <CardText className="TutorialCard-text">{cardData.body}</CardText>
-              <div className="TutorialCard-arrowSpacer" />
-              <Img className={"TutorialCard-arrow" + (disabled ? " TutorialCard-arrow--disabled" : "")} src={arrow} />
-          </CardBody>
+            <CardImg top width="100%" src={cardData.image} alt={cardData.title+" Example Screenshot"} />
+            <CardBody className="TutorialCard-content">
+                <CardTitle className="TutorialCard-title">{cardData.title}</CardTitle>
+                <CardText className="TutorialCard-text">{cardData.body}</CardText>
+                <div className="TutorialCard-arrowSpacer" />
+                <Img className={"TutorialCard-arrow" + (disabled ? " TutorialCard-arrow--disabled" : "")} src={arrow} alt="arrow icon"/>
+            </CardBody>
         </Card>
         <WickCardModal
         cardType="example"

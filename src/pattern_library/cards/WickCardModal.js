@@ -37,6 +37,8 @@ const WickCardModal = ({cardData, onClick, isModalOpen, cardType}) => {
 
     return (
     <Modal
+        role="dialog"
+        aria-modal="true"
         className="WickCardModal-container"
         isOpen={isModalOpen}
         toggle={onClick}
@@ -50,7 +52,7 @@ const WickCardModal = ({cardData, onClick, isModalOpen, cardType}) => {
         </ModalHeader>
         <ModalBody className="WickCardModal-body">
             <div className="WickCardModal-embed">
-                <ResponsiveEmbed src={embed} ratio="16:9" />
+                <ResponsiveEmbed tabindex="0" src={embed} ratio="16:9" />
             </div>
         </ModalBody>
         <ModalFooter className="WickCardModal-footer">

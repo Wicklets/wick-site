@@ -12,7 +12,7 @@
         color: #3E3E3E !important;
 
         &--brand {
-            color: #019875 !important;
+            color: #015642 !important; //#019875 !important;
         }
     }
 
@@ -43,11 +43,11 @@
     &-brand--wide,
     &-brand--narrow {
         font: 600 22px 'Nunito', sans-serif;
-        color: #019875 !important;
+        color: #015642 !important; //#019875 !important;
         transition: color 0.5s;
 
         &:hover {
-            color: #01C094 !important;
+            color: #014B3A !important; //#01C094 !important;
         }
     }
 
@@ -79,7 +79,7 @@
         margin: 0 16px;
         padding: 10px 8px 6px;
         font: 400 16px 'Nunito Sans', sans-serif;
-        color: #007a7c !important;
+        color: #005557 !important; //#007a7c !important;
         transition: color 0.5s;
 
         @media screen and (max-width: 767px) {
@@ -88,7 +88,7 @@
         }
 
         &:hover {
-            color: #3D9B91 !important;
+            color: #004A4D !important; //#3D9B91 !important;
         }
     }
 

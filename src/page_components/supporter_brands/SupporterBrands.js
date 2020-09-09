@@ -24,18 +24,18 @@ const SupporterBrands = () => (
     <Row className="Wick-row">
         <Col xs="10" md="8" lg="6" xl="5">
             <div className="SupporterBrands-row">
-                <Img className="supporter-brand large" src={mozilla} />
-                <Img className="supporter-brand large" src={studio} />
+                <Img className="supporter-brand large" src={mozilla} alt="Mozilla Logo" />
+                <Img className="supporter-brand large" src={studio} alt="Frank-Ratchye Studio for Creative Inquiry Logo"/>
             </div>
             <div className="SupporterBrands-spacer" />
             <div className="SupporterBrands-row">
-                <Img className="supporter-brand medium" src={cosa} />
+                <Img className="supporter-brand medium" src={cosa} alt="Clinic for Open Source Art Logo" />
             </div>
             <div className="SupporterBrands-spacer" />
             <div className="SupporterBrands-row">
-                <Img className="supporter-brand small" src={henryarmero} />
-                <Img className="supporter-brand small" src={olympus} />
-                <Img className="supporter-brand small" src={bxa} />
+                <Img className="supporter-brand small" src={henryarmero} alt="Henry Armero Award Logo"/>
+                <Img className="supporter-brand small" src={olympus} alt="Oluympus Logo"/>
+                <Img className="supporter-brand small" src={bxa} alt="BXA Logo"/>
             </div>
         </Col>
     </Row>

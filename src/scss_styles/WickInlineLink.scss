@@ -8,13 +8,13 @@
 
 .WickInlineLink {
     &-container {
-        color: #1EE29A;
+        color: #0B5B3E; //#1EE29A;
         font-weight: 600;
         transition: color 0.5s;
 
         &:hover {
-            color: #1BC687;
-            text-decoration: none;
+            color: #094931; //#1BC687;
+            //text-decoration: none;
         }
     }
 }

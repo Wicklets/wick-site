@@ -13,13 +13,13 @@ import arrow from '../../Images/Tutorials/arrow.svg';
 
 import '../../scss_styles/ContentLink.scss';
 
-const ContentLink = ({image, title, text, onClick}) => (
-    <div className="ContentLink-container" onClick={onClick}>
-        <Img className="ContentLink-image" src={image} alt="Content Link Image" />
+const ContentLink = ({image, alt, title, text, onClick}) => (
+    <button className="ContentLink-container" onClick={onClick}>
+        <Img className="ContentLink-image" src={image} alt={alt} />
         <div className="ContentLink-title">{title}</div>
         <div className="ContentLink-text">{text}</div>
-        <Img className="ContentLink-arrow" src={arrow} />
-    </div>
+        <Img className="ContentLink-arrow" src={arrow} alt="Arrow Icon"/>
+    </button>
 );
 
 export default ContentLink

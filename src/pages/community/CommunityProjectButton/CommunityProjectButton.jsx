@@ -22,11 +22,11 @@ class CommunityProjectButton extends React.Component {
     render () {
         let project = this.props.project
         return (
-            <div className="community-project-button" onClick={this.toggle}>
+            <button className="community-project-button" onClick={this.toggle}>
                 <div className="project-button-overlay" />
                 <div className="project-preview-image-container">
-                    <img alt="project.projectName" className="project-preview-image-background" src={project.projectImage} />
-                    <img alt="project.projectName" className="project-preview-image-foreground" src={project.projectImage} />
+                    <img alt="" className="project-preview-image-background" src={project.projectImage} />
+                    <img alt={project.projectName +" screenshot"} className="project-preview-image-foreground" src={project.projectImage} />
                 </div>
                 <div className="project-description-container">
                     <div className="project-text project-title">{project.projectName}</div>
@@ -38,7 +38,7 @@ class CommunityProjectButton extends React.Component {
                     project={project}
                     toggle={this.toggle}
                     isModalOpen={this.state.modalOpen} />
-            </div>
+            </button>
         )
     }
 }

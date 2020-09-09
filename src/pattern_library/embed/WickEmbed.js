@@ -17,7 +17,7 @@ const WickEmbed = ({url, ratio}) => (
     <Row className="Wick-row">
         <Col xs="12" md="9" lg="8" xl="7">
             <div className="WickEmbed-container">
-                <ResponsiveEmbed src={url} ratio={ratio} />
+                <ResponsiveEmbed src={url} ratio={ratio}/>
             </div>
         </Col>
     </Row>

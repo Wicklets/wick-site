@@ -37,7 +37,7 @@
         font-family: 'Nunito Sans', sans-serif;
     }
 
-    &-container:hover {
+    &-container:hover, &-container:focus {
         cursor: pointer;
         box-shadow: 5px 5px #1EE29A;
         transform: translateX(-3px) translateY(-2px);

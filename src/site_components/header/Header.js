@@ -25,9 +25,9 @@ const Header = ({title, tagline, subtitle, buttonLabel, buttonSub, onClick}) => 
             </div>
         </div>
         <Container className="fadeIn animated">
-            <div id="Header-titleRow">{title}</div>
+            <h1 id="Header-titleRow">{title}</h1>
             {(tagline ? (
-                <div id="Header-tagline">{tagline}</div>
+                <p id="Header-tagline">{tagline}</p>
             ) : (
                 <div id="Header-taglineSpacer" />
             ))}

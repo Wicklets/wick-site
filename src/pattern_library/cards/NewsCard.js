@@ -15,15 +15,16 @@ import arrow from '../../Images/Tutorials/arrow.svg';
 
 import '../../scss_styles/NewsCard.scss';
 
-const NewsCard = ({cardData, onClick}) => (
-    <Card className="NewsCard-container" onClick={onClick}>
+const NewsCard = ({cardData, onClick, onKeyDown}) => (
+    <Card role="button" tabindex="0"
+    className="NewsCard-container" onClick={onClick} onKeyDown={onKeyDown}>
         <CardBody>
             <CardTitle className="NewsCard-title">{cardData.title}</CardTitle>
             <CardText className="NewsCard-text">{cardData.text}</CardText>
         </CardBody>
         <CardFooter className="NewsCard-footer">
             <CardText className="NewsCard-date">{cardData.date}</CardText>
-            <Img className="NewsCard-arrow" src={arrow} />
+            <Img className="NewsCard-arrow" src={arrow} alt="Arrow Icon"/>
         </CardFooter>
     </Card>
 );

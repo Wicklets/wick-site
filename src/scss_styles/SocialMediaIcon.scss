@@ -16,6 +16,8 @@
     &-icon {
         -webkit-transition: opacity 0.5s;
         transition: opacity 0.5s;
+        max-width: 30px;
+        max-height: 30px;
     }
 
     &-highlight {

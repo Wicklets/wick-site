@@ -1,0 +1,25 @@
+.tag-button {
+    margin: 3px;
+    border-radius: 3px;
+}
+.toggle-button-off{
+    color: white;
+    background-color: #4F4F4F;
+    border: none;
+    transition: 0.2s;
+
+    &:hover, &:focus {
+        background-color: #3B3B3B;
+    }
+}
+
+.toggle-button-on{
+    color: black;
+    background-color: #1EE49A;
+    border: none;
+    transition: 0.2s;
+
+    &:hover, &:focus {
+        background-color: #01C094;
+    }
+}
