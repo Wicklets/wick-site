@@ -28,12 +28,12 @@ const SupportWick = () => (
         </Col>
         <Col className="SupportWick-button" sm="9" md="4" lg="3">
             <WickButton
-                text="Subscribe on Youtube"
+                text="Support on Github"
                 size="lg"
                 type="body"
                 block
                 thicc
-                onClick={() => window.open("https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg")}
+                onClick={() => window.open("https://github.com/sponsors/Wicklets")}
             />
         </Col>
     </Row>

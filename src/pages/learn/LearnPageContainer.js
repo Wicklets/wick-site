@@ -33,7 +33,7 @@ class LearnPageContainer extends Component {
 
         let location = this.props.location.pathname;
         let currentPageRoute = "tutorials";
-        if (location.toString().replace('/learn','') && location.toString().replace('/learn','') !='/'){
+        if (location.toString().replace('/learn','') && location.toString().replace('/learn','') !== '/'){
             let trimmedLocation = location.toString().replace('/learn','');
             currentPageRoute = trimmedLocation.slice(1, trimmedLocation.length);
         }
@@ -48,7 +48,6 @@ class LearnPageContainer extends Component {
     }
 
     renderTutorials = () => {
-        this.state.currentPage = "tutorials";
         return(
             <Fragment>
                 <p class="subtext">Here are a few tutorials to help you get started with the Wick Editor.</p>
@@ -57,7 +56,6 @@ class LearnPageContainer extends Component {
         )
     }
     renderExamples = () => {
-        this.state.currentPage = "examples";
         return(
             <Fragment>
                 <p class="subtext">Here are a few examples that you can download and open in the Wick Editor!</p>
@@ -66,7 +64,6 @@ class LearnPageContainer extends Component {
         )
     }
     renderReference = () => {
-        this.state.currentPage = "reference";
         return(
             <Fragment>
                 <p class="subtext">Here is the reference to programming in the Wick Editor!</p>
