@@ -58,7 +58,7 @@ class LearnPageContainer extends Component {
     renderExamples = () => {
         return(
             <Fragment>
-                <p class="subtext">Here are a few examples that you can download and open in the Wick Editor!</p>
+                <p class="subtext">Here are some examples that you can download and open in the Wick Editor!</p>
                 <ExampleCardBlockContainer />
             </Fragment>
         )

@@ -48,6 +48,8 @@ class HomePageContainer extends Component {
                         title={title}
                         tagline={tagline}
                         subtitle={subtitle}
+                        buttonLabel="Launch Editor"
+                        onClick={() => window.open("https://editor.wickeditor.com")}
                     />
                 ) : (
                     <Header

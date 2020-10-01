@@ -135,11 +135,18 @@
         padding: 0;
     }
 
+    &-embed {
+        max-height: 400px; 
+        max-width: 400px;
+        margin: 0 auto; 
+    }
+
     &-embed div {
         border-radius: 3px;
         box-shadow: 2px 3px #B4ECE6;
         margin-bottom: 1em;
-        width: 100%;
+        // width: 100%;
+
     }
 
     &-infoContainer {

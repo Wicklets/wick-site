@@ -72,7 +72,7 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
         }
         embed = "/examples/reference-"+fileName+".html";
         download = "/examples/reference-"+fileName+".wick";
-        openLink = "https://editor.wickeditor.com/?project=wickeditor.com/examples/"+fileName+".wick";
+        openLink = `https://editor.wickeditor.com/?example=reference-${fileName}.wick`;
 
         descriptionText = referenceData.type + ". " + referenceData.description;
 
@@ -103,6 +103,9 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
             }
         }
     }
+
+    referenceData = referenceData || {};
+    
     return (
     <Modal
         role="dialog"
@@ -131,14 +134,26 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
                         class = "WickReferenceModal-button WickReferenceModal-open">Open in Editor</button>
                     </Col>
                     <Col>
-                        {(referenceData && JSON.stringify(referenceData) !== '{}' && "deprecated" in referenceData) 
-                        && <p class="WickReferenceModal-note">{referenceData.deprecated}</p>}
                         <h3 class="WickReferenceModal-subheader">Description</h3>
-                        <p class="WickReferenceModal-description">{descriptionText}</p>
-                        <h3 class="WickReferenceModal-subheader">Code Snippet</h3>
-                        <CodeMirror class="WickReferenceModal-code" value={code} options={{mode:"javascript", lineNumbers: true, readOnly: true, theme: "monokai", lineWrapping: true, scrollbarStyle: "null"}}/>
+                        <p class="WickReferenceModal-description">
+                            <i>{`${referenceData.type}: `}</i>
+                            
+                            {referenceData.description}
+                            
+                        </p>
+
                         <div>{syntaxDislay}</div>
                         <div class="WickReferenceModal-parameters">{parameterDisplay}</div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        {(referenceData && JSON.stringify(referenceData) !== '{}' && "deprecated" in referenceData) 
+                        && <p class="WickReferenceModal-note">{referenceData.deprecated}</p>}
+
+                        <h3 class="WickReferenceModal-subheader">Code Snippet</h3>
+                        <CodeMirror class="WickReferenceModal-code" value={code} options={{mode:"javascript", lineNumbers: true, readOnly: true, theme: "monokai", lineWrapping: true, scrollbarStyle: "null"}}/>
+
                     </Col>
                 </Row>
             </Container>
