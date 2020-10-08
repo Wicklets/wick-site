@@ -1,0 +1,264 @@
+@import '../../data/SiteData.scss';
+
+// unused
+// .ghost-image {
+//     z-index: 999;
+//     position: fixed;
+//     right: 30px;
+//     top: 14%;
+//     transform: rotate(20deg);
+// }
+
+// unused
+// .support-us-panel {
+//     z-index: 1000;
+//     position: fixed;
+//     right: 0;
+//     top: 20%;
+//     max-width: 30%;
+//     border-radius: 5px 0 0 5px;
+//     font-family: 'Nunito';
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//     background-color: white;
+// }
+
+.support-us-button {
+    position: fixed;
+    right: 1em;
+    bottom: 10%;
+    border: none;
+    background-color: #E85B46;
+    color: white;
+    font-family: "Nunito";
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 25px;
+    z-index: 1000;
+    padding: 10px 10px 10px 15px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+// unused
+// .support-us-text {
+//     display: inline-block;
+//     text-align: left;
+//     float: left;
+//     margin: 0;
+//     padding: 8px 0 8px 10px;
+// }
+
+// unused
+// .support-us-arrow {
+//     display: inline-block;
+//     text-align: right;
+//     float: right;
+//     margin: 0;
+//     padding: 8px 10px 8px 20px;
+// }
+
+// .support-us-content {
+//     width: 100%;
+//     background-color: white;
+//     vertical-align: top;
+//     border-radius: 0 0 0 5px;
+// }
+
+.support-us-title {
+    text-align: left;
+    margin-top: 0.6em;
+    margin-left: 15%;
+    margin-bottom: 0.5em;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.support-us-title-icon {
+    width: 22px;
+    height: auto;
+    margin-right: 5px;
+    order: 1;
+}
+
+.support-us-title-text {
+    margin: 0;
+    order: 2;
+}
+
+.support-us-progress-bar {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+@keyframes patreonAnimation {
+    from {width: 0;}
+    to {width: $patreonProgressWidth;}
+}
+
+#patreon-progress {
+    height: 10px;
+    background-color: #EB7360;
+    display: block;
+    border-radius: 10px 0 0 10px;
+
+    width: $patreonProgressWidth;
+
+    animation-name: patreonAnimation;
+    animation-duration: 1s;
+}
+
+@keyframes githubAnimation {
+    from {width: 0;}
+    to {width: $githubProgressWidth;}
+}
+
+#github-progress {
+    height: 10px;
+    background-color: #EC6CB9;
+    display: block;
+    border-radius: 10px 0 0 10px;
+
+    width: $githubProgressWidth;
+
+    animation-name: githubAnimation;
+    animation-duration: 1s;
+}
+
+.support-us-progress-text {
+    margin: 0.5em auto;
+    display: block;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.support-button-img {
+    width: 22px;
+    height: auto;
+    margin-right: 6px;
+}
+
+.patreon-button {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 800;
+    border: none;
+    background-color: #E85B46;
+    color: white;
+    padding: 0.4em 0.8em;
+    border-radius: 30px;
+    margin: 0 auto 1em auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.github-button {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 800;
+    border-color: #E2E3E3;
+    background-color: white;
+    color: black;
+    padding: 0.4em 0.6em;
+    border-radius: 30px;
+    margin: 0 auto 1em auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+
+// mobile styling
+// .support-us-button-mobile {
+//     position: fixed;
+//     right: 0;
+//     bottom: 10%;
+//     border: none;
+//     background-color: #E85B46;
+//     color: white;
+//     font-family: "Nunito";
+//     font-weight: 800;
+//     font-size: 18px;
+//     border-radius: 5px 0 0 5px;
+//     z-index: 1000;
+//     padding: 5px 5px 5px 10px;
+//     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//     cursor: pointer;
+// }
+
+.support-us-modal-open {
+    font-family: "Nunito";
+    position: relative;
+}
+
+@keyframes flashyAnimation {
+    from {transform: rotate(0deg) scale(0.5);}
+    to {transform: rotate(20deg) scale(1.2)}
+}
+
+#ghost-image-modal {
+    position: absolute;
+    z-index: 999;
+    margin-top: 20%;
+    right: 50%;
+    transform: rotate(20deg) scale(1.2);
+
+    animation-name: flashyAnimation;
+    animation-duration: 1s;
+}
+
+.support-us-modal {
+    background-color: white;
+    min-width: 60%;
+    max-width: 90%;
+    width: max-content;
+    border-radius: 5px;
+    z-index:1000;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 30% auto;
+    font-family: "Nunito";
+}
+
+.support-us-header {
+    display: block;
+    background-color: #E85B46;
+    color: white;
+    height: 2.5em;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 5px 5px 0 0;
+    padding-top: 0.1em;
+}
+
+.support-us-text-modal {
+    display: inline-block;
+    text-align: left;
+    float: left;
+    margin: 0;
+    padding: 8px 0 8px 20px;
+}
+
+.support-us-close {
+    display: inline-block;
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 800;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.support-us-content-modal {
+    clear: both;
+}
+
+.modal-content {
+    border: none;
+}

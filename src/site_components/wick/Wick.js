@@ -11,6 +11,7 @@ import { HashRouter } from 'react-router-dom';
 
 import WickRouterContainer from '../router/WickRouterContainer.js';
 import Footer from '../footer/Footer.js';
+import SupportUs from '../support_us/SupportUs.js';
 
 import ReactGA from 'react-ga';
 
@@ -22,6 +23,7 @@ const Wick = () => {
     return (
         <div className="Wick">
             <div className="Wick-background" />
+            <SupportUs />
             <HashRouter>
                 <WickRouterContainer />
             </HashRouter>
