@@ -468,7 +468,7 @@ export const referenceItems = [
     name: "clones",
     type: "Array",
     description: "An array of every clone of an object.",
-    snippet: "// on move_button object, in Mouseclick script\nfor (let i=0; i<circle.clones.length; i++){\ncircle.clones[i].x += random.integer(-50, 50);\n}",
+    snippet: "// on move_button object, in Mouseclick script\nfor (let i=0; i<circle.clones.length; i++){\n    circle.clones[i].x += random.integer(-50, 50);\n}",
     syntax: "this.clones",
     parameters: [{name:"frame", type: [{name: "number", description: "integer that corresponds to a frame number"}, {name: "string", description: "name of a named frame, in quotes"}]}]
     }, 
@@ -493,7 +493,7 @@ export const referenceItems = [
     //deprecated: "Note: this function is deprecated in Wick Editor 1.18, please use ... instead.",
     type: "Function",
     description: "Determines if the hitboxes of two objects overlap.",
-    snippet: "// on ghost object. in Update script,\nif (this.hitTest(box)) {\nthis.x = random.integer(0, project.width);\n}",
+    snippet: "// on ghost object. in Update script,\nif (this.hitTest(box)) {\n    this.x = random.integer(0, project.width);\n}",
     syntax: "this.hitTest(that)",
     parameters: [{name:"that", type: [{name: "object", description: "the object to be tested against collision"}]}]
     }, 
@@ -502,8 +502,8 @@ export const referenceItems = [
     //deprecated: "Note: this function is deprecated in Wick Editor 1.18, please use ... instead.",
     type: "Statement",
     description: "Runs some custom code when the two objects tested are hitting each other.",
-    snippet: "// on ghost object. in Update script,\nif (this.hitTest(box)) {\nthis.x = random.integer(0, project.width);\n}",
-    syntax: "if (this.hitTest(that)) {    //Add your code here!}",
+    snippet: "// on ghost object. in Update script,\nif (this.hitTest(box)) {\n    this.x = random.integer(0, project.width);\n}",
+    syntax: "if (this.hitTest(that)) {\n    //Add your code here!}",
     parameters: [{name:"that", type: [{name: "object", description: "the object to be tested against collision"}]}]
     },
 
@@ -559,7 +559,7 @@ export const referenceItems = [
     name: "isMouseDown",
     type: "Function",
     description: "Returns true if the mouse is currently pressed down.",
-    snippet: "// on frame 1, in Update script\nif (isMouseDown()) {\nghost.x += 1;\n}",
+    snippet: "// on frame 1, in Update script\nif (isMouseDown()) {\n    ghost.x += 1;\n}",
     syntax: "isMouseDown()",
     parameters: []
     },
@@ -567,7 +567,7 @@ export const referenceItems = [
     name: "isKeyDown",
     type: "Function",
     description: "Returns true if the given key is currently down.",
-    snippet: '// on frame 1, in Update script\nif (isKeyDown("a")) {\nghost.x += 1;\n}',
+    snippet: '// on frame 1, in Update script\nif (isKeyDown("a")) {\n    ghost.x += 1;\n}',
     syntax: "isKeyDown(keyCode)",
     parameters: [{name:"keyCode", type: [{name: "string", description: "the key to be checked, in quotes"}]}]
     },
@@ -575,7 +575,7 @@ export const referenceItems = [
     name: "isKeyJustPressed",
     type: "Function",
     description: "Returns true if the given key was pressed within the last tick.",
-    snippet: '// on frame 1, in Update script\nif (isKeyJustPressed("a")) {\nghost.x += 10;\n}',
+    snippet: '// on frame 1, in Update script\nif (isKeyJustPressed("a")) {\n    ghost.x += 10;\n}',
     syntax: "isKeyJustPressed(keyCode)",
     parameters: [{name:"keyCode", type: [{name: "string", description: "the key to be checked, in quotes"}]}]
     },
@@ -583,7 +583,7 @@ export const referenceItems = [
     name: "if (key)",
     type: "Statement",
     description: "Runs if the last key pressed is equal to the letter, or symbol, tested in the condition.",
-    snippet: '// on frame 1, in Update script\nif (key === "a") {\nghost.x += 10;\n}',
+    snippet: '// on frame 1, in Update script\nif (key === "a") {\n    ghost.x += 10;\n}',
     syntax: 'if (key === keyCode) {// Add your code here.}',
     parameters: [{name:"keyCode", type: [{name: "string", description: "the key to be checked, in quotes"}]}]
     },
@@ -765,7 +765,7 @@ export const referenceItems = [
     name: "load",
     type: "Event",
     description: "Once, when the frame is entered.",
-    snippet: "// on frame 1, in Default script\nonEvent('load', function () {\n    project.score = 0;});",
+    snippet: "// on frame 1, in Default script\nonEvent('load', function () {\n    project.score = 0;\n});",
     syntax: "onEvent('load', function () {    //Add code here!});",
     parameters: []
     },
@@ -781,7 +781,7 @@ export const referenceItems = [
     name: "update",
     type: "Event",
     description: "Every tick, while the project is playing.",
-    snippet: "// on ghost object, in Load script\nonEvent('update', function () {\nthis.rotation += 10;\n});",
+    snippet: "// on ghost object, in Load script\nonEvent('update', function () {\n     this.rotation += 10;\n});",
     syntax: "onEvent('update', function () {    //Add code here!});",
     parameters: []
     },
