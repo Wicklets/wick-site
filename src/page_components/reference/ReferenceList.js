@@ -44,7 +44,7 @@ class ReferenceList extends Component {
 
     handleClick = (e) => {
         this.setState({
-            referenceData: referenceItems.filter( referenceItem => referenceItem.name == e.target.innerHTML.replace(' [deprecated]', ''))[0],
+            referenceData: referenceItems.filter( referenceItem => referenceItem.name === e.target.innerHTML.replace(' [deprecated]', ''))[0],
             isModalOpen: !this.state.isModalOpen
         })
     } 
@@ -57,17 +57,17 @@ class ReferenceList extends Component {
     render() {
         const referenceGroups = this.groupNames.map(groupName => <li class="reference-groups-list-item"><Link onClick={this.handleAnchor} to={{pathname: "/learn/reference", hash: "#"+groupName.toLowerCase()+'-group'}}>{groupName}</Link></li>);
         let displayItems = [];
-        let listItemsArr = this.groupNames.map(groupName => this.filterReference(referenceItems).filter(referenceItem => referenceItem.group == groupName).map(listItem => <li class={("deprecated" in listItem) ? "reference-list-item deprecated" : "reference-list-item"}><button onClick={this.handleClick}>{("deprecated" in listItem) ? listItem.name + " [deprecated]": listItem.name}</button></li>));
+        let listItemsArr = this.groupNames.map(groupName => this.filterReference(referenceItems).filter(referenceItem => referenceItem.group === groupName).map(listItem => <li class={("deprecated" in listItem) ? "reference-list-item deprecated" : "reference-list-item"}><button onClick={this.handleClick}>{("deprecated" in listItem) ? listItem.name + " [deprecated]": listItem.name}</button></li>));
         
         //let columnDisplay = [2, 4, 2];
 
         for (let i=0; i<this.groupNames.length; i++){
             // every 2 lists belong in a column
-            if (i==0 || i==6){
+            if (i===0 || i===6){
                 displayItems.push(<Col><div class="reference-list-container"><h3 class="reference-list-title" id={this.groupNames[i].toLowerCase()+'-group'}>{this.groupNames[i]}</h3><ul class="reference-list">{listItemsArr[i]}</ul></div>
                 <div class="reference-list-container"><h3 class="reference-list-title" id={this.groupNames[i+1].toLowerCase()+'-group'}>{this.groupNames[i+1]}</h3><ul class="reference-list">{listItemsArr[i+1]}</ul></div></Col>);
             }
-            else if (i==2){
+            else if (i===2){
                 displayItems.push(<Col><div class="reference-list-container"><h3 class="reference-list-title" id={this.groupNames[i].toLowerCase()+'-group'}>{this.groupNames[i]}</h3><ul class="reference-list">{listItemsArr[i]}</ul></div>
                 <div class="reference-list-container"><h3 class="reference-list-title" id={this.groupNames[i+1].toLowerCase()+'-group'}>{this.groupNames[i+1]}</h3><ul class="reference-list">{listItemsArr[i+1]}</ul></div>
                 <div class="reference-list-container"><h3 class="reference-list-title" id={this.groupNames[i+2].toLowerCase()+'-group'}>{this.groupNames[i+2]}</h3><ul class="reference-list">{listItemsArr[i+2]}</ul></div>

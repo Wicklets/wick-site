@@ -28,12 +28,12 @@ class WickCardContainer extends Component {
 
     onKeyPressed(e) {
         if (this.props.type === "news"){
-            if (e.key == "Enter"){
+            if (e.key === "Enter"){
                 return this.props.onClick()
             }
         }
         else {
-            if (!this.props.disabled && e.key == "Enter"){
+            if (!this.props.disabled && e.key === "Enter"){
                 this.setState(prevState => ({isModalOpen: !prevState.isModalOpen}));
             }
         }

@@ -16,7 +16,7 @@ class LogoDownloadButton extends React.Component {
         return (
             <div className="logo-download-button">
                 <div className="logo-download-image-container">
-                    <img className="logo-image" src={this.props.imgSrc} />
+                    <img alt="Wick Editor" className="logo-image" src={this.props.imgSrc} />
                 </div>
                 <div onClick={this.downloadPackage} className="logo-download-interactor">
                     {this.props.text}
