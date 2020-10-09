@@ -48,7 +48,7 @@
         background-color: #1EE29A;
         border: none;
         border-radius: 5px;
-        margin: 0.5em;
+        margin: 0 0.5em 2em 0.5em;
         box-shadow: 2px 3px #B4ECE6;
         transition: 0.5s;
 
@@ -215,7 +215,7 @@
 }
 .CodeMirror {
     width: 100% !important;
-    //height: auto !important;
+    height: auto !important;
     max-height: 8em !important;
     text-align: left;
 
