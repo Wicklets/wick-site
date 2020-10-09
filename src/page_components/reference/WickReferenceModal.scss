@@ -48,7 +48,7 @@
         background-color: #1EE29A;
         border: none;
         border-radius: 5px;
-        margin: 0 0.5em 2em 0.5em;
+        margin: 0 0.5em;
         box-shadow: 2px 3px #B4ECE6;
         transition: 0.5s;
 
@@ -73,6 +73,14 @@
             box-shadow: none !important;
         }
     }
+
+    &-download {
+        margin-bottom: 10px;
+    }
+
+    &-open {
+        margin-bottom: 1em;
+    }
     
     &-container {
         text-align: center;
@@ -83,7 +91,7 @@
         font-size: 16px;
         font-weight: 600;
         text-align: left;
-        margin-bottom: 1.5em;
+        margin: 0;
     }
 
     // &-code {
@@ -92,10 +100,16 @@
     //     margin-bottom: 1.5em;
     // }
 
+    &-syntaxblock {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
     &-syntax {
         font-size: 16px;
         font-weight: 600;
         text-align: left;
+        margin: 0;
     }
 
     &-parameters {
@@ -107,30 +121,22 @@
     }
 
     &-parameter-name {
-        clear: both;
-        display: inline-block;
         text-align: left;
-        float: left;
         margin: 0;
         padding: 0;
-        width: 30%;
+        width: 10%;
     }
 
     &-parameter-type{
-        display: inline-block;
         text-align: left;
-        float: left;
         margin: 0;
         padding: 0;
     }
 
     &-parameter-description {
         font-weight: 600;
-        clear: both;
-        display: block;
         text-align: left;
-        float: right;
-        width: 70%;
+        width: 90%;
         margin: 0;
         padding: 0;
     }
@@ -197,6 +203,14 @@
         font-size: 18px;
         font-weight: 800;
         margin-bottom: 0.1em;
+    }
+
+    &-pararow {
+        margin-bottom: 1.5em;
+    }
+
+    &-coderow {
+        //margin-top: 1.5em;
     }
 }
 

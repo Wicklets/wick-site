@@ -58,6 +58,7 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
     let syntaxText = "";
 
     let parameterDisplay = [];
+    let parameterDisplayStyled = [];
     
     if (referenceData && JSON.stringify(referenceData) !== '{}'){
         console.log(referenceData)
@@ -85,23 +86,28 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
             syntaxDislay.push(<p class="WickReferenceModal-syntax">{syntaxText}</p>);
         }
 
-        for (let i=0; i<referenceData.parameters.length; i++){
+        if (referenceData.parameters.length > 0){
+            parameterDisplay.push(<h3 class="WickReferenceModal-subheader">Parameters</h3>);
+            for (let i=0; i<referenceData.parameters.length; i++){
             
-            let typeText = "{";
-            // go through each type for each parameter
-            for (let j=0; j<referenceData.parameters[i].type.length; j++){
-                if (j === referenceData.parameters[i].type.length-1){
-                    typeText += referenceData.parameters[i].type[j].name + "}";
+                let typeText = "{";
+                // go through each type for each parameter
+                for (let j=0; j<referenceData.parameters[i].type.length; j++){
+                    if (j === referenceData.parameters[i].type.length-1){
+                        typeText += referenceData.parameters[i].type[j].name + "}";
+                    }
+                    else{
+                        typeText += referenceData.parameters[i].type[j].name + " || ";
+                    }
                 }
-                else{
-                    typeText += referenceData.parameters[i].type[j].name + " || ";
+                parameterDisplay.push(<Row><Col xs="4" sm="4" md="2"><p class="WickReferenceModal-parameter-name">{referenceData.parameters[i].name}</p></Col><Col xs="8" sm="8" md="10"><p class="WickReferenceModal-parameter-type">{typeText}</p></Col></Row>);
+                for (let k=0; k<referenceData.parameters[i].type.length; k++){
+                    parameterDisplay.push(<Row><Col sm="12" md={{ size: 10, offset: 2}}><p class="WickReferenceModal-parameter-description">{referenceData.parameters[i].type[k].name + " : " + referenceData.parameters[i].type[k].description}</p></Col></Row>);
                 }
             }
-            parameterDisplay.push(<div><p class="WickReferenceModal-parameter-name">{referenceData.parameters[i].name}</p><p class="WickReferenceModal-parameter-type">{typeText}</p></div>);
-            for (let k=0; k<referenceData.parameters[i].type.length; k++){
-                parameterDisplay.push(<p class="WickReferenceModal-parameter-description">{referenceData.parameters[i].type[k].name + " : " + referenceData.parameters[i].type[k].description}</p>);
-            }
+            parameterDisplayStyled.push(<Row className="WickReferenceModal-pararow"><Col sm="12" md="12"><div class="WickReferenceModal-parameters">{parameterDisplay}</div></Col></Row>)
         }
+
     }
 
     referenceData = referenceData || {};
@@ -124,7 +130,7 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
         <ModalBody className="WickReferenceModal-body">
             <Container>
                 <Row>
-                    <Col>
+                    <Col sm="12" md="6">
                         <div className="WickReferenceModal-embed">
                             <ResponsiveEmbed tabindex="0" src={embed} ratio="3:2" />
                         </div>
@@ -133,7 +139,7 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
                         <button onClick={() => {openInEditor(openLink)}}
                         class = "WickReferenceModal-button WickReferenceModal-open">Open in Editor</button>
                     </Col>
-                    <Col>
+                    <Col sm="12" md="6">
                         <h3 class="WickReferenceModal-subheader">Description</h3>
                         <p class="WickReferenceModal-description">
                             <i>{`${referenceData.type}: `}</i>
@@ -142,12 +148,12 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
                             
                         </p>
 
-                        <div>{syntaxDislay}</div>
-                        <div class="WickReferenceModal-parameters">{parameterDisplay}</div>
+                        {(syntaxText) && <div class="WickReferenceModal-syntaxblock">{syntaxDislay}</div>}
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
+                {parameterDisplayStyled}
+                <Row className="WickReferenceModal-coderow">
+                    <Col sm="12" md="12">
                         {(referenceData && JSON.stringify(referenceData) !== '{}' && "deprecated" in referenceData) 
                         && <p class="WickReferenceModal-note">{referenceData.deprecated}</p>}
 
