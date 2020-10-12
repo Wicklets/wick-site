@@ -137,8 +137,12 @@
         font-weight: 600;
         text-align: left;
         width: 90%;
-        margin: 0;
+        margin: 0 !important;
         padding: 0;
+    }
+
+    &-parameter-spacing {
+        margin-bottom: 0.5em;
     }
 
     &-embed {
@@ -197,6 +201,7 @@
     &-note {
         text-align: left;
         color: #AB2121;
+        margin-bottom: 1.5em;
     }
 
     &-subheader {
@@ -210,12 +215,11 @@
     }
 
     &-coderow {
-        //margin-top: 1.5em;
+        margin-bottom: 1.5em;
     }
 }
 
 .ReactCodeMirror {
-    margin-bottom: 1.5em;
     width: 100%;
     font-size: 16px;
 
