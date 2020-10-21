@@ -60,33 +60,37 @@ class SupportUs extends Component {
     render() {
         //const isMobile = window.innerWidth <= 768;
 
-        let modalContent = [<Modal className="support-us-modal-open"  isOpen={this.state.open}>
+        let modalContent = <Modal 
+            toggle={() => {this.setState({open: !this.state.open})}}
+        className="support-us-modal-open"  
+        isOpen={this.state.open}>
                                 <div id="ghost-image-modal">
                                     <Img src={flashy} alt="wick friendly ghost image"/>
                                 </div>
                                 <div className="support-us-modal">
-                                    <div class="support-us-header">
-                                        <p class="support-us-text-modal">Support Us <span role="img" aria-label="celebrations emoji">🎉</span></p>
-                                        <button class="support-us-close" onClick={(e)=>this.togglePanel(e)}>{"X"}</button>
+                                    <div className="support-us-header">
+                                        <p className="support-us-text-modal">Support Us <span role="img" aria-label="celebrations emoji">🎉</span></p>
+                                        <button className="support-us-close" onClick={(e)=>this.togglePanel(e)}>{"X"}</button>
                                     </div>
-                                    <div class="support-us-content-modal">
-                                    <div class="support-us-title"><Img class="support-us-title-icon" src={patreonLogoBlack} alt="black patreon logo"/><p class="support-us-title-text">Patreon</p></div>
+                                    <div className="support-us-message">Help us reach our next community support goal!</div>
+                                    <div className="support-us-content-modal">
+                                    <div className="support-us-title"><Img class="support-us-title-icon" src={patreonLogoBlack} alt="black patreon logo"/><p class="support-us-title-text">Patreon</p></div>
                                         <ProgressBar percent={this.progressData.patreonProgress/this.progressData.patreonGoal*100} type="patreon"></ProgressBar>
                                         <p class="support-us-progress-text">{'$'+this.progressData.patreonProgress+' of $'+this.progressData.patreonGoal+' per month'}</p>
-                                        <button class="patreon-button" onClick={function(){window.open("https://www.patreon.com/WickEditor", "_blank")}}><Img class="support-button-img" src={patreonLogoWhite} alt="white patreon logo"/>Become a Patron</button>
+                                        <button className="patreon-button" onClick={function(){window.open("https://www.patreon.com/WickEditor", "_blank")}}><Img class="support-button-img" src={patreonLogoWhite} alt="white patreon logo"/>Become a Patron</button>
 
-                                        <div class="support-us-title"><Img class="support-us-title-icon" src={githubLogoBlack} alt="black github logo"/><p class="support-us-title-text">GitHub Sponsors</p></div>
+                                        <div className="support-us-title"><Img class="support-us-title-icon" src={githubLogoBlack} alt="black github logo"/><p class="support-us-title-text">GitHub Sponsors</p></div>
                                         <ProgressBar percent={this.progressData.githubProgress/this.progressData.githubGoal*100} type="github"></ProgressBar>
-                                        <p class="support-us-progress-text">{this.progressData.githubProgress+' of '+this.progressData.githubGoal+' sponsors found'}</p>
-                                        <button class="github-button" onClick={function(){window.open("https://github.com/sponsors/Wicklets", "_blank")}}><Img class="support-button-img" src={githubHeart} alt="pink heart icon"/>Sponsor</button>
+                                        <p className="support-us-progress-text">{this.progressData.githubProgress+' of '+this.progressData.githubGoal+' sponsors found'}</p>
+                                        <button className="github-button" onClick={function(){window.open("https://github.com/sponsors/Wicklets", "_blank")}}><Img class="support-button-img" src={githubHeart} alt="pink heart icon"/>Sponsor</button>
                                     </div>
                                 </div>
-                            </Modal>]
+                            </Modal>
 
             return (
-                <Fragment class="support-us-wrapper">
+                <Fragment>
                     {modalContent}
-                    {!this.state.open && <button class="support-us-button" onClick={(e)=>this.togglePanel(e)}>Support Us <span role="img" aria-label="celebrations emoji">🎉</span></button>}
+                    {!this.state.open && <button className="support-us-button" onClick={(e)=>this.togglePanel(e)}>Support Us <span role="img" aria-label="celebrations emoji">🎉</span></button>}
                 </Fragment>
             );
     }

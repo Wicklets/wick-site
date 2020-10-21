@@ -39,7 +39,6 @@ class TabbedInterface extends Component {
         this.state = {
           selectedTab: this.props.currentTab,
         }
-        console.log(this.state.selectedTab);
     }
 
     // Selects the tab of the given name.
@@ -60,7 +59,9 @@ class TabbedInterface extends Component {
         return (
             <div role="tablist" className="tabbed-interface-main-tab-container">
                 {this.props.tabNames.map( (tab, i) => 
-                    <Link to={"/learn/"+tab.toLowerCase()}>
+                    <Link 
+                    key={"reference-link-" + tab + i}
+                    to={"/learn/"+tab.toLowerCase()}>
                     <button to={"/learn/"+tab.toLowerCase()}
                     role="tab" 
                     key={"tabbed-interface-"+tab+"-i"}

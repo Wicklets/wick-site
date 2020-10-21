@@ -88,13 +88,13 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
         // set snytax text
         syntaxText = referenceData.syntax;
         if (syntaxText){
-            syntaxDislay.push(<h3 class="WickReferenceModal-subheader">Syntax</h3>);
-            syntaxDislay.push(<p class="WickReferenceModal-syntax">{syntaxText}</p>);
+            syntaxDislay.push(<h3 className="WickReferenceModal-subheader">Syntax</h3>);
+            syntaxDislay.push(<p className="WickReferenceModal-syntax">{syntaxText}</p>);
         }
 
         // set parameters text
         if (referenceData.parameters.length > 0){
-            parameterDisplay.push(<h3 class="WickReferenceModal-subheader">Parameters</h3>);
+            parameterDisplay.push(<h3 className="WickReferenceModal-subheader">Parameters</h3>);
 
             // iterate through each parameter
             for (let i=0; i<referenceData.parameters.length; i++){
@@ -115,16 +115,16 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
                 }
                 parameterDisplay.push(<Row>
                     <Col xs="4" sm="4" md="2">
-                        <p class="WickReferenceModal-parameter-name">{referenceData.parameters[i].name}</p>
+                        <p className="WickReferenceModal-parameter-name">{referenceData.parameters[i].name}</p>
                     </Col>
                     <Col xs="8" sm="8" md="10">
-                        <p class="WickReferenceModal-parameter-type">{typeText}</p>
+                        <p className="WickReferenceModal-parameter-type">{typeText}</p>
                     </Col></Row>);
 
                 for (let k=0; k<referenceData.parameters[i].type.length; k++){
                     parameterDisplay.push(<Row>
                         <Col sm="12" md={{ size: 11, offset: 2}}>
-                            <p class="WickReferenceModal-parameter-description">
+                            <p className="WickReferenceModal-parameter-description">
                                 {(referenceData.parameters[i].type.length === 1) ? 
                                 referenceData.parameters[i].type[k].description :
                                 referenceData.parameters[i].type[k].name + " : " + referenceData.parameters[i].type[k].description}
@@ -136,12 +136,12 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
                 } 
             } // end of each parameter
 
-            parameterDisplayStyled.push(<Row className="WickReferenceModal-pararow"><Col sm="12" md="12"><div class="WickReferenceModal-parameters">{parameterDisplay}</div></Col></Row>)
+            parameterDisplayStyled.push(<Row className="WickReferenceModal-pararow"><Col sm="12" md="12"><div className="WickReferenceModal-parameters">{parameterDisplay}</div></Col></Row>)
         }
     }
 
     referenceData = referenceData || {};
-    
+
     return (
     <Modal
         role="dialog"
@@ -164,7 +164,7 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
                         <div className="WickReferenceModal-embed">
                             <ResponsiveEmbed tabindex="0" src={embed} ratio="3:2" />
                         </div>
-                        <button onClick={() => {downloadLink(download, referenceData.exampleName + '.wick')}}
+                        <button onClick={() => {downloadLink(download, `${referenceData.exampleName || referenceData.name}.wick`)}}
                         class = "WickReferenceModal-button WickReferenceModal-download">Download Example</button>
                         <button onClick={() => {openInEditor(openLink)}}
                         class = "WickReferenceModal-button WickReferenceModal-open">Open in Editor</button>
@@ -172,28 +172,28 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
                     <Col sm="12" md="6">
                         {/* note for deprecation */}
                         {(referenceData && JSON.stringify(referenceData) !== '{}' && "deprecated" in referenceData) 
-                        && <p class="WickReferenceModal-note">{referenceData.deprecated}</p>}
+                        && <p className="WickReferenceModal-note">{referenceData.deprecated}</p>}
                         {/* description */}
-                        <h3 class="WickReferenceModal-subheader">Description</h3>
-                        <p class="WickReferenceModal-description">
+                        <h3 className="WickReferenceModal-subheader">Description</h3>
+                        <p className="WickReferenceModal-description">
                             <i>{`${referenceData.type}: `}</i>
                             {referenceData.description}
                         </p>
 
-                        {(syntaxText) && <div class="WickReferenceModal-syntaxblock">{syntaxDislay}</div>}
+                        {(syntaxText) && <div className="WickReferenceModal-syntaxblock">{syntaxDislay}</div>}
                     </Col>
                 </Row>
                 <Row className="WickReferenceModal-coderow">
                     <Col sm="12" md="12">
-                        <h3 class="WickReferenceModal-subheader">Simple Code Snippet</h3>
-                        <CodeMirror class="WickReferenceModal-code" value={simpleSnippet} options={{mode:"javascript", lineNumbers: true, readOnly: true, theme: "monokai", lineWrapping: true, scrollbarStyle: "null", screenReaderLabel: "simple code snippet"}}/>
+                        <h3 className="WickReferenceModal-subheader">Simple Code Snippet</h3>
+                        <CodeMirror className="WickReferenceModal-code" value={simpleSnippet} options={{mode:"javascript", lineNumbers: true, readOnly: true, theme: "monokai", lineWrapping: true, scrollbarStyle: "null", screenReaderLabel: "simple code snippet"}}/>
                     </Col>
                 </Row>
                 {parameterDisplayStyled}
                 {(advSnippet) && <Row className="WickReferenceModal-coderow">
                                     <Col sm="12" md="12">
-                                        <h3 class="WickReferenceModal-subheader">Advanced Code Snippet</h3>
-                                        <CodeMirror class="WickReferenceModal-code" value={advSnippet} options={{mode:"javascript", lineNumbers: true, readOnly: true, theme: "monokai", lineWrapping: true, scrollbarStyle: "null", screenReaderLabel: "advanced code snippet"}}/>
+                                        <h3 className="WickReferenceModal-subheader">Advanced Code Snippet</h3>
+                                        <CodeMirror className="WickReferenceModal-code" value={advSnippet} options={{mode:"javascript", lineNumbers: true, readOnly: true, theme: "monokai", lineWrapping: true, scrollbarStyle: "null", screenReaderLabel: "advanced code snippet"}}/>
                                     </Col>
                                 </Row>}
             </Container>

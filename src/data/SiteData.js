@@ -47,10 +47,10 @@ import img_hermanos from '../Images/Community/hermanos.png';
 import img_theInspirator from '../Images/Community/theInspirator.png';
 
 // Support Us progress bar and goals
-export const supportData = {patreonProgress: 205.96,
-                            patreonGoal: 1000, 
-                            githubProgress: 1, 
-                            githubGoal: 10};
+export const supportData = {patreonProgress: 224,
+    patreonGoal: 1000, 
+    githubProgress: 1, 
+    githubGoal: 10}; 
 
 export const examples = [
     {

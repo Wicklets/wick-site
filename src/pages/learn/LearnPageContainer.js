@@ -50,7 +50,7 @@ class LearnPageContainer extends Component {
     renderTutorials = () => {
         return(
             <Fragment>
-                <p class="subtext">Here are a few tutorials to help you get started with the Wick Editor.</p>
+                <p className="subtext">Here are a few tutorials to help you get started with.</p>
                 <TutorialCardBlockContainer />
             </Fragment>
         )
@@ -58,7 +58,7 @@ class LearnPageContainer extends Component {
     renderExamples = () => {
         return(
             <Fragment>
-                <p class="subtext">Here are some examples that you can download and open in the Wick Editor!</p>
+                <p className="subtext">Here are some examples that you can download and open in Wick Editor!</p>
                 <ExampleCardBlockContainer />
             </Fragment>
         )
@@ -66,7 +66,7 @@ class LearnPageContainer extends Component {
     renderReference = () => {
         return(
             <Fragment>
-                <p class="subtext">Here is the reference to programming in the Wick Editor!</p>
+                <p className="subtext">The full Wick Editor programming reference!</p>
                 <ReferenceList />
             </Fragment>
         )
@@ -79,15 +79,15 @@ class LearnPageContainer extends Component {
             <Fragment>
                 <Helmet>
                 <title>The Wick Editor - Learn</title>
-                <meta name="description" content="Here are a few tutorials to help you get started with the Wick Editor." />
+                <meta name="description" content="Here are a few tutorials to help you get started." />
                 </Helmet>
 
                 <Header
                     title="get started"
-                    tagline="Hit the ground running with the basics of wick editor by trying out our starter tutorial."
+                    tagline="Hit the ground running by learning the basics of Wick Editor."
                 />
                 <Container className="fadeIn animated">
-                    <TabbedInterface class="tab-interface"
+                    <TabbedInterface className="tab-interface"
                         tabNames={["Tutorials", "Examples", "Reference"]} 
                         currentTab={this.state.currentPage.charAt(0).toUpperCase() + this.state.currentPage.slice(1)}>          
                         {this.renderTutorials()}
