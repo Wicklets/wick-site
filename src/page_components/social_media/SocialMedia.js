@@ -16,8 +16,6 @@ import twitter from '../../Images/SocialMedia/twitter.svg';
 import twitterdark from '../../Images/SocialMedia/twitter_dark.svg';
 import instagram from '../../Images/SocialMedia/instagram.svg';
 import instagramdark from '../../Images/SocialMedia/instagram_dark.svg';
-import youtube from '../../Images/SocialMedia/youtube.svg';
-import youtubedark from '../../Images/SocialMedia/youtube_dark.svg';
 import patreon from '../../Images/SocialMedia/patreon.svg';
 import patreondark from '../../Images/SocialMedia/patreon_dark.svg';
 
@@ -28,7 +26,6 @@ const SocialMedia = () => (
         <SocialMediaIcon image={facebook} highlight={facebookdark} link="https://www.facebook.com/wickeditor/" alt="Favebook Icon"/>
         <SocialMediaIcon image={twitter} highlight={twitterdark} link="https://twitter.com/wickeditor" alt="Twitter Icon"/>
         <SocialMediaIcon image={instagram} highlight={instagramdark} link="https://www.instagram.com/wickeditor" alt="Instagram Icon"/>
-        <SocialMediaIcon image={youtube} highlight={youtubedark} link="https://www.youtube.com/channel/UCXUM4laL0jXCO4wJjY15xqg" alt="Youtube Icon"/>
         <SocialMediaIcon image={patreon} highlight={patreondark} link="https://www.patreon.com/WickEditor" alt="Patreon Icon"/>
     </div>
 );
