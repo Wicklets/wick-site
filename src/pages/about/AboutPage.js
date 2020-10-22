@@ -56,7 +56,7 @@ const AboutPage = () => (
             <ResponsiveImage id="AboutPage-editor" image={editorpreview} xs="12" lg="9" />
         </ContentSection>
         <ContentSection
-            text="The Wick Editor is a hybrid of an animation tool and a coding environment, heavily inspired by similar tools such as Flash, HyperCard, and Scratch. It was developed in response to a growing need for such a tool for the modern web."
+            text="The Wick Editor is a hybrid animation tool and coding environment, inspired by similar tools such as HyperCard, and Scratch. It was developed in response to a growing need for such a tool for the modern web."
         />
         <WickLargeSpacer />
         <ContentSection
