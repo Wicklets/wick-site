@@ -84,7 +84,7 @@ class ReferenceList extends Component {
 
         return (
             <Fragment>
-                <input className="wick-filter" type="text" placeholder="Filter reference" value={this.state.filterText} onChange={this.updateFilter}></input>
+                <input className="wick-filter" aria-label="filter" type="text" placeholder="Filter reference" value={this.state.filterText} onChange={this.updateFilter}></input>
                 <ul className="reference-groups-list">{referenceGroups}</ul>
                 <div className="content-display-container"><Container><Row>{displayItems}</Row></Container></div>
                 <WickReferenceModal referenceData={this.state.referenceData} onClick={this.handleClick} isModalOpen={this.state.isModalOpen} />

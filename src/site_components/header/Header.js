@@ -21,7 +21,7 @@ const Header = ({title, tagline, subtitle, buttonIcon, buttonIconAlt, buttonLabe
     <Fragment>
         <div id="Header-imageContainer">
             <div id="Header-image">
-                <Img src={wickworld} />
+                <Img src={wickworld} alt=""/>
             </div>
         </div>
         <Container className="fadeIn animated">

@@ -18,7 +18,7 @@ const Footer = () => (
     <Fragment>
         <div id="Footer-imageContainer">
             <div id="Footer-image">
-                <Img src={clouds} />
+                <Img alt="" src={clouds} />
             </div>
         </div>
         <div id="Footer-container">

@@ -129,9 +129,10 @@ class CardBlockContainer extends Component {
         return (
             <Fragment>
                 <input 
-                    className="wick-filter" 
+                    className="wick-filter"
+                    aria-label="filter"
                     type="text" 
-                    placeholder="Filter examples" 
+                    placeholder="Filter..." 
                     value={this.state.filterText} 
                     onChange={this.updateFilter}>
                 </input>
