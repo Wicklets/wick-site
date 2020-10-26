@@ -457,6 +457,22 @@ export const referenceItems = [
     parameters: []
     }, 
     {group:"Object",
+    name: "currentFrameNumber",
+    type: "Object",
+    description: "Returns the number of the current frame selected.",
+    snippet: "this.currentFrameNumber",
+    syntax: "currentFrameNumber",
+    parameters: []
+    }, 
+    {group:"Object",
+    name: "currentFrameName",
+    type: "Object",
+    description: "Returns the name of the current frame if it exists.",
+    snippet: "this.currentFrameName",
+    syntax: "currentFrameName",
+    parameters: []
+    }, 
+    {group:"Object",
     name: "clone",
     type: "Function",
     description: "Creates a clone of this object, places it on the same frame, and returns a reference to it.",   
