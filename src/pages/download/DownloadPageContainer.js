@@ -19,6 +19,8 @@ import windowsIcon from '../../Images/Download/windows.svg';
 import appleIcon from '../../Images/Download/apple.svg';
 import linuxIcon from '../../Images/Download/linux.svg';
 
+import {downloadLinks} from '../../data/SiteData.js';
+
 
 class DownloadPageContainer extends Component {
     constructor(props) {
@@ -29,9 +31,9 @@ class DownloadPageContainer extends Component {
             buttonIcon: (isWindows) ? windowsIcon : (isMacOs) ? appleIcon : linuxIcon,
             buttonIconAlt: (isWindows) ? "Windows Logo" : (isMacOs) ? "Apple Logo" : "Linux Logo",
             downloadButtonType: (isWindows) ? "Windows" : (isMacOs) ? "macOS" : "Linux",
-            downloadButtonLink: (isWindows) ? "https://github.com/Wicklets/wick-editor/releases/download/v1.18.0-prerelease/Wick.Editor.Setup.1.18.0.exe" 
-                                            : (isMacOs) ? "https://github.com/Wicklets/wick-editor/releases/download/v1.18.0-prerelease/Wick.Editor-1.18.0_signed.pkg" 
-                                            : "https://github.com/Wicklets/wick-editor/releases/download/v1.18.0-prerelease/Wick.Editor-1.18.0.AppImage"
+            downloadButtonLink: (isWindows) ? downloadLinks.windows
+                                            : (isMacOs) ? downloadLinks.macos 
+                                            : downloadLinks.linux
         };
     }
 

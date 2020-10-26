@@ -47,10 +47,21 @@ import img_hermanos from '../Images/Community/hermanos.png';
 import img_theInspirator from '../Images/Community/theInspirator.png';
 
 // Support Us progress bar and goals
-export const supportData = {patreonProgress: 224,
+export const supportData = {
+    patreonProgress: 224,
     patreonGoal: 1000, 
     githubProgress: 1, 
-    githubGoal: 10}; 
+    githubGoal: 10
+}; 
+
+// offline editor download links
+export const downloadLinks = {
+    windows: "https://github.com/Wicklets/wick-editor/releases/download/v1.18.0-prerelease/Wick.Editor.Setup.1.18.0.exe",
+    macos: "https://github.com/Wicklets/wick-editor/releases/download/v1.18.0-prerelease/Wick.Editor-1.18.0_signed.pkg", 
+    linux: "https://github.com/Wicklets/wick-editor/releases/download/v1.18.0-prerelease/Wick.Editor-1.18.0.AppImage", 
+    android: "",
+    ios: ""
+}; 
 
 export const examples = [
     {

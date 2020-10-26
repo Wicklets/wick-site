@@ -10,7 +10,6 @@ import React, {Component, Fragment} from 'react';
 
 import HomePage from './HomePage.js';
 import Header from '../../site_components/header/Header.js';
-import InlineLink from '../../pattern_library/inline_link/WickInlineLink.js';
 
 import { Link } from "react-router-dom";
 
