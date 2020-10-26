@@ -39,7 +39,7 @@ const HomePage = () => (
         <WickTitle>our latest</WickTitle>
         <ContentSection
             title="Tutorials"
-            text={<Fragment>Here are a few tutorials to help you get started with the new Wick Editor 1.0. Have an idea for a tutorial, or want to submit your own? Post it on the <InlineLink text="Wick Editor forums!" link="https://forum.wickeditor.com/" /></Fragment>}
+            text={<Fragment>Here are a few tutorials to help you get started. Have an idea for a tutorial, or want to submit your own? Post it on the <InlineLink text="Wick Editor forums!" link="https://forum.wickeditor.com/" /></Fragment>}
             size="small"
             includeUnderline
             icon={tutorial}

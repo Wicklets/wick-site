@@ -61,7 +61,7 @@ class HomePageContainer extends Component {
                         subtitle={subtitle}
                         buttonLabel="Launch Editor"
                         //buttonSub={<Fragment>or launch the <InlineLink text="Legacy Editor" link="http://legacy.wickeditor.com/" /></Fragment>}
-                        buttonSub={<Fragment>or <Link to="/download/" className="WickInlineLink-container">download</Link> the editor</Fragment>}
+                        buttonSub={<Fragment>or <Link to="/download/" className="WickInlineLink-container">download (beta)</Link></Fragment>}
                         onClick={() => window.open("https://editor.wickeditor.com")}
                     />
                 ))}

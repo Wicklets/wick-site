@@ -112,7 +112,7 @@ class CardBlockContainer extends Component {
         let displayContent;
 
         if (filteredCards.length <= 0) {
-            displayContent = <p class="guide-text">Can't find an example? Visit our Community Forum below to request a new example!</p>
+            displayContent = <p className="guide-text">Can't find an example? Visit our Community Forum below to request a new example!</p>
         }
 
         else {
@@ -129,7 +129,7 @@ class CardBlockContainer extends Component {
         return (
             <Fragment>
                 <input 
-                    class="wick-filter" 
+                    className="wick-filter" 
                     type="text" 
                     placeholder="Filter examples" 
                     value={this.state.filterText} 
@@ -138,7 +138,7 @@ class CardBlockContainer extends Component {
 
                 <br />
 
-                <div class="tags-group">
+                <div className="tags-group">
                     {
                     this.tags.map((tag) => <ToggleButton 
                         tag={tag} 
