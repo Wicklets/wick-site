@@ -46,25 +46,25 @@ class HomePageContainer extends Component {
         let subtitle = "The Wick Editor is a free, open-source tool for creating games, animations, and everything in-between!";
         return (
             <Fragment>
-                {(this.state.windowSize < 768 ? (
+                {/* {(this.state.windowSize < 768 ? (
                     <Header
                         title={title}
                         tagline={tagline}
                         subtitle={subtitle}
-                        buttonLabel="Launch Editor"
+                        buttonLabel="Launch Web Editor"
                         onClick={() => window.open("https://editor.wickeditor.com")}
                     />
-                ) : (
+                ) : ( */}
                     <Header
                         title={title}
                         tagline={tagline}
                         subtitle={subtitle}
-                        buttonLabel="Launch Editor"
+                        buttonLabel="Launch Web Editor"
                         //buttonSub={<Fragment>or launch the <InlineLink text="Legacy Editor" link="http://legacy.wickeditor.com/" /></Fragment>}
                         buttonSub={<Fragment>or <Link to="/download/" className="WickInlineLink-container">download (beta)</Link></Fragment>}
                         onClick={() => window.open("https://editor.wickeditor.com")}
                     />
-                ))}
+                {/* ))} */}
                 <HomePage />
             </Fragment>
         );
