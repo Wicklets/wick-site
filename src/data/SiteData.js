@@ -48,9 +48,9 @@ import img_theInspirator from '../Images/Community/theInspirator.png';
 
 // Support Us progress bar and goals
 export const supportData = {
-    patreonProgress: 224,
+    patreonProgress: 214,
     patreonGoal: 1000, 
-    githubProgress: 1, 
+    githubProgress: 2, 
     githubGoal: 10
 }; 
 
@@ -465,6 +465,22 @@ export const referenceItems = [
     description: "Returns the object that owns the calling object.",
     snippet: "// on mouth object, in Mouseclick script\nparent.x = random.integer(0, project.width);",
     syntax: "parent",
+    parameters: []
+    }, 
+    {group:"Object",
+    name: "currentFrameNumber",
+    type: "Object",
+    description: "Returns the number of the current frame selected.",
+    snippet: "this.currentFrameNumber",
+    syntax: "currentFrameNumber",
+    parameters: []
+    }, 
+    {group:"Object",
+    name: "currentFrameName",
+    type: "Object",
+    description: "Returns the name of the current frame if it exists.",
+    snippet: "this.currentFrameName",
+    syntax: "currentFrameName",
     parameters: []
     }, 
     {group:"Object",
