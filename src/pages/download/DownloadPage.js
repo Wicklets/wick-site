@@ -92,7 +92,7 @@ const DownloadPage = () => (
                 <Col xs="12" s="12" md="6" lg="4">
                     <DownloadCard 
                     icon={linuxIcon} iconAlt="Linux Logo" 
-                    title="Linux" text="For Linux ... and above"
+                    title="Linux" text="For recent Linux systems"
                     buttonText="Download AppImage" 
                     onClickLink={downloadLinks.linux}
                     />
@@ -112,7 +112,7 @@ const DownloadPage = () => (
                 <Col xs="12" s="12" md="6" lg={{ size: 4, offset: 2 }}>
                     <DownloadCard 
                     icon={androidIcon} iconAlt="Android Logo" 
-                    title="Android" text="For Android ... and above"
+                    title="Android" text="For recent Android systems"
                     buttonImg={googlePlayBadge}
                     buttonImgAlt="Get it on Google Play"
                     onClickLink={downloadLinks.android}
@@ -121,7 +121,7 @@ const DownloadPage = () => (
                 <Col xs="12" s="12" md="6" lg={{ size: 4 }}>
                     <DownloadCard 
                     icon={appleIcon} iconAlt="Apple Logo" 
-                    title="IOS" text="For IOS ... and above"
+                    title="IOS" text="For recent IOS systems"
                     buttonImg={appStoreBadge} 
                     buttonImgAlt="Get it on App Store"
                     onClickLink={downloadLinks.ios}
