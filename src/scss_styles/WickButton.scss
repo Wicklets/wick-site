@@ -6,7 +6,8 @@
     Stylings for the Wick Buttons
 */
 
-$dark-text: #0A4D32;
+// this should at least be #073C26 or darker to meet AAA standard
+$dark-text: black;//#0A4D32; 
 
 .WickButton {
     &-button {
