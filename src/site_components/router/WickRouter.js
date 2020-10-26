@@ -27,6 +27,7 @@ import SupportersPageContainer from '../../pages/supporters/SupportersPageContai
 import CookiePolicyPageContainer from '../../pages/cookie/CookiePolicyPageContainer.js';
 import PrivacyPolicyPageContainer from '../../pages/privacy/PrivacyPolicyPageContainer.js';
 import TermsAndConditionsPageContainer from '../../pages/termsAndConditions/TermsAndConditionsPageContainer.js';
+import DownloadPageContainer from '../../pages/download/DownloadPageContainer.js';
 import LogoPageContainer from '../../pages/logo/LogoPageContainer.js';
 import { communityProjects } from '../../data/SiteData.js';
 
@@ -41,6 +42,7 @@ const cookie = () => (<CookiePolicyPageContainer />)
 const privacy = () => (<PrivacyPolicyPageContainer />)
 const terms = () => (<TermsAndConditionsPageContainer />)
 const logo = () => (<LogoPageContainer />)
+const download = () => (<DownloadPageContainer />)
 
 const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickLaunchEditor, backgroundAnimationClass, isDropdownOpen}) => (
     <Fragment>
@@ -142,6 +144,7 @@ const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickL
         <Route path="/privacy-policy/" component={privacy} />
         <Route path="/terms-and-conditions" component={terms} />
         <Route path="/logos" component={logo} />
+        <Route path="/download" component={download} />
     </Fragment>
 );
 

@@ -17,7 +17,7 @@ import wickworld from '../../Images/Header/wickworldwide2.svg';
 
 import '../../scss_styles/Header.scss';
 
-const Header = ({title, tagline, subtitle, buttonLabel, buttonSub, onClick}) => (
+const Header = ({title, tagline, subtitle, buttonIcon, buttonIconAlt, buttonLabel, downloadButtonType, buttonSub, onClick}) => (
     <Fragment>
         <div id="Header-imageContainer">
             <div id="Header-image">
@@ -34,9 +34,9 @@ const Header = ({title, tagline, subtitle, buttonLabel, buttonSub, onClick}) => 
             <Row id="Header-buttonRow" className="Wick-row">
                 <Col xs="auto">
                     {buttonLabel ? (
-                        <WickButton text={buttonLabel} size="lg" block type="header" onClick={onClick} />
+                        <WickButton icon={buttonIcon} iconAlt={buttonIconAlt} text={buttonLabel} size="lg" block downloadButtonType={downloadButtonType} type="header" onClick={onClick} />
                     ) : (
-                        <div id="Header-buttonSpacer" />
+                        <div id="Header-buttonSpacer"/>
                     )}
                 </Col>
             </Row>

@@ -16,6 +16,19 @@
             font: 600 22px 'Nunito', sans-serif
         }
 
+        &--download {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 340px;
+            padding: 1rem 1.5rem;
+        }
+
+        &--smallDownload {
+            font: 800 18px 'Nunito Sans', sans-serif;
+        }
+
         &--thicc {
             padding-top: 14px;
             padding-bottom: 14px;
@@ -49,5 +62,17 @@
             color: black !important;
             box-shadow: none !important;
         }
+    }
+
+    &-icon {
+        width: 40px;
+        height: auto;
+        margin-right: 1rem;
+
+    }
+    
+    &-text {
+        max-width: 230px;
+        overflow-wrap: break-word;
     }
 }

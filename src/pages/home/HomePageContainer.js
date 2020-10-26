@@ -12,8 +12,11 @@ import HomePage from './HomePage.js';
 import Header from '../../site_components/header/Header.js';
 import InlineLink from '../../pattern_library/inline_link/WickInlineLink.js';
 
+import { Link } from "react-router-dom";
+
 import ReactGA from 'react-ga'; 
 
+import '../../scss_styles/WickInlineLink.scss';
 
 class HomePageContainer extends Component {
     constructor(props) {
@@ -57,7 +60,8 @@ class HomePageContainer extends Component {
                         tagline={tagline}
                         subtitle={subtitle}
                         buttonLabel="Launch Editor"
-                        buttonSub={<Fragment>or launch the <InlineLink text="Legacy Editor" link="http://legacy.wickeditor.com/" /></Fragment>}
+                        //buttonSub={<Fragment>or launch the <InlineLink text="Legacy Editor" link="http://legacy.wickeditor.com/" /></Fragment>}
+                        buttonSub={<Fragment>or <Link to="/download/" className="WickInlineLink-container">download</Link> the editor</Fragment>}
                         onClick={() => window.open("https://editor.wickeditor.com")}
                     />
                 ))}

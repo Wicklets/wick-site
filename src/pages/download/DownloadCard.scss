@@ -1,0 +1,90 @@
+/*
+    Alex Yixuan Xu (ayxx@nyu.edu)
+    WickEditor Website
+    DownloadCard.scss
+
+    Stylings for the Download Cards
+*/
+
+.DownloadCard {
+    &-container {
+        max-width: 300px;
+        text-align: left;
+        font-family: 'Nunito Sans', sans-serif;
+        border-width: 0;
+        box-shadow: 2px 3px #B4ECE6;
+        margin: 1rem auto;
+
+        &-mobile {
+            position: relative;
+            display: block;
+            top: 0;
+            max-width: 90%;
+            font-family: 'Nunito Sans', sans-serif;
+            border-width: 0;
+            box-shadow: 2px 3px #B4ECE6;
+            margin: 0 auto;
+        }
+    }
+
+    &-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+
+        &-mobile {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    &-titleIcon {
+        width: 24px;
+        height: auto;
+        margin-right: 8px;
+
+        &-mobile {
+            display: none;
+        }
+    }
+
+    &-titleText {
+        font-size: 22px;
+        font-weight: 800;
+
+        &-mobile {
+            font-size: 24px;
+            font-weight: 800;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    &-text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &-button {
+        margin-top: 1rem;
+    }
+
+    &-buttonImg {
+        height: 44px;
+        width: auto;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+            border-radius: 5px;
+            transform: translateX(-3px) translateY(-2px);
+            box-shadow: 5px 5px #303030;
+        }
+
+        &-mobile {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
