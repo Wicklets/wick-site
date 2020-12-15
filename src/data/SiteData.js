@@ -537,7 +537,7 @@ export const referenceItems = [
     name: "hits",
     type: "Function",
     description: "Function: Determines if the hitboxes of two objects overlap.",
-    snippet: ["this.hits(that);", 
+    snippet: ["if (this.hits(that)) {\n //do something!\n};", 
               "let hitInfo = this.hits(that, {overlap: true});\nif (hitInfo){\n    this.x -= hitInfo.overlapX;\n    this.y -= hitInfo.overlapY;\n}"],
     syntax: "this.hits(that, options)",
     parameters: [{name:"that", type: [{name: "object", description: "the object to be tested against collision"}]},
