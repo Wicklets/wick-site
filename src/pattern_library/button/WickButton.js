@@ -32,7 +32,7 @@ const WickButton = ({icon, iconAlt, text, size, block, type, downloadButtonType,
         <img src={icon} alt={iconAlt} className="WickButton-icon"></img>
         <div className="WickButton-text">
             <div>{text}</div>
-            <div>{"1.18 for "+downloadButtonType}</div>
+            <div>{"1.19 for "+downloadButtonType}</div>
         </div>
     </Button>
 );

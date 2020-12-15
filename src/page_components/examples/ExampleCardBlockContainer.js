@@ -5,10 +5,7 @@
     Container for Learn Page Example Card Block
 */
 
-import React, { Fragment, Component } from 'react';
-
-import WickCardDeckContainer from '../../pattern_library/cards/WickCardDeckContainer.js';
-import ToggleButton from '../../pattern_library/button/toggle_button.js';
+import React, { Component } from 'react';
 
 import { examples } from '../../data/SiteData.js';
 

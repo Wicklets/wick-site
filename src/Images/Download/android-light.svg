@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="29"
+   viewBox="0 0 24 29"
+   fill="none"
+   version="1.1"
+   id="svg865"
+   sodipodi:docname="android-light.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
+  <metadata
+     id="metadata871">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs869" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="776"
+     inkscape:window-height="480"
+     id="namedview867"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="12"
+     inkscape:cy="14.5"
+     inkscape:window-x="810"
+     inkscape:window-y="141"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg865" />
+  <path
+     d="M4.8 9.6L4.8012 20.9328C4.8012 21.966 5.6364 22.8 6.6696 22.8H7.2V27.0504C7.2 28.0152 8.0484 28.8 9.012 28.8C9.9792 28.8 10.8 28.0152 10.8 27.0492V22.8H13.2V27.0504C13.2 28.0152 14.0484 28.8 15.0132 28.8C15.9804 28.8 16.8 28.0152 16.8 27.0492V22.8L17.3328 22.7988C18.3624 22.7988 19.2 21.9636 19.2 20.9304V9.6H4.8ZM24 11.3652C24 10.3992 23.166 9.6 22.2 9.6C21.234 9.5988 20.4 10.4004 20.4 11.3664V18.6936C20.4 19.6608 21.2328 20.4 22.2 20.4C23.166 20.4 24 19.662 24 18.6936V11.3652ZM3.6 11.3652C3.6 10.3992 2.766 9.6 1.8 9.6C0.834 9.5988 0 10.4004 0 11.3664V18.6936C0 19.6608 0.8328 20.4 1.8 20.4C2.766 20.4 3.6 19.662 3.6 18.6936V11.3652ZM15.5412 2.5908L16.6692 0.36C16.7508 0.2016 16.6464 0 16.4736 0C16.3944 0 16.3176 0.0456 16.2768 0.126L15.138 2.3796C13.3008 1.4952 10.8852 1.4052 8.8632 2.3796L7.7232 0.126C7.6836 0.0456 7.6068 0 7.5264 0C7.3536 0 7.2492 0.2016 7.3308 0.36L8.4588 2.5908C6.2448 3.8316 4.8 5.6916 4.8 8.3988H19.2C19.2 5.6916 17.7552 3.8316 15.5412 2.5908ZM9.0012 6C8.67 6 8.4 5.7312 8.4 5.4C8.4 5.0712 8.67 4.8 9.0012 4.8C9.3324 4.8 9.6 5.0712 9.6 5.4C9.6 5.7312 9.3324 6 9.0012 6ZM14.9988 6C14.6676 6 14.4 5.7312 14.4 5.4C14.4 5.0712 14.6676 4.8 14.9988 4.8C15.33 4.8 15.6 5.0712 15.6 5.4C15.6 5.7312 15.33 6 14.9988 6Z"
+     fill="black"
+     id="path863"
+     style="fill:#eaeaea;fill-opacity:1" />
+</svg>

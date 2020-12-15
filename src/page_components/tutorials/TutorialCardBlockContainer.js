@@ -8,10 +8,7 @@
     Edited by Alex Yixuan Xu (ayxx@nyu.edu)
 */
 
-import React, { Fragment, Component } from 'react';
-
-import WickCardDeckContainer from '../../pattern_library/cards/WickCardDeckContainer.js';
-import ToggleButton from '../../pattern_library/button/toggle_button.js';
+import React, { Component } from 'react';
 
 import { tutorials } from '../../data/SiteData.js';
 

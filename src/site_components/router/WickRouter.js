@@ -29,6 +29,7 @@ import PrivacyPolicyPageContainer from '../../pages/privacy/PrivacyPolicyPageCon
 import TermsAndConditionsPageContainer from '../../pages/termsAndConditions/TermsAndConditionsPageContainer.js';
 import DownloadPageContainer from '../../pages/download/DownloadPageContainer.js';
 import LogoPageContainer from '../../pages/logo/LogoPageContainer.js';
+import ProofPage from '../../pages/proof/ProofPage.js';
 import { communityProjects } from '../../data/SiteData.js';
 
 import '../../scss_styles/WickRouter.scss';
@@ -43,6 +44,7 @@ const privacy = () => (<PrivacyPolicyPageContainer />)
 const terms = () => (<TermsAndConditionsPageContainer />)
 const logo = () => (<LogoPageContainer />)
 const download = () => (<DownloadPageContainer />)
+const proof = () => (<ProofPage />)
 
 const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickLaunchEditor, backgroundAnimationClass, isDropdownOpen}) => (
     <Fragment>
@@ -145,6 +147,7 @@ const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickL
         <Route path="/terms-and-conditions" component={terms} />
         <Route path="/logos" component={logo} />
         <Route path="/download" component={download} />
+        <Route path="/proof" component={proof} />
     </Fragment>
 );
 

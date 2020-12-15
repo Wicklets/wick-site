@@ -79,7 +79,7 @@ class DownloadPageContainer extends Component {
                         downloadButtonType={this.state.downloadButtonType}
                         buttonLabel="Download Wick Editor"
                         buttonSub={<Fragment>The offline versions of the Wick Editor are currently in Beta. If you encounter an issue or have any questions, 
-                            please <InlineLink text="contact us in the forum" link="https://forum.wickeditor.com/" />.</Fragment>}
+                            please <InlineLink text="contact us on the forum" link="https://forum.wickeditor.com/" />.</Fragment>}
                         onClick={() => window.open(this.state.downloadButtonLink)}
                     />
                     <DownloadPage />

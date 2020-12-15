@@ -48,7 +48,7 @@ import img_theInspirator from '../Images/Community/theInspirator.png';
 
 // Support Us progress bar and goals
 export const supportData = {
-    patreonProgress: 214,
+    patreonProgress: 224,
     patreonGoal: 1000, 
     githubProgress: 2, 
     githubGoal: 10
@@ -56,11 +56,11 @@ export const supportData = {
 
 // offline editor download links
 export const downloadLinks = {
-    windows: "https://github.com/Wicklets/wick-editor/releases/download/v1.18.0-prerelease/Wick.Editor.Setup.1.18.0.exe",
-    macos: "https://github.com/Wicklets/wick-editor/releases/download/v1.18.0-prerelease/Wick.Editor-1.18.0_signed.pkg", 
-    linux: "https://github.com/Wicklets/wick-editor/releases/download/v1.18.0-prerelease/Wick.Editor-1.18.0.AppImage", 
-    android: "",
-    ios: ""
+    windows: "https://github.com/Wicklets/wick-editor/releases/download/1.19.0/Windows_Wick.Editor.Setup.1.19.0.exe",
+    macos: "https://github.com/Wicklets/wick-editor/releases/download/1.19.0/Mac_Wick.Editor-1.19.0.pkg", 
+    linux: "https://github.com/Wicklets/wick-editor/releases/download/1.19.0/Linux_Wick.Editor-1.19.0.AppImage", 
+    android: "https://play.google.com/store/apps/details?id=com.wickeditor.wickeditorapp",
+    ios: "https://apps.apple.com/us/app/wick-editor/id1527813014"
 }; 
 
 export const examples = [
@@ -517,7 +517,7 @@ export const referenceItems = [
     }, 
     {group:"Object",
     name: "hitTest",
-    //deprecated: "Note: this function is deprecated in Wick Editor 1.18, please use hits() instead.",
+    deprecated: "Note: this function was deprecated in Wick Editor 1.19, please use hits() instead.",
     type: "Function",
     description: "Determines if the hitboxes of two objects overlap.",
     snippet: "// on ghost object. in Update script,\nif (this.hitTest(box)) {\n    this.x = random.integer(0, project.width);\n}",
@@ -526,14 +526,13 @@ export const referenceItems = [
     }, 
     {group:"Object",
     name: "if (hitTest)",
-    //deprecated: "Note: this function is deprecated in Wick Editor 1.18, please use hits() instead.",
+    deprecated: "Note: this function was deprecated in Wick Editor 1.19, please use hits() instead.",
     type: "Statement",
     description: "Runs some custom code when the two objects tested are hitting each other.",
     snippet: "// on ghost object. in Update script,\nif (this.hitTest(box)) {\n    this.x = random.integer(0, project.width);\n}",
     syntax: "if (this.hitTest(that)) {\n    //Add your code here!}",
     parameters: [{name:"that", type: [{name: "object", description: "the object to be tested against collision"}]}]
     },
-    /*
     {group:"Object",
     name: "hits",
     type: "Function",
@@ -561,7 +560,6 @@ export const referenceItems = [
                  {name:"offsetOn", optional: true, type: [{name: "boolean", description: 'determines if offset data is returned, includes offsetX and offsetY. Can be true or false. Default is false.'}]},
                 ]
     },
-    */
 
     {group:"Input",
     name: "mouseX",

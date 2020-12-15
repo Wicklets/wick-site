@@ -21,6 +21,8 @@ import windowsIcon from '../../Images/Download/windows.svg';
 import appleIcon from '../../Images/Download/apple.svg';
 import linuxIcon from '../../Images/Download/linux.svg';
 import androidIcon from '../../Images/Download/android.svg';
+
+
 import appStoreBadge from '../../Images/Download/app-store-badge.svg';
 import googlePlayBadge from '../../Images/Download/google-play-badge.svg';
 
@@ -37,7 +39,7 @@ const DownloadPage = () => (
         <DownloadCard 
             // icon={(isIOS)? appleIcon : androidIcon} 
             // iconAlt={(isIOS)? "Apple Logo" : "Android Logo"}
-            title={(isIOS)? "Download Wick Editor 1.18 for IOS" : "Download Wick Editor 1.18 for Android"}
+            title={(isIOS)? "Download Wick Editor for iOS" : "Download Wick Editor for Android"}
             buttonImg={(isIOS) ? appStoreBadge : googlePlayBadge}
             buttonImgAlt={(isIOS) ? "Download on the App Store" : "Get it on Google Play"}
             isMobileView="true"
@@ -45,13 +47,13 @@ const DownloadPage = () => (
         />
         <Row><p></p></Row>
         <p style={{font: "400 16px 'Nunito', sans-serif", maxWidth: "855px", margin: "0 auto"}}>The offline versions of the Wick Editor are currently in Beta. If you encounter an issue or have any questions, 
-            please <InlineLink text="contact us in the forum" link="https://forum.wickeditor.com/" /></p>
+            please <InlineLink text="contact us on our forum" link="https://forum.wickeditor.com/" /></p>
         <Row><p></p></Row>
-        <p style={{font: "400 16px 'Nunito', sans-serif", maxWidth: "855px", margin: "0 auto"}}>If you are looking for the source code or an older version of the Wick Editor, please 
+        <p style={{font: "400 16px 'Nunito', sans-serif", maxWidth: "855px", margin: "0 auto"}}>The Wick Editor is Open Source! If you are looking for the source code or an older version of the Wick Editor, please 
         visit <InlineLink text="our GitHub" link="https://github.com/Wicklets/wick-editor/releases" />.</p>
         <WickSmallSpacer />
         <p style={{font: "600 20px 'Nunito', sans-serif", maxWidth: "855px", margin: "0 auto"}}>Note: The Wick Editor is a free and open-source software. 
-            To avoid scam, please only download The Wick Editor from 
+            To avoid scams, please only download The Wick Editor from 
             our <InlineLink text="official site" link="https://www.wickeditor.com/#/"></InlineLink> or 
             our <InlineLink text="GitHub" link="https://github.com/Wicklets/wick-editor"></InlineLink>.</p>
         <WickLargeSpacer />
@@ -75,7 +77,7 @@ const DownloadPage = () => (
             <Row style={{maxWidth: "855px", margin: "0 auto"}}>
                 <Col xs="12" s="12" md="6" lg="4">
                     <DownloadCard 
-                    icon={windowsIcon} iconAlt="Windows Logo" 
+                    icon={windowsIcon} iconAlt="Windows Logo"  
                     title="Windows" text="For Windows 8 and above"
                     buttonText="Download .exe"
                     onClickLink={downloadLinks.windows}
@@ -102,11 +104,7 @@ const DownloadPage = () => (
 
         <WickSmallSpacer />
         
-        <ContentSection
-            title="Mobile"
-            size="small"
-            includeUnderline
-        >
+        <ContentSection title="Mobile" size="small" includeUnderline>
             {/* icon, iconAlt, title, text, buttonText, buttonImg, buttonImgAlt, onClick */}
             <Row style={{maxWidth: "855px", margin: "0 auto"}}>
                 <Col xs="12" s="12" md="6" lg={{ size: 4, offset: 2 }}>
@@ -131,13 +129,13 @@ const DownloadPage = () => (
         </ContentSection>
 
         <WickSmallSpacer />
-        <p style={{font: "400 16px 'Nunito', sans-serif", maxWidth: "855px", margin: "0 auto"}}>If you are looking for the source code or an older version of the Wick Editor, please 
+        <p style={{font: "400 16px 'Nunito', sans-serif", maxWidth: "855px", margin: "0 auto"}}>The Wick Editor is Open Source! If you are looking for the source code or an older version of the Wick Editor, please 
         visit <InlineLink text="our GitHub" link="https://github.com/Wicklets/wick-editor/releases" />.</p>
 
         <WickSmallSpacer />
 
         <p style={{font: "600 20px 'Nunito', sans-serif", maxWidth: "855px", margin: "0 auto"}}>Note: The Wick Editor is a free and open-source software. 
-            To avoid scam, please only download The Wick Editor from 
+            To avoid scams, please only download The Wick Editor from 
             our <InlineLink text="official site" link="https://www.wickeditor.com/#/"></InlineLink> or 
             our <InlineLink text="GitHub" link="https://github.com/Wicklets/wick-editor"></InlineLink>.</p>
 
