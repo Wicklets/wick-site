@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "886e2cf5366f1bd07089",
-    "url": "/static/css/main.a92a0100.chunk.css"
+    "revision": "f5fce3531cab37f498e2",
+    "url": "/static/css/main.1f093ec8.chunk.css"
   },
   {
-    "revision": "886e2cf5366f1bd07089",
-    "url": "/static/js/main.886e2cf5.chunk.js"
+    "revision": "f5fce3531cab37f498e2",
+    "url": "/static/js/main.f5fce353.chunk.js"
   },
   {
-    "revision": "34cc5cc8c164a8363da3",
-    "url": "/static/css/1.2167a43f.chunk.css"
+    "revision": "472e22efe503ed1438bc",
+    "url": "/static/css/1.e8bbc6c9.chunk.css"
   },
   {
-    "revision": "34cc5cc8c164a8363da3",
-    "url": "/static/js/1.34cc5cc8.chunk.js"
+    "revision": "472e22efe503ed1438bc",
+    "url": "/static/js/1.472e22ef.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -24,8 +24,28 @@ self.__precacheManifest = [
     "url": "/static/media/arrow.f6d6b746.svg"
   },
   {
+    "revision": "8f4a801adc98c18eb266e6b30e90c70d",
+    "url": "/static/media/apple.8f4a801a.svg"
+  },
+  {
+    "revision": "7afbad300a9ce68166607c8c8fd19dd9",
+    "url": "/static/media/windows.7afbad30.svg"
+  },
+  {
+    "revision": "a319b3d504c9c96a464da70e2ef4df8f",
+    "url": "/static/media/linux.a319b3d5.svg"
+  },
+  {
     "revision": "c193c5fe745e98af3130fbfdafe09657",
     "url": "/static/media/testworld3.c193c5fe.svg"
+  },
+  {
+    "revision": "1cfd5dba4a9210bcf77f5dbe48ec2e66",
+    "url": "/static/media/app-store-badge.1cfd5dba.svg"
+  },
+  {
+    "revision": "e3ea015c98c4f1809ad62d0ef9c14a88",
+    "url": "/static/media/google-play-badge.e3ea015c.svg"
   },
   {
     "revision": "601cf1b160163d298a91e4fd0c5db0d6",
@@ -268,6 +288,10 @@ self.__precacheManifest = [
     "url": "/static/media/cosa_logo.9af883a9.png"
   },
   {
+    "revision": "fca458141fb604d5778c38d261521ce8",
+    "url": "/static/media/android.fca45814.svg"
+  },
+  {
     "revision": "50ec19cb2f0b5e5852a7880dac960bff",
     "url": "/static/media/clouds.50ec19cb.svg"
   },
@@ -288,7 +312,7 @@ self.__precacheManifest = [
     "url": "/static/media/patreon-logo-white.c9fa3329.svg"
   },
   {
-    "revision": "db655e8de23529ab609828bdcc49eb9a",
+    "revision": "e1d70aafe981b296bc6c5f623f80d40d",
     "url": "/index.html"
   }
 ];
