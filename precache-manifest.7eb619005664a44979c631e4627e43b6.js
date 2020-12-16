@@ -312,7 +312,7 @@ self.__precacheManifest = [
     "url": "/static/media/patreon-logo-white.c9fa3329.svg"
   },
   {
-    "revision": "de3d7b38fae5ec273caa85e6e1dbc042",
+    "revision": "2ddc8b673ce6b70ff50730f28cf8e6b6",
     "url": "/index.html"
   }
 ];
