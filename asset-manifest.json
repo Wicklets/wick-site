@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.1f093ec8.chunk.css",
-  "main.js": "/static/js/main.f5fce353.chunk.js",
-  "main.js.map": "/static/js/main.f5fce353.chunk.js.map",
+  "main.js": "/static/js/main.edc58c52.chunk.js",
+  "main.js.map": "/static/js/main.edc58c52.chunk.js.map",
   "static/css/1.e8bbc6c9.chunk.css": "/static/css/1.e8bbc6c9.chunk.css",
   "static/js/1.472e22ef.chunk.js": "/static/js/1.472e22ef.chunk.js",
   "static/js/1.472e22ef.chunk.js.map": "/static/js/1.472e22ef.chunk.js.map",
@@ -80,9 +80,9 @@
   "static/media/github-logo-black.svg": "/static/media/github-logo-black.0bf87fb7.svg",
   "static/media/patreon-logo-black.svg": "/static/media/patreon-logo-black.7fbff6b6.svg",
   "static/media/patreon-logo-white.svg": "/static/media/patreon-logo-white.c9fa3329.svg",
-  "static/css/main.1f093ec8.chunk.css.map": "/static/css/main.1f093ec8.chunk.css.map",
   "static/css/1.e8bbc6c9.chunk.css.map": "/static/css/1.e8bbc6c9.chunk.css.map",
+  "static/css/main.1f093ec8.chunk.css.map": "/static/css/main.1f093ec8.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.7eb619005664a44979c631e4627e43b6.js": "/precache-manifest.7eb619005664a44979c631e4627e43b6.js",
+  "precache-manifest.a6d0eb3ce2fac278e2885e5b4b66bfd2.js": "/precache-manifest.a6d0eb3ce2fac278e2885e5b4b66bfd2.js",
   "service-worker.js": "/service-worker.js"
 }
