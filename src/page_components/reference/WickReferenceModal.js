@@ -74,7 +74,7 @@ const WickReferenceModal = ({referenceData, onClick, isModalOpen}) => {
         // set file links for embed, download and open in editor
         embed = "/examples/reference-"+fileName+".html";
         download = "/examples/reference-"+fileName+".wick";
-        openLink = `https://editor.wickeditor.com/?example=reference-${fileName}.wick`;
+        openLink = `https://www.wickeditor.com/editor/?example=reference-${fileName}.wick`;
 
         // set simple and advanced snippet
         if (Array.isArray(referenceData.snippet)){

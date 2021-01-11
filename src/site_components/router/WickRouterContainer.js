@@ -46,7 +46,7 @@ class WickRouterContainer extends Component {
     }
 
     launchEditor = () => {
-        window.open("https://editor.wickeditor.com", "_self")
+        window.open("https://www.wickeditor.com/editor/", "_self")
     }
 
     componentDidMount() {

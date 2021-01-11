@@ -144,6 +144,7 @@ const WickRouter = ({page, onClickCloseDropdown, onClickToggleDropdown, onClickL
         <Route path="/supporters/" component={supporters} />
         <Route path="/cookie-policy/" component={cookie} />
         <Route path="/privacy-policy/" component={privacy} />
+        <Route path="/privacy/" component={privacy} />
         <Route path="/terms-and-conditions" component={terms} />
         <Route path="/logos" component={logo} />
         <Route path="/download" component={download} />
