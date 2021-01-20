@@ -23,10 +23,6 @@ import ReferenceList from '../../page_components/reference/ReferenceList.js';
 
 import './LearnPage.scss';
 
-import ReactGA from 'react-ga'; 
-
-
-
 class LearnPageContainer extends Component {
     constructor(props) {
         super(props);
@@ -73,8 +69,6 @@ class LearnPageContainer extends Component {
     }
 
     render() {
-        ReactGA.pageview('/learn');
-
         return (
             <Fragment>
                 <Helmet>

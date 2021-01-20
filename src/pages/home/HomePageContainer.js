@@ -13,8 +13,6 @@ import Header from '../../site_components/header/Header.js';
 
 import { Link } from "react-router-dom";
 
-import ReactGA from 'react-ga'; 
-
 import '../../scss_styles/WickInlineLink.scss';
 
 class HomePageContainer extends Component {
@@ -38,8 +36,6 @@ class HomePageContainer extends Component {
     }
 
     render() {
-        ReactGA.pageview("/");
-
         let title = "wick editor";
         let tagline = "games, animations and everything in-between.";
         let subtitle = "The Wick Editor is a free, open-source tool for creating games, animations, and everything in-between!";

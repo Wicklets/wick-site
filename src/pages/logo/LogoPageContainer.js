@@ -1,8 +1,6 @@
 import React, {Component, Fragment} from 'react';
 
 import LogoPage from './LogoPage';
-import ReactGA from 'react-ga'; 
-
 
 class LogoPageContainer extends Component {
     componentDidMount = () => {
@@ -10,7 +8,6 @@ class LogoPageContainer extends Component {
     }
 
     render() {
-        ReactGA.pageview('/cookie');
         return (
             <Fragment>
                 <LogoPage />

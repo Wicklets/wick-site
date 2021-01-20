@@ -13,7 +13,6 @@
     "react-cx": "^0.1.12",
     "react-device-detect": "^1.14.0",
     "react-dom": "^16.6.1",
-    "react-ga": "^2.5.7",
     "react-helmet": "^5.2.1",
     "react-image": "^1.5.1",
     "react-image-crop": "^6.0.9",

@@ -13,8 +13,6 @@ import DownloadPage from './DownloadPage.js';
 import Header from '../../site_components/header/Header.js';
 import InlineLink from '../../pattern_library/inline_link/WickInlineLink.js';
 
-import ReactGA from 'react-ga'; 
-
 import windowsIcon from '../../Images/Download/windows.svg';
 import appleIcon from '../../Images/Download/apple.svg';
 import linuxIcon from '../../Images/Download/linux.svg';
@@ -49,7 +47,6 @@ class DownloadPageContainer extends Component {
     }
 
     render() {
-        ReactGA.pageview("/");
 
         let title = "download";
         let tagline = "download an offline version of the wick editor for your devices.";

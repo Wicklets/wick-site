@@ -11,15 +11,12 @@ import React, {Component, Fragment} from 'react';
 import SupportersPage from './SupportersPage.js';
 import Header from '../../site_components/header/Header.js';
 
-import ReactGA from 'react-ga'; 
-
 class SupportersPageContainer extends Component {
     componentDidMount = () => {
         window.scrollTo({top: 0, left: 0, behvaior: "smooth"})
     }
 
     render() {
-        ReactGA.pageview('/supporters');
         return (
             <Fragment>
                 <Header

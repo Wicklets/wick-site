@@ -10,7 +10,6 @@ import React, {Component, Fragment} from 'react';
 
 import AboutPage from './AboutPage.js';
 import Header from '../../site_components/header/Header.js';
-import ReactGA from 'react-ga'; 
 
 class AboutPageContainer extends Component {
     componentDidMount = () => {
@@ -18,7 +17,6 @@ class AboutPageContainer extends Component {
     }
 
     render() {
-        ReactGA.pageview('/about');
         return (
             <Fragment>
                 <Header
